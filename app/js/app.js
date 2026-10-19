@@ -33,7 +33,7 @@ const MOCK = {
 };
 
 /* The 4-week plan (mirrors STUDY_PLAN.md). `go` links a day to an action in-app. */
-const STUDY_PLAN = [
+const PLAN_4W = [
   { d: 1, w: 1, t: 'Ch 1 — The values and principles of the UK', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Answer all Ch 1 questions in the official Q&A / app.', 'Practise 20 questions: Values & Principles.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
   { d: 2, w: 1, t: 'Ch 2 — What is the UK? (nations & capitals)', k: ['Read: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies.', 'Note what "Great Britain" excludes.', 'Practise 25 questions: What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
   { d: 3, w: 1, t: 'Ch 2 — Symbols, people & currency', k: ['Read: patron saints & days, national flowers, the Union Flag, population, languages, cities, currency.', 'Answer all Ch 2 questions in the official Q&A.', 'Practise 25 × What is the UK? + one Quick 10.'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
@@ -67,12 +67,136 @@ const STUDY_PLAN = [
   { d: 28, w: 4, t: 'Rest and prepare', k: ['No cramming. Confirm your ID and test centre details.', 'Early night. Remember: 24 questions, 45 minutes, 18 to pass.'] },
 ];
 
-const PLAN_MILESTONES = [
+const MILESTONES_4W = [
   { day: 7, target: '~15/24', note: 'Baseline — you know the format' },
   { day: 12, target: '18+/24', note: 'Passing level' },
   { day: 21, target: '20+/24', note: 'Comfortable' },
   { day: 26, target: '22+/24', note: 'Exam-ready with margin' },
 ];
+
+/* --------------------------------------------------------------------------
+ * Plan variants. Each plan is a list of days: d = day number, w = week,
+ * t = focus, k = tasks, go = optional in-app action. A plan is chosen with
+ * `store.planId`; ticking a day only affects that plan.
+ * ------------------------------------------------------------------------ */
+
+const PLAN_2W = [
+  { d: 1, w: 1, t: 'Ch 1 + Ch 2 — Values, nations & symbols', k: ['Read Ch 1: the 5 fundamental principles, your rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies.', 'Practise 25 Values & Principles + 20 What is the UK?'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
+  { d: 2, w: 1, t: 'Ch 2 finish + Ch 3 — Early Britain', k: ['Read: patron saints & days, national flowers, the Union Flag, currency, languages, major cities.', 'Read Ch 3: Stone Age → Romans → Anglo-Saxons → Vikings → Norman Conquest.', 'Memorise AD 43, AD 410, 1066, 1086. Practise 25 × What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
+  { d: 3, w: 1, t: 'Ch 3 — Middle Ages, Tudors & Stuarts', k: ['Read: Magna Carta, Wales & Scotland, the Hundred Years War, the Black Death, the Wars of the Roses.', 'Read: Henry VIII, the Reformation, Elizabeth I, the Armada, the Gunpowder Plot, the Civil War, the Restoration.', 'Timeline: 1215, 1314, 1348, 1415, 1485, 1534, 1588, 1605. Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 4, w: 1, t: 'Ch 3 — 18th, 19th & early 20th century', k: ['Read: the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution, Ireland.', "Read: WWI and the Somme, women's suffrage (1918, 1928), the Depression, WWII and the Battle of Britain.", 'Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 5, w: 1, t: 'Ch 3 finish + mock #1', k: ['Read: the NHS (1948), the Commonwealth, the welfare state, the 1960s–2000s, devolution, leaving the EU.', 'Clear every wrong answer so far, then sit mock #1 as a baseline (target ~15/24).', 'Review every wrong answer and add the facts to your notes.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 6, w: 1, t: 'Ch 4 — Religion, festivals & customs', k: ['Read: the churches and other faiths, the census figures, patron saints, Christmas/Easter, Diwali, Hannukah, Eid, Vaisakhi, Remembrance Day.', 'Practise 30 Modern Society questions.', 'Retry any Values & Principles / What is the UK? questions you have got wrong.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 7, w: 1, t: 'Ch 4 finish + week 1 review', k: ['Read: sport & sportspeople, music, literature, art, architecture, gardens, places of interest.', 'Practise 30 Modern Society questions.', 'Review your notes and re-read the timeline card.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+
+  { d: 8, w: 2, t: 'Ch 5 — Government & the constitution', k: ['Read: the monarchy, Parliament, Commons/Lords, the Speaker, elections and voting, the PM, cabinet, parties, local government.', 'Practise 30 Government & Law questions.', 'Re-read the devolution summary before tomorrow.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 9, w: 2, t: 'Ch 5 — Devolution & international bodies', k: ['Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions.', 'Sit a mock (target 18+/24) and review it fully.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 10, w: 2, t: 'Ch 5 — Law, courts & your role', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Practise 30 Government & Law questions.', 'Retry every wrong answer from the whole pool.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 11, w: 2, t: 'Weak areas + mock #2', k: ['Open Stats and drill your two weakest categories (hard).', 'Sit mock #2 — target 18+/24.', 'Review every wrong answer in depth.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
+  { d: 12, w: 2, t: 'Full sweep + mock #3', k: ['Practise all Values & Principles and What is the UK? questions.', 'Sit mock #3 — target 20+/24.', 'Add any new facts to your key-facts sheet.'], go: { label: 'Practise all questions', action: 'start-all' } },
+  { d: 13, w: 2, t: 'Mock #4 under exam conditions', k: ['Sit a timed mock in the morning, phone away. Target 22+/24.', 'Analyse the result and close the last gaps.', 'Light revision only in the evening.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 14, w: 2, t: 'Rest and prepare', k: ['No cramming. Re-read your key-facts sheet once.', 'Confirm your ID and test centre details.', 'Early night: 24 questions, 45 minutes, 18 to pass.'], go: { label: 'Quick 10', action: 'start-quick' } },
+];
+
+const MILESTONES_2W = [
+  { day: 5, target: '~15/24', note: 'Baseline — you know the format' },
+  { day: 9, target: '18+/24', note: 'Passing level' },
+  { day: 12, target: '20+/24', note: 'Comfortable' },
+  { day: 13, target: '22+/24', note: 'Exam-ready with margin' },
+];
+
+const PLAN_1W = [
+  { d: 1, w: 1, t: 'Ch 1 + Ch 2 — Values, nations & symbols', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, patron saints, the Union Flag, currency.', 'Practise 30 Values & Principles + 30 What is the UK?. Expect 3–4 hours today.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
+  { d: 2, w: 1, t: 'Ch 3 — Early Britain to the 19th century', k: ['Read: Stone Age → Romans → Anglo-Saxons → Vikings → Normans; Magna Carta, the Middle Ages, Wales & Scotland.', 'Read: the Tudors and Stuarts; the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution.', 'Memorise AD 43, 1066, 1215, 1485, 1534, 1588, 1605, 1707. Practise 50 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 3, w: 1, t: 'Ch 3 finish + mock #1', k: ['Read: WWI and the Somme, suffrage (1918, 1928), the Depression, WWII and the Battle of Britain, the NHS (1948), the Commonwealth, devolution, leaving the EU.', 'Practise 40 History questions, then sit mock #1 as a baseline.', 'Review every wrong answer — these are your priority for tomorrow.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 4, w: 1, t: 'Ch 4 — Modern society in one day', k: ['Read: religion and the census, festivals and customs, sport, music, literature, art, architecture, gardens, places of interest.', 'Practise 50 Modern Society questions.', 'Retry every Modern Society question you have got wrong.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 5, w: 1, t: 'Ch 5 — Government & devolution + mock #2', k: ['Read: the monarchy, Parliament, elections and voting, the PM and cabinet, parties, local government.', 'Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions, then sit mock #2 (target 18+/24).'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 6, w: 1, t: 'Ch 5 — Law & your role + weak areas', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Open Stats and drill your two weakest categories.', 'Sit mock #3 — target 20+/24 — and review every wrong answer.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
+  { d: 7, w: 1, t: 'Final revision, mock #4 & rest', k: ['Morning: one timed mock under exam conditions — target 22+/24.', 'Afternoon: re-read your key-facts sheet and only the facts you keep missing.', 'No cramming after that. Confirm your ID and test centre details. Early night.'], go: { label: 'Start mock test', action: 'start-mock' } },
+];
+
+const MILESTONES_1W = [
+  { day: 3, target: '~15/24', note: 'Baseline — you know the format' },
+  { day: 5, target: '18+/24', note: 'Passing level' },
+  { day: 6, target: '20+/24', note: 'Comfortable' },
+  { day: 7, target: '22+/24', note: 'Exam-ready with margin' },
+];
+
+const PLANS = {
+  '4w': {
+    id: '4w',
+    chip: '4 weeks',
+    name: '4-week plan',
+    days: PLAN_4W,
+    milestones: MILESTONES_4W,
+    weeks: {
+      1: 'Week 1 — Foundations & the shorter chapters',
+      2: 'Week 2 — History (the big one)',
+      3: 'Week 3 — Society & Government',
+      4: 'Week 4 — Exam readiness',
+    },
+    lede: 'A 4-week plan built around your official handbook, Q&A and app — with this app for drilling and mock tests. Tick each day off as you go.',
+  },
+  '2w': {
+    id: '2w',
+    chip: '2 weeks',
+    name: '2-week plan',
+    days: PLAN_2W,
+    milestones: MILESTONES_2W,
+    weeks: {
+      1: 'Week 1 — Foundations & History',
+      2: 'Week 2 — Society, Government & exam readiness',
+    },
+    lede: 'A 14-day plan for when the test is a fortnight away. Expect 2–3 focused hours a day: one pass through each chapter, then mocks and weak-area work.',
+  },
+  '1w': {
+    id: '1w',
+    chip: '1 week',
+    name: '1-week plan',
+    days: PLAN_1W,
+    milestones: MILESTONES_1W,
+    weeks: { 1: 'The week — one pass, then mocks' },
+    lede: 'A 7-day intensive for when the test is next week. Expect 3–4 hours a day: cover each chapter once, then spend the last days on mocks and your wrong answers.',
+  },
+};
+
+const PLAN_ORDER = ['4w', '2w', '1w'];
+
+function planDef(id) {
+  return PLANS[id] || PLANS['4w'];
+}
+
+function currentPlan() {
+  return planDef(store.planId);
+}
+
+/** The tick map for a store's selected plan (creating it if needed). */
+function planDoneMap(s = store) {
+  if (!s.plan || typeof s.plan !== 'object') s.plan = {};
+  const id = planDef(s.planId).id;
+  if (!s.plan[id]) s.plan[id] = {};
+  return s.plan[id];
+}
+
+function planDoneCount(s) {
+  const def = planDef(s.planId);
+  const done = (s.plan && s.plan[def.id]) || {};
+  return def.days.filter((d) => done[d.d]).length;
+}
+
+/** Migrate the old flat { "3": 1 } map into the 4-week bucket. */
+function normalizeStore(s) {
+  if (!s.plan || typeof s.plan !== 'object') s.plan = {};
+  const legacy = Object.keys(s.plan).filter((k) => /^\d+$/.test(k));
+  if (legacy.length) {
+    const done = {};
+    for (const k of legacy) done[k] = s.plan[k];
+    s.plan = { '4w': done };
+  }
+  for (const id of PLAN_ORDER) if (!s.plan[id]) s.plan[id] = {};
+  if (!PLANS[s.planId]) s.planId = '4w';
+  return s;
+}
 
 const STORE_KEY = 'liuk_state_v1';
 const ACTIVE_MOCK_KEY = 'liuk_active_mock_v1';
@@ -87,12 +211,22 @@ const TYPE_LABEL = {
 /* ---------- storage ---------- */
 
 function defaultStore() {
-  return { seen: {}, right: {}, wrong: {}, flags: {}, mocks: [], plan: {}, testDate: null, verify: {} };
+  return {
+    seen: {},
+    right: {},
+    wrong: {},
+    flags: {},
+    mocks: [],
+    plan: { '4w': {}, '2w': {}, '1w': {} },
+    planId: '4w',
+    testDate: null,
+    verify: {},
+  };
 }
 
 let store = (() => {
   try {
-    return Object.assign(defaultStore(), JSON.parse(localStorage.getItem(STORE_KEY) || '{}'));
+    return normalizeStore(Object.assign(defaultStore(), JSON.parse(localStorage.getItem(STORE_KEY) || '{}')));
   } catch (e) {
     return defaultStore();
   }
@@ -174,7 +308,7 @@ function switchUser(id) {
   const target = profiles.byId[id];
   if (!target || id === profiles.active) return;
   parkActive();
-  store = Object.assign(defaultStore(), target.saved || {});
+  store = normalizeStore(Object.assign(defaultStore(), target.saved || {}));
   target.saved = null;
   profiles.active = id;
   if (target.savedMock) localStorage.setItem(ACTIVE_MOCK_KEY, target.savedMock);
@@ -693,7 +827,7 @@ function render() {
   headerSub.textContent =
     {
       practice: 'Practice',
-      plan: '4-week plan',
+      plan: 'Study plan',
       mock: 'Mock test',
       stats: 'Statistics',
       verify: 'Verify facts',
@@ -941,9 +1075,7 @@ function renderReview() {
   const opts = q.options
     .map(
       (o, idx) =>
-        `<div class="ropt ${q.answer.includes(idx) ? 'correct' : ''}"><span>${
-          q.answer.includes(idx) ? '✓' : ''
-        }</span><span>${esc(o)}</span></div>`
+        `<div class="ropt"><span>${String.fromCharCode(65 + idx)}</span><span>${esc(o)}</span></div>`
     )
     .join('');
 
@@ -966,9 +1098,7 @@ function renderReview() {
       </div>
       <div class="q-text">${esc(q.question)}</div>
       ${opts}
-      <div class="feedback ok"><strong>✅ Answer: ${esc(
-        q.answer.map((x) => q.options[x]).join(' and ')
-      )}</strong>${esc(q.explanation)}</div>
+      <p class="small muted">Answer hidden — use <strong>Practise these</strong> to answer them and see the explanation.</p>
     </div>
 
     <div class="actions">
@@ -1178,7 +1308,8 @@ function statFor(s, total) {
     attempts: attempts,
     mocks: (s.mocks || []).length,
     best: (s.mocks || []).reduce((m, r) => Math.max(m, r.correct || 0), 0),
-    planDone: STUDY_PLAN.filter((d) => (s.plan || {})[d.d]).length,
+    planDone: planDoneCount(s),
+    planDays: planDef(s.planId).days.length,
     verified: Object.keys(s.verify || {}).length,
   };
 }
@@ -1234,7 +1365,7 @@ function renderUser() {
       <div class="stat-box"><div class="n">${st.acc}%</div><div class="l">Correct</div></div>
       <div class="stat-box"><div class="n">${st.mocks}</div><div class="l">Mocks</div></div>
       <div class="stat-box"><div class="n">${st.best ? st.best + '/' + MOCK.total : '—'}</div><div class="l">Best mock</div></div>
-      <div class="stat-box"><div class="n">${st.planDone}/${STUDY_PLAN.length}</div><div class="l">Plan days</div></div>
+      <div class="stat-box"><div class="n">${st.planDone}/${st.planDays}</div><div class="l">Plan days</div></div>
       <div class="stat-box"><div class="n">${st.verified}</div><div class="l">Facts checked</div></div>
     </div>
 
@@ -1330,7 +1461,7 @@ function renderStats() {
  * Study plan
  * ========================================================================= */
 
-function planToday() {
+function planToday(totalDays = currentPlan().days.length) {
   if (!store.testDate) return null;
   const test = new Date(store.testDate + 'T00:00:00');
   if (isNaN(test.getTime())) return null;
@@ -1342,7 +1473,7 @@ function planToday() {
   const midnightUtc = (d) => Date.UTC(d.getFullYear(), d.getMonth(), d.getDate());
 
   const start = new Date(test.getTime());
-  start.setDate(start.getDate() - 27);
+  start.setDate(start.getDate() - (totalDays - 1));
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -1353,42 +1484,49 @@ function planToday() {
 }
 
 function renderPlan() {
-  const plan = store.plan || {};
-  const doneCount = STUDY_PLAN.filter((d) => plan[d.d]).length;
-  const pt = planToday();
-  const todayDay = pt && pt.day >= 1 && pt.day <= 28 ? pt.day : null;
-  const pct = Math.round((doneCount / STUDY_PLAN.length) * 100);
+  const plan = currentPlan();
+  const done = planDoneMap();
+  const total = plan.days.length;
+  const doneCount = plan.days.filter((d) => done[d.d]).length;
+  const pt = planToday(total);
+  const todayDay = pt && pt.day >= 1 && pt.day <= total ? pt.day : null;
+  const pct = Math.round((doneCount / total) * 100);
 
-  const weekNames = {
-    1: 'Week 1 — Foundations & the shorter chapters',
-    2: 'Week 2 — History (the big one)',
-    3: 'Week 3 — Society & Government',
-    4: 'Week 4 — Exam readiness',
-  };
-
-  const milestones = PLAN_MILESTONES.map(
-    (m) => `<div class="bd-row">
-        <span>Day ${m.day}</span>
-        <span><strong>${m.target}</strong></span>
-        <span class="bd-bar"><span style="width:${plan[m.day] ? 100 : 0}%"></span></span>
-        <span class="small muted" style="grid-column:1/-1">${esc(m.note)}</span>
-      </div>`
+  const selector = PLAN_ORDER.map(
+    (id) =>
+      `<button class="chip ${id === plan.id ? 'is-on' : ''}" data-action="set-plan" data-plan="${id}">${
+        PLANS[id].chip
+      }</button>`
   ).join('');
 
-  const weeks = [1, 2, 3, 4]
+  const milestones = plan.milestones
+    .map(
+      (m) => `<div class="bd-row">
+        <span>Day ${m.day}</span>
+        <span><strong>${m.target}</strong></span>
+        <span class="bd-bar"><span style="width:${done[m.day] ? 100 : 0}%"></span></span>
+        <span class="small muted" style="grid-column:1/-1">${esc(m.note)}</span>
+      </div>`
+    )
+    .join('');
+
+  const weeks = Object.keys(plan.weeks)
+    .map(Number)
+    .sort((a, b) => a - b)
     .map((w) => {
-      const days = STUDY_PLAN.filter((d) => d.w === w)
+      const days = plan.days
+        .filter((d) => d.w === w)
         .map((d) => {
-          const done = !!plan[d.d];
+          const isDone = !!done[d.d];
           const isToday = todayDay === d.d;
           const go = d.go
             ? `<button class="btn secondary plan-go" data-action="${d.go.action}"${
                 d.go.cat ? ` data-cat="${d.go.cat}"` : ''
               }${d.go.tab ? ` data-tab="${d.go.tab}"` : ''}>${esc(d.go.label)}</button>`
             : '';
-          return `<div class="plan-day${done ? ' is-done' : ''}${isToday ? ' is-today' : ''}">
+          return `<div class="plan-day${isDone ? ' is-done' : ''}${isToday ? ' is-today' : ''}">
             <button class="plan-check" data-action="plan-toggle" data-day="${d.d}" aria-label="Mark day ${d.d} complete">${
-            done ? '✓' : ''
+            isDone ? '✓' : ''
           }</button>
             <div class="plan-body">
               <div class="plan-head"><strong>Day ${d.d}</strong><span class="plan-focus">${esc(d.t)}</span>${
@@ -1400,16 +1538,30 @@ function renderPlan() {
           </div>`;
         })
         .join('');
-      return `<h2 class="section">${weekNames[w]}</h2><div class="card plan-card">${days}</div>`;
+      return `<h2 class="section">${esc(plan.weeks[w])}</h2><div class="card plan-card">${days}</div>`;
     })
     .join('');
 
+  // If the test date is set, suggest the longest plan that still fits.
+  let suggestion = '';
+  if (pt && pt.daysToTest >= 1) {
+    const fit = pt.daysToTest <= 7 ? '1w' : pt.daysToTest <= 14 ? '2w' : '4w';
+    if (fit !== plan.id) {
+      suggestion = `<p class="small muted">Your test is in <strong>${pt.daysToTest}</strong> ${
+        pt.daysToTest === 1 ? 'day' : 'days'
+      } — the ${PLANS[fit].name} fits. <button class="chip plan-suggest" data-action="set-plan" data-plan="${fit}">Use it</button></p>`;
+    }
+  }
+
   mainEl.innerHTML = `
-    <p class="lede">A 4-week plan built around your official handbook, Q&amp;A and app — with this app for drilling and mock tests. Tick each day off as you go.</p>
+    <p class="lede">${esc(plan.lede)}</p>
+
+    <h2 class="section">Your timeline</h2>
+    <div class="chips">${selector}</div>
 
     <div class="card">
       <div class="q-progress">
-        <span>${doneCount}/${STUDY_PLAN.length} days</span>
+        <span>${doneCount}/${total} days</span>
         <span class="progress-bar"><span style="width:${pct}%"></span></span>
         <span>${pct}%</span>
       </div>
@@ -1428,6 +1580,7 @@ function renderPlan() {
             }${todayDay ? ` · you are on <strong>day ${todayDay}</strong> of the plan` : ''}</p>`
           : `<p class="small muted">Set your test date for a countdown and to see which day you are on.</p>`
       }
+      ${suggestion}
     </div>
 
     <h2 class="section">Milestones</h2>
@@ -1836,23 +1989,34 @@ mainEl.addEventListener('click', (e) => {
       render();
       break;
 
+    case 'set-plan': {
+      const id = t.dataset.plan;
+      if (!PLANS[id]) break;
+      store.planId = id;
+      saveStore();
+      render();
+      toast(PLANS[id].name + ' selected');
+      break;
+    }
     case 'plan-toggle': {
-      const d = t.dataset.day;
-      if (!store.plan) store.plan = {};
-      if (store.plan[d]) delete store.plan[d];
-      else store.plan[d] = 1;
+      const d = Number(t.dataset.day);
+      const done = planDoneMap();
+      if (done[d]) delete done[d];
+      else done[d] = 1;
       saveStore();
       render();
       break;
     }
-    case 'reset-plan':
-      if (confirm('Clear the study-plan ticks and test date?')) {
-        store.plan = {};
+    case 'reset-plan': {
+      const plan = currentPlan();
+      if (confirm(`Clear the ${plan.name}'s ticks and test date?`)) {
+        store.plan[plan.id] = {};
         store.testDate = null;
         saveStore();
         render();
       }
       break;
+    }
     case 'go-tab': {
       const tab = t.dataset.tab;
       if (ui.screen === 'mock' && ui.tab !== tab) {

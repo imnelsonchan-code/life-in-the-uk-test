@@ -112,11 +112,11 @@ module.exports = {
         await openPlan();
         suite.eq('exactly four week cards', await page.count('.plan-card'), 4);
         suite.eq(
-          'day entries equal STUDY_PLAN.length',
+          'day entries equal the plan length',
           await page.count('.plan-day'),
-          await page.eval('return STUDY_PLAN.length')
+          await page.eval('return currentPlan().days.length')
         );
-        suite.eq('STUDY_PLAN has 28 days', await page.eval('return STUDY_PLAN.length'), PLAN_DAYS);
+        suite.eq('the default plan has 28 days', await page.eval('return currentPlan().days.length'), PLAN_DAYS);
 
         const headings = await page.eval(
           'return [].map.call(document.querySelectorAll("h2.section"), function (h) { return h.textContent.trim(); });'
@@ -135,13 +135,79 @@ module.exports = {
         suite.eq(
           'go buttons match the days that have one',
           await page.count('.plan-go'),
-          await page.eval('return STUDY_PLAN.filter(function (d) { return !!d.go; }).length')
+          await page.eval('return currentPlan().days.filter(function (d) { return !!d.go; }).length')
         );
 
         const p = await planProgress();
         suite.eq('progress counter starts at 0/28', p && p.count, `0/${PLAN_DAYS} days`);
         suite.eq('progress starts at 0%', p && p.pct, '0%');
         suite.eq('progress bar starts empty', p && p.width, '0%');
+      });
+
+      /* --- choosing a timeline ------------------------------------------ */
+
+      await suite.group('Switching plans swaps the schedule and keeps ticks separate', async () => {
+        await openPlan();
+
+        // Put a tick on the 4-week plan so we can prove it is not shared.
+        await page.click('[data-action="plan-toggle"][data-day="3"]');
+        suite.eq('4-week tick recorded', await page.eval('return store.plan["4w"]["3"]'), 1);
+
+        await page.click('[data-action="set-plan"][data-plan="2w"]');
+        suite.eq('the chosen plan is stored', await page.eval('return store.planId'), '2w');
+        suite.eq('two week cards', await page.count('.plan-card'), 2);
+        suite.eq('fourteen day entries', await page.count('.plan-day'), 14);
+        suite.eq('progress is per-plan', (await planProgress()).count, '0/14 days');
+        const nums = await page.eval(
+          'return [].map.call(document.querySelectorAll(".plan-head strong"), function (s) { return Number(s.textContent.replace(/[^0-9]/g, "")); });'
+        );
+        suite.check(
+          'days renumbered 1..14',
+          JSON.stringify(nums) === JSON.stringify(Array.from({ length: 14 }, (_, i) => i + 1)),
+          JSON.stringify(nums)
+        );
+        const m2 = await milestoneRows();
+        suite.check(
+          'the 2-week milestones are used',
+          m2.length === 4 && m2[0].day === 'Day 5' && m2[3].day === 'Day 13',
+          JSON.stringify(m2.map((r) => r.day))
+        );
+
+        await page.click('[data-action="set-plan"][data-plan="1w"]');
+        suite.eq('one week card', await page.count('.plan-card'), 1);
+        suite.eq('seven day entries', await page.count('.plan-day'), 7);
+        suite.eq('progress 0/7 on the new plan', (await planProgress()).count, '0/7 days');
+        const m1 = await milestoneRows();
+        suite.check('the 1-week milestones are used', m1.length === 4 && m1[0].day === 'Day 3', JSON.stringify(m1.map((r) => r.day)));
+
+        await page.click('[data-action="set-plan"][data-plan="4w"]');
+        suite.eq('back to four week cards', await page.count('.plan-card'), 4);
+        suite.eq('the 4-week tick is still there', await page.eval('return store.plan["4w"]["3"]'), 1);
+        suite.eq('progress 1/28 again', (await planProgress()).count, '1/28 days');
+
+        await page.click('[data-action="plan-toggle"][data-day="3"]'); // clean up
+        suite.eq('cleanup leaves the 4-week plan empty', await page.eval('return Object.keys(store.plan["4w"]).length'), 0);
+
+        await reload();
+        await openPlan();
+        suite.eq('the chosen plan survives a reload', await page.eval('return store.planId'), '4w');
+      });
+
+      await suite.group('A near test date suggests the plan that fits', async () => {
+        await openPlan();
+        const soon = ymd(ty, tm, td, 5);
+        await page.setValue('[data-action="set-test-date"]', soon);
+
+        suite.check('the 1-week plan is suggested', /1-week plan fits/.test(await page.text('#main')));
+        suite.check('the suggestion is a working button', await page.exists('.plan-suggest'));
+        await page.click('.plan-suggest');
+        suite.eq('clicking it switches plan', await page.eval('return store.planId'), '1w');
+        suite.eq('and shortens the schedule', await page.count('.plan-day'), 7);
+
+        // restore the default plan and no date for the date tests below
+        await page.click('[data-action="set-plan"][data-plan="4w"]');
+        await page.setValue('[data-action="set-test-date"]', '');
+        suite.eq('restored to the 4-week plan', await page.eval('return store.planId'), '4w');
       });
 
       /* --- test date ---------------------------------------------------- */
@@ -239,7 +305,7 @@ module.exports = {
       await suite.group('Ticking a day and persistence', async () => {
         await openPlan();
         await page.click('[data-action="plan-toggle"][data-day="3"]');
-        suite.eq('store.plan records day 3', await page.eval('return store.plan["3"]'), 1);
+        suite.eq('store.plan records day 3', await page.eval('return store.plan[store.planId]["3"]'), 1);
         suite.eq('day 3 marked done', await dayDone(3), true);
         suite.eq('day 3 checkbox shows a tick', await page.text('[data-action="plan-toggle"][data-day="3"]'), '✓');
         let p = await planProgress();
@@ -248,13 +314,13 @@ module.exports = {
         suite.eq('progress bar width is 4%', p.width, '4%');
         suite.eq(
           'tick written to localStorage',
-          await page.eval('return JSON.parse(localStorage.getItem("liuk_state_v1")).plan["3"]'),
+          await page.eval('var s = JSON.parse(localStorage.getItem("liuk_state_v1")); return s.plan[s.planId]["3"];'),
           1
         );
 
         await reload();
         await openPlan();
-        suite.eq('tick survives a reload', await page.eval('return store.plan["3"]'), 1);
+        suite.eq('tick survives a reload', await page.eval('return store.plan[store.planId]["3"]'), 1);
         suite.eq('day 3 still marked done after reload', await dayDone(3), true);
         p = await planProgress();
         suite.eq('counter survives a reload', p.count, `1/${PLAN_DAYS} days`);
@@ -264,7 +330,7 @@ module.exports = {
       await suite.group('Unticking a day', async () => {
         await openPlan();
         await page.click('[data-action="plan-toggle"][data-day="3"]');
-        suite.eq('store.plan no longer has day 3', await page.eval('return !("3" in store.plan)'), true);
+        suite.eq('store.plan no longer has day 3', await page.eval('return !("3" in store.plan[store.planId])'), true);
         suite.eq('day 3 not marked done', await dayDone(3), false);
         suite.eq('day 3 checkbox is empty', await page.text('[data-action="plan-toggle"][data-day="3"]'), '');
         const p = await planProgress();
@@ -273,7 +339,7 @@ module.exports = {
 
         await reload();
         await openPlan();
-        suite.eq('untick survives a reload', await page.eval('return !("3" in store.plan)'), true);
+        suite.eq('untick survives a reload', await page.eval('return !("3" in store.plan[store.planId])'), true);
         suite.eq('day 3 still not done after reload', await dayDone(3), false);
       });
 
@@ -283,7 +349,7 @@ module.exports = {
         await openPlan();
         let rows = await milestoneRows();
         const wantedDays = await page.eval(
-          'return PLAN_MILESTONES.map(function (m) { return "Day " + m.day; });'
+          'return currentPlan().milestones.map(function (m) { return "Day " + m.day; });'
         );
         suite.eq('one milestone row per checkpoint', rows.length, wantedDays.length);
         suite.check(
@@ -322,7 +388,7 @@ module.exports = {
         await openPlan();
         await page.click('[data-action="plan-toggle"][data-day="12"]');
         await page.setValue('[data-action="set-test-date"]', inPlanDate);
-        suite.eq('setup: a day is ticked', await page.eval('return store.plan["12"]'), 1);
+        suite.eq('setup: a day is ticked', await page.eval('return store.plan[store.planId]["12"]'), 1);
         suite.eq('setup: a test date is set', await page.eval('return store.testDate'), inPlanDate);
 
         const before = page.dialogs.length;
@@ -330,11 +396,11 @@ module.exports = {
         await sleep(150);
         suite.check(
           'reset asked for confirmation',
-          page.dialogs.slice(before).some((m) => /study-plan ticks/i.test(m)),
+          page.dialogs.slice(before).some((m) => /ticks/i.test(m)),
           JSON.stringify(page.dialogs.slice(before))
         );
 
-        suite.eq('ticks cleared', await page.eval('return Object.keys(store.plan).length'), 0);
+        suite.eq('ticks cleared', await page.eval('return Object.keys(store.plan[store.planId]).length'), 0);
         suite.eq('test date cleared too', await page.eval('return store.testDate'), null);
         suite.eq('no days are marked done', await page.count('.plan-day.is-done'), 0);
         const p = await planProgress();
@@ -345,7 +411,7 @@ module.exports = {
         await openPlan();
         suite.eq(
           'reset persists across a reload',
-          await page.eval('return Object.keys(store.plan).length === 0 && store.testDate === null'),
+          await page.eval('return Object.keys(store.plan[store.planId]).length === 0 && store.testDate === null'),
           true
         );
       });
@@ -376,7 +442,7 @@ module.exports = {
         for (const c of cases) {
           await openPlan();
           const spec = await page.eval(
-            `var d = STUDY_PLAN.filter(function (x) { return x.d === ${c.day}; })[0]; return d && d.go;`
+            `var d = currentPlan().days.filter(function (x) { return x.d === ${c.day}; })[0]; return d && d.go;`
           );
           const idx = await goIndexForDay(c.day);
           suite.eq(`day ${c.day} has an action button`, idx >= 0, true);

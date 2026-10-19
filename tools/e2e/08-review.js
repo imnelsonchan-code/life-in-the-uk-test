@@ -73,8 +73,10 @@ module.exports = {
 
         const q = await page.eval(`return DATA.byId['${flaggedId}']`);
         suite.check('the question text is shown', (await page.text('.q-text')).trim() === q.question);
-        suite.eq('the correct option(s) are marked', await page.eval("return document.querySelectorAll('.ropt.correct').length"), q.answer.length);
-        suite.check('the answer is revealed', (await page.text('.feedback')).indexOf('Answer:') >= 0);
+        suite.eq('no option is marked as correct', await page.eval("return document.querySelectorAll('.ropt.correct').length"), 0);
+        suite.check('the answer is not revealed', (await page.text('#main')).indexOf('Answer:') < 0);
+        suite.check('the explanation is not revealed', (await page.text('#main')).indexOf(q.explanation) < 0);
+        suite.eq('no answer/feedback block is rendered', await page.eval("return document.querySelectorAll('.feedback').length"), 0);
         suite.eq('previous is disabled on the only question', await isDisabled('[data-action="review-prev"]'), true);
         suite.eq('next is disabled on the only question', await isDisabled('[data-action="review-next"]'), true);
 
@@ -123,9 +125,9 @@ module.exports = {
         suite.eq('the review list is the wrong list', await page.eval('return ui.review.kind'), 'wrong');
         suite.check('it shows how many times you got it wrong', (await page.text('#main')).indexOf('wrong 1×') >= 0);
         suite.eq(
-          'the correct option(s) are marked',
+          'no option is marked as correct',
           await page.eval("return document.querySelectorAll('.ropt.correct').length"),
-          await page.eval(`return DATA.byId['${id}'].answer.length`)
+          0
         );
 
         await removeFromReview();
