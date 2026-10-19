@@ -19,8 +19,10 @@ keep getting wrong.
 - **Timed mock tests** — 24 questions in 45 minutes, 18 to pass, with the real
   test's chapter weighting and a per-question review at the end.
 - **Study plan** — choose a **4-week, 2-week or 1-week** schedule. Each day has
-  its own reading, drilling and mock targets, a "today" marker driven by your
-  test date, and progress you tick off as you go (kept per plan).
+  its own reading, drilling and mock targets plus a one-click drill (including a
+  combined **Ch 1 + Ch 2 sweep**), a "today" marker driven by your test date, and
+  progress you tick off as you go (kept per plan). The written companion is
+  [`STUDY_PLAN.md`](STUDY_PLAN.md).
 - **Flag & review** — flag any question for a second look, then review your
   flagged questions or your wrong answers. The review screens show the question
   and options only; use *Practise these* to answer them and see the explanation.
@@ -120,7 +122,7 @@ is the merged pool the app actually loads — regenerate it after editing parts:
 ```bash
 node tools/merge.js        # parts -> app/data/questions (+ index.json)
 node tools/validate.js     # schema and invariant checks
-node tools/test.js         # regression suite (64 checks)
+node tools/test.js         # regression suite (65 checks)
 ```
 
 Browser end-to-end tests run against a live server (they drive the system Chrome

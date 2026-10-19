@@ -1,5 +1,9 @@
 # Content Audit — Life in the UK question pool
 
+> **Historical snapshot:** this audit was run against the 577-question pool. The
+> pool has since grown to **716** questions (see `verify/fact-check-2026-10-19.md`);
+> the totals below are left as they were recorded at the time.
+
 Independent, adversarial content audit of `app/data/questions/*.json` (577 questions).
 Auditor: independent agent. Scope: content correctness, duplicate/redundancy, staleness,
 and structural integrity. I did **not** rely on `tools/dupes.js` or the existing

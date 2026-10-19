@@ -175,13 +175,28 @@ section('App wiring');
 const html = fs.readFileSync(path.join(APPDIR, 'index.html'), 'utf8');
 const appjs = fs.readFileSync(path.join(APPDIR, 'js', 'app.js'), 'utf8');
 
+// Parse (without running) the script: a stray apostrophe or brace in the plan
+// text otherwise slips past every other check and only shows up as a blank page.
+let parseError = null;
+try {
+  new Function(appjs);
+} catch (e) {
+  parseError = e.message;
+}
+check('app.js parses as JavaScript', parseError === null, parseError || '');
+
 const tabs = [...html.matchAll(/data-tab="([^"]+)"/g)].map((m) => m[1]);
 check('six tabs are declared', tabs.length === 6, `got ${tabs.length}: ${tabs.join(', ')}`);
 for (const t of ['practice', 'plan', 'mock', 'stats', 'verify', 'user']) {
   check(`tab present: ${t}`, tabs.includes(t));
 }
 
-const actions = new Set([...appjs.matchAll(/data-action="([^"$]+)"/g)].map((m) => m[1]));
+const actions = new Set([
+  ...[...appjs.matchAll(/data-action="([^"$]+)"/g)].map((m) => m[1]),
+  // Plan days carry their action in data — go: { action: 'start-mock' } — and
+  // render it dynamically, so those escape the data-action scan above.
+  ...[...appjs.matchAll(/\baction: '([a-z-]+)'/g)].map((m) => m[1]),
+]);
 // An action is "handled" if it appears in a switch case, or is targeted by a
 // delegated listener such as closest('[data-action="x"]') / dataset.action === 'x'.
 const handled = new Set([

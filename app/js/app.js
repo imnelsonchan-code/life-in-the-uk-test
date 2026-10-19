@@ -34,36 +34,36 @@ const MOCK = {
 
 /* The 4-week plan (mirrors STUDY_PLAN.md). `go` links a day to an action in-app. */
 const PLAN_4W = [
-  { d: 1, w: 1, t: 'Ch 1 — The values and principles of the UK', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Answer all Ch 1 questions in the official Q&A / app.', 'Practise 20 questions: Values & Principles.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
-  { d: 2, w: 1, t: 'Ch 2 — What is the UK? (nations & capitals)', k: ['Read: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies.', 'Note what "Great Britain" excludes.', 'Practise 25 questions: What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
-  { d: 3, w: 1, t: 'Ch 2 — Symbols, people & currency', k: ['Read: patron saints & days, national flowers, the Union Flag, population, languages, cities, currency.', 'Answer all Ch 2 questions in the official Q&A.', 'Practise 25 × What is the UK? + one Quick 10.'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
-  { d: 4, w: 1, t: 'Ch 3 — Early Britain', k: ['Read Stone Age → Romans → Anglo-Saxons → Vikings → Norman Conquest.', 'Memorise the anchor dates: AD 43, AD 410, 1066, 1086.', 'Practise 30 History questions (start on easy).'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 5, w: 1, t: 'Ch 3 — The Middle Ages', k: ['Read: Magna Carta, Wales & Scotland, the Hundred Years War, the Black Death, the Wars of the Roses.', 'Timeline card: 1215, 1314, 1348, 1415, 1485.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 6, w: 1, t: 'Ch 3 — The Tudors and Stuarts', k: ['Read: Henry VIII, the Reformation, Elizabeth I, the Armada, the Gunpowder Plot, the Civil War, the Restoration.', 'Do the first half of Ch 3 in the official Q&A.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 7, w: 1, t: 'Week 1 review + baseline mock', k: ['Clear every wrong answer so far (Practice → Retry wrong).', 'Sit mock #1 — a baseline, not a verdict.', 'Re-read Ch 1–2 notes and your timeline card.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 1, w: 1, t: 'The values & principles of the UK (Ch 1)', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Answer all Ch 1 questions in the official Q&A.', 'Also read the practical half of Ch 1: becoming a permanent resident and taking the test.', 'Practise 20 questions: Values & Principles.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
+  { d: 2, w: 1, t: 'What is the UK? — nations & capitals (Ch 2)', k: ['Read: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies, overseas territories.', 'Note what "Great Britain" excludes.', 'Practise 25 questions: What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
+  { d: 3, w: 1, t: 'Symbols, people & geography (Ch 2)', k: ['Read: patron saints & days, national flowers, the Union Flag, population, languages, cities, currency — and the physical geography: hills, mountains, rivers and lakes.', 'Answer all Ch 2 questions in the official Q&A.', 'Practise 25 × What is the UK? + one Quick 10.'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
+  { d: 4, w: 1, t: 'Early Britain (Ch 3)', k: ['Read Stone Age → Romans → Anglo-Saxons → Vikings → Norman Conquest.', 'Memorise the anchor dates: AD 43, AD 410, 1066, 1086.', 'Practise 30 History questions — set the Difficulty chip to Easy first.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 5, w: 1, t: 'The Middle Ages (Ch 3)', k: ['Read: Magna Carta, Wales & Scotland, the Hundred Years War, the Black Death, the Wars of the Roses.', 'Timeline card: 1215, 1314, 1348, 1415, 1455 (the Wars of the Roses begin), 1485.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 6, w: 1, t: 'The Tudors & Stuarts (Ch 3)', k: ['Read: Henry VIII, the Reformation, Elizabeth I, the Armada, the Gunpowder Plot, the Civil War, the Restoration.', 'Do the first half of Ch 3 in the official Q&A.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 7, w: 1, t: 'Week 1 review + baseline mock', k: ['Clear every wrong answer so far (Practice → Retry wrong).', 'Sit the baseline mock (target about 15/24) — it is a baseline, not a verdict.', 'Re-read Ch 1–2 notes and your timeline card.'], go: { label: 'Start mock test', action: 'start-mock' } },
 
-  { d: 8, w: 2, t: 'Ch 3 — The 18th and 19th centuries', k: ['Read: the 1707 Union, the empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution, Ireland.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 9, w: 2, t: 'Ch 3 — The 20th century (1)', k: ['Read: WWI and the Somme, women\'s suffrage (1918, 1928), Ireland, the Depression, WWII and the Battle of Britain.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 10, w: 2, t: 'Ch 3 — 20th century (2) & since 1945', k: ['Read: the NHS (1948), the Commonwealth, the welfare state, the 1960s–2000s, devolution, leaving the EU.', 'Do the second half of Ch 3 in the official Q&A.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 11, w: 2, t: 'History consolidation', k: ['Practise 30 History questions at HARD difficulty.', 'Review every wrong answer and add the fact to your notes.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 12, w: 2, t: 'Weak areas + mock #1', k: ['Check Stats and drill your two weakest categories.', 'Sit a mock. Target 18+/24.', 'Review every wrong answer fully.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 13, w: 2, t: 'Revisit the shorter chapters', k: ['Retry wrong answers from Values & Principles and What is the UK?.', 'Two Quick 10 mixed sets.'], go: { label: 'Retry wrong answers', action: 'start-wrong' } },
+  { d: 8, w: 2, t: 'The 18th & 19th centuries (Ch 3)', k: ['Read: the 1707 Union, the empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution, Ireland — and the abolition of slavery.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 9, w: 2, t: 'The 20th century, part 1 (Ch 3)', k: ['Read: WWI and the Somme, women\'s suffrage (1918, 1928), Ireland, the Depression, WWII and the Battle of Britain.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 10, w: 2, t: 'The 20th century, part 2 & since 1945 (Ch 3)', k: ['Read: the NHS (1948), the welfare state, the Commonwealth, the 1960s–2000s, broadcasting (the BBC was founded in 1922), devolution, and the UK leaving the EU in 2020.', 'Do the second half of Ch 3 in the official Q&A.', 'Practise 30 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 11, w: 2, t: 'History consolidation', k: ['Practise 30 History questions — set the Difficulty chip to Hard first.', 'Review every wrong answer and add the fact to your notes.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 12, w: 2, t: 'Weak areas + Mock #1', k: ['Check Stats, then drill your two weakest categories on Practice.', 'Sit Mock #1. Target 18+/24.', 'Review every wrong answer fully.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 13, w: 2, t: 'Revisit the shorter chapters', k: ['Retry your wrong answers — start with Values & Principles and What is the UK?.', 'Two Quick 10 mixed sets from the Practice tab.'], go: { label: 'Retry wrong answers', action: 'start-wrong' } },
   { d: 14, w: 2, t: 'Rest + light revision', k: ['Official app quiz only — 15–20 min.', 'Re-read your key-facts sheet. No heavy study.'] },
 
-  { d: 15, w: 3, t: 'Ch 4 — Religion', k: ['Read: the churches, other faiths, and the census figures.', 'Practise 25 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
-  { d: 16, w: 3, t: 'Ch 4 — Festivals, customs & traditions', k: ['Read: patron saints\' days, Christmas/Easter, Diwali, Hannukah, Eid, Vaisakhi, Remembrance Day, bank holidays.', 'Do the first half of Ch 4 in the official Q&A.', 'Practise 25 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
-  { d: 17, w: 3, t: 'Ch 4 — Sport, arts, culture & leisure', k: ['Read: sports & sportspeople, music, literature, art, architecture, gardens, places of interest.', 'Practise 30 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
-  { d: 18, w: 3, t: 'Ch 5 — Government & the constitution', k: ['Read: the monarchy, Parliament, Commons/Lords, the Speaker, elections, voting, the PM, cabinet, parties, local government.', 'Practise 30 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 19, w: 3, t: 'Ch 5 — Devolution & international bodies', k: ['Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Do the first half of Ch 5 in the official Q&A.', 'Practise 25 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 20, w: 3, t: 'Ch 5 — Law, courts & your role', k: ['Read: criminal vs civil law, courts & juries, the police, human rights, tax, driving, volunteering.', 'Practise 30 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 21, w: 3, t: 'Week 3 review + mock #2', k: ['Retry wrong answers in Modern Society and Government & Law.', 'Sit a mock. Target 20+/24.', 'Review every wrong answer in depth.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 15, w: 3, t: 'Religion (Ch 4)', k: ['Read: the churches, other faiths, and the census figures.', 'Practise 25 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 16, w: 3, t: 'Festivals, customs & traditions (Ch 4)', k: ['Read: patron saints\' days, Christmas/Easter, Diwali, Hannukah, Eid, Vaisakhi, Remembrance Day, bank holidays.', 'Do the first half of Ch 4 in the official Q&A.', 'Practise 25 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 17, w: 3, t: 'Sport, arts, culture & leisure (Ch 4)', k: ['Read: sports & sportspeople, music, literature, art, architecture, gardens and places of interest — plus film, television & the media, science, and food.', 'Practise 30 Modern Society questions.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 18, w: 3, t: 'Government & the constitution (Ch 5)', k: ['Read: the monarchy, Parliament, Commons/Lords, the Speaker, elections, voting, the PM, cabinet, parties, local government.', 'Practise 30 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 19, w: 3, t: 'Devolution & international bodies (Ch 5)', k: ['Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Do the first half of Ch 5 in the official Q&A.', 'Practise 25 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 20, w: 3, t: 'Law, courts & your role (Ch 5)', k: ['Read: criminal vs civil law, courts & juries, the police, human rights, tax, driving, volunteering — plus the civil service, equality & discrimination, and the laws on alcohol, tobacco and drugs.', 'Practise 30 Government & Law questions.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 21, w: 3, t: 'Week 3 review + Mock #2', k: ['Retry wrong answers in Modern Society and Government & Law (Practice → Retry wrong).', 'Sit Mock #2. Target 20+/24.', 'Review every wrong answer in depth.'], go: { label: 'Start mock test', action: 'start-mock' } },
 
   { d: 22, w: 4, t: 'Target your weakest areas', k: ['Stats: find your two weakest categories and drill them (hard).', 'Redo those chapters in the official Q&A.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
-  { d: 23, w: 4, t: 'Full sweep — Ch 1 + Ch 2', k: ['Practise all Values & Principles (45) and What is the UK? (60).', 'Target 90%+.'], go: { label: 'Practise all questions', action: 'start-all' } },
-  { d: 24, w: 4, t: 'Full sweep — History', k: ['Practise History with "only unseen" on to confirm coverage.', 'Target 85%+.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 25, w: 4, t: 'Mock #3 + review', k: ['Sit a mock. Target 22+/24.', 'Add any new facts to your sheet.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 26, w: 4, t: 'Mock #4 under exam conditions', k: ['Sit a timed mock in the morning, phone away.', 'Analyse the result and close the last gaps.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 27, w: 4, t: 'Light revision', k: ['Re-read your key-facts sheet and notes.', 'Official app questions for speed. One quick mock only if you want.'], go: { label: 'Quick 10', action: 'start-quick' } },
+  { d: 23, w: 4, t: 'Full sweep — Ch 1 + Ch 2', k: ['Practise all Values & Principles (72) and What is the UK? (77) — 149 questions in one sitting.', 'Target 90%+.'], go: { label: 'Sweep Ch 1 + Ch 2', action: 'start-cats', cats: ['values_principles', 'what_is_uk'] } },
+  { d: 24, w: 4, t: 'Full sweep — History', k: ['On Practice, switch on "Only questions I haven’t seen", then drill History to confirm you have covered it all.', 'Target 85%+.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 25, w: 4, t: 'Mock #3 + review', k: ['Sit Mock #3. Target 22+/24.', 'Add any new facts to your sheet.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 26, w: 4, t: 'Mock #4 under exam conditions', k: ['Sit Mock #4 in the morning, phone away. Target 22+/24 again — you are confirming it now, not learning it.', 'Analyse the result and close the last gaps.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 27, w: 4, t: 'Light revision', k: ['Re-read your key-facts sheet and notes.', 'Official app questions for speed. Optionally sit one more full mock (24 questions / 45 minutes).'], go: { label: 'Quick 10', action: 'start-quick' } },
   { d: 28, w: 4, t: 'Rest and prepare', k: ['No cramming. Confirm your ID and test centre details.', 'Early night. Remember: 24 questions, 45 minutes, 18 to pass.'] },
 ];
 
@@ -81,21 +81,21 @@ const MILESTONES_4W = [
  * ------------------------------------------------------------------------ */
 
 const PLAN_2W = [
-  { d: 1, w: 1, t: 'Ch 1 + Ch 2 — Values, nations & symbols', k: ['Read Ch 1: the 5 fundamental principles, your rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies.', 'Practise 25 Values & Principles + 20 What is the UK?'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
-  { d: 2, w: 1, t: 'Ch 2 finish + Ch 3 — Early Britain', k: ['Read: patron saints & days, national flowers, the Union Flag, currency, languages, major cities.', 'Read Ch 3: Stone Age → Romans → Anglo-Saxons → Vikings → Norman Conquest.', 'Memorise AD 43, AD 410, 1066, 1086. Practise 25 × What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
-  { d: 3, w: 1, t: 'Ch 3 — Middle Ages, Tudors & Stuarts', k: ['Read: Magna Carta, Wales & Scotland, the Hundred Years War, the Black Death, the Wars of the Roses.', 'Read: Henry VIII, the Reformation, Elizabeth I, the Armada, the Gunpowder Plot, the Civil War, the Restoration.', 'Timeline: 1215, 1314, 1348, 1415, 1485, 1534, 1588, 1605. Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 4, w: 1, t: 'Ch 3 — 18th, 19th & early 20th century', k: ['Read: the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution, Ireland.', "Read: WWI and the Somme, women's suffrage (1918, 1928), the Depression, WWII and the Battle of Britain.", 'Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 5, w: 1, t: 'Ch 3 finish + mock #1', k: ['Read: the NHS (1948), the Commonwealth, the welfare state, the 1960s–2000s, devolution, leaving the EU.', 'Clear every wrong answer so far, then sit mock #1 as a baseline (target ~15/24).', 'Review every wrong answer and add the facts to your notes.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 6, w: 1, t: 'Ch 4 — Religion, festivals & customs', k: ['Read: the churches and other faiths, the census figures, patron saints, Christmas/Easter, Diwali, Hannukah, Eid, Vaisakhi, Remembrance Day.', 'Practise 30 Modern Society questions.', 'Retry any Values & Principles / What is the UK? questions you have got wrong.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 1, w: 1, t: 'Values, nations & symbols (Ch 1–2)', k: ['Read Ch 1: the 5 fundamental principles, your rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, the British Isles, Crown dependencies.', 'Practise 25 Values & Principles, then 20 What is the UK? — both from the Practice tab.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
+  { d: 2, w: 1, t: 'Ch 2 finish + Early Britain (Ch 3)', k: ['Read: patron saints & days, national flowers, the Union Flag, currency, languages, major cities.', 'Read Ch 3: Stone Age → Romans → Anglo-Saxons → Vikings → Norman Conquest.', 'Memorise AD 43, AD 410, 1066, 1086. Practise 25 × What is the UK?'], go: { label: 'Drill What is the UK?', action: 'start-cat', cat: 'what_is_uk' } },
+  { d: 3, w: 1, t: 'Middle Ages, Tudors & Stuarts (Ch 3)', k: ['Read: Magna Carta, Wales & Scotland, the Hundred Years War, the Black Death, the Wars of the Roses.', 'Read: Henry VIII, the Reformation, Elizabeth I, the Armada, the Gunpowder Plot, the Civil War, the Restoration.', 'Timeline: 1215, 1314, 1348, 1415, 1485, 1530s (the Reformation), 1588, 1605. Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 4, w: 1, t: 'The 18th century to the Great War (Ch 3)', k: ['Read: the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution, Ireland.', "Read: WWI and the Somme, women's suffrage (1918, 1928), the Depression, WWII and the Battle of Britain.", 'Practise 40 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 5, w: 1, t: 'Ch 3 finish + baseline mock', k: ['Read: the NHS (1948), the welfare state, the Commonwealth, the 1960s–2000s, broadcasting (the BBC was founded in 1922), devolution, and the UK leaving the EU in 2020.', 'Clear every wrong answer so far, then sit the baseline mock (target ~15/24).', 'Review every wrong answer and add the facts to your notes.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 6, w: 1, t: 'Religion, festivals & customs (Ch 4)', k: ['Read: the churches and other faiths, the census figures, patron saints, Christmas/Easter, Diwali, Hannukah, Eid, Vaisakhi, Remembrance Day.', 'Practise 30 Modern Society questions.', 'Retry any Values & Principles / What is the UK? questions you have got wrong (Practice → Retry wrong).'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
   { d: 7, w: 1, t: 'Ch 4 finish + week 1 review', k: ['Read: sport & sportspeople, music, literature, art, architecture, gardens, places of interest.', 'Practise 30 Modern Society questions.', 'Review your notes and re-read the timeline card.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
 
-  { d: 8, w: 2, t: 'Ch 5 — Government & the constitution', k: ['Read: the monarchy, Parliament, Commons/Lords, the Speaker, elections and voting, the PM, cabinet, parties, local government.', 'Practise 30 Government & Law questions.', 'Re-read the devolution summary before tomorrow.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 9, w: 2, t: 'Ch 5 — Devolution & international bodies', k: ['Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions.', 'Sit a mock (target 18+/24) and review it fully.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 10, w: 2, t: 'Ch 5 — Law, courts & your role', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Practise 30 Government & Law questions.', 'Retry every wrong answer from the whole pool.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 11, w: 2, t: 'Weak areas + mock #2', k: ['Open Stats and drill your two weakest categories (hard).', 'Sit mock #2 — target 18+/24.', 'Review every wrong answer in depth.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
-  { d: 12, w: 2, t: 'Full sweep + mock #3', k: ['Practise all Values & Principles and What is the UK? questions.', 'Sit mock #3 — target 20+/24.', 'Add any new facts to your key-facts sheet.'], go: { label: 'Practise all questions', action: 'start-all' } },
-  { d: 13, w: 2, t: 'Mock #4 under exam conditions', k: ['Sit a timed mock in the morning, phone away. Target 22+/24.', 'Analyse the result and close the last gaps.', 'Light revision only in the evening.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 14, w: 2, t: 'Rest and prepare', k: ['No cramming. Re-read your key-facts sheet once.', 'Confirm your ID and test centre details.', 'Early night: 24 questions, 45 minutes, 18 to pass.'], go: { label: 'Quick 10', action: 'start-quick' } },
+  { d: 8, w: 2, t: 'Government & the constitution (Ch 5)', k: ['Read: the monarchy, Parliament, Commons/Lords, the Speaker, elections and voting, the PM, cabinet, parties, local government.', 'Practise 30 Government & Law questions.', 'Re-read the devolution summary before tomorrow.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 9, w: 2, t: 'Devolution & international bodies (Ch 5)', k: ['Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions.', 'On the Mock tab, sit Mock #1 (target 18+/24) and review it fully.'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 10, w: 2, t: 'Law, courts & your role (Ch 5)', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Practise 30 Government & Law questions.', 'Retry every wrong answer from the whole pool (Practice → Retry wrong).'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 11, w: 2, t: 'Weak areas + Mock #2', k: ['Open Stats and drill your two weakest categories (hard).', 'Sit Mock #2 — hold 18+/24.', 'Review every wrong answer in depth.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
+  { d: 12, w: 2, t: 'Full sweep + Mock #3', k: ['Practise all Values & Principles (72) and What is the UK? (77) — 149 questions in one sitting.', 'Sit Mock #3 — target 20+/24.', 'Add any new facts to your key-facts sheet.'], go: { label: 'Sweep Ch 1 + Ch 2', action: 'start-cats', cats: ['values_principles', 'what_is_uk'] } },
+  { d: 13, w: 2, t: 'Mock #4 under exam conditions', k: ['Sit Mock #4 in the morning, phone away. Target 22+/24.', 'Analyse the result and close the last gaps.', 'Light revision only in the evening.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 14, w: 2, t: 'Rest and prepare', k: ['No cramming. Re-read your key-facts sheet once — or a single Quick 10 if you want to stay sharp.', 'Confirm your ID and test centre details.', 'Early night: 24 questions, 45 minutes, 18 to pass.'], go: { label: 'Quick 10', action: 'start-quick' } },
 ];
 
 const MILESTONES_2W = [
@@ -106,13 +106,13 @@ const MILESTONES_2W = [
 ];
 
 const PLAN_1W = [
-  { d: 1, w: 1, t: 'Ch 1 + Ch 2 — Values, nations & symbols', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, patron saints, the Union Flag, currency.', 'Practise 30 Values & Principles + 30 What is the UK?. Expect 3–4 hours today.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
-  { d: 2, w: 1, t: 'Ch 3 — Early Britain to the 19th century', k: ['Read: Stone Age → Romans → Anglo-Saxons → Vikings → Normans; Magna Carta, the Middle Ages, Wales & Scotland.', 'Read: the Tudors and Stuarts; the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution.', 'Memorise AD 43, 1066, 1215, 1485, 1534, 1588, 1605, 1707. Practise 50 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
-  { d: 3, w: 1, t: 'Ch 3 finish + mock #1', k: ['Read: WWI and the Somme, suffrage (1918, 1928), the Depression, WWII and the Battle of Britain, the NHS (1948), the Commonwealth, devolution, leaving the EU.', 'Practise 40 History questions, then sit mock #1 as a baseline.', 'Review every wrong answer — these are your priority for tomorrow.'], go: { label: 'Start mock test', action: 'start-mock' } },
-  { d: 4, w: 1, t: 'Ch 4 — Modern society in one day', k: ['Read: religion and the census, festivals and customs, sport, music, literature, art, architecture, gardens, places of interest.', 'Practise 50 Modern Society questions.', 'Retry every Modern Society question you have got wrong.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
-  { d: 5, w: 1, t: 'Ch 5 — Government & devolution + mock #2', k: ['Read: the monarchy, Parliament, elections and voting, the PM and cabinet, parties, local government.', 'Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions, then sit mock #2 (target 18+/24).'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
-  { d: 6, w: 1, t: 'Ch 5 — Law & your role + weak areas', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Open Stats and drill your two weakest categories.', 'Sit mock #3 — target 20+/24 — and review every wrong answer.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
-  { d: 7, w: 1, t: 'Final revision, mock #4 & rest', k: ['Morning: one timed mock under exam conditions — target 22+/24.', 'Afternoon: re-read your key-facts sheet and only the facts you keep missing.', 'No cramming after that. Confirm your ID and test centre details. Early night.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 1, w: 1, t: 'Values, nations & symbols (Ch 1–2)', k: ['Read Ch 1: the 5 fundamental principles, rights & responsibilities, the citizenship pledge.', 'Read Ch 2: the 4 nations, capitals, Great Britain vs the UK, patron saints, the Union Flag, currency.', 'Practise 30 Values & Principles, then 30 What is the UK? — both from the Practice tab. Expect 3–4 hours today.'], go: { label: 'Drill Values & Principles', action: 'start-cat', cat: 'values_principles' } },
+  { d: 2, w: 1, t: 'Early Britain to the Industrial Revolution (Ch 3)', k: ['Read: Stone Age → Romans → Anglo-Saxons → Vikings → Normans; Magna Carta, the Middle Ages, Wales & Scotland.', 'Read: the Tudors and Stuarts; the 1707 Union, empire, Trafalgar, Waterloo, the Reform Acts, Victoria, the Industrial Revolution.', 'Memorise AD 43, 1066, 1215, 1485, 1530s (the Reformation), 1588, 1605, 1707. Practise 50 History questions.'], go: { label: 'Drill History', action: 'start-cat', cat: 'history' } },
+  { d: 3, w: 1, t: 'Ch 3 finish + baseline mock', k: ['Read: WWI and the Somme, suffrage (1918, 1928), the Depression, WWII and the Battle of Britain, the NHS (1948), the Commonwealth, devolution, and the UK leaving the EU in 2020.', 'Practise 40 History questions, then sit the baseline mock (target ~15/24).', 'Review every wrong answer (Practice → Retry wrong) — these are your priority for tomorrow.'], go: { label: 'Start mock test', action: 'start-mock' } },
+  { d: 4, w: 1, t: 'Modern society in one day (Ch 4)', k: ['Read: religion and the census, festivals and customs, sport, music, literature, art, architecture, gardens, places of interest.', 'Practise 50 Modern Society questions.', 'Retry every Modern Society question you have got wrong.'], go: { label: 'Drill Modern Society', action: 'start-cat', cat: 'modern_society' } },
+  { d: 5, w: 1, t: 'Government & devolution (Ch 5) + Mock #1', k: ['Read: the monarchy, Parliament, elections and voting, the PM and cabinet, parties, local government.', 'Read: the Scottish Parliament, the Senedd, the NI Assembly; the Commonwealth, UN, NATO, Council of Europe.', 'Practise 30 Government & Law questions, then sit Mock #1 (target 18+/24).'], go: { label: 'Drill Government & Law', action: 'start-cat', cat: 'government_law' } },
+  { d: 6, w: 1, t: 'Law & your role (Ch 5) + weak areas', k: ['Read: criminal vs civil law, courts and juries, the police, human rights, tax, driving, volunteering.', 'Open Stats and drill your two weakest categories.', 'Sit Mock #2 — target 20+/24 — and review every wrong answer.'], go: { label: 'Open Stats', action: 'go-tab', tab: 'stats' } },
+  { d: 7, w: 1, t: 'Final revision, Mock #3 & rest', k: ['Morning: Mock #3 under exam conditions — target 22+/24.', 'Afternoon: re-read your key-facts sheet and only the facts you keep missing.', 'No cramming after that. Confirm your ID and test centre details. Early night.'], go: { label: 'Start mock test', action: 'start-mock' } },
 ];
 
 const MILESTONES_1W = [
@@ -130,7 +130,7 @@ const PLANS = {
     days: PLAN_4W,
     milestones: MILESTONES_4W,
     weeks: {
-      1: 'Week 1 — Foundations & the shorter chapters',
+      1: 'Week 1 — Foundations & early History',
       2: 'Week 2 — History (the big one)',
       3: 'Week 3 — Society & Government',
       4: 'Week 4 — Exam readiness',
@@ -147,7 +147,7 @@ const PLANS = {
       1: 'Week 1 — Foundations & History',
       2: 'Week 2 — Society, Government & exam readiness',
     },
-    lede: 'A 14-day plan for when the test is a fortnight away. Expect 2–3 focused hours a day: one pass through each chapter, then mocks and weak-area work.',
+    lede: 'A 14-day plan for when the test is a fortnight away. Expect 2–3 focused hours a day: a first pass through each chapter, with mocks woven in from day 5 and the last days spent on your weak areas.',
   },
   '1w': {
     id: '1w',
@@ -156,7 +156,7 @@ const PLANS = {
     days: PLAN_1W,
     milestones: MILESTONES_1W,
     weeks: { 1: 'The week — one pass, then mocks' },
-    lede: 'A 7-day intensive for when the test is next week. Expect 3–4 hours a day: cover each chapter once, then spend the last days on mocks and your wrong answers.',
+    lede: 'A 7-day intensive for when the test is next week. Expect 3–4 hours a day: cover each chapter once, with a mock from day 3 and the final day kept for revision and rest.',
   },
 };
 
@@ -532,8 +532,10 @@ function setTab(tab) {
  * Practice
  * ========================================================================= */
 
+/** The filtered pool for one category, several categories, or the whole pool. */
 function poolFor(catId) {
-  let pool = catId ? DATA.byCat[catId] || [] : DATA.all;
+  const cats = Array.isArray(catId) ? catId : catId ? [catId] : null;
+  const pool = cats ? cats.flatMap((c) => DATA.byCat[c] || []) : DATA.all;
   const f = ui.filters;
   return pool.filter(
     (q) =>
@@ -541,6 +543,14 @@ function poolFor(catId) {
       (f.difficulty === 'all' || q.difficulty === f.difficulty) &&
       (!f.unseen || !store.seen[q.id])
   );
+}
+
+/** Display name for a category, or for several joined with " + ". */
+function catTitle(catId) {
+  if (!catId) return 'All questions';
+  return (Array.isArray(catId) ? catId : [catId])
+    .map((id) => (CAT_BY_ID[id] || {}).name || id)
+    .join(' + ');
 }
 
 function startPractice({ catId = null, title, ids = null, limit = 0 } = {}) {
@@ -554,7 +564,7 @@ function startPractice({ catId = null, title, ids = null, limit = 0 } = {}) {
   ui.session = {
     mode: 'practice',
     catId,
-    title: title || (catId ? CAT_BY_ID[catId].name : 'All questions'),
+    title: title || catTitle(catId),
     items: pool.map((q) => instantiate(q)),
     i: 0,
     answered: 0,
@@ -1538,7 +1548,9 @@ function renderPlan() {
           const go = d.go
             ? `<button class="btn secondary plan-go" data-action="${d.go.action}"${
                 d.go.cat ? ` data-cat="${d.go.cat}"` : ''
-              }${d.go.tab ? ` data-tab="${d.go.tab}"` : ''}>${esc(d.go.label)}</button>`
+              }${d.go.cats ? ` data-cats="${d.go.cats.join(',')}"` : ''}${
+                d.go.tab ? ` data-tab="${d.go.tab}"` : ''
+              }>${esc(d.go.label)}</button>`
             : '';
           return `<div class="plan-day${isDone ? ' is-done' : ''}${isToday ? ' is-today' : ''}">
             <button class="plan-check" data-action="plan-toggle" data-day="${d.d}" aria-label="Mark day ${d.d} complete">${
@@ -1558,14 +1570,18 @@ function renderPlan() {
     })
     .join('');
 
-  // If the test date is set, suggest the longest plan that still fits.
+  // If the test date is set, suggest the longest plan that still fits. A plan of
+  // N days starts on testDate - (N - 1), so N - 1 days of runway is the most it
+  // can use; with less than that, day 1 would already be in the past.
   let suggestion = '';
   if (pt && pt.daysToTest >= 1) {
-    const fit = pt.daysToTest <= 7 ? '1w' : pt.daysToTest <= 14 ? '2w' : '4w';
-    if (fit !== plan.id) {
-      suggestion = `<p class="small muted">Your test is in <strong>${pt.daysToTest}</strong> ${
-        pt.daysToTest === 1 ? 'day' : 'days'
-      } — the ${PLANS[fit].name} fits. <button class="chip plan-suggest" data-action="set-plan" data-plan="${fit}">Use it</button></p>`;
+    const fits = (id) => pt.daysToTest <= PLANS[id].days.length - 1;
+    const fit = fits('1w') ? '1w' : fits('2w') ? '2w' : fits('4w') ? '4w' : null;
+    const days = pt.daysToTest === 1 ? 'day' : 'days';
+    if (!fit) {
+      suggestion = `<p class="small muted">Your test is in <strong>${pt.daysToTest}</strong> ${days} — further out than the 4-week plan reaches (its day 1 is 27 days before the test). Come back to this tab when the date is closer.</p>`;
+    } else if (fit !== plan.id) {
+      suggestion = `<p class="small muted">Your test is in <strong>${pt.daysToTest}</strong> ${days} — the ${PLANS[fit].name} fits. <button class="chip plan-suggest" data-action="set-plan" data-plan="${fit}">Use it</button></p>`;
     }
   }
 
@@ -1894,6 +1910,9 @@ mainEl.addEventListener('click', (e) => {
       break;
     case 'start-cat':
       startPractice({ catId: t.dataset.cat });
+      break;
+    case 'start-cats':
+      startPractice({ catId: (t.dataset.cats || '').split(',').filter(Boolean) });
       break;
     case 'start-all':
       startPractice({ catId: null, title: 'All questions' });

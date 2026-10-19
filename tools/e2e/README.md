@@ -36,8 +36,8 @@ module.exports = {
     try {
       const page = await browser.newPage();
       await page.goto(ctx.base + '/');
-      await page.ready(577);                 // waits for DATA.all to populate
-      suite.eq('pool size', await page.eval('return DATA.all.length'), 577);
+      await page.ready(716);                 // waits for DATA.all to populate
+      suite.eq('pool size', await page.eval('return DATA.all.length'), 716);
     } finally {
       await browser.close();
     }

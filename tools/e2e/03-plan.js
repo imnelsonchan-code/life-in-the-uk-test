@@ -435,7 +435,7 @@ module.exports = {
           { day: 7, action: 'start-mock' },
           { day: 13, action: 'start-wrong', title: 'Retry wrong' },
           { day: 22, action: 'go-tab', tab: 'stats' },
-          { day: 23, action: 'start-all', title: 'All questions' },
+          { day: 23, action: 'start-cats', title: 'Values & Principles + What is the UK?' },
           { day: 27, action: 'start-quick', title: 'Quick 10' },
         ];
 
@@ -513,16 +513,32 @@ module.exports = {
               await page.eval('return document.getElementById("headerSubtitle").textContent'),
               'Statistics'
             );
-          } else if (c.action === 'start-all') {
+          } else if (c.action === 'start-cats') {
             suite.eq(`day ${c.day} opens the practice tab`, await page.eval('return ui.tab'), 'practice');
             suite.eq(
-              `day ${c.day} title is All questions`,
+              `day ${c.day} title names both categories`,
               await page.eval('return ui.session && ui.session.title'),
               c.title
             );
             suite.eq(
-              `day ${c.day} loads the whole pool`,
-              await page.eval('return ui.session.items.length === DATA.all.length'),
+              `day ${c.day} loads exactly the two categories`,
+              await page.eval(
+                `return ui.session.items.length === DATA.byCat["values_principles"].length + DATA.byCat["what_is_uk"].length`
+              ),
+              true
+            );
+            suite.eq(
+              `day ${c.day} loads nothing outside those two categories`,
+              await page.eval(
+                `return ui.session.items.every(function (q) { return q.ref.category === "values_principles" || q.ref.category === "what_is_uk"; })`
+              ),
+              true
+            );
+            suite.eq(
+              `day ${c.day} loads every question of both, with no repeats`,
+              await page.eval(
+                `var ids = ui.session.items.map(function (q) { return q.id; }); return new Set(ids).size === ids.length;`
+              ),
               true
             );
           } else if (c.action === 'start-quick') {
