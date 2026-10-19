@@ -1,0 +1,833 @@
+[
+  {
+    "id": "gov-0035",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Members of the House of Lords may stand for election to the House of Commons.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Members of the House of Lords cannot stand for election to the House of Commons.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0034: Lords cannot stand for the Commons - same fact as gov-0034"
+  },
+  {
+    "id": "gov-0060",
+    "category": "government_law",
+    "subcategory": "human-rights",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is a right protected by the European Convention on Human Rights?",
+    "options": [
+      "The right to free housing",
+      "The right to a university place",
+      "The right to a fair trial",
+      "The right to a job"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Protected rights include the right to life and the right to a fair trial, freedom of thought, conscience and religion, and freedom of expression.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0097: rights protected by the ECHR - same fact as gov-0097"
+  },
+  {
+    "id": "gov-0075",
+    "category": "government_law",
+    "subcategory": "scotland-legal",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In Scotland, the most serious criminal cases such as murder are heard in which court?",
+    "options": [
+      "The County Court",
+      "The High Court",
+      "The Crown Court",
+      "The Magistrates' Court"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "In Scotland the most serious cases, such as murder, are heard in the High Court.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0096: Scottish courts for serious crime - same fact as gov-0096"
+  },
+  {
+    "id": "gov-0077",
+    "category": "government_law",
+    "subcategory": "taxation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is a tax on earnings?",
+    "options": [
+      "Council tax",
+      "VAT",
+      "Income tax",
+      "Stamp duty"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Income tax is one of the two main taxes on earnings, the other being National Insurance.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0061: main taxes on earnings - same fact as gov-0061"
+  },
+  {
+    "id": "gov-0085",
+    "category": "government_law",
+    "subcategory": "rule-of-law",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The law in the UK applies in the same way to everyone.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Every person in the UK receives equal treatment under the law, which applies in the same way to everyone.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0101: the law applies equally to everyone - same fact as gov-0101"
+  },
+  {
+    "id": "gov-0086",
+    "category": "government_law",
+    "subcategory": "civil-law",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Criminal law is used to settle disputes between individuals.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "It is civil law, not criminal law, that settles disputes between individuals or groups.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0055: civil law settles disputes between individuals - same fact as gov-0055"
+  },
+  {
+    "id": "gov-0087",
+    "category": "government_law",
+    "subcategory": "criminal-offences",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "You can be prosecuted for carrying a weapon even if you say it is only for self-defence.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Carrying a weapon of any kind is a criminal offence, even if the person claims it is for self-defence.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0056: carrying a weapon is an offence even for self-defence - same fact as gov-0056"
+  },
+  {
+    "id": "gov-0094",
+    "category": "government_law",
+    "subcategory": "driving",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO things are needed to drive a car legally in the UK?",
+    "options": [
+      "A valid driving licence",
+      "Valid insurance",
+      "A passport",
+      "Membership of a trade union"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "To drive legally you must hold a valid licence, be insured, and the vehicle must have a valid MOT certificate.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0071: licence and insurance needed to drive - same fact as gov-0071"
+  },
+  {
+    "id": "gov-0098",
+    "category": "government_law",
+    "subcategory": "taxation",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO are described as the main taxes on earnings in the UK?",
+    "options": [
+      "Income tax",
+      "National Insurance",
+      "Council tax",
+      "Vehicle tax"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Income tax and National Insurance are the main taxes paid on earnings in the UK.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept gov-0061: main taxes on earnings - same fact as gov-0061"
+  },
+  {
+    "id": "hist-0021",
+    "category": "history",
+    "subcategory": "1066",
+    "type": "statement",
+    "difficulty": "easy",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "William the Conqueror defeated King Harold at the Battle of Hastings",
+      "King Harold defeated William the Conqueror at the Battle of Hastings",
+      "The Battle of Hastings took place in 1215",
+      "The Battle of Hastings was fought in Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "At the Battle of Hastings in 1066, William the Conqueror defeated King Harold.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0020: William won at Hastings 1066 - same fact as hist-0020"
+  },
+  {
+    "id": "hist-0029",
+    "category": "history",
+    "subcategory": "magna-carta",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which king agreed to Magna Carta in 1215?",
+    "options": [
+      "King John",
+      "King Henry V",
+      "King Richard III",
+      "King Charles I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King John agreed to Magna Carta, meaning the Great Charter, in 1215.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0028: King John agreed Magna Carta in 1215 - same fact as hist-0028"
+  },
+  {
+    "id": "hist-0050",
+    "category": "history",
+    "subcategory": "reformation",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "In 1560 the Scottish Parliament abolished the authority of the Pope in Scotland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1560 the Scottish Parliament abolished papal authority and established a Protestant Church of Scotland.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0051: 1560 Scottish Parliament abolished papal authority - same fact as hist-0051"
+  },
+  {
+    "id": "hist-0061",
+    "category": "history",
+    "subcategory": "stuart-succession",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year was the first Union Flag created?",
+    "options": [
+      "1606",
+      "1603",
+      "1605",
+      "1688"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first Union Flag was created in 1606.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0027: Union Flag created 1606 - same fact as uk-0027"
+  },
+  {
+    "id": "hist-0079",
+    "category": "history",
+    "subcategory": "bill-of-rights",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "In 1689 the Bill of Rights confirmed the rights of Parliament and the limits of the king's power.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bill of Rights of 1689 confirmed the rights of Parliament and limited the king's power.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0087: Bill of Rights 1689 - same fact as hist-0087"
+  },
+  {
+    "id": "hist-0084",
+    "category": "history",
+    "subcategory": "huguenots",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "From which country did many Huguenot refugees come to Britain between 1680 and 1720?",
+    "options": [
+      "France",
+      "Spain",
+      "Italy",
+      "Norway"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Huguenots were Protestants persecuted in France, and many came to Britain between 1680 and 1720.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0074: Huguenots fled France 1680-1720 - same fact as hist-0074"
+  },
+  {
+    "id": "hist-0086",
+    "category": "history",
+    "subcategory": "huguenots",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Between 1680 and 1720 many Huguenot refugees came to Britain.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Many Huguenot refugees, Protestant exiles from France, came to Britain between 1680 and 1720.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0074: Huguenots fled France 1680-1720 - same fact as hist-0074"
+  },
+  {
+    "id": "hist-0137",
+    "category": "history",
+    "subcategory": "womens-suffrage",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What did the law of 1918 allow women over 30 to do?",
+    "options": [
+      "Vote and stand for Parliament",
+      "Join the army only",
+      "Own property for the first time",
+      "Attend university"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1918 women over 30 gained the right to vote and to stand for Parliament.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0138: 1918 rights for women over 30 - same fact as hist-0138"
+  },
+  {
+    "id": "hist-0165",
+    "category": "history",
+    "subcategory": "sporting-firsts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did Sir Roger Bannister achieve in 1954?",
+    "options": [
+      "He ran a mile in under four minutes, the first man in the world to do so",
+      "He won the Tour de France",
+      "He won Olympic gold for ice dancing",
+      "He sailed around the world single-handed"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1954 Sir Roger Bannister became the first man in the world to run a mile in under four minutes.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0063: Roger Bannister, four-minute mile, 1954 - same fact as soc-0063"
+  },
+  {
+    "id": "hist-0169",
+    "category": "history",
+    "subcategory": "literature",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Man Booker Prize for Fiction was first awarded in 1968",
+      "The Man Booker Prize was first awarded in 1952",
+      "The Man Booker Prize is awarded for science",
+      "The Man Booker Prize was first awarded in 1984"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Man Booker Prize for Fiction was first awarded in 1968.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0097: Man Booker Prize since 1968 - same fact as soc-0097"
+  },
+  {
+    "id": "soc-0006",
+    "category": "modern_society",
+    "subcategory": "patron-saints",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "On which date is St David's Day, the patron saint's day of Wales?",
+    "options": [
+      "1 March",
+      "17 March",
+      "23 April",
+      "30 November"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St David's Day is celebrated on 1 March.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0017: St David's Day is 1 March - same fact as uk-0017"
+  },
+  {
+    "id": "soc-0017",
+    "category": "modern_society",
+    "subcategory": "hannukah",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Over how many days is Hannukah celebrated?",
+    "options": [
+      "Eight",
+      "Five",
+      "Two",
+      "Twelve"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hannukah is a Jewish festival lasting eight days, in November or December.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0020: Hannukah lasts eight days - same fact as soc-0020"
+  },
+  {
+    "id": "soc-0032",
+    "category": "modern_society",
+    "subcategory": "easter",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Good Friday and Easter Monday are both public holidays in the UK.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Good Friday, marking the death of Jesus Christ, and Easter Monday are public holidays.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0025: Good Friday and Easter Monday are public holidays - same fact as soc-0025"
+  },
+  {
+    "id": "soc-0049",
+    "category": "modern_society",
+    "subcategory": "currency",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many pence make one pound sterling?",
+    "options": [
+      "100",
+      "10",
+      "50",
+      "1000"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "There are 100 pence in one pound sterling.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0055: 100 pence in a pound - same fact as uk-0055"
+  },
+  {
+    "id": "soc-0050",
+    "category": "modern_society",
+    "subcategory": "currency",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Scottish and Northern Irish banknotes are valid throughout the UK, but shops do not have to accept them.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "These banknotes are valid across the UK, although shops are not obliged to accept them.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0057: Scottish banknotes not legally required to be accepted - same fact as uk-0057"
+  },
+  {
+    "id": "soc-0056",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of the following sports is generally regarded as having originated in Britain?",
+    "options": [
+      "Baseball",
+      "Cricket",
+      "Basketball",
+      "Ice hockey"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Cricket is one of the sports that began in Britain, along with football, lawn tennis, golf and rugby.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0099: sports that originated in Britain - same fact as soc-0099"
+  },
+  {
+    "id": "soc-0087",
+    "category": "modern_society",
+    "subcategory": "architecture",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who designed the new St Paul's Cathedral after the Great Fire of London?",
+    "options": [
+      "Sir Christopher Wren",
+      "Inigo Jones",
+      "Sir Edwin Lutyens",
+      "Robert Adam"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sir Christopher Wren designed the new St Paul's Cathedral.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0071: Wren designed the new St Paul's - same fact as hist-0071"
+  },
+  {
+    "id": "soc-0092",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "George Frederick Handel was born in Britain.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Handel was German-born and only became a British citizen in 1727, so he was not born in Britain.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0084: Handel settled in Britain - same fact as soc-0084"
+  },
+  {
+    "id": "uk-0009",
+    "category": "what_is_uk",
+    "subcategory": "capitals",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Edinburgh is the capital city of Wales.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Edinburgh is the capital of Scotland; Cardiff is the capital of Wales.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0006: Edinburgh is the capital of Scotland - same fact as uk-0006"
+  },
+  {
+    "id": "uk-0019",
+    "category": "what_is_uk",
+    "subcategory": "patron-saints",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "St Patrick's Day is celebrated on 17 March.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Patrick, the patron saint of Northern Ireland, is celebrated on 17 March.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0018: St Patrick's Day is 17 March - same fact as uk-0018"
+  },
+  {
+    "id": "uk-0020",
+    "category": "what_is_uk",
+    "subcategory": "patron-saints",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "St Andrew's Day falls in which month?",
+    "options": [
+      "November",
+      "March",
+      "April",
+      "January"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Andrew's Day is celebrated on 30 November.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0016: St Andrew's Day is 30 November - same fact as uk-0016"
+  },
+  {
+    "id": "uk-0026",
+    "category": "what_is_uk",
+    "subcategory": "symbols-and-flowers",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The daffodil is the national flower of Wales",
+      "The daffodil is the national flower of Scotland",
+      "The daffodil is the national flower of England",
+      "The daffodil is the national flower of Northern Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The daffodil is the national flower of Wales.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0023: daffodil is the flower of Wales - same fact as uk-0023"
+  },
+  {
+    "id": "uk-0028",
+    "category": "what_is_uk",
+    "subcategory": "flags",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The first Union Flag, created in 1606, combined the flags of which pair of nations?",
+    "options": [
+      "England and Scotland",
+      "England and Wales",
+      "Scotland and Ireland",
+      "England and Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first Union Flag combined the flags of England and Scotland.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0027: Union Flag created 1606 - same fact as uk-0027"
+  },
+  {
+    "id": "uk-0030",
+    "category": "what_is_uk",
+    "subcategory": "flags",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Union Flag was first created by combining the flags of England and Scotland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first Union Flag, created in 1606, combined the flags of England and Scotland.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0027: Union Flag created 1606 - same fact as uk-0027"
+  },
+  {
+    "id": "uk-0031",
+    "category": "what_is_uk",
+    "subcategory": "flags",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Union Flag was first created in 1606",
+      "The Union Flag was first created in 1906",
+      "The Union Flag includes the Welsh dragon",
+      "The Union Flag was created before England united with Scotland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Union Flag was first created in 1606 when the flags of England and Scotland were combined.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0027: Union Flag created 1606 - same fact as uk-0027"
+  },
+  {
+    "id": "uk-0034",
+    "category": "what_is_uk",
+    "subcategory": "crown-dependencies",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Channel Islands are part of the United Kingdom.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Channel Islands are Crown dependencies, closely linked to the UK but not part of it.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0032: Channel Islands are Crown dependencies, not part of the UK - same fact as uk-0032"
+  },
+  {
+    "id": "uk-0035",
+    "category": "what_is_uk",
+    "subcategory": "crown-dependencies",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Isle of Man has its own government but is not part of the UK",
+      "The Isle of Man is a county of England",
+      "The Isle of Man is part of Scotland",
+      "The Isle of Man is part of the Republic of Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Isle of Man is a Crown dependency with its own government and is not part of the UK.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0033: Isle of Man has its own government, not part of the UK - same fact as uk-0033"
+  },
+  {
+    "id": "uk-0039",
+    "category": "what_is_uk",
+    "subcategory": "overseas-territories",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "British overseas territories are part of the United Kingdom.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "British overseas territories are linked to the UK but are not part of it.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0040: overseas territories are not part of the UK - same fact as uk-0040"
+  },
+  {
+    "id": "hist-0120",
+    "category": "history",
+    "subcategory": "sporting-firsts",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Where was the first tennis club founded in 1872?",
+    "options": [
+      "Leamington Spa",
+      "Wimbledon",
+      "Enfield",
+      "Oldham"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The world's first tennis club was founded in Leamington Spa in 1872.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0122: first tennis club, Leamington Spa 1872 - same fact as soc-0122"
+  },
+  {
+    "id": "hist-0129",
+    "category": "history",
+    "subcategory": "motorsport",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Motor-car racing in the UK began in 1902.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Motor-car racing started in the UK in 1902.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept soc-0124: motor racing in the UK began 1902 - same fact as soc-0124"
+  },
+  {
+    "id": "hist-0213",
+    "category": "history",
+    "subcategory": "union-flag",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Welsh dragon does not appear on the Union Flag because Wales was already united with England when the first Union Flag was created in 1606",
+      "The Welsh dragon appears in the centre of the Union Flag",
+      "The Union Flag combines only the crosses of England and Wales",
+      "The Union Flag was first created in the 20th century"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Welsh dragon does not appear on the Union Flag because, when the first Union Flag was created in 1606 from the flags of Scotland and England, the Principality of Wales was already united with England.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0029: why the Welsh dragon is not on the Union Flag - same fact as uk-0029"
+  },
+  {
+    "id": "soc-0113",
+    "category": "modern_society",
+    "subcategory": "patron-saints",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "On which date is St Andrew's Day, the national day of Scotland?",
+    "options": [
+      "30 November",
+      "17 March",
+      "1 March",
+      "23 April"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Andrew's Day, the national day of Scotland, is celebrated on 30 November.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0016: St Andrew's Day is 30 November - same fact as uk-0016"
+  },
+  {
+    "id": "uk-0074",
+    "category": "what_is_uk",
+    "subcategory": "overseas-territories",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are British overseas territories?",
+    "options": [
+      "Bermuda",
+      "The Isle of Man",
+      "The Cayman Islands",
+      "The Channel Islands"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "explanation": "Bermuda and the Cayman Islands are British overseas territories, while the Isle of Man and the Channel Islands are Crown dependencies.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept uk-0038: which are British overseas territories - same fact as uk-0038"
+  },
+  {
+    "id": "gov-0124",
+    "category": "government_law",
+    "subcategory": "devolution-northern-ireland",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which year was the Northern Ireland Parliament, established in 1922, abolished?",
+    "options": [
+      "1972",
+      "1922",
+      "1969",
+      "1998"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A Northern Ireland Parliament was established in 1922 when Ireland was divided, but it was abolished in 1972 shortly after the Troubles broke out in 1969.",
+    "source": "Original practice question based on public handbook facts",
+    "removedFor": "kept hist-0174: wrong: the Northern Ireland Parliament was suspended and direct rule introduced in 1972 (not abolished), and the same fact is covered by hist-0174"
+  }
+]

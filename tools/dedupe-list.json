@@ -1,0 +1,45 @@
+[
+  { "id": "uk-0028", "keep": "uk-0027", "reason": "Union Flag created 1606 - same fact as uk-0027" },
+  { "id": "uk-0030", "keep": "uk-0027", "reason": "Union Flag created 1606 - same fact as uk-0027" },
+  { "id": "uk-0031", "keep": "uk-0027", "reason": "Union Flag created 1606 - same fact as uk-0027" },
+  { "id": "hist-0061", "keep": "uk-0027", "reason": "Union Flag created 1606 - same fact as uk-0027" },
+
+  { "id": "gov-0077", "keep": "gov-0061", "reason": "main taxes on earnings - same fact as gov-0061" },
+  { "id": "gov-0098", "keep": "gov-0061", "reason": "main taxes on earnings - same fact as gov-0061" },
+
+  { "id": "hist-0084", "keep": "hist-0074", "reason": "Huguenots fled France 1680-1720 - same fact as hist-0074" },
+  { "id": "hist-0086", "keep": "hist-0074", "reason": "Huguenots fled France 1680-1720 - same fact as hist-0074" },
+
+  { "id": "gov-0035", "keep": "gov-0034", "reason": "Lords cannot stand for the Commons - same fact as gov-0034" },
+  { "id": "gov-0086", "keep": "gov-0055", "reason": "civil law settles disputes between individuals - same fact as gov-0055" },
+  { "id": "gov-0087", "keep": "gov-0056", "reason": "carrying a weapon is an offence even for self-defence - same fact as gov-0056" },
+  { "id": "gov-0060", "keep": "gov-0097", "reason": "rights protected by the ECHR - same fact as gov-0097" },
+  { "id": "gov-0094", "keep": "gov-0071", "reason": "licence and insurance needed to drive - same fact as gov-0071" },
+  { "id": "gov-0075", "keep": "gov-0096", "reason": "Scottish courts for serious crime - same fact as gov-0096" },
+  { "id": "gov-0085", "keep": "gov-0101", "reason": "the law applies equally to everyone - same fact as gov-0101" },
+
+  { "id": "hist-0021", "keep": "hist-0020", "reason": "William won at Hastings 1066 - same fact as hist-0020" },
+  { "id": "hist-0029", "keep": "hist-0028", "reason": "King John agreed Magna Carta in 1215 - same fact as hist-0028" },
+  { "id": "hist-0050", "keep": "hist-0051", "reason": "1560 Scottish Parliament abolished papal authority - same fact as hist-0051" },
+  { "id": "hist-0079", "keep": "hist-0087", "reason": "Bill of Rights 1689 - same fact as hist-0087" },
+  { "id": "hist-0137", "keep": "hist-0138", "reason": "1918 rights for women over 30 - same fact as hist-0138" },
+  { "id": "hist-0165", "keep": "soc-0063", "reason": "Roger Bannister, four-minute mile, 1954 - same fact as soc-0063" },
+  { "id": "hist-0169", "keep": "soc-0097", "reason": "Man Booker Prize since 1968 - same fact as soc-0097" },
+
+  { "id": "soc-0087", "keep": "hist-0071", "reason": "Wren designed the new St Paul's - same fact as hist-0071" },
+  { "id": "soc-0006", "keep": "uk-0017", "reason": "St David's Day is 1 March - same fact as uk-0017" },
+  { "id": "soc-0017", "keep": "soc-0020", "reason": "Hannukah lasts eight days - same fact as soc-0020" },
+  { "id": "soc-0032", "keep": "soc-0025", "reason": "Good Friday and Easter Monday are public holidays - same fact as soc-0025" },
+  { "id": "soc-0049", "keep": "uk-0055", "reason": "100 pence in a pound - same fact as uk-0055" },
+  { "id": "soc-0050", "keep": "uk-0057", "reason": "Scottish banknotes not legally required to be accepted - same fact as uk-0057" },
+  { "id": "soc-0056", "keep": "soc-0099", "reason": "sports that originated in Britain - same fact as soc-0099" },
+  { "id": "soc-0092", "keep": "soc-0084", "reason": "Handel settled in Britain - same fact as soc-0084" },
+
+  { "id": "uk-0009", "keep": "uk-0006", "reason": "Edinburgh is the capital of Scotland - same fact as uk-0006" },
+  { "id": "uk-0020", "keep": "uk-0016", "reason": "St Andrew's Day is 30 November - same fact as uk-0016" },
+  { "id": "uk-0019", "keep": "uk-0018", "reason": "St Patrick's Day is 17 March - same fact as uk-0018" },
+  { "id": "uk-0026", "keep": "uk-0023", "reason": "daffodil is the flower of Wales - same fact as uk-0023" },
+  { "id": "uk-0034", "keep": "uk-0032", "reason": "Channel Islands are Crown dependencies, not part of the UK - same fact as uk-0032" },
+  { "id": "uk-0035", "keep": "uk-0033", "reason": "Isle of Man has its own government, not part of the UK - same fact as uk-0033" },
+  { "id": "uk-0039", "keep": "uk-0040", "reason": "overseas territories are not part of the UK - same fact as uk-0040" }
+]

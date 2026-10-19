@@ -1,0 +1,1367 @@
+[
+  {
+    "id": "val-0001",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is one of the fundamental principles of British life?",
+    "options": [
+      "Democracy",
+      "Rule by a single royal family",
+      "One compulsory state religion",
+      "Control of the country by the armed forces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Democracy is one of the five fundamental principles of British life, alongside the rule of law, individual liberty, tolerance and participation in community life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0002",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of the following are fundamental principles of British life?",
+    "options": [
+      "The rule of law",
+      "Individual liberty",
+      "Loyalty to a particular political party",
+      "Compulsory membership of a trade union"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The rule of law and individual liberty are both fundamental principles of British life. Party loyalty and union membership are personal choices, not principles of British life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0003",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"Tolerance of those with different faiths and beliefs is a fundamental principle of British life.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Tolerance of those with different faiths and beliefs is one of the five fundamental principles of British life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0004",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Participation in community life is one of the fundamental principles of British life.",
+      "The fundamental principles of British life apply only to people born in the UK.",
+      "The fundamental principles of British life are set out in a new law passed every year.",
+      "The fundamental principles of British life are decided at each general election."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Participation in community life is one of the five fundamental principles of British life; the others are democracy, the rule of law, individual liberty and tolerance.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0005",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What should you take with you when you attend the Life in the UK test centre?",
+    "options": [
+      "The same photo ID you used to book the test",
+      "A written reference from your employer",
+      "A pre-written essay about British history",
+      "Your own set of questions to submit"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Candidates must bring the same photo ID they used when booking the test. (The printed handbook also mentioned proof of address.)",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0006",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which of the following is true about extremism in British society?",
+    "options": [
+      "British society has no place for extremism or intolerance.",
+      "Extremism is allowed as long as those involved stay peaceful.",
+      "Only people who are not citizens are protected from extremism.",
+      "Extremism is tolerated in private but banned in public."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "British society has no place for extremism or intolerance; these are seen as incompatible with the fundamental values of British life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0007",
+    "category": "values_principles",
+    "subcategory": "rights",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is a freedom offered to people in the UK?",
+    "options": [
+      "Freedom of belief and religion",
+      "Freedom from paying any kind of tax",
+      "The right to ignore laws that you dislike",
+      "The right to a state-provided home for life"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Freedom of belief and religion is one of the freedoms the UK offers, along with freedom of speech and freedom from unfair discrimination.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0008",
+    "category": "values_principles",
+    "subcategory": "rights",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following are rights or freedoms in the UK?",
+    "options": [
+      "Freedom from unfair discrimination",
+      "A right to a fair trial",
+      "A right to free housing for life",
+      "A right to avoid ever serving on a jury"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Freedom from unfair discrimination and the right to a fair trial are both protected in the UK. Free housing for life and permanent exemption from jury service are not rights.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0009",
+    "category": "values_principles",
+    "subcategory": "rights",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which right allows people in the UK to help choose who governs them?",
+    "options": [
+      "The right to join in the election of a government",
+      "The right to a fair trial",
+      "Freedom of belief and religion",
+      "Freedom from unfair discrimination"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The right to join in the election of a government allows people to take part in choosing who governs the country.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0010",
+    "category": "values_principles",
+    "subcategory": "rights",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"In the UK, freedom of speech allows people to express their own views openly.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Freedom of speech is a freedom the UK offers, so people may express their own views openly.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0011",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is a responsibility of everyone living in the UK?",
+    "options": [
+      "Respecting and obeying the law",
+      "Joining a political party",
+      "Attending a place of worship each week",
+      "Volunteering for the armed forces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Respecting and obeying the law is one of the responsibilities of people living in the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0012",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which responsibility relates to the place where you live?",
+    "options": [
+      "Looking after the area in which you live and the environment",
+      "Paying your neighbours' household bills",
+      "Attending every meeting of the local council",
+      "Joining the local police force"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Residents are expected to look after the area in which they live and the environment.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0013",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"People living in the UK are expected to treat others with fairness.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Treating others with fairness is one of the responsibilities of residents of the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0014",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is a responsibility towards other people?",
+    "options": [
+      "Respecting the rights of others, including their right to their own opinions",
+      "Telling your neighbours how they should vote",
+      "Reporting neighbours who disagree with you",
+      "Choosing which religion your friends should follow"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Residents should respect the rights of others, including their right to hold their own opinions.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0015",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Looking after yourself and your family is a responsibility of people living in the UK.",
+      "People living in the UK have no duty to look after their own family.",
+      "Only full citizens, and not other residents, are expected to obey the law.",
+      "These responsibilities apply only to people over the age of 65."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Looking after yourself and your family is one of the responsibilities expected of people living in the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0016",
+    "category": "values_principles",
+    "subcategory": "democracy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In a democracy, how is the government chosen?",
+    "options": [
+      "By the people through elections",
+      "By the monarch acting alone",
+      "By senior judges in the courts",
+      "By the leaders of the armed forces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In a democracy the government is chosen by the people through elections.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0017",
+    "category": "values_principles",
+    "subcategory": "democracy",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these best describes democracy as a British value?",
+    "options": [
+      "Decisions are made by representatives whom the people elect.",
+      "All decisions are made by one ruling family.",
+      "Laws are made only by unelected officials.",
+      "Voting is open only to public officials."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Under democracy, decisions are made by elected representatives chosen by the people.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0018",
+    "category": "values_principles",
+    "subcategory": "democracy",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following are features of a democracy?",
+    "options": [
+      "Regular elections in which people can vote",
+      "Government by representatives who are accountable to the people",
+      "Rule by a monarch who cannot be removed",
+      "Decisions made only by the police"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Regular elections and representatives who are accountable to the people are features of a democracy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0019",
+    "category": "values_principles",
+    "subcategory": "democracy",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"In the UK, people can help choose their government by voting in elections.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "People in the UK take part in choosing their government by voting in elections, which reflects the value of democracy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0020",
+    "category": "values_principles",
+    "subcategory": "rule-of-law",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does the rule of law mean?",
+    "options": [
+      "Everyone, including the government, must obey the law.",
+      "Only citizens, and not residents, must obey the law.",
+      "Judges are allowed to act above the law.",
+      "The law applies only inside court buildings."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The rule of law means that everyone, including the government, must obey the law.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0021",
+    "category": "values_principles",
+    "subcategory": "rule-of-law",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which principle means that no one, however powerful, is above the law?",
+    "options": [
+      "The rule of law",
+      "Individual liberty",
+      "Tolerance",
+      "Participation in community life"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The rule of law holds that no one is above the law, regardless of their position or power.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0022",
+    "category": "values_principles",
+    "subcategory": "rule-of-law",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "A government minister breaks the law. According to the rule of law, what should happen?",
+    "options": [
+      "They should be dealt with by the law in the same way as anyone else.",
+      "They should be excused because of their position.",
+      "Only Parliament may decide whether the law applies to them.",
+      "The monarch alone decides whether they are prosecuted."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Under the rule of law, everyone is subject to the same laws, so a minister who breaks the law is treated like anyone else.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0023",
+    "category": "values_principles",
+    "subcategory": "rule-of-law",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The rule of law means that laws apply equally to everyone in society.",
+      "The rule of law applies only to people who are not citizens.",
+      "The rule of law allows officials to act outside the law.",
+      "The rule of law applies only to written contracts."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The rule of law means that the law applies equally to everyone in society.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0024",
+    "category": "values_principles",
+    "subcategory": "individual-liberty",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does individual liberty mean?",
+    "options": [
+      "People are free to live their lives and make their own choices within the law.",
+      "People may do whatever they wish, even when it harms others.",
+      "The state decides which career each person must follow.",
+      "Only wealthy people have personal freedom."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Individual liberty means people are free to live their lives and make their own choices, within the law.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0025",
+    "category": "values_principles",
+    "subcategory": "individual-liberty",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is an example of individual liberty in the UK?",
+    "options": [
+      "Being free to follow your own religion, or none at all",
+      "Being required to join a state-approved religion",
+      "Being told by the government which job to take",
+      "Being prevented from moving to another town"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Individual liberty includes the freedom to follow your own religion or to have no religion.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0026",
+    "category": "values_principles",
+    "subcategory": "individual-liberty",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of the following are protected by the principle of individual liberty?",
+    "options": [
+      "The freedom to hold your own opinions",
+      "The freedom to practise the religion of your choice",
+      "The freedom to break the law without consequence",
+      "The freedom to ignore other people's rights"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Individual liberty protects freedoms such as holding your own opinions and practising the religion of your choice; it does not allow breaking the law or ignoring others' rights.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0027",
+    "category": "values_principles",
+    "subcategory": "tolerance",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which value means accepting people who have different faiths and beliefs?",
+    "options": [
+      "Tolerance",
+      "The rule of law",
+      "Individual liberty",
+      "Democracy"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Tolerance means accepting and respecting people with different faiths and beliefs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0028",
+    "category": "values_principles",
+    "subcategory": "tolerance",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these best describes tolerance in British life?",
+    "options": [
+      "People of different faiths and beliefs are treated with respect.",
+      "Everyone is expected to follow the same religion.",
+      "Only one set of beliefs may be discussed in public.",
+      "People may be punished for holding unusual beliefs."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Tolerance means that people of different faiths and beliefs are treated with respect in British life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0029",
+    "category": "values_principles",
+    "subcategory": "tolerance",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"In the UK, people are free to follow the religion of their choice, or to have no religion.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Freedom of belief and religion means people in the UK may follow the religion of their choice, or none at all.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0030",
+    "category": "values_principles",
+    "subcategory": "community-participation",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does participation in community life involve?",
+    "options": [
+      "Taking an active part in the life of your local area",
+      "Avoiding all contact with your neighbours",
+      "Paying a monthly fee to the local council",
+      "Serving a set number of years in the armed forces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Participation in community life means taking an active part in the life of your local area.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0031",
+    "category": "values_principles",
+    "subcategory": "community-participation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is an example of participating in community life?",
+    "options": [
+      "Volunteering to help with local activities",
+      "Never leaving your own home",
+      "Refusing to meet other residents",
+      "Ignoring problems in your neighbourhood"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Volunteering and helping with local activities are examples of taking part in community life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0032",
+    "category": "values_principles",
+    "subcategory": "community-participation",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following are ways of participating in community life?",
+    "options": [
+      "Volunteering for a local charity",
+      "Helping with a neighbourhood clean-up",
+      "Refusing to help your neighbours",
+      "Avoiding all community events"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Volunteering for a charity and helping with a neighbourhood clean-up are ways of participating in community life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0033",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In the citizenship pledge, new citizens make which of these promises?",
+    "options": [
+      "To show loyalty to the UK and respect its rights and freedoms",
+      "To follow every instruction given by their local council",
+      "To give up any other nationality they already hold",
+      "To serve in the armed forces if they are asked to"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The citizenship pledge includes a promise to give loyalty to the UK and to respect its rights and freedoms.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0034",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Besides making the pledge, what do new citizens do at a citizenship ceremony?",
+    "options": [
+      "Swear an oath or make an affirmation of allegiance to the monarch",
+      "Sign an employment contract with the government",
+      "Vote in their first general election",
+      "Hand in any other passports they hold"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "At a citizenship ceremony new citizens swear an oath, or make an affirmation, of allegiance to the monarch.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0035",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"The citizenship pledge includes a promise to uphold the UK's democratic values.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The citizenship pledge includes a promise to uphold the UK's democratic values, as well as loyalty and respect for its rights and freedoms.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0036",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What does the citizenship pledge say about the law?",
+    "options": [
+      "Citizens will faithfully observe the laws of the United Kingdom.",
+      "Citizens may choose which laws they wish to follow.",
+      "Citizens are excused from minor laws.",
+      "Citizens will help to write new laws."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the pledge, new citizens promise to observe the laws of the United Kingdom faithfully.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0037",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "To settle in the UK, what level of English are applicants usually expected to show?",
+    "options": [
+      "Speaking and listening at B1 level (ESOL Entry Level 3)",
+      "The ability to read ancient Latin",
+      "Writing skills at university degree level",
+      "Fluency in a second European language"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Applicants normally have to show speaking and listening skills in English at B1 level, which is ESOL Entry Level 3.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0038",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which combination is normally required to become a permanent resident or citizen?",
+    "options": [
+      "Passing the Life in the UK test and showing English speaking and listening skills",
+      "Passing a driving test and owning property in the UK",
+      "Holding a UK university degree and having a job offer",
+      "Joining a political party and a trade union"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "To become a permanent resident or citizen, applicants normally pass the Life in the UK test and show English speaking and listening skills.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0039",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Besides passing the Life in the UK test, what must an applicant usually demonstrate?",
+    "options": [
+      "Speaking and listening skills in English at B1 level",
+      "A pass in a British history A-level",
+      "Membership of a local charity",
+      "Ownership of a home in the UK"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "As well as passing the Life in the UK test, applicants normally show speaking and listening skills in English at B1 level.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0040",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following are required to become a permanent resident or citizen of the UK?",
+    "options": [
+      "Passing the Life in the UK test",
+      "Showing English speaking and listening skills at B1 level",
+      "Buying a property in the UK",
+      "Living in the UK for exactly one year"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Applicants normally pass the Life in the UK test and show English speaking and listening skills at B1 level. Buying property and a fixed one-year residence are not requirements.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0041",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"People who wish to settle in the UK must show that they have a good understanding of life in the UK.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Applicants must show they have a good understanding of life in the UK, which is tested by the Life in the UK test.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0042",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many questions are there in the Life in the UK test?",
+    "options": [
+      "24",
+      "12",
+      "40",
+      "10"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Life in the UK test contains 24 questions.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0043",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Life in the UK test is based on which official handbook?",
+    "options": [
+      "Life in the United Kingdom: A Guide for New Residents",
+      "The British Citizenship Handbook",
+      "A Short History of Britain",
+      "The New Resident's Guide"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The test is based on the official handbook \"Life in the United Kingdom: A Guide for New Residents\".",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0044",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What is the pass mark for the Life in the UK test?",
+    "options": [
+      "18 out of 24",
+      "12 out of 24",
+      "24 out of 24",
+      "15 out of 24"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The pass mark is 18 out of 24, which is 75 per cent.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0045",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Life in the UK test is booked online at gov.uk and taken at an approved test centre.",
+      "The test can be taken at any post office without booking in advance.",
+      "The test is taken at home using the candidate's own computer.",
+      "The test must be taken before you arrive in the UK."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Life in the UK test is booked online at gov.uk and taken at an approved test centre.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0046",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Approximately how many Life in the UK test centres are there around the UK?",
+    "options": [
+      "About 30",
+      "About 3",
+      "About 300",
+      "About 1,000"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "There are about 30 registered and approved Life in the UK test centres around the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0047",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "As well as English, special arrangements can be made for the Life in the UK test to be taken in which languages?",
+    "options": [
+      "Welsh or Scottish Gaelic",
+      "French or German",
+      "Polish or Romanian",
+      "Welsh or Irish"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The test is usually taken in English, although special arrangements can be made to take it in Welsh or Scottish Gaelic.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0048",
+    "category": "values_principles",
+    "subcategory": "handbook-study",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"Everything you need to know to pass the Life in the UK test is included in the official handbook.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook states that everything needed to pass the test is included in 'Life in the United Kingdom: A Guide for New Residents'.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0049",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Whose Life in the UK test certificates will be accepted for a settlement or citizenship application?",
+    "options": [
+      "Only certificates from approved test centres",
+      "Certificates from any school or college",
+      "Certificates from online courses only",
+      "Certificates issued by an employer"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Only certificates from approved test centres are accepted, so the test should not be taken at any other establishment. (The weaker 'UK Border Agency' named in older handbooks has been replaced by UK Visas and Immigration, part of the Home Office.)",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0050",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What does the handbook say about taking the Life in the UK test if you live on the Isle of Man or in the Channel Islands?",
+    "options": [
+      "There are different arrangements for taking the test.",
+      "The test is not required at all.",
+      "The test must be taken in London.",
+      "The test is provided free of charge."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "If you live on the Isle of Man or in the Channel Islands, there are different arrangements for taking the Life in the UK test.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0051",
+    "category": "values_principles",
+    "subcategory": "handbook-study",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Just knowing the things highlighted in the handbook's 'CHECK:' sections is not enough to pass the test.",
+      "The 'CHECK:' sections contain every question that will be asked in the test.",
+      "Only the 'CHECK:' sections of the handbook need to be studied.",
+      "The Life in the UK test does not cover the introduction to the handbook."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 'CHECK:' sections are for guidance and help you identify things to understand, but knowing only what they highlight is not enough to pass the test.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0052",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following are true about the questions in the Life in the UK test?",
+    "options": [
+      "They are based on all parts of the handbook.",
+      "They are different for each person taking the test at that session.",
+      "They are all taken from the 'CHECK:' sections.",
+      "The same 24 questions are used for every candidate."
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The test's 24 questions are based on all parts of the handbook and are different for each person taking the test at that session.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0053",
+    "category": "values_principles",
+    "subcategory": "handbook-study",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The handbook is written so that anyone who can read English at which level should have no difficulty with the language?",
+    "options": [
+      "ESOL Entry Level 3 or above",
+      "University degree level",
+      "GCSE grade A* only",
+      "Beginner level"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook has been written so that anyone who can read English at ESOL Entry Level 3 or above should have no difficulty with the language.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0054",
+    "category": "values_principles",
+    "subcategory": "finding-information",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which website does the handbook recommend for information about the application process and the forms you need to complete?",
+    "options": [
+      "The Home Office website",
+      "A recruitment agency website",
+      "A university's website",
+      "A newspaper's website"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook directs readers to the Home Office website for information about the application process and the forms needed to settle in the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0055",
+    "category": "values_principles",
+    "subcategory": "finding-information",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where does the handbook say you can find information about ESOL courses and how to find one in your area?",
+    "options": [
+      "Gov.uk",
+      "A local newspaper",
+      "A recruitment agency",
+      "A social media page"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook lists Gov.uk (www.gov.uk) as a source of information about ESOL courses and how to find one in your area.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0056",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Is this statement true? \"The requirements for citizenship applications may change in the future, so you should check the current requirements before applying.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook notes that citizenship requirements may change and says applicants should check GOV.UK for current requirements before applying.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0057",
+    "category": "values_principles",
+    "subcategory": "introduction",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "According to the introduction to the handbook, Britain is proud of its record of doing what?",
+    "options": [
+      "Welcoming new migrants who add to the diversity and dynamism of national life",
+      "Closing its borders to all newcomers",
+      "Discouraging people from settling permanently",
+      "Keeping its culture hidden from other countries"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The introduction says Britain is proud of its record of welcoming new migrants who will add to the diversity and dynamism of national life.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0058",
+    "category": "values_principles",
+    "subcategory": "introduction",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"Passing the Life in the UK test is part of demonstrating that you are ready to become a permanent migrant to the UK.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook states that passing the Life in the UK test is part of demonstrating that you are ready to become a permanent migrant to the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0059",
+    "category": "values_principles",
+    "subcategory": "introduction",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How does the handbook describe good citizens?",
+    "options": [
+      "As an asset to the UK",
+      "As a burden on the UK",
+      "As a threat to British traditions",
+      "As people who should avoid community life"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The handbook says that good citizens are an asset to the UK and that those seeking to make a positive contribution to society are welcome.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0060",
+    "category": "values_principles",
+    "subcategory": "fundamental-values",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The values and principles of the UK are based on history and traditions and are protected by law, customs and expectations.",
+      "The values and principles of the UK are protected only by the police.",
+      "The values and principles of the UK are set out in a written constitution for the whole world.",
+      "The values and principles of the UK apply only to people born in Britain."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The fundamental values and principles of the UK are based on history and traditions and are protected by law, customs and expectations.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "val-0061",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many years must you usually have lived in the UK before you can apply for British citizenship?",
+    "options": [
+      "5 years",
+      "2 years",
+      "7 years",
+      "10 years"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must usually have lived in the UK for 5 years before applying for citizenship. This is reduced to 3 years if you are married to, or in a civil partnership with, a British citizen.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0062",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "If you are married to a British citizen, how long must you usually have lived in the UK before you can apply for citizenship?",
+    "options": [
+      "3 years",
+      "5 years",
+      "7 years",
+      "10 years"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A person married to, or in a civil partnership with, a British citizen can usually apply for citizenship after living in the UK for 3 years.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0063",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What must most people normally hold before they can apply to become a British citizen?",
+    "options": [
+      "Indefinite leave to remain, also called permanent residence",
+      "A British passport",
+      "A job offer from a UK employer",
+      "A degree from a UK university"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Most applicants must first be granted indefinite leave to remain (permanent residence) before they can apply for naturalisation as a British citizen.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0064",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the name of the event at which successful applicants formally become British citizens?",
+    "options": [
+      "The citizenship ceremony",
+      "The coronation",
+      "The State Opening of Parliament",
+      "The Speaker's election"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Successful applicants attend a citizenship ceremony, where they take an oath or affirmation of allegiance and make a pledge of loyalty to the UK.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0065",
+    "category": "values_principles",
+    "subcategory": "citizenship-ceremony",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "At a citizenship ceremony, new citizens make a pledge to respect which of the following?",
+    "options": [
+      "The rights, freedoms and laws of the United Kingdom",
+      "The policies of the governing political party",
+      "The rules of their local council only",
+      "The wishes of the monarch alone"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the pledge, new citizens promise to respect the rights, freedoms and laws of the UK, and to uphold its democratic values.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0066",
+    "category": "values_principles",
+    "subcategory": "responsibilities",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is a legal responsibility of almost everyone in paid work in the UK?",
+    "options": [
+      "Paying tax and National Insurance contributions",
+      "Joining a trade union",
+      "Working for the government",
+      "Voting in every election"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Almost everybody in paid work, including self-employed people, must pay tax and National Insurance contributions.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0067",
+    "category": "values_principles",
+    "subcategory": "rights",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of these are rights offered to people living in the UK?",
+    "options": [
+      "Freedom of belief and religion",
+      "The right to a fair trial",
+      "Free housing for everyone",
+      "A guaranteed job"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The UK offers its residents freedom of belief and religion, freedom of speech, freedom from unfair discrimination, a right to a fair trial and a right to take part in elections. Free housing and guaranteed jobs are not rights.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0068",
+    "category": "values_principles",
+    "subcategory": "community-participation",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"Volunteering, which means working for good causes without payment, is compulsory in the UK.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Volunteering is working for good causes without payment. It is not compulsory, but it is an important way of taking part in community life.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0069",
+    "category": "values_principles",
+    "subcategory": "community-participation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Until it closed in 2025, what did the National Citizen Service help young people to do?",
+    "options": [
+      "Build skills for work and life through volunteering",
+      "Join the armed forces",
+      "Become members of Parliament",
+      "Move abroad to study"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The National Citizen Service (which closed in 2025) offered young people the chance to volunteer and gain accreditation that could help them build skills for work and life.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0070",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How long are candidates given to complete the Life in the UK test?",
+    "options": [
+      "45 minutes",
+      "30 minutes",
+      "60 minutes",
+      "90 minutes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Life in the UK test lasts 45 minutes and contains 24 questions.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0071",
+    "category": "values_principles",
+    "subcategory": "test-administration",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these statements about the Life in the UK test are correct?",
+    "options": [
+      "It contains 24 questions",
+      "You must answer at least 18 correctly to pass",
+      "It is free of charge",
+      "You can take it from home online"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The test has 24 questions and you must get at least 18 right to pass. It is taken at a test centre and a fee is charged.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "val-0072",
+    "category": "values_principles",
+    "subcategory": "becoming-a-resident",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"If you do not pass the Life in the UK test on your first attempt, you can take it again.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "There is no limit on the number of times you may sit the Life in the UK test. If you do not pass, you can book and take it again (a fee is payable each time).",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  }
+]

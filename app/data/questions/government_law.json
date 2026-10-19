@@ -1,0 +1,3061 @@
+[
+  {
+    "id": "gov-0001",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the role of the monarch in the UK today?",
+    "options": [
+      "The monarch is head of state but does not rule",
+      "The monarch personally decides all government policies",
+      "The monarch leads the largest political party",
+      "The monarch writes every new law"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK is a constitutional monarchy, so the monarch is head of state but does not govern or decide policy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0002",
+    "category": "government_law",
+    "subcategory": "democracy",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The UK is a parliamentary democracy with a constitutional monarchy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK is a parliamentary democracy in which the monarch is head of state under a constitutional monarchy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0003",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who is the UK head of state?",
+    "options": [
+      "King Charles III",
+      "The Prime Minister",
+      "The Speaker of the House of Commons",
+      "The Mayor of London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King Charles III is the head of state of the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0004",
+    "category": "government_law",
+    "subcategory": "constitution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How is the British constitution best described?",
+    "options": [
+      "It is unwritten and is found in laws, conventions and institutions",
+      "It is set out in one single written document",
+      "It was written from scratch in 1997",
+      "It is a copy of the United States constitution"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The British constitution is described as unwritten because it is not contained in a single document but in laws, conventions and institutions.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0005",
+    "category": "government_law",
+    "subcategory": "constitution",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The constitution is made up only of Acts of Parliament.",
+      "The constitution is not set out in a single document.",
+      "The constitution is written in one document kept in Parliament.",
+      "The UK has no constitutional conventions at all."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The British constitution is unwritten, meaning it is not gathered together in one single document.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0006",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the national anthem of the UK?",
+    "options": [
+      "God Save the King",
+      "Land of Hope and Glory",
+      "Rule Britannia",
+      "Jerusalem"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The national anthem is \"God Save the King\".",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0007",
+    "category": "government_law",
+    "subcategory": "constitution",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are constitutional institutions in the UK?",
+    "options": [
+      "The judiciary (the courts)",
+      "The cabinet",
+      "A national football league",
+      "A commercial television channel"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The courts and the cabinet are both constitutional institutions, alongside the monarchy, Parliament and others.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0008",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the King's Speech?",
+    "options": [
+      "A speech at the opening of a new parliamentary session summarising the government's policies",
+      "A speech made by the Prime Minister to the House of Lords",
+      "A yearly speech given by the Speaker of the House of Commons",
+      "A statement made by the leader of the opposition"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The monarch opens each new parliamentary session and makes the King's Speech, which summarises the government's policies for the year.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0009",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The monarch personally decides government policy.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The monarch can advise, warn and encourage, but does not decide policy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0010",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who does the monarch invite to become Prime Minister?",
+    "options": [
+      "The leader of the party with the largest number of MPs",
+      "The leader chosen by the House of Lords",
+      "The person who wins a nationwide public vote",
+      "The most senior civil servant"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The monarch invites the leader of the party with the largest number of MPs to become Prime Minister.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0011",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What are the two Houses of Parliament?",
+    "options": [
+      "The House of Commons and the House of Lords",
+      "The House of Commons and the cabinet",
+      "The House of Lords and the judiciary",
+      "The Senedd and the Scottish Parliament"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Parliament has two Houses: the elected House of Commons and the House of Lords.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0012",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which House of Parliament is the more important, and why?",
+    "options": [
+      "The House of Commons, because its members are democratically elected",
+      "The House of Lords, because its members are appointed for life",
+      "The House of Lords, because peers have more experience",
+      "Neither, because neither House is elected"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The House of Commons is the more important House because its members are democratically elected.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0013",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Members of the House of Lords are elected by the public.",
+      "The House of Lords can suggest amendments, but the House of Commons can overrule it.",
+      "The House of Lords has more power than the House of Commons.",
+      "Every peer represents a parliamentary constituency."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Lords can suggest amendments and check laws, but the Commons can overrule it.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0014",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What are members of the House of Lords called?",
+    "options": [
+      "Peers",
+      "MPs",
+      "Councillors",
+      "MSPs"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Members of the House of Lords are called peers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0015",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Since 1999, hereditary peers have kept the automatic right to sit in the House of Lords.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Since 1999 hereditary peers lost the automatic right to sit in the House of Lords, and the remaining hereditary peers were removed from the House altogether in 2026.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0016",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Since 1958, who has been able to nominate life peers?",
+    "options": [
+      "The Prime Minister",
+      "The Speaker of the House of Commons",
+      "The monarch acting alone",
+      "The Mayor of London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Since 1958 the Prime Minister has been able to nominate life peers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0017",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "How is the Speaker of the House of Commons chosen?",
+    "options": [
+      "By MPs in a secret ballot",
+      "By the monarch",
+      "By the House of Lords",
+      "By a national public vote"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Speaker is chosen by MPs in a secret ballot and is neutral, not representing a political party.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0018",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are roles of an MP?",
+    "options": [
+      "Debating national issues",
+      "Scrutinising the government",
+      "Commanding the armed forces",
+      "Appointing judges"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "MPs help create laws, scrutinise the government and debate national issues.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0019",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does an MP represent?",
+    "options": [
+      "A parliamentary constituency",
+      "A government department",
+      "A local council area only",
+      "A devolved parliament"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Each MP represents a parliamentary constituency.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0020",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How often must a general election be held, at the latest?",
+    "options": [
+      "At least every five years",
+      "At least every two years",
+      "At least every ten years",
+      "At least every seven years"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "General elections are held at least every five years.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0021",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "If an MP resigns or dies, a by-election is held in that constituency.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "When an MP dies or resigns, a by-election is held to choose a new MP for that constituency.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0022",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How are MPs elected?",
+    "options": [
+      "By first past the post, where the candidate with the most votes in a constituency wins",
+      "By a national list system shared out by party",
+      "By a vote of the House of Lords",
+      "By local councils selecting a candidate"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "MPs are elected using first past the post: in each constituency the candidate with the most votes wins.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0023",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements about UK general elections are correct?",
+    "options": [
+      "If no party wins a majority, two parties may form a coalition",
+      "The candidate with the most votes in each constituency is elected",
+      "Voters must be at least 21 years old",
+      "MPs are chosen by proportional representation"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The candidate with the most votes wins each constituency, and if no party has a majority two parties may form a coalition.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0024",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the minimum voting age in UK general elections?",
+    "options": [
+      "18",
+      "16",
+      "21",
+      "25"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The voting age for UK general elections is 18; it was reduced from 21 to 18 in 1969. Some devolved elections in Scotland and Wales now allow voting at 16.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0025",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year was the voting age reduced to 18?",
+    "options": [
+      "1969",
+      "1928",
+      "1945",
+      "1997"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The voting age was reduced to 18 in 1969.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0026",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the history of UK voting are correct?",
+    "options": [
+      "The voting age was reduced to 18 in 1969",
+      "The UK has had a fully democratic voting system since 1928",
+      "Voting is compulsory in the UK",
+      "The minimum voting age is 21"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The UK has had a fully democratic voting system since 1928, and the voting age was lowered to 18 in 1969.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0027",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "You must be on the electoral register in order to vote.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Only people on the electoral register are able to vote.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0028",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "When is the electoral register usually updated?",
+    "options": [
+      "Every year in September or October",
+      "Every month",
+      "Only every five years",
+      "Only when a general election is called"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The electoral register is updated every year in September or October.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0029",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which part of the UK runs its own separate voter registration system, administered by its own Electoral Office?",
+    "options": [
+      "Northern Ireland",
+      "Scotland",
+      "Wales",
+      "Greater London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Northern Ireland runs its own separate electoral registration system, administered by the Electoral Office for Northern Ireland. Individual registration (each voter registering themselves) now operates across the whole UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0030",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What are the opening hours of polling stations on election day?",
+    "options": [
+      "7 a.m. until 10 p.m.",
+      "8 a.m. until 6 p.m.",
+      "6 a.m. until 8 p.m.",
+      "9 a.m. until 9 p.m."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Polling stations are open from 7 a.m. until 10 p.m.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0031",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Voters must show photo ID at UK parliamentary elections and English local elections.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Voters must show photo ID at UK parliamentary elections, English local elections and police and crime commissioner elections in England and Wales. Photo ID is not required for Scottish Parliament, Senedd or Scottish and Welsh council elections.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0032",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO groups of people resident in the UK can vote in all public elections?",
+    "options": [
+      "UK citizens",
+      "Citizens of the Irish Republic",
+      "Citizens of the United States",
+      "Citizens of any country in the world"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "UK, Commonwealth and Irish Republic citizens resident in the UK can vote in all public elections.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0033",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "From what age can you stand for public office if you are a UK, Irish or Commonwealth citizen?",
+    "options": [
+      "18",
+      "16",
+      "21",
+      "25"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You can stand for public office from the age of 18.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0034",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Members of the armed forces can stand for public office while serving.",
+      "Civil servants can stand for public office while serving.",
+      "Members of the House of Lords cannot stand for election to the House of Commons.",
+      "Anyone convicted of a criminal offence may always stand for public office."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Members of the House of Lords cannot stand for election to the House of Commons; armed forces members, civil servants and some offenders are also excluded.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0036",
+    "category": "government_law",
+    "subcategory": "prime-minister",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where is the Prime Minister's official London residence?",
+    "options": [
+      "10 Downing Street",
+      "11 Downing Street",
+      "Chequers",
+      "Buckingham Palace"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Prime Minister lives at 10 Downing Street.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0037",
+    "category": "government_law",
+    "subcategory": "prime-minister",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the name of the Prime Minister's country house?",
+    "options": [
+      "Chequers",
+      "Balmoral",
+      "Windsor",
+      "Highgrove"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Prime Minister's country house is called Chequers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0038",
+    "category": "government_law",
+    "subcategory": "cabinet",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Roughly how many senior MPs make up the cabinet?",
+    "options": [
+      "About 20",
+      "About 5",
+      "About 50",
+      "About 100"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The cabinet is made up of about 20 senior MPs who run government departments.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0039",
+    "category": "government_law",
+    "subcategory": "cabinet",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO cabinet posts and responsibilities are correctly matched?",
+    "options": [
+      "Home Secretary - crime, policing and immigration",
+      "Foreign Secretary - relationships with foreign countries",
+      "Chancellor of the Exchequer - health and education",
+      "Home Secretary - defence and the armed forces"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Home Secretary deals with crime, policing and immigration, and the Foreign Secretary handles relationships with foreign countries.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0040",
+    "category": "government_law",
+    "subcategory": "cabinet",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which cabinet post is responsible for the economy?",
+    "options": [
+      "Chancellor of the Exchequer",
+      "Home Secretary",
+      "Foreign Secretary",
+      "Speaker of the House of Commons"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Chancellor of the Exchequer is responsible for the economy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0041",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The opposition is the second-largest party in the House of Commons.",
+      "The leader of the opposition is chosen by the monarch.",
+      "The shadow cabinet is appointed by the Speaker.",
+      "The UK has no official opposition."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The second-largest party in the Commons is the opposition, and its leader appoints a shadow cabinet.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0042",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How often does Prime Minister's Questions take place while Parliament is sitting?",
+    "options": [
+      "Weekly",
+      "Every day",
+      "Monthly",
+      "Once a year"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Prime Minister's Questions takes place weekly while Parliament is sitting.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0043",
+    "category": "government_law",
+    "subcategory": "political-parties",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of these are main political parties in the UK?",
+    "options": [
+      "The Conservative Party",
+      "The Labour Party",
+      "The Federalist Party",
+      "The Green Cross Party"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The main political parties are the Conservative Party, the Labour Party and the Liberal Democrats.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0044",
+    "category": "government_law",
+    "subcategory": "civil-service",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these describes the core values of the civil service?",
+    "options": [
+      "Integrity, honesty, objectivity and impartiality",
+      "Loyalty to a political party and campaigning",
+      "Profit-making and competition",
+      "Independence from all government ministers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Civil servants are politically neutral and chosen on merit, with core values of integrity, honesty, objectivity and impartiality.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0045",
+    "category": "government_law",
+    "subcategory": "local-government",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Local councils are funded only by central government.",
+      "Towns, cities and rural areas are governed by elected councils.",
+      "Local councillors are appointed by the Prime Minister.",
+      "Local councils are part of the House of Lords."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Towns, cities and rural areas are governed by elected councils, known as local authorities, funded by central government and local taxes.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0046",
+    "category": "government_law",
+    "subcategory": "local-government",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many local authorities does London have?",
+    "options": [
+      "33",
+      "12",
+      "50",
+      "100"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "London has 33 local authorities, along with a Mayor of London and the Greater London Authority.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0047",
+    "category": "government_law",
+    "subcategory": "local-government",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "When are local elections for councillors usually held?",
+    "options": [
+      "In May",
+      "In January",
+      "In August",
+      "In December"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Local elections for councillors are usually held in May.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0048",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which matters were reserved to the UK government when powers were devolved from 1997?",
+    "options": [
+      "Defence, foreign affairs, social security and most taxation",
+      "Education and health only",
+      "Local council housing only",
+      "Culture and sport only"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Defence, foreign affairs, social security and most taxation were reserved to the UK government when powers were devolved.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0049",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are reserved to the UK government rather than devolved?",
+    "options": [
+      "Foreign affairs",
+      "Defence",
+      "Education",
+      "Health"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Foreign affairs and defence were reserved to the UK government; education and health are areas that were devolved.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0050",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many members does the Welsh Parliament (the Senedd) have, and where does it meet?",
+    "options": [
+      "96 members, and it meets in Cardiff",
+      "129 members, and it meets in Cardiff",
+      "90 members, and it meets in Edinburgh",
+      "60 members, and it meets in Edinburgh"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Welsh Parliament (the Senedd) meets in Cardiff and, since the May 2026 election, has 96 members. (The older handbook figure was 60.)",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0051",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which of these is correct about the Scottish Parliament?",
+    "options": [
+      "It was formed in 1999 and has 129 MSPs",
+      "It was formed in 1998 and has 90 MSPs",
+      "It meets at Stormont and has 60 members",
+      "It was formed in 2011 and has 129 members"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Scottish Parliament is in Edinburgh, was formed in 1999 and has 129 MSPs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0052",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Northern Ireland Assembly meets at Stormont and has 90 MLAs.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Northern Ireland Assembly meets at Stormont, has 90 MLAs and was established after the Belfast (Good Friday) Agreement of 1998.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0053",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Where are proceedings in Parliament recorded?",
+    "options": [
+      "Hansard",
+      "The King's Speech",
+      "The electoral register",
+      "The Senedd"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Proceedings in Parliament are recorded in Hansard.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0054",
+    "category": "government_law",
+    "subcategory": "criminal-law",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does criminal law deal with?",
+    "options": [
+      "Disputes between individuals",
+      "Crimes and their punishment",
+      "Agreements between companies",
+      "Only traffic offences"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Criminal law relates to crimes, which are investigated by the police and punished by the courts.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0055",
+    "category": "government_law",
+    "subcategory": "civil-law",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Civil law is mainly used to do which of the following?",
+    "options": [
+      "Punish people who commit crimes",
+      "Prosecute drug dealers",
+      "Settle disputes between individuals or groups",
+      "Enforce driving bans"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Civil law settles disputes between individuals or groups, such as housing, consumer or employment matters.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0056",
+    "category": "government_law",
+    "subcategory": "criminal-offences",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of the following is a criminal offence in the UK?",
+    "options": [
+      "Breaking a contract",
+      "Owing money to a bank",
+      "Being unemployed",
+      "Carrying a weapon of any kind, even for self-defence"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Carrying a weapon of any kind is a criminal offence, even if the person claims it is only for self-defence.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0057",
+    "category": "government_law",
+    "subcategory": "police-duty",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is a duty of the police?",
+    "options": [
+      "To decide how much tax people pay",
+      "To protect life and property",
+      "To write new laws",
+      "To run the court system"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The duties of the police include protecting life and property, keeping the peace and preventing and detecting crime.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0058",
+    "category": "government_law",
+    "subcategory": "magistrates-court",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In England, Wales and Northern Ireland, most minor criminal cases are dealt with in which court?",
+    "options": [
+      "A Crown Court",
+      "A Magistrates' Court",
+      "The High Court",
+      "The Old Bailey"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Most minor criminal cases in England, Wales and Northern Ireland are heard in a Magistrates' Court.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0059",
+    "category": "government_law",
+    "subcategory": "jury",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many members does a jury have in England, Wales and Northern Ireland?",
+    "options": [
+      "10",
+      "12",
+      "15",
+      "20"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "A jury in England, Wales and Northern Ireland has 12 members; in Scotland it has 15.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0061",
+    "category": "government_law",
+    "subcategory": "taxation",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which are the main taxes on earnings in the UK?",
+    "options": [
+      "VAT and council tax",
+      "Income tax and National Insurance",
+      "Stamp duty and inheritance tax",
+      "Road tax and the TV licence"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Income tax and National Insurance are the main taxes on earnings in the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0062",
+    "category": "government_law",
+    "subcategory": "driving",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the minimum age to drive a car in the UK?",
+    "options": [
+      "15",
+      "16",
+      "17",
+      "18"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "The minimum age to drive a car in the UK is 17.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0063",
+    "category": "government_law",
+    "subcategory": "community",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is a way of taking part in your community?",
+    "options": [
+      "Ignoring local elections",
+      "Volunteering for a charity",
+      "Refusing to pay tax",
+      "Moving abroad"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "You can take part in your community by volunteering, joining a charity or community group, or helping at a school or sports club.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0064",
+    "category": "government_law",
+    "subcategory": "youth-court",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where is a criminal case usually heard if the accused person is aged 10 to 17 in England, Wales and Northern Ireland?",
+    "options": [
+      "A Crown Court",
+      "The High Court",
+      "A Youth Court",
+      "A County Court"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "If the accused is aged 10 to 17 the case is normally heard in a Youth Court, which the public may not attend.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0065",
+    "category": "government_law",
+    "subcategory": "civil-courts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which court deals with civil disputes such as money owed, personal injury and divorce in England and Wales?",
+    "options": [
+      "Crown Court",
+      "Magistrates' Court",
+      "Youth Court",
+      "County Court"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "County Courts deal with civil disputes such as money owed, personal injury, family matters, breach of contract and divorce.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0066",
+    "category": "government_law",
+    "subcategory": "legal-profession",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is a solicitor?",
+    "options": [
+      "A judge who decides the verdict",
+      "A trained lawyer who gives legal advice and represents clients in court",
+      "A police officer who investigates crime",
+      "A member of the jury"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Solicitors are trained lawyers who give legal advice and represent their clients in court.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0067",
+    "category": "government_law",
+    "subcategory": "judiciary",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What is the role of the judiciary?",
+    "options": [
+      "To make new laws for the government",
+      "To interpret the law and ensure trials are conducted fairly",
+      "To arrest people suspected of crimes",
+      "To collect taxes from the public"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The judiciary interprets the law and ensures trials are conducted fairly, and the government cannot interfere with it.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0068",
+    "category": "government_law",
+    "subcategory": "police-commissioners",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who were first elected by the public in England and Wales in November 2012?",
+    "options": [
+      "Justices of the Peace",
+      "Members of the jury",
+      "Police and Crime Commissioners",
+      "Chief Constables"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "In November 2012 the public in England and Wales elected Police and Crime Commissioners for the first time.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0069",
+    "category": "government_law",
+    "subcategory": "equality",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which body works to protect equality in England, Wales and Scotland?",
+    "options": [
+      "The House of Lords",
+      "The Equality and Human Rights Commission",
+      "The Electoral Commission",
+      "The Bank of England"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Equality and Human Rights Commission works to protect equality in England, Wales and Scotland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0070",
+    "category": "government_law",
+    "subcategory": "domestic-violence",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which statement about domestic violence in the UK is correct?",
+    "options": [
+      "It is only a crime if the couple are married",
+      "A man who forces his wife to have sex can be charged with rape",
+      "It is a private matter and not a crime",
+      "Only physical injury counts as a crime"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Domestic violence is a serious crime, and a man who forces a woman to have sex, including his wife, can be charged with rape.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0071",
+    "category": "government_law",
+    "subcategory": "driving",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which of these is required by law before you can drive a car on public roads in the UK?",
+    "options": [
+      "A valid driving licence and valid motor insurance",
+      "Only a valid driving licence",
+      "A licence and a passport",
+      "Membership of a motoring organisation"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must hold a valid driving licence and have valid motor insurance. A vehicle more than three years old must also pass an annual MOT test.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0072",
+    "category": "government_law",
+    "subcategory": "terrorism",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which group is considered the most serious terrorist threat to the UK?",
+    "options": [
+      "Al Qa'ida, Daesh (ISIS) and their affiliates",
+      "Irish republican groups",
+      "Animal rights extremists",
+      "Environmental protesters"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The most serious terrorist threat to the UK comes from Islamist terrorism, including Al Qa'ida, Daesh (ISIS) and their affiliates. Northern Ireland-related and extreme right-wing terrorism are also concerns.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0073",
+    "category": "government_law",
+    "subcategory": "magistrates",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which statement about Magistrates and Justices of the Peace is correct?",
+    "options": [
+      "They must be qualified lawyers",
+      "They are usually unpaid and do not need legal qualifications",
+      "They are always members of parliament",
+      "They sit only in the High Court"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Magistrates and Justices of the Peace are usually unpaid and do not need legal qualifications.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0074",
+    "category": "government_law",
+    "subcategory": "crown-court",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In England, Wales and Northern Ireland, serious offences are tried in a Crown Court before whom?",
+    "options": [
+      "A single magistrate",
+      "Two solicitors",
+      "A judge and a jury",
+      "The Chief Constable"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Serious offences are tried in a Crown Court before a judge and a jury.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0076",
+    "category": "government_law",
+    "subcategory": "human-rights-act",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which Act incorporated the European Convention on Human Rights into UK law?",
+    "options": [
+      "The Bill of Rights 1689",
+      "The Human Rights Act 1998",
+      "The Habeas Corpus Act",
+      "The Magna Carta"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Human Rights Act 1998 incorporated the European Convention on Human Rights, which the UK signed in 1950, into UK law.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0078",
+    "category": "government_law",
+    "subcategory": "pcsos",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the role of a Police Community Support Officer (PCSO)?",
+    "options": [
+      "To make laws in parliament",
+      "To support police officers, patrol the streets and work with the public",
+      "To sit as a judge",
+      "To elect the Chief Constable"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "PCSOs support police officers by patrolling the streets and working with the public.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0079",
+    "category": "government_law",
+    "subcategory": "civil-law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is an example of civil law?",
+    "options": [
+      "Carrying a weapon",
+      "Selling drugs",
+      "Smoking in an enclosed public place",
+      "Housing disputes between landlord and tenant"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Housing law, which covers landlord and tenant disputes, is an example of civil law.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0080",
+    "category": "government_law",
+    "subcategory": "alcohol-tobacco",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the minimum age for buying alcohol in the UK?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "21"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "It is a criminal offence to sell alcohol to anyone under 18 or to buy alcohol for someone under 18.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0081",
+    "category": "government_law",
+    "subcategory": "criminal-courts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which is probably the most famous criminal court in the world?",
+    "options": [
+      "The High Court",
+      "The Old Bailey",
+      "The Sheriff Court",
+      "The County Court"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Old Bailey is probably the most famous criminal court in the world.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0082",
+    "category": "government_law",
+    "subcategory": "international-organisations",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who is the ceremonial head of the Commonwealth?",
+    "options": [
+      "The Prime Minister",
+      "The Speaker",
+      "The monarch",
+      "The Chief Constable"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "The UK is a member of the Commonwealth, of which the monarch is the ceremonial head.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0083",
+    "category": "government_law",
+    "subcategory": "community",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is a way of helping your local community?",
+    "options": [
+      "Avoiding your neighbours",
+      "Ignoring local issues",
+      "Refusing to volunteer",
+      "Becoming a school governor"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Becoming a school governor is one of the ways you can take part in and help your community.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0084",
+    "category": "government_law",
+    "subcategory": "arrest-rights",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "If you are arrested, what must a police officer tell you?",
+    "options": [
+      "The reason for your arrest",
+      "How long you will be in prison",
+      "The name of the judge",
+      "The amount of your fine"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "If you are arrested, a police officer will tell you the reason for the arrest and you can seek legal advice.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0088",
+    "category": "government_law",
+    "subcategory": "youth-court",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Members of the public are allowed into a Youth Court to watch the proceedings.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Members of the public are not allowed in Youth Courts, and the accused young person cannot be named in the media.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0089",
+    "category": "government_law",
+    "subcategory": "scotland-legal",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "In Scotland a jury can return a verdict of 'not proven'.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "This is false. The 'not proven' verdict was abolished for trials starting on or after 1 January 2026, so Scottish juries now return only guilty or not guilty.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0090",
+    "category": "government_law",
+    "subcategory": "human-rights",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The UK signed the European Convention on Human Rights in 1950.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The European Convention on Human Rights was signed by the UK in 1950 and later incorporated by the Human Rights Act 1998.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0091",
+    "category": "government_law",
+    "subcategory": "judiciary",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "The government can instruct judges on how they should decide a case.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The judiciary is independent, and the government cannot interfere with how judges interpret the law or decide cases.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0092",
+    "category": "government_law",
+    "subcategory": "alcohol-tobacco",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "A person aged 16 or over may drink beer, wine or cider with a meal in licensed premises.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Although selling alcohol to under-18s is an offence, people aged 16 or over may drink beer, wine or cider (but not spirits) with a meal in licensed premises.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0093",
+    "category": "government_law",
+    "subcategory": "police-duty",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of these are duties of the police?",
+    "options": [
+      "Protecting life and property",
+      "Keeping the peace",
+      "Setting the rate of income tax",
+      "Deciding court verdicts"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The police protect life and property, prevent disturbances to keep the peace, and prevent and detect crime.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0095",
+    "category": "government_law",
+    "subcategory": "civil-law",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are examples of civil law?",
+    "options": [
+      "Housing law",
+      "Consumer rights",
+      "Carrying a weapon",
+      "Smoking in an enclosed public place"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Housing law, consumer rights, employment law and debt are examples of civil law.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0096",
+    "category": "government_law",
+    "subcategory": "scotland-legal",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO courts hear serious criminal cases in Scotland?",
+    "options": [
+      "The Sheriff Court",
+      "The High Court",
+      "The County Court",
+      "The Magistrates' Court"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "In Scotland serious cases are heard in a Sheriff Court, and the most serious cases such as murder in the High Court.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0097",
+    "category": "government_law",
+    "subcategory": "human-rights",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are rights protected by the European Convention on Human Rights?",
+    "options": [
+      "The right to life",
+      "Freedom of expression",
+      "The right to a free car",
+      "The right to avoid all taxes"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Protected rights include the right to life, the prohibition of torture and slavery, the right to a fair trial, and freedom of expression.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0099",
+    "category": "government_law",
+    "subcategory": "jury",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements about juries in the UK are correct?",
+    "options": [
+      "Members are chosen at random from the local electoral register",
+      "A jury in Scotland has 15 members",
+      "A jury in England and Wales has 15 members",
+      "Jurors must be qualified lawyers"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Jurors are chosen at random from the local electoral register; a jury has 12 members in England, Wales and Northern Ireland and 15 in Scotland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0100",
+    "category": "government_law",
+    "subcategory": "international-organisations",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these organisations is the UK a member of?",
+    "options": [
+      "The United Nations",
+      "NATO",
+      "The United States Congress",
+      "The eurozone"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The UK is a member of the United Nations, NATO, the Commonwealth and the Council of Europe; it is one of five permanent members of the UN Security Council.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0101",
+    "category": "government_law",
+    "subcategory": "rule-of-law",
+    "type": "statement",
+    "difficulty": "easy",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Judges must follow instructions from the government.",
+      "The police decide whether a person is guilty.",
+      "Everyone in the UK is treated equally under the law.",
+      "Only wealthy people may use the courts."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Every person in the UK receives equal treatment under the law, which applies in the same way to everyone.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0102",
+    "category": "government_law",
+    "subcategory": "criminal-civil-law",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Criminal cases are investigated by the police and punished by the courts.",
+      "Civil law deals with offences such as selling drugs.",
+      "Magistrates must be qualified lawyers.",
+      "Juries decide the sentence in a Crown Court."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Criminal law relates to crimes, which are investigated by the police and punished by the courts; in a Crown Court the judge decides the sentence.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0103",
+    "category": "government_law",
+    "subcategory": "police",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The government can direct the police on which crimes to investigate.",
+      "The police are organised into forces headed by Chief Constables and are independent of the government.",
+      "Chief Constables are elected by the public every year.",
+      "PCSOs have the power to act as judges."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The police are organised into forces headed by Chief Constables and are independent of the government.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0104",
+    "category": "government_law",
+    "subcategory": "civil-courts",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "County Courts hear only criminal cases.",
+      "The Old Bailey is a civil court.",
+      "Solicitors are not allowed to give legal advice.",
+      "The small claims procedure is used for claims of less than £10,000 in England and Wales."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "The small claims procedure is used for claims of less than £10,000 in England and Wales, and £5,000 in Scotland and Northern Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0105",
+    "category": "government_law",
+    "subcategory": "human-rights-history",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Human Rights Act 1998 abolished the right to a fair trial.",
+      "The European Convention on Human Rights was signed by the UK in 1998.",
+      "British rights have roots in Magna Carta, the Habeas Corpus Act and the Bill of Rights of 1689.",
+      "The judiciary is part of the government and follows its orders."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "British rights have their roots in Magna Carta, the Habeas Corpus Act and the Bill of Rights of 1689.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0106",
+    "category": "government_law",
+    "subcategory": "democracy-history",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these was one of the six changes demanded by the Chartists in the 1830s and 1840s?",
+    "options": [
+      "Elections every year",
+      "Votes for women over 30",
+      "Abolition of the monarchy",
+      "A written constitution"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Chartists campaigned for six changes, including giving every man the vote, holding elections every year, making all regions equal in the electoral system, using secret ballots, allowing any man to stand as an MP and paying MPs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0107",
+    "category": "government_law",
+    "subcategory": "voting-history",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In 1918, the right to vote was extended to which group of women?",
+    "options": [
+      "Women over 30",
+      "Women over 21",
+      "All women regardless of age",
+      "Women over 18"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1918 the vote was extended to women over 30, and in 1928 women over 21 gained the vote on the same terms as men.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0108",
+    "category": "government_law",
+    "subcategory": "constitution",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The UK's constitution is unwritten partly because the UK has never had a revolution leading permanently to a totally new system of government.",
+      "The UK wrote a completely new constitution after a revolution in the 19th century.",
+      "Britain's constitution is set out in a single document, like France's.",
+      "The UK copied its written constitution from America."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Unlike America or France, the UK has never had a revolution that permanently replaced its system of government, so its most important institutions have developed over hundreds of years and the constitution is not written in one document.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0109",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who is the heir to the throne?",
+    "options": [
+      "Prince William, the Prince of Wales",
+      "Prince Harry",
+      "The Duke of Edinburgh",
+      "Princess Anne"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King Charles III's eldest son, Prince William (the Prince of Wales), is the heir to the throne.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0110",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "All Acts of Parliament are made in the King's name.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "All Acts of Parliament are made in the monarch's name, although the King does not decide policy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0111",
+    "category": "government_law",
+    "subcategory": "speaker",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is one of the Speaker's main duties during debates in the House of Commons?",
+    "options": [
+      "Chairing the debates and keeping order",
+      "Leading the largest political party",
+      "Deciding verdicts in court cases",
+      "Choosing the members of the cabinet"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Speaker chairs debates in the House of Commons, is the chief officer of the House, and keeps order during political debates to make sure the rules are followed.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0112",
+    "category": "government_law",
+    "subcategory": "speaker",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are duties of the Speaker of the House of Commons?",
+    "options": [
+      "Making sure the opposition has a guaranteed amount of time to debate issues it chooses",
+      "Representing Parliament on ceremonial occasions",
+      "Appointing the Prime Minister",
+      "Commanding the armed forces",
+      "Setting the rate of income tax"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Speaker keeps order in debates, makes sure the opposition has guaranteed time to debate issues it chooses, and represents Parliament on ceremonial occasions.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0113",
+    "category": "government_law",
+    "subcategory": "lords",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Hereditary peers can no longer sit in the House of Lords.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The remaining hereditary peers were removed from the House of Lords by the House of Lords (Hereditary Peers) Act 2026 (in force from 29 April 2026). Between 1999 and 2026, hereditary peers had lost the automatic right to sit and instead elected a few of their number to represent them.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0114",
+    "category": "government_law",
+    "subcategory": "lords",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these can nominate life peers?",
+    "options": [
+      "The leaders of the other main political parties",
+      "An independent Appointments Commission for non-party peers",
+      "The Speaker of the House of Commons",
+      "The Mayor of London"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "As well as the Prime Minister, life peers can be nominated by the leaders of the other main political parties or by an independent Appointments Commission for non-party peers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0115",
+    "category": "government_law",
+    "subcategory": "lords",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The House of Lords is normally more independent of the government than the House of Commons.",
+      "Members of the House of Lords are directly elected by the public.",
+      "Each peer represents a parliamentary constituency.",
+      "The House of Lords can dismiss the monarch."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The House of Lords is not elected and does not represent constituencies, but it is normally more independent of the government than the House of Commons.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0116",
+    "category": "government_law",
+    "subcategory": "contacting-members",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is an MP's 'surgery'?",
+    "options": [
+      "A local session where constituents can raise issues in person",
+      "A medical operation carried out in Parliament",
+      "A meeting of the cabinet",
+      "A court hearing for minor offences"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Many MPs, Senedd members and MSPs hold regular local 'surgeries', where constituents can go in person to talk about issues that are of concern to them.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0117",
+    "category": "government_law",
+    "subcategory": "prime-minister",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How can a Prime Minister be changed?",
+    "options": [
+      "If the MPs in the governing party decide to do so, or if the Prime Minister chooses to resign",
+      "Only by a vote of the House of Lords",
+      "Only by a national referendum",
+      "Only if the monarch dismisses the Prime Minister"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Prime Minister can be changed if the MPs in the governing party decide to do so, or if he or she wishes to resign; a Prime Minister usually resigns after losing a General Election.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0118",
+    "category": "government_law",
+    "subcategory": "cabinet",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these statements about the cabinet are correct?",
+    "options": [
+      "It usually meets weekly",
+      "Its senior ministers in charge of departments are called Secretaries of State",
+      "Its members are elected directly by the public",
+      "It never includes any members of the House of Commons"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The cabinet is a committee of about 20 senior ministers that usually meets weekly to make important decisions about government policy, and ministers in charge of departments such as education, health and defence are called Secretaries of State.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0119",
+    "category": "government_law",
+    "subcategory": "civil-service",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the role of civil servants?",
+    "options": [
+      "Supporting the government in developing and implementing its policies",
+      "Deciding government policy independently of ministers",
+      "Representing constituencies in Parliament",
+      "Commanding the police forces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Civil servants support the government in developing and implementing its policies, deliver public services and are accountable to ministers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0120",
+    "category": "government_law",
+    "subcategory": "pressure-groups",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which organisation represents the views of British business as a pressure or lobby group?",
+    "options": [
+      "The CBI (Confederation of British Industry)",
+      "Greenpeace",
+      "Liberty",
+      "The Equality and Human Rights Commission"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The CBI (Confederation of British Industry) is a representative organisation that speaks for British business; other pressure groups include Greenpeace on the environment and Liberty on human rights.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0121",
+    "category": "government_law",
+    "subcategory": "united-nations",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many members are there on the UN Security Council?",
+    "options": [
+      "15",
+      "5",
+      "10",
+      "47"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UN Security Council has 15 members, which recommends action when there are international crises and threats to peace; the UK is one of its five permanent members.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0122",
+    "category": "government_law",
+    "subcategory": "devolution-wales",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In how many areas can the Senedd make laws for Wales?",
+    "options": [
+      "20",
+      "12",
+      "60",
+      "129"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Senedd has the power to make laws for Wales in 20 areas, including education and training, health and social services, economic development and housing.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0123",
+    "category": "government_law",
+    "subcategory": "devolution-scotland",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these matters can the Scottish Parliament legislate on?",
+    "options": [
+      "Civil and criminal law",
+      "Defence",
+      "Foreign affairs",
+      "Social security"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Scottish Parliament can pass laws on matters including civil and criminal law, health, education, planning and additional tax-raising powers; defence, foreign affairs and social security remain reserved to the UK government.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0125",
+    "category": "government_law",
+    "subcategory": "council-of-europe",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many member countries does the Council of Europe have?",
+    "options": [
+      "46",
+      "15",
+      "27",
+      "56"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Council of Europe has 46 member countries, including the UK, and works to protect and promote human rights. Russia was expelled in March 2022.",
+    "source": "Original practice question based on public facts"
+  },
+  {
+    "id": "gov-0126",
+    "category": "government_law",
+    "subcategory": "commonwealth",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Membership of the Commonwealth is voluntary, and the Commonwealth can suspend a member.",
+      "The Commonwealth can make laws that all its members must obey.",
+      "Membership of the Commonwealth is compulsory for former British colonies.",
+      "The Commonwealth is led by the Prime Minister."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Commonwealth membership is voluntary and it has no power over its members, although it can suspend membership; it currently has 56 member states and the monarch is its ceremonial head.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0127",
+    "category": "government_law",
+    "subcategory": "scotland-legal",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In Scotland, where do minor criminal offences go?",
+    "options": [
+      "A Justice of the Peace Court",
+      "A Crown Court",
+      "The High Court",
+      "The Court of Session"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In Scotland minor criminal offences go to a Justice of the Peace Court; more serious cases are heard in a Sheriff Court or, for the most serious cases such as murder, the High Court.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0128",
+    "category": "government_law",
+    "subcategory": "jury-service",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Everyone who is summoned for jury service must do it unless they are not eligible or have a good reason to be excused.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Everyone summoned for jury service must serve unless they are ineligible (for example, because of a criminal conviction) or provide a good reason to be excused, such as ill health.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0129",
+    "category": "government_law",
+    "subcategory": "taxation",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are sources of income on which people in the UK pay income tax?",
+    "options": [
+      "Wages from paid employment",
+      "Income from property, savings and dividends",
+      "The value of your own home",
+      "Gifts of money received from friends"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Income tax is paid on wages from employment, profits from self-employment, taxable benefits, pensions, and income from property, savings and dividends.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0130",
+    "category": "government_law",
+    "subcategory": "rights-responsibilities",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are shared values and responsibilities in the UK?",
+    "options": [
+      "To obey and respect the law",
+      "To treat everyone equally, regardless of sex, race, religion, age, disability, class or sexual orientation",
+      "To avoid paying any tax",
+      "To ignore the rights of others"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Shared values and responsibilities include obeying and respecting the law, being aware of and respecting the rights of others, treating others fairly and equally, behaving responsibly, helping others and voting in elections.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "gov-0131",
+    "category": "government_law",
+    "subcategory": "monarchy",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What role does the monarch play in government today?",
+    "options": [
+      "Advising, warning and encouraging the Prime Minister",
+      "Deciding all government policies",
+      "Running the civil service day to day",
+      "Judging criminal cases in court"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The monarch has regular meetings with the Prime Minister and has the right to advise, warn and encourage, but does not decide government policy.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0132",
+    "category": "government_law",
+    "subcategory": "government",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "About how many senior MPs does the Prime Minister usually appoint as ministers in charge of government departments?",
+    "options": [
+      "About 20",
+      "About 5",
+      "About 50",
+      "About 100"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Prime Minister appoints about 20 senior MPs to become ministers in charge of departments, forming the government.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0134",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which year was the Scottish Parliament established?",
+    "options": [
+      "1999",
+      "1979",
+      "1997",
+      "2007"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Powers were devolved from central government, and a Scottish Parliament and a Welsh Assembly were established in 1999.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0135",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where does the Northern Ireland Assembly meet?",
+    "options": [
+      "Stormont, in Belfast",
+      "Holyrood, in Edinburgh",
+      "The Senedd, in Cardiff",
+      "Westminster, in London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Elected members of the Northern Ireland Assembly (MLAs) meet at Stormont, in Belfast.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0136",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "How many members (MLAs) does the Northern Ireland Assembly have?",
+    "options": [
+      "90",
+      "60",
+      "129",
+      "100"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Northern Ireland Assembly has 90 members, known as MLAs (Members of the Legislative Assembly).",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0137",
+    "category": "government_law",
+    "subcategory": "devolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What can the Scottish Parliament do?",
+    "options": [
+      "Pass laws on matters that are not reserved to the UK Parliament",
+      "Control the UK's armed forces",
+      "Appoint the UK Prime Minister",
+      "Set tax rates for the whole of the UK"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Scottish Parliament can pass laws on all matters not specifically reserved to the UK Parliament, such as civil and criminal law, health, education and planning. Defence and foreign affairs are reserved to the UK Parliament.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0138",
+    "category": "government_law",
+    "subcategory": "judiciary",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What are judges, who together are called the judiciary, responsible for?",
+    "options": [
+      "Interpreting the law and ensuring fair trials",
+      "Making new laws in Parliament",
+      "Running the police force",
+      "Choosing the government"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Judges are responsible for interpreting the law and ensuring that trials are conducted fairly.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0139",
+    "category": "government_law",
+    "subcategory": "jury",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who can be asked to serve on a jury in England and Wales?",
+    "options": [
+      "People on the electoral register aged 18 to 75",
+      "Only people aged over 40",
+      "Only people with legal training",
+      "Only homeowners"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "People on the electoral register aged between 18 and 75 can be randomly selected to serve on a jury.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0140",
+    "category": "government_law",
+    "subcategory": "jury",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"In a trial, the jury decides whether the defendant is guilty or not guilty.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The jury listens to the evidence and decides a verdict of 'guilty' or 'not guilty'. The judge decides the sentence.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0141",
+    "category": "government_law",
+    "subcategory": "courts",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In Scotland, which court deals with the most serious civil cases?",
+    "options": [
+      "The Court of Session in Edinburgh",
+      "The Crown Court",
+      "The Supreme Court",
+      "The magistrates' court"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In Scotland, the most serious civil cases, such as claims for large amounts of compensation, are dealt with by the Court of Session in Edinburgh.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0142",
+    "category": "government_law",
+    "subcategory": "courts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In England and Wales, the small claims procedure is used for settling minor disputes for claims of less than what amount?",
+    "options": [
+      "£10,000",
+      "£3,000",
+      "£5,000",
+      "£50,000"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The small claims procedure is an informal way to settle minor disputes. In England and Wales it is used for claims of less than £10,000.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0143",
+    "category": "government_law",
+    "subcategory": "civil-law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Disputes over wages, unfair dismissal and discrimination in the workplace are dealt with as what type of law?",
+    "options": [
+      "Civil law",
+      "Criminal law",
+      "International law",
+      "Military law"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Civil law deals with disputes between individuals or organisations, such as wage disputes, unfair dismissal and workplace discrimination.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0145",
+    "category": "government_law",
+    "subcategory": "government",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which government minister is responsible for crime, policing and immigration?",
+    "options": [
+      "The Home Secretary",
+      "The Chancellor of the Exchequer",
+      "The Speaker of the House of Commons",
+      "The Foreign Secretary"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Home Secretary is the government minister responsible for crime, policing and immigration.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0146",
+    "category": "government_law",
+    "subcategory": "opposition",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the Shadow Cabinet?",
+    "options": [
+      "Senior members of the main opposition party who shadow government ministers",
+      "A committee of the House of Lords",
+      "Advisers appointed by the monarch",
+      "Judges who review new laws"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The leader of the opposition appoints a shadow cabinet of senior MPs from the main opposition party, who each shadow a government department.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0147",
+    "category": "government_law",
+    "subcategory": "civil-service",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are core values expected of civil servants?",
+    "options": [
+      "Integrity",
+      "Impartiality",
+      "Personal profit",
+      "Party loyalty"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Civil servants are expected to carry out their role with dedication and commitment to the civil service and its core values of integrity, honesty, objectivity and impartiality.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0148",
+    "category": "government_law",
+    "subcategory": "taxation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is self-assessment used for?",
+    "options": [
+      "Completing a tax return, often by self-employed people",
+      "Applying for a passport",
+      "Registering to vote",
+      "Claiming a state pension"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Self-assessment is the system used to complete a tax return. It is often used by people who are self-employed.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0149",
+    "category": "government_law",
+    "subcategory": "voting",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "From what age can you vote in a UK general election?",
+    "options": [
+      "18",
+      "16",
+      "21",
+      "25"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must be 18 or over to vote in a UK general election.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0151",
+    "category": "government_law",
+    "subcategory": "international",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many member states does the Commonwealth have?",
+    "options": [
+      "56",
+      "46",
+      "27",
+      "193"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Commonwealth currently has 56 member states. Membership is voluntary and the monarch is its ceremonial head.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0152",
+    "category": "government_law",
+    "subcategory": "international",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is a military alliance that the UK belongs to?",
+    "options": [
+      "NATO",
+      "The European Union",
+      "The Commonwealth",
+      "The United Nations"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK is a member of NATO (the North Atlantic Treaty Organization), a military alliance of countries that agree to defend one another.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0153",
+    "category": "government_law",
+    "subcategory": "international",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Approximately how many countries are members of the United Nations?",
+    "options": [
+      "More than 190",
+      "About 50",
+      "About 100",
+      "About 28"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The United Nations is an international organisation with more than 190 member countries. The UK is one of the five permanent members of its Security Council.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0154",
+    "category": "government_law",
+    "subcategory": "international",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The UK is one of the permanent members of which body?",
+    "options": [
+      "The UN Security Council",
+      "The European Commission",
+      "The International Court of Justice",
+      "The Commonwealth Secretariat"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK is one of the five permanent members of the United Nations Security Council.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0157",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In England, what is 'common law' based on?",
+    "options": [
+      "Following previous decisions, known as precedent",
+      "Acts of Parliament only",
+      "The personal wishes of the monarch",
+      "International treaties"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In England, judges developed 'common law' by a process of precedent, that is, following previous decisions.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0158",
+    "category": "government_law",
+    "subcategory": "nhs",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The National Health Service provides healthcare that is...",
+    "options": [
+      "free at the point of use for residents",
+      "paid for by private insurance only",
+      "available only to people in work",
+      "available only in England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The NHS provides healthcare free at the point of use for all residents of the UK, funded mainly through taxation and National Insurance.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0159",
+    "category": "government_law",
+    "subcategory": "rights",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"Forced Marriage Protection Orders exist to help protect people from being forced into a marriage.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Forced Marriage Protection Orders were introduced in 2008 to protect potential victims of forced marriage. Forcing someone into marriage is a criminal offence.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0160",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"The House of Commons has powers to overrule the House of Lords, but these powers are not used often.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The House of Commons has powers to overrule the House of Lords, but this is rarely used. The Commons is normally the more powerful chamber.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0161",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is 'canvassing' during an election campaign?",
+    "options": [
+      "Persuading people to vote for a party or candidate",
+      "Counting the votes after polling day",
+      "Drawing the boundaries of constituencies",
+      "Printing the ballot papers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Canvassing is the activity of persuading people to vote for a particular party or candidate.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0162",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "In the UK, an arranged marriage is acceptable as long as both people freely agree to it.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Arranged marriages, where both people agree to the marriage, are acceptable in the UK. Forcing someone to marry against their will is a criminal offence.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0163",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "When you take a dog out in public, its collar must show which of the following?",
+    "options": [
+      "The owner's name and address",
+      "The dog's date of birth",
+      "The owner's National Insurance number",
+      "The dog's veterinary practice"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "By law, a dog in a public place must wear a collar showing the name and address of its owner.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0164",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is sent to registered voters before a general election to tell them where and when they can vote?",
+    "options": [
+      "A poll card",
+      "A ballot paper",
+      "A manifesto",
+      "A writ of election"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Before an election, registered voters are sent a poll card telling them the date of the election and where their polling station is.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0165",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the minimum age for riding a moped on public roads in the UK?",
+    "options": [
+      "16",
+      "17",
+      "18",
+      "21"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must be at least 16 years old to ride a moped on public roads in the UK.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0166",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the minimum age for riding a motorcycle on public roads in the UK?",
+    "options": [
+      "17",
+      "16",
+      "18",
+      "21"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must be at least 17 years old to ride a motorcycle on public roads in the UK.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0167",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Female genital mutilation (FGM), or taking a girl abroad for it, is a criminal offence in the UK.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "FGM, and taking a girl or woman abroad for FGM, is illegal in the UK and is a criminal offence.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0168",
+    "category": "government_law",
+    "subcategory": "media",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "In the UK you need a TV licence to watch live television on a computer.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A TV licence is required to watch or record live television, including on a computer or other device.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0169",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How are a solicitor's charges for a case usually worked out?",
+    "options": [
+      "They are usually based on how much time is spent on the case",
+      "They are always a fixed fee set by the government",
+      "They are based on the length of a prison sentence",
+      "They are paid only by the losing side"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Solicitors' charges are usually based on how much time they spend on a case.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0170",
+    "category": "government_law",
+    "subcategory": "elections",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO types of broadcaster must, by law, give balanced coverage of the political parties and equal time to rival views before an election?",
+    "options": [
+      "Television",
+      "Radio",
+      "Newspapers",
+      "Social media"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "By law, television and radio coverage of political parties must be balanced, with equal time given to rival viewpoints. Newspapers are not covered by this rule.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0171",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "If you believe someone is trying to involve you in a terrorist activity, who should you contact?",
+    "options": [
+      "Your local police force",
+      "Your local council",
+      "A newspaper",
+      "Your member of Parliament"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You should report any suspected terrorist or extremist activity to your local police force.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0172",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the minimum age for entering a betting shop or gambling club in the UK?",
+    "options": [
+      "18",
+      "16",
+      "17",
+      "21"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "You must be at least 18 years old to go into a betting shop or gambling club in the UK.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0173",
+    "category": "government_law",
+    "subcategory": "parliament",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "An MP can only be contacted by post at the House of Commons.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "This is false. MPs can be contacted in a number of ways and have an office in the House of Commons as well as a constituency office.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0174",
+    "category": "government_law",
+    "subcategory": "community",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are key roles of school governors?",
+    "options": [
+      "Setting the strategic direction of the school",
+      "Monitoring and evaluating the school's performance",
+      "Teaching every class in the school",
+      "Deciding the court sentences for pupils"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "School governors help to set the strategic direction of the school and monitor and evaluate how well it is performing.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "gov-0175",
+    "category": "government_law",
+    "subcategory": "law",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which of these best describes a barrister?",
+    "options": [
+      "A trained lawyer who specialises in representing clients in court",
+      "A police officer who brings prosecutions",
+      "A judge who sits in the Magistrates' Court",
+      "A civil servant who drafts new laws"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A barrister is a trained lawyer who specialises in representing clients in court, usually in the higher courts.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  }
+]

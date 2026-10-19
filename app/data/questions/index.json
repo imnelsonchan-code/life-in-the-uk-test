@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-10-19T05:25:08.689Z",
+  "total": 716,
+  "categories": [
+    {
+      "id": "values_principles",
+      "name": "The Values and Principles of the UK",
+      "file": "values_principles.json",
+      "count": 72
+    },
+    {
+      "id": "what_is_uk",
+      "name": "What is the UK?",
+      "file": "what_is_uk.json",
+      "count": 77
+    },
+    {
+      "id": "history",
+      "name": "A Long and Illustrious History",
+      "file": "history.json",
+      "count": 243
+    },
+    {
+      "id": "modern_society",
+      "name": "A Modern, Thriving Society",
+      "file": "modern_society.json",
+      "count": 164
+    },
+    {
+      "id": "government_law",
+      "name": "The UK Government, the Law and Your Role",
+      "file": "government_law.json",
+      "count": 160
+    }
+  ]
+}

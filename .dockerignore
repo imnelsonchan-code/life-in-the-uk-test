@@ -1,0 +1,9 @@
+.git
+.gitignore
+node_modules
+app/data/parts
+tools
+PLAN.md
+README.md
+*.log
+.DS_Store

@@ -1,0 +1,3136 @@
+[
+  {
+    "id": "soc-0001",
+    "category": "modern_society",
+    "subcategory": "religion-census",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "According to the 2021 Census for England and Wales, roughly what proportion of people described themselves as Christian?",
+    "options": [
+      "About 46%",
+      "About 25%",
+      "About 59%",
+      "About 80%"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the 2021 Census for England and Wales, about 46% of people identified as Christian and about 37% said they had no religion.",
+    "source": "Original practice question based on public facts"
+  },
+  {
+    "id": "soc-0002",
+    "category": "modern_society",
+    "subcategory": "religion-census",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Is this statement true? \"The 2021 Census found that about 37% of people in England and Wales said they had no religion.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 2021 Census found that about 37% of people in England and Wales said they had no religion.",
+    "source": "Original practice question based on public facts"
+  },
+  {
+    "id": "soc-0003",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which is the established church in England?",
+    "options": [
+      "The Church of England",
+      "The Church of Scotland",
+      "The Roman Catholic Church",
+      "The Free Church of England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Church of England, also called the Anglican Church, is the established church in England.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0004",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who is the spiritual leader of the Church of England?",
+    "options": [
+      "The Archbishop of Canterbury",
+      "The Moderator of the General Assembly",
+      "The Pope",
+      "The Speaker of the House of Commons"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Archbishop of Canterbury is the spiritual leader of the Church of England, whose head is the monarch.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0005",
+    "category": "modern_society",
+    "subcategory": "patron-saints",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO patron saints' days are official public holidays?",
+    "options": [
+      "St Andrew's Day",
+      "St George's Day",
+      "St David's Day",
+      "St Patrick's Day"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "explanation": "Only Scotland's St Andrew's Day and Northern Ireland's St Patrick's Day are official holidays; those of England and Wales are not.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0007",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Several Church of England bishops sit in the House of Lords.",
+      "The Church of England was founded in the 1830s.",
+      "The Archbishop of Canterbury leads the Church of Scotland.",
+      "The monarch is the head of the Church of Scotland."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Some Church of England bishops have seats in the House of Lords; the church dates from the Reformation of the 1530s.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0008",
+    "category": "modern_society",
+    "subcategory": "church-of-scotland",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Church of Scotland is governed by ministers and elders, which makes it which kind of church?",
+    "options": [
+      "Presbyterian",
+      "Anglican",
+      "Roman Catholic",
+      "Baptist"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Church of Scotland is a Presbyterian church governed by ministers and elders.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0009",
+    "category": "modern_society",
+    "subcategory": "established-church",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "There is an established church in Wales.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "There is no established church in Wales or Northern Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0010",
+    "category": "modern_society",
+    "subcategory": "places-of-worship",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Followers of which religion worship in a mosque?",
+    "options": [
+      "Muslims",
+      "Hindus",
+      "Jews",
+      "Sikhs"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Muslims worship in mosques, while Hindus use temples and Sikhs use gurdwaras.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0011",
+    "category": "modern_society",
+    "subcategory": "places-of-worship",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the name of the Sikh place of worship?",
+    "options": [
+      "A gurdwara",
+      "A synagogue",
+      "A mosque",
+      "A cathedral"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sikhs worship in a gurdwara; a synagogue is a Jewish place of worship and a mosque is Muslim.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0012",
+    "category": "modern_society",
+    "subcategory": "places-of-worship",
+    "type": "statement",
+    "difficulty": "easy",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Muslims worship in mosques, Hindus in temples and Jews in synagogues.",
+      "A gurdwara is a place of worship for Jews.",
+      "Buddhists worship in mosques.",
+      "Only members of the Church of England may enter a church."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Each faith has its own place of worship, such as mosques, temples, synagogues and gurdwaras.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0013",
+    "category": "modern_society",
+    "subcategory": "sikh-festivals",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these festivals are celebrated by Sikhs?",
+    "options": [
+      "Diwali",
+      "Vaisakhi",
+      "Hannukah",
+      "Eid al-Fitr"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Diwali is celebrated by Hindus and Sikhs, and Vaisakhi is a Sikh festival; Hannukah is Jewish and Eid is Muslim.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0014",
+    "category": "modern_society",
+    "subcategory": "diwali",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Diwali is commonly known by which name?",
+    "options": [
+      "The Festival of Lights",
+      "The Festival of the Dead",
+      "The Festival of Harvest",
+      "The Festival of Fire"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Diwali is called the Festival of Lights and is celebrated by Hindus and Sikhs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0015",
+    "category": "modern_society",
+    "subcategory": "diwali",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many days does the festival of Diwali normally last?",
+    "options": [
+      "Five",
+      "Two",
+      "Eight",
+      "Ten"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Diwali normally lasts for five days, usually in October or November.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0016",
+    "category": "modern_society",
+    "subcategory": "diwali",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which city is famous for a large public Diwali celebration?",
+    "options": [
+      "Leicester",
+      "Norwich",
+      "Aberdeen",
+      "Swansea"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Leicester is well known for its public Diwali celebrations.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0018",
+    "category": "modern_society",
+    "subcategory": "hannukah",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "During Hannukah, a candle is lit each day on which object?",
+    "options": [
+      "A menorah",
+      "A minaret",
+      "A monstrance",
+      "A maypole"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A candle is lit on each of the eight days of Hannukah on a candelabrum called a menorah.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0019",
+    "category": "modern_society",
+    "subcategory": "diwali",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which months does Diwali normally fall?",
+    "options": [
+      "October or November",
+      "January or February",
+      "June or July",
+      "March or April"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Diwali normally falls in October or November.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0020",
+    "category": "modern_society",
+    "subcategory": "hannukah",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Hannukah is celebrated in November or December and lasts for eight days.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hannukah is an eight-day Jewish festival that falls in November or December.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0021",
+    "category": "modern_society",
+    "subcategory": "islamic-festivals",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Eid al-Fitr marks the end of which period?",
+    "options": [
+      "Ramadan",
+      "Lent",
+      "Advent",
+      "Hannukah"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Eid al-Fitr celebrates the end of Ramadan, the month of fasting.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0022",
+    "category": "modern_society",
+    "subcategory": "islamic-festivals",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Muslims fast during which month?",
+    "options": [
+      "Ramadan",
+      "Easter",
+      "Diwali",
+      "Vaisakhi"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Ramadan is the month during which Muslims fast.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0023",
+    "category": "modern_society",
+    "subcategory": "islamic-festivals",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Eid ul Adha commemorates the willingness of which prophet to sacrifice his son?",
+    "options": [
+      "Ibrahim",
+      "Moses",
+      "David",
+      "Jonah"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Eid ul Adha commemorates the prophet Ibrahim's willingness to sacrifice his son.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0024",
+    "category": "modern_society",
+    "subcategory": "sikh-festivals",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Vaisakhi, celebrated on 14 April, marks the founding of what?",
+    "options": [
+      "The Khalsa",
+      "The Church of Scotland",
+      "The House of Lords",
+      "The Cenotaph"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Vaisakhi, also called Baisakhi, is a Sikh festival on 14 April celebrating the founding of the Khalsa.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0025",
+    "category": "modern_society",
+    "subcategory": "easter",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO days are public holidays marking the Easter period?",
+    "options": [
+      "Good Friday",
+      "Easter Monday",
+      "Shrove Tuesday",
+      "Ash Wednesday"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Good Friday and Easter Monday are public holidays; Shrove Tuesday and Ash Wednesday are not.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0026",
+    "category": "modern_society",
+    "subcategory": "christmas",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Christmas Day falls on which date?",
+    "options": [
+      "25 December",
+      "24 December",
+      "26 December",
+      "1 January"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Christmas Day is on 25 December and is a public holiday.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0027",
+    "category": "modern_society",
+    "subcategory": "christmas",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Boxing Day is celebrated on which date?",
+    "options": [
+      "26 December",
+      "25 December",
+      "2 January",
+      "6 January"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Boxing Day is on 26 December and is also a public holiday.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0028",
+    "category": "modern_society",
+    "subcategory": "lent",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is the day immediately before Lent called?",
+    "options": [
+      "Shrove Tuesday",
+      "Ash Wednesday",
+      "Good Friday",
+      "Palm Sunday"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The day before Lent begins is Shrove Tuesday; Lent itself starts on Ash Wednesday.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0029",
+    "category": "modern_society",
+    "subcategory": "lent",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Shrove Tuesday is also widely known as which day?",
+    "options": [
+      "Pancake Day",
+      "Poppy Day",
+      "Bonfire Night",
+      "Boxing Day"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Shrove Tuesday is also called Pancake Day.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0030",
+    "category": "modern_society",
+    "subcategory": "bank-holidays",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these bank holidays have no religious significance?",
+    "options": [
+      "The holiday at the beginning of May",
+      "The holiday in August",
+      "Christmas Day",
+      "Easter Monday"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The early May and August bank holidays have no religious significance, unlike Christmas and Easter.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0031",
+    "category": "modern_society",
+    "subcategory": "lent",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How many days does Lent last?",
+    "options": [
+      "40",
+      "30",
+      "50",
+      "12"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Lent is the 40-day period before Easter.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0033",
+    "category": "modern_society",
+    "subcategory": "halloween",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Halloween is celebrated on which date?",
+    "options": [
+      "31 October",
+      "5 November",
+      "1 November",
+      "1 April"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Halloween is celebrated on 31 October.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0034",
+    "category": "modern_society",
+    "subcategory": "halloween",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Halloween has its origins in which older observance?",
+    "options": [
+      "A pagan festival marking the start of winter",
+      "The Gunpowder Plot",
+      "A Roman harvest thanksgiving",
+      "The Battle of the Boyne"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Halloween's roots lie in a pagan festival that marked the start of winter.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0035",
+    "category": "modern_society",
+    "subcategory": "bonfire-night",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Bonfire Night takes place on which date?",
+    "options": [
+      "5 November",
+      "11 November",
+      "31 October",
+      "1 May"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bonfire Night is held on 5 November.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0036",
+    "category": "modern_society",
+    "subcategory": "bonfire-night",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Bonfire Night commemorates which event?",
+    "options": [
+      "The Gunpowder Plot of 1605",
+      "The Battle of the Boyne",
+      "The Great Fire of London",
+      "The coronation of Elizabeth I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bonfire Night on 5 November remembers the 1605 Gunpowder Plot.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0037",
+    "category": "modern_society",
+    "subcategory": "remembrance-day",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Remembrance Day is observed on which date?",
+    "options": [
+      "11 November",
+      "5 November",
+      "1 November",
+      "14 February"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Remembrance Day is observed on 11 November each year.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0038",
+    "category": "modern_society",
+    "subcategory": "remembrance-day",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO customs are associated with Remembrance Day?",
+    "options": [
+      "Wearing a poppy",
+      "A two-minute silence at 11 a.m.",
+      "Lighting a menorah",
+      "Setting off fireworks for the Gunpowder Plot"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "On Remembrance Day people wear poppies and observe a two-minute silence at 11 a.m.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0039",
+    "category": "modern_society",
+    "subcategory": "remembrance-day",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "On Remembrance Day, wreaths are laid at the Cenotaph in Whitehall.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Wreaths are laid at the Cenotaph in Whitehall as part of Remembrance Day commemorations.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0040",
+    "category": "modern_society",
+    "subcategory": "other-celebrations",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Valentine's Day is celebrated on which date?",
+    "options": [
+      "14 February",
+      "14 March",
+      "1 April",
+      "3 June"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Valentine's Day is celebrated on 14 February.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0041",
+    "category": "modern_society",
+    "subcategory": "other-celebrations",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "According to tradition, jokes on April Fool's Day should stop at what time?",
+    "options": [
+      "Midday",
+      "Midnight",
+      "4 p.m.",
+      "Sunrise"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "By tradition, April Fool's Day jokes are meant to end at midday on 1 April.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0042",
+    "category": "modern_society",
+    "subcategory": "other-celebrations",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "When does Mothering Sunday fall?",
+    "options": [
+      "Three weeks before Easter",
+      "The third Sunday in June",
+      "The first Sunday in May",
+      "Three weeks after Christmas"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Mothering Sunday falls three weeks before Easter.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0043",
+    "category": "modern_society",
+    "subcategory": "other-celebrations",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "On which day is Father's Day celebrated in the UK?",
+    "options": [
+      "The third Sunday in June",
+      "The first Sunday in March",
+      "The second Sunday in May",
+      "The last Sunday in April"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Father's Day is celebrated on the third Sunday in June.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0044",
+    "category": "modern_society",
+    "subcategory": "new-year",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What is 31 December called in Scotland?",
+    "options": [
+      "Hogmanay",
+      "Burns Night",
+      "Beltane",
+      "Up Helly Aa"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In Scotland, 31 December is known as Hogmanay.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0045",
+    "category": "modern_society",
+    "subcategory": "new-year",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "In Scotland, 2 January is also a public holiday.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In Scotland, New Year's Day and 2 January are both public holidays.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0046",
+    "category": "modern_society",
+    "subcategory": "bank-holidays",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "There are bank holidays at the beginning of May, in late May or early June, and in August.",
+      "There is a bank holiday every week in August.",
+      "Bank holidays only occur in December.",
+      "The August bank holiday is a religious festival."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bank holidays without religious significance fall at the start of May, in late May or early June, and in August.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0047",
+    "category": "modern_society",
+    "subcategory": "northern-ireland",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "A public holiday in Northern Ireland in July marks the anniversary of which battle?",
+    "options": [
+      "The Battle of the Boyne",
+      "The Battle of Britain",
+      "The Battle of Hastings",
+      "The Battle of Trafalgar"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In Northern Ireland, the anniversary of the Battle of the Boyne in July is a public holiday.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0048",
+    "category": "modern_society",
+    "subcategory": "currency",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements about UK currency are correct?",
+    "options": [
+      "Scotland and Northern Ireland issue their own banknotes",
+      "There are 100 pence in a pound",
+      "Shops are legally obliged to accept Scottish banknotes",
+      "Northern Ireland uses the euro"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Scotland and Northern Ireland have their own banknotes and there are 100 pence in a pound, but shops need not accept those notes.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0051",
+    "category": "modern_society",
+    "subcategory": "religious-freedom",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Everyone has the legal right to choose their religion or to practise none.",
+      "Only Christians are allowed to practise their religion in public.",
+      "The Church of England is the established church in Wales.",
+      "It is illegal to change your religion."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the UK everyone has the legal right to choose their religion or to practise none.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0052",
+    "category": "modern_society",
+    "subcategory": "diversity",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "About one in six people were born outside the UK.",
+      "Almost everyone in the UK was born in the UK.",
+      "More than half the population has no religion.",
+      "The UK population is entirely Christian."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK is a diverse, multiracial society. In the 2021 Census, about 17% of people in England and Wales (roughly one in six) were born outside the UK.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0053",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Church of England dates from the Reformation in the 1530s.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Church of England is a Protestant church dating from the Reformation in the 1530s.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0054",
+    "category": "modern_society",
+    "subcategory": "church-of-scotland",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "The Moderator who chairs the General Assembly of the Church of Scotland is appointed for one year.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Church of Scotland's General Assembly is chaired by the Moderator, who is appointed for one year.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0055",
+    "category": "modern_society",
+    "subcategory": "protestant-groups",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are Protestant groups found in the UK?",
+    "options": [
+      "Baptists",
+      "Quakers",
+      "Roman Catholics",
+      "Buddhists"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Baptists and Quakers are Protestant groups; Roman Catholics form the largest other denomination and Buddhists are a separate faith.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0057",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which sport is the most popular in the UK?",
+    "options": [
+      "Cricket",
+      "Rugby",
+      "Football",
+      "Tennis"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Football is the UK's most popular sport, with a large number of professional and amateur clubs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0058",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which city is Wembley Stadium located?",
+    "options": [
+      "London",
+      "Cardiff",
+      "Manchester",
+      "Glasgow"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Wembley Stadium is a major national stadium in London, while the Principality Stadium is in Cardiff.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0059",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The Principality Stadium is a major sports venue in which UK capital city?",
+    "options": [
+      "London",
+      "Cardiff",
+      "Edinburgh",
+      "Belfast"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Principality Stadium is a well-known national stadium in Cardiff, the capital of Wales.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0060",
+    "category": "modern_society",
+    "subcategory": "olympics",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many times has the UK hosted the Olympic Games?",
+    "options": [
+      "Once",
+      "Twice",
+      "Four times",
+      "Three times"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "The UK has hosted the Olympic Games three times, in 1908, 1948 and 2012.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0061",
+    "category": "modern_society",
+    "subcategory": "olympics",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which part of London was the main site of the 2012 Olympic Games?",
+    "options": [
+      "Stratford",
+      "Greenwich",
+      "Wembley",
+      "Camden"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The main 2012 Olympic site was built in Stratford, in east London.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0062",
+    "category": "modern_society",
+    "subcategory": "paralympics",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The Paralympic movement began with the work of Dr Sir Ludwig Guttmann at which hospital?",
+    "options": [
+      "Guy's Hospital",
+      "St Thomas' Hospital",
+      "Stoke Mandeville",
+      "Great Ormond Street Hospital"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "The Paralympic Games originated in the work of the German refugee Dr Sir Ludwig Guttmann at Stoke Mandeville hospital in Buckinghamshire.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0063",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who was the first person to run a mile in under four minutes?",
+    "options": [
+      "Sir Steve Redgrave",
+      "Sir Roger Bannister",
+      "Sir Chris Hoy",
+      "Bobby Moore"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Sir Roger Bannister became the first man to run a mile in under four minutes, in 1954.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0064",
+    "category": "modern_society",
+    "subcategory": "motor-sport",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which Scottish racing driver won the Formula 1 world championship three times?",
+    "options": [
+      "Damon Hill",
+      "Jenson Button",
+      "Sir Bradley Wiggins",
+      "Sir Jackie Stewart"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Sir Jackie Stewart, a Scottish racing driver, won the Formula 1 world championship three times.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0065",
+    "category": "modern_society",
+    "subcategory": "football",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who captained the England football team that won the World Cup in 1966?",
+    "options": [
+      "Bobby Moore",
+      "Sir Geoff Hurst",
+      "Sir Bobby Charlton",
+      "Sir Stanley Matthews"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bobby Moore captained the England team that won the World Cup in 1966, the only time England has won the tournament.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0066",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Jayne Torvill and Christopher Dean won Olympic gold in which sport?",
+    "options": [
+      "Rowing",
+      "Cycling",
+      "Ice dancing",
+      "Swimming"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Jayne Torvill and Christopher Dean won Olympic gold for ice dancing in 1984.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0067",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "At how many consecutive Olympic Games did Sir Steve Redgrave win rowing gold medals?",
+    "options": [
+      "Three",
+      "Five",
+      "Four",
+      "Six"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Sir Steve Redgrave won rowing gold medals at five consecutive Olympic Games.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0068",
+    "category": "modern_society",
+    "subcategory": "paralympics",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "How many Paralympic medals did Baroness Tanni Grey-Thompson win?",
+    "options": [
+      "16",
+      "8",
+      "11",
+      "24"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Baroness Tanni Grey-Thompson won 16 Paralympic medals, 11 of them gold.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0069",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "At which Olympic Games did Dame Kelly Holmes win two gold medals for running?",
+    "options": [
+      "1996",
+      "2000",
+      "1992",
+      "2004"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Dame Kelly Holmes won two gold medals for running at the 2004 Olympic Games.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0070",
+    "category": "modern_society",
+    "subcategory": "water-sports",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What record did Dame Ellen MacArthur set in 2005?",
+    "options": [
+      "First woman to cross the Atlantic alone",
+      "Longest single voyage ever made",
+      "Fastest solo circumnavigation of the world",
+      "First person to sail non-stop around the world"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "In 2005, after setting off in November 2004, Dame Ellen MacArthur became the fastest person to sail single-handed around the world.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0071",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Sir Chris Hoy, who won six Olympic gold medals, competed in which sport?",
+    "options": [
+      "Rowing",
+      "Cycling",
+      "Athletics",
+      "Swimming"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Sir Chris Hoy was a Scottish cyclist who won six Olympic golds and 11 world titles.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0072",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Sir Bradley Wiggins became the first Briton to win which event in 2012?",
+    "options": [
+      "The Tour de France",
+      "The London Marathon",
+      "Wimbledon",
+      "The Boat Race"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 2012 Sir Bradley Wiggins became the first Briton to win the Tour de France.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0073",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which two events did Sir Mo Farah win Olympic gold in 2012 and 2016?",
+    "options": [
+      "100m and 200m",
+      "800m and 1,500m",
+      "Marathon and 10,000m",
+      "5,000m and 10,000m"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Sir Mo Farah, a distance runner born in Somalia, won Olympic gold in the 5,000m and 10,000m in 2012 and 2016.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0074",
+    "category": "modern_society",
+    "subcategory": "cricket",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The Ashes is a series of Test cricket matches between England and which country?",
+    "options": [
+      "India",
+      "Australia",
+      "South Africa",
+      "New Zealand"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Ashes is a series of Test matches played between England and Australia.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0075",
+    "category": "modern_society",
+    "subcategory": "cricket",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How long can a Test cricket match last?",
+    "options": [
+      "One day",
+      "Two days",
+      "Up to five days",
+      "Three weeks"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Cricket games such as Test matches can last up to five days.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0076",
+    "category": "modern_society",
+    "subcategory": "rugby",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which rugby union competition features England, Ireland, Scotland, Wales, France and Italy?",
+    "options": [
+      "The Six Nations",
+      "The Super League",
+      "The Ashes",
+      "The Grand National"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Six Nations is the most famous rugby union competition, contested by England, Ireland, Scotland, Wales, France and Italy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0077",
+    "category": "modern_society",
+    "subcategory": "horse-racing",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "At which racecourse is the Grand National run?",
+    "options": [
+      "Ascot",
+      "Newmarket",
+      "Ayr",
+      "Aintree"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "The Grand National is run at Aintree, near Liverpool.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0078",
+    "category": "modern_society",
+    "subcategory": "golf",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which Scottish town is known as the home of golf?",
+    "options": [
+      "Ayr",
+      "St Andrews",
+      "Edinburgh",
+      "Glasgow"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The modern game of golf can be traced to 15th-century Scotland, and St Andrews is known as the home of golf.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0079",
+    "category": "modern_society",
+    "subcategory": "tennis",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Wimbledon Championships is the only Grand Slam tennis tournament played on which surface?",
+    "options": [
+      "Grass",
+      "Clay",
+      "Hard court",
+      "Carpet"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Wimbledon is the oldest tennis tournament in the world and the only Grand Slam played on grass.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0080",
+    "category": "modern_society",
+    "subcategory": "water-sports",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What was notable about Sir Robin Knox-Johnston's voyage in 1968-69?",
+    "options": [
+      "He crossed the Atlantic in a rowing boat",
+      "He sailed around Britain in a week",
+      "He sailed single-handed around the world without stopping",
+      "He was the first to take a steamship around the world"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Sir Robin Knox-Johnston was the first person to sail single-handed around the world without stopping.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0081",
+    "category": "modern_society",
+    "subcategory": "water-sports",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The famous sailing event at Cowes takes place on which island?",
+    "options": [
+      "The Isle of Man",
+      "Anglesey",
+      "The Isle of Skye",
+      "The Isle of Wight"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "The famous sailing event at Cowes is held on the Isle of Wight.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0082",
+    "category": "modern_society",
+    "subcategory": "water-sports",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The Oxford and Cambridge boat race is rowed on which river?",
+    "options": [
+      "The Mersey",
+      "The Thames",
+      "The Clyde",
+      "The Severn"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The annual Oxford and Cambridge boat race takes place on the River Thames.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0083",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Proms, an eight-week summer season of classical music, is organised by which organisation?",
+    "options": [
+      "The BBC",
+      "The National Trust",
+      "The Arts Council",
+      "The Royal Academy"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Proms is a summer season of orchestral classical music at venues including the Royal Albert Hall, organised by the BBC since 1927.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0084",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which composer was German-born but became a British citizen in 1727?",
+    "options": [
+      "Henry Purcell",
+      "Edward Elgar",
+      "George Frederick Handel",
+      "Gustav Holst"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "George Frederick Handel was German-born, became a British citizen in 1727, and wrote works including Water Music and Messiah.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0085",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which composer wrote the Pomp and Circumstance Marches?",
+    "options": [
+      "Benjamin Britten",
+      "Sir Edward Elgar",
+      "Gustav Holst",
+      "William Walton"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Sir Edward Elgar wrote the Pomp and Circumstance Marches.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0086",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Benjamin Britten founded a well-known music festival in which town?",
+    "options": [
+      "Newmarket",
+      "Ayr",
+      "Cowes",
+      "Aldeburgh"
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "Benjamin Britten wrote operas including Peter Grimes and Billy Budd and founded the Aldeburgh festival.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0088",
+    "category": "modern_society",
+    "subcategory": "leisure",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What is an allotment?",
+    "options": [
+      "A public park owned by the council",
+      "A type of small cottage",
+      "A plot of rented land used for growing fruit and vegetables",
+      "A shared village hall"
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "An allotment is a plot of land rented from a local authority or other body, used for growing fruit and vegetables.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0089",
+    "category": "modern_society",
+    "subcategory": "poetry",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The Canterbury Tales by Geoffrey Chaucer is a collection of which of the following?",
+    "options": [
+      "A series of poems about pilgrims travelling to Canterbury",
+      "A history of the Norman Conquest",
+      "The collected sonnets of William Shakespeare",
+      "A diary of the Great Fire of London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Canterbury Tales is a series of poems about a group of pilgrims travelling to Canterbury, who tell each other stories on the journey.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0090",
+    "category": "modern_society",
+    "subcategory": "art",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which artist is famous for landscape paintings of Dedham Vale?",
+    "options": [
+      "John Constable",
+      "Thomas Gainsborough",
+      "Lucian Freud",
+      "David Hockney"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "John Constable is famous for landscape paintings of the area around Dedham Vale.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0091",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Last Night of the Proms is the best-known concert of the Proms season.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Last Night of the Proms is the best-known concert of the annual Proms season.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0093",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Mercury Music Prize is awarded each year for the best album from the UK and Ireland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Mercury Music Prize is awarded each year (usually in September or October) for the best album from the UK and Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0094",
+    "category": "modern_society",
+    "subcategory": "theatre",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Mousetrap has been running in London's West End since 1952.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Mousetrap, a murder-mystery play by Dame Agatha Christie, has run in the West End since 1952.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0095",
+    "category": "modern_society",
+    "subcategory": "theatre",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "In a traditional pantomime, the Dame is played by a woman.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "In a traditional pantomime the Dame is a woman's role traditionally played by a man.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0096",
+    "category": "modern_society",
+    "subcategory": "art",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "The Turner Prize was established in 1984 and is named after the painter Joseph Turner.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Turner Prize was established in 1984 and is named after the landscape painter Joseph Turner.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0097",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Booker Prize for Fiction was first awarded in 1969.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The prize was established in 1968 and first awarded in 1969. It was known as the Man Booker Prize from 2002 to 2019, and is now simply The Booker Prize.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0098",
+    "category": "modern_society",
+    "subcategory": "leisure",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Mount Stewart, a well-known garden, is located in Wales.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Mount Stewart is a famous garden in Northern Ireland, not Wales.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0099",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of the following sports are generally regarded as having originated in Britain?",
+    "options": [
+      "Basketball",
+      "Cricket",
+      "Golf",
+      "Ice hockey"
+    ],
+    "answer": [
+      1,
+      2
+    ],
+    "explanation": "Cricket and golf began in Britain, along with football, lawn tennis and rugby.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0100",
+    "category": "modern_society",
+    "subcategory": "theatre",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of these works were written by Gilbert and Sullivan?",
+    "options": [
+      "Messiah",
+      "The Planets",
+      "HMS Pinafore",
+      "The Mikado"
+    ],
+    "answer": [
+      2,
+      3
+    ],
+    "explanation": "Gilbert and Sullivan wrote comic operas including HMS Pinafore, The Pirates of Penzance and The Mikado.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0101",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these novels were written by Charles Dickens?",
+    "options": [
+      "Pride and Prejudice",
+      "Oliver Twist",
+      "Treasure Island",
+      "Great Expectations"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Charles Dickens wrote Oliver Twist and Great Expectations, among many other novels.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0102",
+    "category": "modern_society",
+    "subcategory": "poetry",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these poets are associated with the First World War?",
+    "options": [
+      "John Keats",
+      "Wilfred Owen",
+      "Lord Byron",
+      "Siegfried Sassoon"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Wilfred Owen and Siegfried Sassoon were poets associated with the First World War.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0103",
+    "category": "modern_society",
+    "subcategory": "leisure",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these gardens are located in England?",
+    "options": [
+      "Bodnant Garden",
+      "Mount Stewart",
+      "Sissinghurst",
+      "Hidcote"
+    ],
+    "answer": [
+      2,
+      3
+    ],
+    "explanation": "Sissinghurst and Hidcote are famous English gardens; Bodnant Garden is in Wales and Mount Stewart is in Northern Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0104",
+    "category": "modern_society",
+    "subcategory": "architecture",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of the following are well-known British architects?",
+    "options": [
+      "Frank Lloyd Wright",
+      "Sir Norman Foster",
+      "I. M. Pei",
+      "Dame Zaha Hadid"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "Sir Norman Foster and Dame Zaha Hadid are among the well-known modern British architects, along with Lord Richard Rogers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0105",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these places of interest are in Northern Ireland?",
+    "options": [
+      "Snowdonia",
+      "The Giant's Causeway",
+      "Stonehenge",
+      "Mount Stewart"
+    ],
+    "answer": [
+      1,
+      3
+    ],
+    "explanation": "The Giant's Causeway and Mount Stewart are in Northern Ireland; Snowdonia is in Wales and Stonehenge is in England.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0106",
+    "category": "modern_society",
+    "subcategory": "architecture",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Sir Christopher Wren designed the Cenotaph in Whitehall.",
+      "Sir Edwin Lutyens designed the Banqueting House in Whitehall.",
+      "Inigo Jones designed the Queen's House at Greenwich.",
+      "Robert Adam designed St Paul's Cathedral after the Great Fire."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Inigo Jones designed the Queen's House at Greenwich and the Banqueting House in Whitehall.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0107",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "statement",
+    "difficulty": "easy",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Ian Fleming created the detective Sherlock Holmes.",
+      "JRR Tolkien's The Lord of the Rings was voted the country's best-loved novel in 2003.",
+      "Charles Dickens created the character James Bond.",
+      "Agatha Christie wrote The Lord of the Rings."
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "JRR Tolkien's The Lord of the Rings was voted the country's best-loved novel in 2003.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0108",
+    "category": "modern_society",
+    "subcategory": "art",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Henry Moore was best known for watercolour landscapes.",
+      "Thomas Gainsborough was a leading sculptor of large bronze figures.",
+      "David Hockney was a nineteenth-century landscape painter.",
+      "The Pre-Raphaelites painted detailed religious or literary scenes in bright colours."
+    ],
+    "answer": [
+      3
+    ],
+    "explanation": "The Pre-Raphaelites painted detailed religious or literary scenes in bright colours.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0109",
+    "category": "modern_society",
+    "subcategory": "poetry",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "John Milton wrote the epic poem Paradise Lost.",
+      "Geoffrey Chaucer wrote Paradise Lost.",
+      "William Wordsworth wrote the Canterbury Tales.",
+      "Alfred Lord Tennyson wrote Beowulf."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "John Milton wrote the epic poem Paradise Lost.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0110",
+    "category": "modern_society",
+    "subcategory": "theatre",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Gilbert and Sullivan wrote the musical Jesus Christ Superstar.",
+      "The Mousetrap was written by Andrew Lloyd Webber.",
+      "Andrew Lloyd Webber wrote the music for The Phantom of the Opera.",
+      "Dame Agatha Christie wrote the opera The Mikado."
+    ],
+    "answer": [
+      2
+    ],
+    "explanation": "Andrew Lloyd Webber wrote the music for Jesus Christ Superstar, Evita, Cats and The Phantom of the Opera.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0111",
+    "category": "modern_society",
+    "subcategory": "patron-saints",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "On which date is St David's Day, the national day of Wales?",
+    "options": [
+      "1 March",
+      "17 March",
+      "23 April",
+      "30 November"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St David's Day, the national day of Wales, falls on 1 March.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0112",
+    "category": "modern_society",
+    "subcategory": "patron-saints",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these patron saints' days fall in the month of March?",
+    "options": [
+      "St David's Day",
+      "St Patrick's Day",
+      "St George's Day",
+      "St Andrew's Day"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "St David's Day is on 1 March and St Patrick's Day is on 17 March; St George's Day is 23 April and St Andrew's Day is 30 November.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0114",
+    "category": "modern_society",
+    "subcategory": "patron-saints-emblems",
+    "type": "statement",
+    "difficulty": "easy",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The rose is associated with England and the thistle with Scotland.",
+      "The shamrock is associated with Wales.",
+      "The daffodil is associated with Northern Ireland.",
+      "The thistle is associated with Wales."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "England is associated with the rose and Scotland with the thistle; Wales is associated with the daffodil and Northern Ireland with the shamrock.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0115",
+    "category": "modern_society",
+    "subcategory": "christian-denominations",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these are Protestant Christian groups in the UK?",
+    "options": [
+      "Methodists",
+      "Presbyterians",
+      "Roman Catholics",
+      "Buddhists"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Methodists and Presbyterians are Protestant Christian groups in the UK, alongside Baptists and Quakers; Roman Catholics are a separate denomination and Buddhists are a different faith.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0116",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Archbishop of Canterbury is usually chosen by the Prime Minister and a committee appointed by the Church.",
+      "The Archbishop of Canterbury is elected by the House of Commons.",
+      "The Church of England is part of the Roman Catholic Church.",
+      "There is no constitutional link between the Church of England and the state."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The monarch has the right to select the Archbishop and other senior officials, but usually the choice is made by the Prime Minister and a committee appointed by the Church.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0117",
+    "category": "modern_society",
+    "subcategory": "religion-census",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In the 2021 Census for England and Wales, roughly what proportion of people identified themselves as Muslim?",
+    "options": [
+      "About 6%",
+      "About 12%",
+      "About 1.5%",
+      "About 25%"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the 2021 Census for England and Wales, about 6% of people identified as Muslim; Hindus made up about 2% and Sikhs about 1%.",
+    "source": "Original practice question based on public facts"
+  },
+  {
+    "id": "soc-0118",
+    "category": "modern_society",
+    "subcategory": "church-names",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Church of England is known as the Episcopal Church in Scotland and the United States.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Church of England is called the Anglican Church in other countries and the Episcopal Church in Scotland and the United States.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0119",
+    "category": "modern_society",
+    "subcategory": "jewish-festivals",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Hannukah remembers the Jewish struggle for religious freedom.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hannukah is an eight-day festival that remembers the Jews' struggle for religious freedom.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0120",
+    "category": "modern_society",
+    "subcategory": "rugby",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the Super League?",
+    "options": [
+      "The most well-known rugby league club competition",
+      "The most famous rugby union competition",
+      "A competition for cricket Test matches",
+      "A tennis tournament played on grass"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Super League is the most well-known rugby league club competition, while the Six Nations is the most famous rugby union competition.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0121",
+    "category": "modern_society",
+    "subcategory": "golf",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is notable about golf's Open Championship?",
+    "options": [
+      "It is the only Major tournament held outside the United States",
+      "It is played only in Scotland",
+      "It is the only tournament played on grass",
+      "It is held only every four years"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Open Championship is the only golf Major tournament held outside the United States, and it is hosted by a different course every year.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0122",
+    "category": "modern_society",
+    "subcategory": "tennis",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Where was the first tennis club founded in 1872?",
+    "options": [
+      "Leamington Spa",
+      "Wimbledon",
+      "St Andrews",
+      "Cowes"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first tennis club was founded in Leamington Spa in 1872, as modern tennis evolved in England in the late 19th century.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0123",
+    "category": "modern_society",
+    "subcategory": "horse-racing",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Royal Ascot, the five-day race meeting attended by members of the Royal Family, is held in which county?",
+    "options": [
+      "Berkshire",
+      "Suffolk",
+      "Merseyside",
+      "Ayrshire"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Royal Ascot is a five-day race meeting held in Berkshire and attended by members of the Royal Family.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0124",
+    "category": "modern_society",
+    "subcategory": "motor-sport",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Motor-car racing in the UK began in 1902.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "There is a long history of motor sport in the UK, and motor-car racing began in 1902.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0125",
+    "category": "modern_society",
+    "subcategory": "motor-sport",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these drivers won the Formula 1 World Championship for Britain in recent years?",
+    "options": [
+      "Damon Hill",
+      "Lewis Hamilton",
+      "Michael Schumacher",
+      "Sebastian Vettel"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Recent British winners of the Formula 1 World Championship include Damon Hill, Lewis Hamilton and Jenson Button.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0126",
+    "category": "modern_society",
+    "subcategory": "cricket",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Sir Ian Botham captained the English national team in which sport?",
+    "options": [
+      "Cricket",
+      "Rugby",
+      "Football",
+      "Golf"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sir Ian Botham captained the English cricket team and held a number of English Test cricket records for batting and bowling.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0127",
+    "category": "modern_society",
+    "subcategory": "poetry",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which poet wrote the famous lines about 'a host of golden daffodils'?",
+    "options": [
+      "William Wordsworth",
+      "Lord Byron",
+      "John Milton",
+      "Wilfred Owen"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William Wordsworth wrote the poem The Daffodils, which describes 'a host of golden daffodils'.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0128",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these writers have won the Nobel Prize in Literature?",
+    "options": [
+      "Sir William Golding",
+      "Seamus Heaney",
+      "Jane Austen",
+      "J K Rowling"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The novelist Sir William Golding and the poet Seamus Heaney have won the Nobel Prize in Literature, as has the playwright Harold Pinter.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0129",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these books was written by Robert Louis Stevenson?",
+    "options": [
+      "Treasure Island",
+      "Oliver Twist",
+      "Pride and Prejudice",
+      "Great Expectations"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Robert Louis Stevenson wrote Treasure Island, Kidnapped and Dr Jekyll and Mr Hyde.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0130",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which composer wrote the suite of pieces called The Planets?",
+    "options": [
+      "Gustav Holst",
+      "Sir Edward Elgar",
+      "Benjamin Britten",
+      "Henry Purcell"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Gustav Holst wrote The Planets, a suite of pieces themed around the planets and the solar system.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0131",
+    "category": "modern_society",
+    "subcategory": "art",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Henry Moore is best known for his large bronze abstract sculptures.",
+      "Henry Moore was famous for watercolour landscapes of Dedham Vale.",
+      "Henry Moore wrote the music for The Planets.",
+      "Henry Moore was a Northern Irish portrait painter."
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry Moore was an English sculptor best known for his large bronze abstract sculptures.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0132",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Eden Project, with its giant greenhouse-like biomes, is located in Cornwall.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Eden Project is in Cornwall, in the south west of England, and its biomes house plants from all over the world.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0133",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is Big Ben actually the nickname for?",
+    "options": [
+      "The great bell of the clock at the Houses of Parliament",
+      "The clock tower of the Tower of London",
+      "The bell of St Paul's Cathedral",
+      "The clock on Edinburgh Castle"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Big Ben is the nickname for the great bell of the clock at the Houses of Parliament in London; the clock tower itself is named Elizabeth Tower.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0134",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "There are 15 national parks in England, Wales and Scotland.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "There are 15 national parks in England, Wales and Scotland; they are areas of protected countryside that everyone can visit.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0135",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which is the largest expanse of fresh water in mainland Britain?",
+    "options": [
+      "Loch Lomond",
+      "Windermere",
+      "Loch Ness",
+      "Lake Bala"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Loch Lomond, in the Loch Lomond and the Trossachs National Park, is the largest expanse of fresh water in mainland Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "soc-0140",
+    "category": "modern_society",
+    "subcategory": "church-of-england",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"The monarch has the right to select the Archbishop of Canterbury and other Church of England bishops.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The monarch has the right to select the Archbishop of Canterbury and other senior Church of England bishops.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0141",
+    "category": "modern_society",
+    "subcategory": "festivals",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these religions celebrate the festival of Diwali?",
+    "options": [
+      "Hinduism",
+      "Sikhism",
+      "Islam",
+      "Judaism"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Diwali, the Festival of Lights, is celebrated by Hindus and Sikhs. It usually falls in October or November.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0144",
+    "category": "modern_society",
+    "subcategory": "food",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which traditional dish is associated with Northern Ireland?",
+    "options": [
+      "Ulster fry",
+      "Haggis",
+      "Welsh cakes",
+      "Roast beef"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Ulster fry, a fried meal with bacon, eggs, sausage and other items, is a traditional dish of Northern Ireland.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0145",
+    "category": "modern_society",
+    "subcategory": "food",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Roast beef is a traditional food associated with which part of the UK?",
+    "options": [
+      "England",
+      "Scotland",
+      "Wales",
+      "Northern Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Roast beef, often served with potatoes, is a traditional English dish.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0148",
+    "category": "modern_society",
+    "subcategory": "sportsperson",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Mo Farah won Olympic gold for Great Britain in which event?",
+    "options": [
+      "10,000 metres",
+      "100 metres",
+      "The marathon",
+      "400 metres"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Mo Farah was the first British runner to win Olympic gold in the 10,000 metres, and he went on to win multiple distance golds.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0150",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Grand National, a famous horse race, is held near which city?",
+    "options": [
+      "Liverpool",
+      "London",
+      "Edinburgh",
+      "Cardiff"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Grand National is a famous horse race held at Aintree, near Liverpool.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0152",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Proms is an eight-week summer season of which type of music?",
+    "options": [
+      "Orchestral classical music",
+      "Rock music",
+      "Folk dancing",
+      "Jazz only"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Proms is an eight-week summer season of orchestral and solo instrumental classical music.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0154",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "'To be, or not to be' is a famous line from which play by Shakespeare?",
+    "options": [
+      "Hamlet",
+      "Macbeth",
+      "King Lear",
+      "Othello"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "'To be, or not to be' is one of the most famous lines from Shakespeare's play Hamlet.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0156",
+    "category": "modern_society",
+    "subcategory": "media",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The BBC is funded mainly by which of the following?",
+    "options": [
+      "Television licences",
+      "Advertising",
+      "Government grants",
+      "Subscription fees"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Money from TV licences funds the BBC. A TV licence is required to watch or record live television.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0158",
+    "category": "modern_society",
+    "subcategory": "media",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Is this statement true? \"One TV licence covers all the equipment at one address, but people who rent separate rooms in a shared house may need their own licence.\"",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "One TV licence covers all the equipment at a single address, but people who rent different rooms in a shared house may each need a separate licence.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0159",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Stonehenge, the ancient monument, stands in which English county?",
+    "options": [
+      "Wiltshire",
+      "Kent",
+      "Yorkshire",
+      "Cornwall"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Stonehenge still stands in what is now the English county of Wiltshire.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0160",
+    "category": "modern_society",
+    "subcategory": "places-of-interest",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Giant's Causeway in Northern Ireland is a formation of columns made from what?",
+    "options": [
+      "Volcanic lava",
+      "Sandstone",
+      "Limestone",
+      "Compacted ice"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Giant's Causeway, on the north-east coast of Northern Ireland, is a land formation of columns made from volcanic lava.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0162",
+    "category": "modern_society",
+    "subcategory": "science",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which scientist, born in Lincolnshire and educated at Cambridge, is famous for his work on gravity and motion?",
+    "options": [
+      "Isaac Newton",
+      "Charles Darwin",
+      "Michael Faraday",
+      "Alexander Fleming"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Isaac Newton, born in Lincolnshire and educated at Cambridge, developed ideas about gravity and the laws of motion.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0163",
+    "category": "modern_society",
+    "subcategory": "science",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which Scottish scientist developed radar, which helped to detect enemy aircraft?",
+    "options": [
+      "Sir Robert Watson-Watt",
+      "Alexander Fleming",
+      "Tim Berners-Lee",
+      "Sir Isaac Newton"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Radar was developed by the Scotsman Sir Robert Watson-Watt, who proposed that enemy aircraft could be detected using radio waves.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0165",
+    "category": "modern_society",
+    "subcategory": "charities",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The NSPCC is a UK charity that works to help which group?",
+    "options": [
+      "Children",
+      "The homeless",
+      "Older people",
+      "Animals"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The National Society for the Prevention of Cruelty to Children (NSPCC) is a charity that works to protect children.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0166",
+    "category": "modern_society",
+    "subcategory": "landscape",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which is the largest national park in England?",
+    "options": [
+      "The Lake District",
+      "Snowdonia",
+      "The Cairngorms",
+      "Dartmoor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Lake District, in north-west England, is the largest national park in England. Snowdonia is in Wales and the Cairngorms are in Scotland.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0167",
+    "category": "modern_society",
+    "subcategory": "landscape",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which area was voted Britain's favourite view in 2007?",
+    "options": [
+      "The Lake District",
+      "The White Cliffs of Dover",
+      "Ben Nevis",
+      "The Giant's Causeway"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A national poll in 2007 chose the Lake District as Britain's favourite view.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0168",
+    "category": "modern_society",
+    "subcategory": "tourism",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What is the name given to the guides who tell visitors about the history of the Tower of London?",
+    "options": [
+      "Beefeaters",
+      "Grenadiers",
+      "Cavaliers",
+      "Courtiers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The guides at the Tower of London are known as Beefeaters, and they also guard the Crown Jewels.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0169",
+    "category": "modern_society",
+    "subcategory": "arts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The area of central London with many famous theatres is known as what?",
+    "options": [
+      "Theatreland",
+      "The City",
+      "Mayfair",
+      "The South Bank"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The West End of London, with its many famous theatres, is known as Theatreland.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0170",
+    "category": "modern_society",
+    "subcategory": "film",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The animated characters Wallace and Gromit were created by which British film-maker?",
+    "options": [
+      "Nick Park",
+      "Alfred Hitchcock",
+      "Danny Boyle",
+      "Ridley Scott"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Nick Park created Wallace and Gromit and has won several Academy Awards for his animated films.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0171",
+    "category": "modern_society",
+    "subcategory": "film",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which series of films, based on books by a British author, is one of the highest-grossing film franchises produced in the UK?",
+    "options": [
+      "Harry Potter",
+      "Toy Story",
+      "The Matrix",
+      "Pirates of the Caribbean"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Harry Potter films, based on the books by J. K. Rowling, are among the most commercially successful films produced in the UK.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0172",
+    "category": "modern_society",
+    "subcategory": "tv",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are long-running British television soap operas?",
+    "options": [
+      "Coronation Street",
+      "EastEnders",
+      "Doctor Who",
+      "Top Gear"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Coronation Street and EastEnders are two of the best-known British soap operas. Doctor Who is science fiction and Top Gear is a motoring programme.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0173",
+    "category": "modern_society",
+    "subcategory": "film",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which silent-film star was famous for playing a 'tramp' character?",
+    "options": [
+      "Charlie Chaplin",
+      "Laurence Olivier",
+      "Cary Grant",
+      "Sean Connery"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charlie Chaplin became world-famous for his 'tramp' character in silent films.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0174",
+    "category": "modern_society",
+    "subcategory": "arts",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Clarice Cliff is remembered as a designer of which kind of objects?",
+    "options": [
+      "Art Deco ceramics",
+      "Stained-glass windows",
+      "Wrought-iron gates",
+      "Brass instruments"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Clarice Cliff was a famous designer of Art Deco ceramics.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0175",
+    "category": "modern_society",
+    "subcategory": "sport-leisure",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO of these games are traditionally played in British pubs?",
+    "options": [
+      "Darts",
+      "Pool",
+      "Cricket",
+      "Polo"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Darts, pool and dominoes are traditional pub games in the UK. Cricket and polo are outdoor sports.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0176",
+    "category": "modern_society",
+    "subcategory": "music",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO British groups became famous during the 1960s?",
+    "options": [
+      "The Beatles",
+      "The Rolling Stones",
+      "Oasis",
+      "The Spice Girls"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Beatles and The Rolling Stones were among the British groups that became famous in the 1960s. Oasis and the Spice Girls came later.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0177",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Ellie Simmonds won Paralympic gold medals in which sport?",
+    "options": [
+      "Swimming",
+      "Wheelchair racing",
+      "Cycling",
+      "Judo"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Ellie Simmonds is a British Paralympic swimmer who won gold medals at the 2008, 2012 and 2016 Paralympic Games.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0178",
+    "category": "modern_society",
+    "subcategory": "sport",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Mary Peters won an Olympic gold medal at the 1972 Games in which event?",
+    "options": [
+      "The pentathlon",
+      "The marathon",
+      "Rowing",
+      "Cycling"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Mary Peters won Olympic gold in the pentathlon in 1972.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0179",
+    "category": "modern_society",
+    "subcategory": "charities",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these is an environmental charity?",
+    "options": [
+      "Friends of the Earth",
+      "The British Red Cross",
+      "Age UK",
+      "Barnardo's"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Friends of the Earth is a charity that campaigns to protect the environment. The others work in areas such as health, older people and children.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0180",
+    "category": "modern_society",
+    "subcategory": "science",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In 1996, scientists led by Sir Ian Wilmut and Keith Campbell produced the first mammal to be cloned from an adult cell. What was it called?",
+    "options": [
+      "Dolly the sheep",
+      "Polly the pig",
+      "Molly the cow",
+      "Holly the horse"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Dolly the sheep, born in 1996, was the first mammal to be cloned from an adult cell.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0181",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these plays was written by William Shakespeare?",
+    "options": [
+      "A Midsummer Night's Dream",
+      "Pygmalion",
+      "The Importance of Being Earnest",
+      "Doctor Faustus"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A Midsummer Night's Dream is a play by William Shakespeare. Pygmalion is by George Bernard Shaw and The Importance of Being Earnest is by Oscar Wilde.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0182",
+    "category": "modern_society",
+    "subcategory": "literature",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The detective Sherlock Holmes was created by which author?",
+    "options": [
+      "Sir Arthur Conan Doyle",
+      "Charles Dickens",
+      "Robert Louis Stevenson",
+      "H. G. Wells"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Sherlock Holmes stories were written by Sir Arthur Conan Doyle.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0183",
+    "category": "modern_society",
+    "subcategory": "arts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Edinburgh Festival Fringe is held each year in which city?",
+    "options": [
+      "Edinburgh",
+      "Glasgow",
+      "Cardiff",
+      "Belfast"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Fringe is held in Edinburgh each summer as part of the city's festival season.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0184",
+    "category": "modern_society",
+    "subcategory": "places",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Crathes Castle, a historic castle with famous gardens, is in which part of the UK?",
+    "options": [
+      "Scotland",
+      "Wales",
+      "Northern Ireland",
+      "England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Crathes Castle is in Aberdeenshire, in Scotland.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0185",
+    "category": "modern_society",
+    "subcategory": "society",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "About what proportion of the UK workforce today are women?",
+    "options": [
+      "About half",
+      "About one in ten",
+      "About one in four",
+      "About three-quarters"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Women make up about half of the UK workforce.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0186",
+    "category": "modern_society",
+    "subcategory": "science",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The Turing Award, a major international prize in computing, is named after which British scientist?",
+    "options": [
+      "Alan Turing",
+      "Isaac Newton",
+      "Stephen Hawking",
+      "Alexander Fleming"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Turing Award is named after Alan Turing, the British mathematician and computing pioneer.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0187",
+    "category": "modern_society",
+    "subcategory": "arts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which city is the Tate Modern art gallery?",
+    "options": [
+      "London",
+      "Manchester",
+      "Edinburgh",
+      "Cardiff"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Tate Modern is an art gallery in London, on the south bank of the River Thames.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "soc-0188",
+    "category": "modern_society",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which of these is the 1960s particularly remembered for in Britain?",
+    "options": [
+      "A growth in British fashion, music and popular culture",
+      "The end of the Second World War",
+      "The building of the railway network",
+      "The invention of the printing press"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 1960s are remembered as a period of rapid change, with British fashion, pop music and popular culture becoming famous worldwide.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  }
+]

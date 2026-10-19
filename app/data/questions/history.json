@@ -1,0 +1,4635 @@
+[
+  {
+    "id": "hist-0001",
+    "category": "history",
+    "subcategory": "stone-age",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What kind of people were the first to arrive in Britain during the Stone Age?",
+    "options": [
+      "Hunter-gatherers",
+      "Metalworkers",
+      "Farmers who built stone towns",
+      "Roman soldiers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first people to reach Britain were hunter-gatherers who lived off hunting animals and collecting wild plants.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0002",
+    "category": "history",
+    "subcategory": "stone-age",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "About how long ago did Britain become permanently separated from the rest of the continent?",
+    "options": [
+      "About 1,000 years ago",
+      "About 10,000 years ago",
+      "About 100,000 years ago",
+      "About 1 million years ago"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "Britain became permanently separated from the continent about 10,000 years ago, roughly 8,000 BC.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0003",
+    "category": "history",
+    "subcategory": "stone-age",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The first farmers arrived in Britain roughly 6,000 years ago.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first farmers are thought to have reached Britain about 6,000 years ago, around 4,000 BC.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0004",
+    "category": "history",
+    "subcategory": "stone-age",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO statements about the first farmers in Britain are correct?",
+    "options": [
+      "They arrived about 6,000 years ago",
+      "They probably came from south-east Europe",
+      "They arrived before the hunter-gatherers",
+      "They built Hadrian's Wall"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The first farmers arrived about 6,000 years ago and are thought to have come from south-east Europe.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0005",
+    "category": "history",
+    "subcategory": "bronze-age",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What type of houses did people live in during the Bronze Age?",
+    "options": [
+      "Roundhouses",
+      "Stone castles",
+      "Roman villas",
+      "Wooden longhouses with tiled roofs"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bronze Age people lived in roundhouses and made metal tools.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0006",
+    "category": "history",
+    "subcategory": "bronze-age",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "People made metal tools during the Bronze Age",
+      "The Bronze Age began about 10,000 years ago",
+      "Bronze Age people buried their dead in pyramids",
+      "Coins were first minted during the Bronze Age"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bronze Age, from about 2,000 BC, saw the making of metal tools. Coins were first minted much later, in the Iron Age.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0007",
+    "category": "history",
+    "subcategory": "bronze-age",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "During the Bronze Age, the dead were often buried in round barrows.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bronze Age people buried their dead in round barrows.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0008",
+    "category": "history",
+    "subcategory": "iron-age",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which period were the first coins minted in Britain?",
+    "options": [
+      "The Iron Age",
+      "The Stone Age",
+      "The Bronze Age",
+      "The Roman period"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "People of the Iron Age made the first coins to be minted in Britain, some inscribed with the names of Iron Age kings.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0009",
+    "category": "history",
+    "subcategory": "iron-age",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Maiden Castle is an example of what kind of site?",
+    "options": [
+      "An Iron Age hill fort",
+      "A Roman fort",
+      "A Bronze Age burial mound",
+      "A medieval castle"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Maiden Castle is a well-known Iron Age hill fort.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0010",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Julius Caesar tried and failed to invade Britain in 55 BC",
+      "Julius Caesar conquered Britain in 55 BC",
+      "The Roman army left Britain in AD 43",
+      "Hadrian's Wall was built in AD 410"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Julius Caesar attempted an invasion in 55 BC but did not succeed. Britain was only successfully invaded under Claudius in AD 43.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0011",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which Roman emperor successfully invaded Britain in AD 43?",
+    "options": [
+      "Claudius",
+      "Julius Caesar",
+      "Hadrian",
+      "Nero"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Emperor Claudius led a successful invasion of Britain in AD 43.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0012",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who led a revolt against Roman rule in Britain around AD 60?",
+    "options": [
+      "Boudicca",
+      "Alfred the Great",
+      "Guy Fawkes",
+      "Robert the Bruce"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Boudicca, also called Boadicea, led a revolt against the Romans around AD 60.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0013",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "When was Hadrian's Wall built?",
+    "options": [
+      "AD 122",
+      "AD 43",
+      "AD 410",
+      "55 BC"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hadrian's Wall was built in AD 122 to defend the northern frontier of Roman Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0014",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Roman army left Britain in AD 410.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Roman army departed from Britain in AD 410.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0015",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "When did the first Christian communities appear in Britain?",
+    "options": [
+      "During the 3rd and 4th centuries AD",
+      "During the 1st century BC",
+      "During the 8th century AD",
+      "During the 11th century"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first Christian communities in Britain appeared in the 3rd and 4th centuries AD.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0016",
+    "category": "history",
+    "subcategory": "anglo-saxons",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "By about AD 600, which kingdoms had been established mainly in England?",
+    "options": [
+      "Anglo-Saxon kingdoms",
+      "Viking kingdoms",
+      "Norman kingdoms",
+      "Roman provinces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "By around AD 600, Anglo-Saxon kingdoms were established in Britain, mainly in England.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0017",
+    "category": "history",
+    "subcategory": "vikings",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the Vikings in Britain are correct?",
+    "options": [
+      "They came from Denmark and Norway",
+      "They first raided coastal towns from 789",
+      "They built the Tower of London",
+      "They introduced Magna Carta"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Vikings came from Denmark and Norway and first raided coastal towns from 789.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0018",
+    "category": "history",
+    "subcategory": "vikings",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Where did the Vikings mainly settle in Britain?",
+    "options": [
+      "In the east of England and Scotland",
+      "In the south-west of England and Wales",
+      "Only in Ireland",
+      "Only around London"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After raiding, the Vikings settled mainly in the east of England and Scotland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0019",
+    "category": "history",
+    "subcategory": "anglo-saxons",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Alfred the Great is associated with the Anglo-Saxon period.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Alfred the Great was an Anglo-Saxon king and belongs to the Anglo-Saxon period of British history.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0020",
+    "category": "history",
+    "subcategory": "1066",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who won the Battle of Hastings in 1066?",
+    "options": [
+      "William the Conqueror",
+      "King Harold",
+      "Oliver Cromwell",
+      "Julius Caesar"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William the Conqueror defeated King Harold at the Battle of Hastings in 1066.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0022",
+    "category": "history",
+    "subcategory": "1066",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "William the Conqueror was the Duke of which region?",
+    "options": [
+      "Normandy",
+      "Brittany",
+      "Flanders",
+      "Tuscany"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William the Conqueror was the Duke of Normandy before becoming King of England.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0023",
+    "category": "history",
+    "subcategory": "1066",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about 1066 are correct?",
+    "options": [
+      "The Battle of Hastings was the last successful invasion of England",
+      "William the Conqueror was Duke of Normandy",
+      "King Harold was the Duke of Normandy",
+      "The Battle of Hastings took place in 1086"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Hastings was the last successful invasion of England, and William was Duke of Normandy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0024",
+    "category": "history",
+    "subcategory": "norman-england",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which famous building did William the Conqueror have built in London?",
+    "options": [
+      "The Tower of London",
+      "St Paul's Cathedral",
+      "Buckingham Palace",
+      "Hadrian's Wall"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William the Conqueror built the Tower of London.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0025",
+    "category": "history",
+    "subcategory": "norman-england",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Domesday Book was compiled in 1086.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Domesday Book, a survey of land and property, was compiled in 1086.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0026",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Middle Ages, also called the medieval period, ran from which years?",
+    "options": [
+      "1066 to 1485",
+      "55 BC to AD 410",
+      "1485 to 1603",
+      "1603 to 1714"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Middle Ages ran from 1066 until 1485.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0027",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "By 1200, the English ruled an area of Ireland around Dublin known by what name?",
+    "options": [
+      "The Pale",
+      "The Marches",
+      "The Fens",
+      "The Wolds"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "By 1200 the English controlled an area of Ireland around Dublin called the Pale.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0028",
+    "category": "history",
+    "subcategory": "magna-carta",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about Magna Carta are correct?",
+    "options": [
+      "It was agreed by King John in 1215",
+      "It limited the power of the monarch",
+      "It was signed by William the Conqueror",
+      "It abolished Parliament"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Magna Carta was agreed by King John in 1215 and limited the power of the monarch.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0030",
+    "category": "history",
+    "subcategory": "wales",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which king introduced the Statute of Rhuddlan in 1284, annexing Wales to the English Crown?",
+    "options": [
+      "Edward I",
+      "Henry VIII",
+      "James I",
+      "William I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King Edward I introduced the Statute of Rhuddlan in 1284, annexing Wales to the English Crown.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0031",
+    "category": "history",
+    "subcategory": "wales",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Conwy and Caernarfon are examples of which kind of building?",
+    "options": [
+      "Castles built after the English conquest of Wales",
+      "Roman forts",
+      "Iron Age hill forts",
+      "Tudor palaces"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Great castles such as Conwy and Caernarfon were built after Edward I annexed Wales.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0032",
+    "category": "history",
+    "subcategory": "scotland",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In 1314, who led the Scots to victory over the English at the Battle of Bannockburn?",
+    "options": [
+      "Robert the Bruce",
+      "William Wallace",
+      "Oliver Cromwell",
+      "Henry Tudor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Robert the Bruce led the Scots to victory at Bannockburn in 1314.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0033",
+    "category": "history",
+    "subcategory": "hundred-years-war",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Hundred Years War between England and France began in 1337",
+      "The Hundred Years War began in 1455",
+      "The Hundred Years War was fought between England and Spain",
+      "The Hundred Years War ended at the Battle of Hastings"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Hundred Years War with France began in 1337.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0034",
+    "category": "history",
+    "subcategory": "hundred-years-war",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which English king led an outnumbered army to victory at the Battle of Agincourt in 1415?",
+    "options": [
+      "Henry V",
+      "Henry VIII",
+      "Edward I",
+      "Richard III"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King Henry V's outnumbered English army won the Battle of Agincourt in 1415.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0035",
+    "category": "history",
+    "subcategory": "black-death",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Black Death reached Britain in 1348.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Black Death, a form of plague, reached Britain in 1348.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0036",
+    "category": "history",
+    "subcategory": "black-death",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What was the Black Death?",
+    "options": [
+      "A form of plague",
+      "A long famine",
+      "A war with France",
+      "A great fire"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Black Death was a form of plague that reached Britain in 1348.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0037",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "By 1400 English was used in official documents and was preferred at court and in Parliament",
+      "By 1400 French had replaced English in Parliament",
+      "English was never used in official documents in the Middle Ages",
+      "Geoffrey Chaucer wrote only in Latin"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "By 1400 English was used in official documents and was the preferred language of the royal court and Parliament.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0038",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who wrote the Canterbury Tales?",
+    "options": [
+      "Geoffrey Chaucer",
+      "William Shakespeare",
+      "Samuel Pepys",
+      "Alfred the Great"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Geoffrey Chaucer wrote the Canterbury Tales.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0039",
+    "category": "history",
+    "subcategory": "wars-of-the-roses",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which year did the Wars of the Roses begin?",
+    "options": [
+      "1455",
+      "1485",
+      "1348",
+      "1215"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Wars of the Roses began in 1455 between the House of Lancaster and the House of York.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0040",
+    "category": "history",
+    "subcategory": "wars-of-the-roses",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Wars of the Roses were fought between which two royal houses?",
+    "options": [
+      "Lancaster and York",
+      "Tudor and Stuart",
+      "Normandy and Anjou",
+      "England and France"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Wars of the Roses were fought between the House of Lancaster and the House of York.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0041",
+    "category": "history",
+    "subcategory": "wars-of-the-roses",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the end of the Wars of the Roses are correct?",
+    "options": [
+      "The wars ended at the Battle of Bosworth Field in 1485",
+      "Henry Tudor defeated Richard III and became king",
+      "Henry Tudor was defeated at Bosworth Field",
+      "The wars ended in 1455"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The wars ended in 1485 at Bosworth Field, where Henry Tudor defeated Richard III and became King Henry VII.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0042",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who became king after defeating Richard III at the Battle of Bosworth Field?",
+    "options": [
+      "Henry VII",
+      "Henry VIII",
+      "Richard III",
+      "Charles I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry Tudor defeated Richard III at Bosworth Field and became King Henry VII.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0043",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Henry VII married Elizabeth of York and founded which royal house?",
+    "options": [
+      "The House of Tudor",
+      "The House of Stuart",
+      "The House of Lancaster",
+      "The House of Normandy"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry VII married Elizabeth of York and founded the House of Tudor.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0044",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "The Tudor symbol was a red rose with a white rose inside it.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Tudor symbol combined the red rose of Lancaster with the white rose of York inside it.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0045",
+    "category": "history",
+    "subcategory": "henry-viii",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many wives did Henry VIII have?",
+    "options": [
+      "Six",
+      "Three",
+      "Two",
+      "Nine"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry VIII, who became king in 1509, had six wives.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0046",
+    "category": "history",
+    "subcategory": "henry-viii",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "After Henry VIII broke from Rome, who became the head of the Church of England?",
+    "options": [
+      "The monarch",
+      "The Pope",
+      "The Archbishop of Canterbury alone",
+      "The Speaker of the House of Commons"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry VIII established the Church of England with the monarch as its head.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0047",
+    "category": "history",
+    "subcategory": "wales",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about Wales in the Tudor period are correct?",
+    "options": [
+      "Wales became formally united with England by the Act for the Government of Wales",
+      "Henry VIII was the king when this union took place",
+      "Wales gained its own separate Parliament in 1500",
+      "Wales remained fully independent of England"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Under Henry VIII, Wales became formally united with England by the Act for the Government of Wales.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0048",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Who succeeded Henry VIII when he died in 1547?",
+    "options": [
+      "Edward VI",
+      "Mary I",
+      "Elizabeth I",
+      "James I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry VIII died in 1547 and was succeeded by his son Edward VI.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0049",
+    "category": "history",
+    "subcategory": "mary-queen-of-scots",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements about Mary, Queen of Scots are correct?",
+    "options": [
+      "She was a Catholic",
+      "She was imprisoned in England for about 20 years and then executed",
+      "She was one of the wives of Henry VIII",
+      "She commanded the Spanish Armada"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Mary, Queen of Scots was a Catholic who fled to England, was imprisoned for about 20 years and then executed.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0051",
+    "category": "history",
+    "subcategory": "reformation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did the Scottish Parliament do in 1560?",
+    "options": [
+      "Abolished the authority of the Pope and established a Protestant Church of Scotland",
+      "Annexed England to Scotland",
+      "Crowned James I of England",
+      "Agreed to Magna Carta"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1560 the Scottish Parliament abolished the Pope's authority in Scotland and set up a Protestant Church of Scotland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0052",
+    "category": "history",
+    "subcategory": "spanish-armada",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which year did the English fleet defeat the Spanish Armada?",
+    "options": [
+      "1588",
+      "1560",
+      "1605",
+      "1642"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The English fleet defeated the Spanish Armada in 1588.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0053",
+    "category": "history",
+    "subcategory": "spanish-armada",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Spanish Armada was sent by Spain to conquer England and restore Catholicism",
+      "The Spanish Armada was sent to support English Protestants",
+      "The Spanish Armada defeated the English fleet in 1588",
+      "The Spanish Armada sailed from France"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Spain sent the Armada to conquer England and restore Catholicism, but the English fleet defeated it in 1588.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0054",
+    "category": "history",
+    "subcategory": "spanish-armada",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who was a leading English commander against the Spanish Armada?",
+    "options": [
+      "Sir Francis Drake",
+      "Guy Fawkes",
+      "Oliver Cromwell",
+      "Robert the Bruce"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sir Francis Drake was a leading English commander during the defeat of the Spanish Armada.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0055",
+    "category": "history",
+    "subcategory": "elizabethan-era",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO are associated with the Elizabethan period?",
+    "options": [
+      "The plays and poems of William Shakespeare",
+      "English settlers beginning to colonise the eastern coast of America",
+      "The Great Fire of London",
+      "The Gunpowder Plot"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Elizabethan period is remembered for Shakespeare's writing and the start of English colonisation of the eastern coast of America.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0056",
+    "category": "history",
+    "subcategory": "elizabethan-era",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who was queen of England when the Spanish Armada was defeated?",
+    "options": [
+      "Elizabeth I",
+      "Victoria",
+      "Mary, Queen of Scots",
+      "Anne"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Elizabeth I was queen when the Spanish Armada was defeated in 1588, and became one of the most popular monarchs in English history.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0057",
+    "category": "history",
+    "subcategory": "stuart-succession",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "James VI of Scotland became James I of England, Wales and Ireland in 1603.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "When Elizabeth I died childless in 1603, James VI of Scotland became James I of England, Wales and Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0058",
+    "category": "history",
+    "subcategory": "gunpowder-plot",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What was the Gunpowder Plot of 1605?",
+    "options": [
+      "A failed plan by Catholics to blow up the king and the Houses of Parliament",
+      "A successful invasion of England",
+      "A peace treaty with Spain",
+      "A rebellion in Scotland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Gunpowder Plot was a failed Catholic plan in 1605 to blow up the Protestant king and the Houses of Parliament.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0059",
+    "category": "history",
+    "subcategory": "gunpowder-plot",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which well-known member of the group behind the Gunpowder Plot was caught guarding the gunpowder?",
+    "options": [
+      "Guy Fawkes",
+      "Oliver Cromwell",
+      "William of Orange",
+      "Julius Caesar"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Gunpowder Plot was a plan by a group of Catholics to blow up the King and Parliament in 1605. Guy Fawkes, who was caught beside the gunpowder, is the best-known of the conspirators.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0060",
+    "category": "history",
+    "subcategory": "gunpowder-plot",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Bonfire Night on 5 November commemorates which event?",
+    "options": [
+      "The failure of the Gunpowder Plot",
+      "The Battle of Hastings",
+      "The Great Fire of London",
+      "The Glorious Revolution"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Bonfire Night on 5 November marks the failure of the Gunpowder Plot of 1605.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0062",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which king ruled without Parliament for 11 years before recalling it in 1640 to ask for money?",
+    "options": [
+      "Charles I",
+      "Charles II",
+      "James I",
+      "Henry VIII"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charles I ruled without Parliament for 11 years before recalling it in 1640 to ask for money.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0063",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The English Civil War began in 1642.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The English Civil War began in 1642 between the king and Parliament.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0064",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In the English Civil War, who were the Cavaliers?",
+    "options": [
+      "Supporters of the king",
+      "Supporters of Parliament",
+      "Supporters of Spain",
+      "Supporters of the Pope"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Cavaliers supported King Charles I in the English Civil War.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0065",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Roundheads were supporters of Parliament and were led by Oliver Cromwell.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Roundheads supported Parliament and were led by Oliver Cromwell.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0066",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Charles I's army was defeated at which battles?",
+    "options": [
+      "Marston Moor and Naseby",
+      "Hastings and Agincourt",
+      "Bosworth and Bannockburn",
+      "The Boyne and Rhuddlan"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The king's army was defeated at the Battles of Marston Moor (1644) and Naseby (1645); by 1646 it was clear that Parliament had won the war.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0067",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What happened to King Charles I in 1649?",
+    "options": [
+      "He was executed",
+      "He became king of Scotland",
+      "He fled to France",
+      "He agreed to Magna Carta"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "King Charles I was executed in 1649.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0068",
+    "category": "history",
+    "subcategory": "commonwealth",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What title did Oliver Cromwell take after Charles I was executed?",
+    "options": [
+      "Lord Protector",
+      "King of England",
+      "Prime Minister",
+      "Archbishop of Canterbury"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After Charles I was executed in 1649, England became a republic, the Commonwealth; Oliver Cromwell became its Lord Protector in 1653.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0069",
+    "category": "history",
+    "subcategory": "restoration",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO events happened in 1665 and 1666?",
+    "options": [
+      "A major outbreak of plague in London",
+      "The Great Fire of London",
+      "The Battle of the Boyne",
+      "The Gunpowder Plot"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "A major plague outbreak struck London in 1665, and the Great Fire destroyed much of London in 1666.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0070",
+    "category": "history",
+    "subcategory": "restoration",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What happened in 1660?",
+    "options": [
+      "Parliament invited Charles II to return from exile, the Restoration",
+      "Charles I was executed",
+      "The Great Fire destroyed London",
+      "James II became king"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1660 Parliament invited Charles II to return from exile, an event known as the Restoration.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0071",
+    "category": "history",
+    "subcategory": "great-fire",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who designed the rebuilt St Paul's Cathedral after the Great Fire of London?",
+    "options": [
+      "Sir Christopher Wren",
+      "Samuel Pepys",
+      "Sir Francis Drake",
+      "Geoffrey Chaucer"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Paul's Cathedral was rebuilt after the Great Fire and designed by Sir Christopher Wren.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0072",
+    "category": "history",
+    "subcategory": "restoration",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Samuel Pepys wrote a famous diary about the plague and the Great Fire",
+      "Samuel Pepys designed St Paul's Cathedral",
+      "Samuel Pepys was king of England in 1666",
+      "Samuel Pepys led the Gunpowder Plot"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Samuel Pepys wrote a famous diary recording the plague of 1665 and the Great Fire of 1666.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0073",
+    "category": "history",
+    "subcategory": "habeas-corpus",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What did the Habeas Corpus Act of 1679 guarantee?",
+    "options": [
+      "That no one could be held prisoner unlawfully",
+      "That the monarch must be a Protestant",
+      "That newspapers needed a government licence",
+      "That Parliament must meet every year"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Habeas Corpus Act of 1679 guaranteed that no one could be held prisoner unlawfully.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0074",
+    "category": "history",
+    "subcategory": "huguenots",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements about the Huguenots are correct?",
+    "options": [
+      "They were Protestants persecuted in France",
+      "Many came to Britain between 1680 and 1720",
+      "They were Catholics from Spain",
+      "They invaded England with William of Orange"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Huguenots were Protestants persecuted in France, and many came to Britain between 1680 and 1720.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0075",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who became king in 1685 after the death of Charles II?",
+    "options": [
+      "James II",
+      "William III",
+      "Charles I",
+      "Henry VIII"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charles II died in 1685 and was succeeded by his brother James II.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0076",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What was notable about James II's religion?",
+    "options": [
+      "He was a Catholic",
+      "He was a Protestant",
+      "He was Jewish",
+      "He was Muslim"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "James II, who became king in 1685, was a Catholic.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0077",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Glorious Revolution took place in 1688.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Glorious Revolution took place in 1688, when James II fled and William of Orange became king.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0078",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who was invited to invade England in 1688 during the Glorious Revolution?",
+    "options": [
+      "William of Orange",
+      "James II",
+      "Charles II",
+      "Oliver Cromwell"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Important Protestants invited William of Orange to invade England in 1688; James II fled and William became king.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0080",
+    "category": "history",
+    "subcategory": "bill-of-rights",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "According to the Bill of Rights of 1689, what must the monarch be?",
+    "options": [
+      "A Protestant",
+      "A Catholic",
+      "A member of Parliament",
+      "A serving army officer"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bill of Rights of 1689 declared that the monarch must be a Protestant.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0081",
+    "category": "history",
+    "subcategory": "bill-of-rights",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Bill of Rights of 1689 marks the beginning of constitutional monarchy in Britain",
+      "The Bill of Rights gave all power to the monarch",
+      "The Bill of Rights was agreed in 1215",
+      "The Bill of Rights made Catholicism the state religion"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bill of Rights of 1689 marks the beginning of constitutional monarchy, in which the monarch's power is limited.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0082",
+    "category": "history",
+    "subcategory": "battle-of-the-boyne",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In 1690, William III defeated James II at which battle?",
+    "options": [
+      "The Battle of the Boyne",
+      "The Battle of Naseby",
+      "The Battle of Hastings",
+      "The Battle of Bannockburn"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William III defeated James II at the Battle of the Boyne in Ireland in 1690.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0083",
+    "category": "history",
+    "subcategory": "late-stuarts",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO statements are correct?",
+    "options": [
+      "William III defeated James II at the Battle of the Boyne in 1690",
+      "From 1695 newspapers could operate without government licence",
+      "The Bill of Rights was passed in 1215",
+      "James II won the Battle of the Boyne"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "William III won the Battle of the Boyne in 1690, and from 1695 newspapers were allowed to operate without government licence.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0085",
+    "category": "history",
+    "subcategory": "huguenots",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who were the Huguenots?",
+    "options": [
+      "Protestants persecuted in France",
+      "Catholics from Spain",
+      "Viking settlers",
+      "Roman soldiers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Huguenots were Protestants who were persecuted in France and many of whom settled in Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0087",
+    "category": "history",
+    "subcategory": "bill-of-rights",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which document confirmed the rights of Parliament and the limits of the king's power in 1689?",
+    "options": [
+      "The Bill of Rights",
+      "Magna Carta",
+      "The Domesday Book",
+      "The Habeas Corpus Act"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bill of Rights of 1689 confirmed the rights of Parliament and the limits of the king's power.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0088",
+    "category": "history",
+    "subcategory": "late-stuarts",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "From 1695 newspapers were allowed to operate without government licence",
+      "Newspapers were banned in 1695",
+      "The first newspaper licence was granted in 1695",
+      "Newspapers could only be published by the monarch"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1695 newspapers were allowed to operate without government licence.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0089",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the Glorious Revolution are correct?",
+    "options": [
+      "James II fled and William of Orange became king in 1688",
+      "The Bill of Rights of 1689 confirmed the rights of Parliament",
+      "Oliver Cromwell became Lord Protector in 1688",
+      "Charles I was executed in 1688"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "In the Glorious Revolution of 1688 James II fled and William of Orange became king, and the Bill of Rights of 1689 confirmed Parliament's rights.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0090",
+    "category": "history",
+    "subcategory": "constitutional-monarchy",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What does constitutional monarchy mean?",
+    "options": [
+      "A system in which the monarch's power is limited by Parliament and the law",
+      "A system in which the monarch has absolute power",
+      "A system with no monarch at all",
+      "A system in which the army chooses the monarch"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "A constitutional monarchy is one in which the monarch's power is limited by Parliament and the law, as established from the Bill of Rights of 1689.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0091",
+    "category": "history",
+    "subcategory": "act-of-union-1707",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Act of Union of 1707 created the Kingdom of Great Britain.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Act of Union of 1707 united England and Scotland to form the Kingdom of Great Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0092",
+    "category": "history",
+    "subcategory": "act-of-union-1707",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Act of Union of 1707 brought together which two nations?",
+    "options": [
+      "England and Wales",
+      "England and Scotland",
+      "Scotland and Ireland",
+      "Wales and Ireland"
+    ],
+    "answer": [
+      1
+    ],
+    "explanation": "The Act of Union of 1707 created the Kingdom of Great Britain by uniting England and Scotland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0093",
+    "category": "history",
+    "subcategory": "hanoverian-succession",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "When Queen Anne died in 1714, Parliament chose George I, a German Protestant, as the new monarch.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Parliament chose George I, the nearest Protestant relative, after Queen Anne died in 1714.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0094",
+    "category": "history",
+    "subcategory": "prime-ministers",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who is regarded as the first Prime Minister of Britain, taking office in 1721?",
+    "options": [
+      "Sir Robert Walpole",
+      "The Duke of Wellington",
+      "Winston Churchill",
+      "Clement Attlee"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sir Robert Walpole became the first Prime Minister in 1721.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0095",
+    "category": "history",
+    "subcategory": "jacobite-rebellion",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who was known as 'Bonnie Prince Charlie' and attempted to seize the throne in 1745?",
+    "options": [
+      "Charles Edward Stuart",
+      "George I",
+      "Sir Robert Walpole",
+      "The Duke of Wellington"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charles Edward Stuart, known as Bonnie Prince Charlie, tried to seize the throne in 1745.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0096",
+    "category": "history",
+    "subcategory": "jacobite-rebellion",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where was Charles Edward Stuart's Jacobite rebellion finally defeated in 1746?",
+    "options": [
+      "The Battle of Culloden",
+      "The Battle of Waterloo",
+      "The Battle of Trafalgar",
+      "The Battle of the Somme"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Jacobite rising was defeated at the Battle of Culloden in 1746.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0097",
+    "category": "history",
+    "subcategory": "american-independence",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The 13 American colonies declared independence in 1776",
+      "The 13 American colonies declared independence in 1707",
+      "Britain recognised American independence in 1776",
+      "The American colonies remained part of Britain until 1900"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 13 American colonies declared independence in 1776, and Britain recognised it in 1783.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0098",
+    "category": "history",
+    "subcategory": "american-independence",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year did Britain formally recognise the independence of the United States?",
+    "options": [
+      "1783",
+      "1776",
+      "1770",
+      "1791"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Britain recognised American independence in 1783, after the war that began in 1776.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0099",
+    "category": "history",
+    "subcategory": "agriculture-1700s",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "Before the 18th century, agriculture was the biggest source of employment in Britain.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Before the 18th century, agriculture was the biggest source of employment in Britain. Manufacturing later became the main source of employment.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0100",
+    "category": "history",
+    "subcategory": "abolition-slavery",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which religious group set up the first formal anti-slavery organisation in the 18th century?",
+    "options": [
+      "The Quakers",
+      "The Methodists",
+      "The Catholics",
+      "The Presbyterians"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Quakers established the first formal anti-slavery group in the 18th century.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0101",
+    "category": "history",
+    "subcategory": "act-of-union-1801",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Act of Union of 1800, effective in 1801, changed the official name of the state to which of these?",
+    "options": [
+      "The United Kingdom of Great Britain and Ireland",
+      "The Kingdom of Great Britain",
+      "The United Kingdom of Great Britain and Northern Ireland",
+      "The Republic of Ireland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Act of Union of 1800 unified Ireland with Great Britain, creating the United Kingdom of Great Britain and Ireland in 1801.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0102",
+    "category": "history",
+    "subcategory": "napoleonic-wars",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these were British military victories against the French?",
+    "options": [
+      "The Battle of Trafalgar in 1805",
+      "The Battle of Waterloo in 1815",
+      "The Battle of Culloden in 1746",
+      "The Battle of the Somme in 1916"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Britain won the Battle of Trafalgar in 1805, and Wellington defeated Napoleon at Waterloo in 1815.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0103",
+    "category": "history",
+    "subcategory": "abolition-slavery",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did the law of 1807 make illegal?",
+    "options": [
+      "Trading slaves in British ships or from British ports",
+      "All forms of slavery throughout the Empire",
+      "Working more than ten hours a day",
+      "Voting in general elections"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "From 1807 it became illegal to trade slaves in British ships or from British ports; slavery itself was abolished across the Empire in 1833.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0104",
+    "category": "history",
+    "subcategory": "napoleonic-wars",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who defeated Napoleon at the Battle of Waterloo in 1815?",
+    "options": [
+      "The Duke of Wellington",
+      "Admiral Nelson",
+      "Sir Robert Walpole",
+      "Charles Edward Stuart"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Duke of Wellington defeated Napoleon at Waterloo in 1815.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0105",
+    "category": "history",
+    "subcategory": "napoleonic-wars",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The Duke of Wellington was nicknamed the 'Iron Duke' and later held which office?",
+    "options": [
+      "Prime Minister",
+      "Admiral of the Fleet",
+      "Lord Chancellor",
+      "Archbishop of Canterbury"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Duke of Wellington, nicknamed the 'Iron Duke', later became Prime Minister.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0106",
+    "category": "history",
+    "subcategory": "reform-act",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Reform Act of 1832 greatly increased the number of people entitled to vote.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 1832 Reform Act greatly increased the number of voters and abolished the rotten boroughs.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0107",
+    "category": "history",
+    "subcategory": "reform-act",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The Reform Act of 1832 abolished which of the following?",
+    "options": [
+      "The rotten boroughs",
+      "The monarchy",
+      "The House of Lords",
+      "The National Trust"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Reform Act of 1832 abolished the rotten boroughs, which were constituencies with very few voters.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0108",
+    "category": "history",
+    "subcategory": "abolition-slavery",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the abolition of slavery are correct?",
+    "options": [
+      "Trading slaves in British ships became illegal in 1807",
+      "Slavery was abolished throughout the British Empire in 1833",
+      "Slavery in the Empire was abolished in 1807",
+      "The Quakers campaigned in favour of slavery"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Trading slaves in British ships became illegal in 1807, and the Emancipation Act of 1833 abolished slavery throughout the Empire.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0109",
+    "category": "history",
+    "subcategory": "queen-victoria",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How old was Victoria when she became queen in 1837?",
+    "options": [
+      "18",
+      "25",
+      "16",
+      "30"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Victoria became queen in 1837 at the age of 18.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0110",
+    "category": "history",
+    "subcategory": "chartists",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did the Chartists demand when they signed their petition in 1839?",
+    "options": [
+      "Votes for the working class",
+      "Free trade with Europe",
+      "The abolition of the monarchy",
+      "Higher wages for soldiers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Chartists signed a petition in 1839 demanding votes for the working class.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0111",
+    "category": "history",
+    "subcategory": "corn-laws",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Corn Laws were repealed in 1846.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Corn Laws, which had kept the price of bread high, were repealed in 1846.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0112",
+    "category": "history",
+    "subcategory": "factory-reform",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What did the law of 1847 do for women and children working in factories?",
+    "options": [
+      "Limited their working day to ten hours",
+      "Banned them from working at night only",
+      "Gave them the right to vote",
+      "Guaranteed them a paid holiday"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "From 1847 the number of hours women and children could work in factories was limited by law to ten per day.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0113",
+    "category": "history",
+    "subcategory": "great-exhibition",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO statements about the Great Exhibition of 1851 are correct?",
+    "options": [
+      "It was held in Hyde Park",
+      "It took place in the Crystal Palace",
+      "It was held in Edinburgh",
+      "It celebrated victory in the First World War"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Great Exhibition of 1851 was held in the Crystal Palace in Hyde Park.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0114",
+    "category": "history",
+    "subcategory": "crimean-war",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Queen Victoria introduced the Victoria Cross during the Crimean War",
+      "The Victoria Cross was introduced during the First World War",
+      "The Crimean War was fought between Britain and France",
+      "The Crimean War lasted from 1914 to 1918"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Queen Victoria introduced the Victoria Cross during the Crimean War of 1853 to 1856.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0115",
+    "category": "history",
+    "subcategory": "crimean-war",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Crimean War was the first war to be extensively covered by the media",
+      "The Crimean War was fought between Britain and Turkey",
+      "The Crimean War took place between 1914 and 1918",
+      "The Crimean War began after the Battle of Culloden"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Crimean War (Britain, Turkey and France against Russia) was the first war extensively covered by the media.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0116",
+    "category": "history",
+    "subcategory": "modern-nursing",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who is regarded as the founder of modern nursing and set up a training school in 1860?",
+    "options": [
+      "Florence Nightingale",
+      "Emmeline Pankhurst",
+      "Agatha Christie",
+      "Jayne Torvill"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Florence Nightingale established the Nightingale Training School for nurses in 1860 and is regarded as the founder of modern nursing.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0117",
+    "category": "history",
+    "subcategory": "reform-act-1867",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which of these best describes the Reform Act of 1867?",
+    "options": [
+      "It created more urban seats in Parliament and lowered the property qualification, but most men and all women still could not vote",
+      "It gave all men and women the vote",
+      "It abolished the House of Commons",
+      "It created the Scottish Parliament"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The 1867 Reform Act created more urban parliamentary seats and reduced the property qualification, but most men and all women remained without the vote.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0118",
+    "category": "history",
+    "subcategory": "womens-property",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "Acts of 1870 and 1882 gave married women the right to keep their own earnings and property",
+      "Acts of 1870 and 1882 gave women the right to vote",
+      "Acts of 1870 and 1882 allowed women to sit in the House of Lords",
+      "Acts of 1870 and 1882 abolished the Corn Laws"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Acts passed in 1870 and 1882 gave married women the right to keep their own earnings and property.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0119",
+    "category": "history",
+    "subcategory": "jewish-migration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Between 1870 and 1914, roughly 120,000 people came to Britain to escape persecution. Who were they?",
+    "options": [
+      "Russian and Polish Jews",
+      "West Indians",
+      "Ugandan Asians",
+      "Irish nationalists"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "About 120,000 Russian and Polish Jews arrived in Britain between 1870 and 1914 to escape persecution.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0121",
+    "category": "history",
+    "subcategory": "suffrage",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Emmeline Pankhurst set up the Women's Franchise League in 1889.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Emmeline Pankhurst set up the Women's Franchise League in 1889.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0122",
+    "category": "history",
+    "subcategory": "national-trust",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many volunteers founded the National Trust in 1895?",
+    "options": [
+      "Three",
+      "Ten",
+      "One",
+      "Twenty-five"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The National Trust was founded in 1895 by three volunteers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0123",
+    "category": "history",
+    "subcategory": "entertainment-history",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Films were first shown publicly in the UK in 1896.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Films were first shown publicly in the UK in 1896.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0124",
+    "category": "history",
+    "subcategory": "boer-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which country was the Boer War fought between 1899 and 1902?",
+    "options": [
+      "South Africa",
+      "India",
+      "Ireland",
+      "Egypt"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Boer War of 1899 to 1902 was fought in South Africa.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0125",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these did 19th-century Britain produce more than half of the world's supply of?",
+    "options": [
+      "Iron",
+      "Coal",
+      "Oil",
+      "Rubber"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "In the 19th century Britain produced more than half of the world's iron, coal and cotton cloth.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0126",
+    "category": "history",
+    "subcategory": "irish-famine",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO happened in Ireland when the potato crop failed in the 1840s?",
+    "options": [
+      "About a million people died",
+      "About 1.5 million people left Ireland",
+      "Ireland immediately became a republic",
+      "The Corn Laws were introduced"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "When the potato crop failed in the 1840s, about a million people died and 1.5 million left Ireland, boosting support for Irish Nationalism and Home Rule.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0127",
+    "category": "history",
+    "subcategory": "irish-history",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO movements or causes gained support in Ireland as a result of the potato famine of the 1840s?",
+    "options": [
+      "Irish Nationalism",
+      "Support for Home Rule",
+      "The Chartist movement",
+      "The abolition of the Corn Laws"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The famine strengthened the Irish Nationalist movement and support for Home Rule.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0128",
+    "category": "history",
+    "subcategory": "queen-victoria",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about Queen Victoria are correct?",
+    "options": [
+      "She reigned for almost 64 years",
+      "Her reign ended with her death in 1901",
+      "She was Britain's first woman Prime Minister",
+      "She introduced the NHS in 1948"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Queen Victoria reigned for almost 64 years, ending with her death in 1901.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0130",
+    "category": "history",
+    "subcategory": "literature",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these achievements are correctly matched to the person?",
+    "options": [
+      "Rudyard Kipling was awarded the Nobel Prize in Literature in 1907",
+      "Bradley Wiggins became the first Briton to win the Tour de France",
+      "Margaret Thatcher was awarded the Nobel Prize in Literature",
+      "Florence Nightingale won the Nobel Prize in Literature"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Rudyard Kipling was awarded the Nobel Prize in Literature in 1907, and Bradley Wiggins won the Tour de France in 2012.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0131",
+    "category": "history",
+    "subcategory": "irish-history",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did the British government promise for Ireland in 1913?",
+    "options": [
+      "Home Rule",
+      "Full independence",
+      "A separate currency",
+      "Membership of the EEC"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1913 the British government promised Home Rule for Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0132",
+    "category": "history",
+    "subcategory": "first-world-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How long did the First World War last?",
+    "options": [
+      "1914 to 1918",
+      "1914 to 1919",
+      "1918 to 1922",
+      "1939 to 1945"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The First World War lasted from 1914 to 1918.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0133",
+    "category": "history",
+    "subcategory": "first-world-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The First World War began after the assassination of which figure?",
+    "options": [
+      "Archduke Franz Ferdinand of Austria",
+      "Adolf Hitler",
+      "Tsar Nicholas II",
+      "Kaiser Wilhelm II"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The First World War began in 1914 after the assassination of Archduke Franz Ferdinand of Austria.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0134",
+    "category": "history",
+    "subcategory": "battle-of-the-somme",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "About how many British casualties were caused on the first day of the Battle of the Somme in 1916?",
+    "options": [
+      "60,000",
+      "6,000",
+      "600",
+      "160,000"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first day of the Battle of the Somme in 1916 caused about 60,000 British casualties.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0135",
+    "category": "history",
+    "subcategory": "easter-rising",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What was the Easter Rising of 1916?",
+    "options": [
+      "A rebellion in Dublin against British rule in Ireland",
+      "A naval battle in the First World War",
+      "A peace treaty with Germany",
+      "A protest demanding votes for women"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1916 there was an Easter Rising in Dublin against British rule in Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0136",
+    "category": "history",
+    "subcategory": "first-world-war",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The First World War ended at 11 a.m. on 11 November 1918.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The First World War ended at 11 a.m. on 11 November 1918.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0138",
+    "category": "history",
+    "subcategory": "womens-suffrage",
+    "type": "two",
+    "difficulty": "easy",
+    "question": "Which TWO rights were granted to women over 30 in 1918?",
+    "options": [
+      "The right to vote",
+      "The right to stand for Parliament",
+      "The right to become Prime Minister",
+      "The right to join the House of Lords"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The 1918 legislation gave women over 30 the right both to vote and to stand for Parliament.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0139",
+    "category": "history",
+    "subcategory": "remembrance",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Where is the Cenotaph, unveiled in 1920, located?",
+    "options": [
+      "Whitehall, London",
+      "Hyde Park, London",
+      "Edinburgh Castle",
+      "Cardiff Bay"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Cenotaph in Whitehall, London, was unveiled in 1920.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0140",
+    "category": "history",
+    "subcategory": "inventions",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who developed the television during the 1920s?",
+    "options": [
+      "John Logie Baird",
+      "James Goodfellow",
+      "Tim Berners-Lee",
+      "Alexander Fleming"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "John Logie Baird developed the television in the 1920s.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0141",
+    "category": "history",
+    "subcategory": "irish-partition",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The 1921 peace treaty with Irish Nationalists led to the partition of Ireland",
+      "The 1921 peace treaty created the National Health Service",
+      "The 1921 peace treaty abolished the Northern Ireland Parliament",
+      "The 1921 peace treaty gave Ireland independence in 1707"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1921 a peace treaty was signed and in 1922 Ireland became two countries: the six counties in the north remained part of the UK as Northern Ireland, and the rest became the Irish Free State.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0142",
+    "category": "history",
+    "subcategory": "broadcasting",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What did the BBC begin doing in 1922?",
+    "options": [
+      "Radio broadcasts",
+      "Television broadcasts",
+      "Organising the Proms",
+      "Publishing newspapers"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The BBC started radio broadcasts in 1922.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0143",
+    "category": "history",
+    "subcategory": "broadcasting",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year did the BBC begin organising the Proms?",
+    "options": [
+      "1927",
+      "1922",
+      "1936",
+      "1930"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The BBC began organising the Proms in 1927.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0144",
+    "category": "history",
+    "subcategory": "womens-suffrage",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "From which year has the UK had a fully democratic voting system?",
+    "options": [
+      "1928",
+      "1918",
+      "1945",
+      "1969"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1928 women gained the vote at 21, the same age as men, so the UK has had a fully democratic voting system since 1928.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0145",
+    "category": "history",
+    "subcategory": "great-depression",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The world entered the Great Depression in 1929.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The world entered the Great Depression in 1929.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0146",
+    "category": "history",
+    "subcategory": "rise-of-hitler",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which year did Adolf Hitler come to power in Germany?",
+    "options": [
+      "1933",
+      "1929",
+      "1939",
+      "1945"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Adolf Hitler came to power in Germany in 1933.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0147",
+    "category": "history",
+    "subcategory": "technology-history",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "The first successful radar test took place in 1935.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first successful radar test took place in 1935, which helped Britain in the Second World War.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0148",
+    "category": "history",
+    "subcategory": "broadcasting",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What happened in 1936 in relation to television?",
+    "options": [
+      "The BBC began the world's first regular television service",
+      "The first television was invented",
+      "Colour television was introduced",
+      "The BBC stopped broadcasting"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1936 the BBC began the world's first regular television service.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0149",
+    "category": "history",
+    "subcategory": "second-world-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which event caused Britain and France to declare war on Germany in 1939?",
+    "options": [
+      "Hitler's invasion of Poland",
+      "The bombing of London",
+      "The Battle of Britain",
+      "The sinking of the Titanic"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hitler invaded Poland in 1939, so Britain and France declared war on Germany.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0150",
+    "category": "history",
+    "subcategory": "second-world-war",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who became Prime Minister in 1940?",
+    "options": [
+      "Winston Churchill",
+      "Clement Attlee",
+      "Neville Chamberlain",
+      "David Cameron"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Winston Churchill became Prime Minister in 1940.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0151",
+    "category": "history",
+    "subcategory": "battle-of-britain",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What was the Battle of Britain in 1940?",
+    "options": [
+      "A crucial aerial battle against the Germans, which Britain won",
+      "A naval blockade of Germany",
+      "A land invasion of France",
+      "A bombing raid on Berlin"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Battle of Britain in 1940 was a crucial aerial battle against the Germans, which Britain won.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0152",
+    "category": "history",
+    "subcategory": "d-day",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What happened on 6 June 1944?",
+    "options": [
+      "Allied forces landed in Normandy on D-Day",
+      "The war in Europe ended",
+      "Churchill became Prime Minister",
+      "The NHS was established"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "On 6 June 1944, D-Day, Allied forces landed in Normandy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0153",
+    "category": "history",
+    "subcategory": "education-act",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The Education Act introduced in 1944 is also known by which name?",
+    "options": [
+      "The Butler Act",
+      "The Bevan Act",
+      "The Corn Law",
+      "The Reform Act"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Education Act 1944 was also known as the 'Butler Act'.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0154",
+    "category": "history",
+    "subcategory": "post-war-politics",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who became Prime Minister after Churchill lost the 1945 General Election?",
+    "options": [
+      "Clement Attlee",
+      "Margaret Thatcher",
+      "Tony Blair",
+      "Gordon Brown"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Clement Attlee became Prime Minister of a Labour government after the 1945 General Election.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0155",
+    "category": "history",
+    "subcategory": "decolonisation",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "In 1947 independence was granted to nine countries, including India",
+      "In 1947 Britain joined the European Economic Community",
+      "In 1947 Ceylon became part of the United Kingdom",
+      "In 1947 India gained independence but Pakistan did not"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1947 independence was granted to nine countries, including India, Pakistan and Ceylon (now Sri Lanka).",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0156",
+    "category": "history",
+    "subcategory": "nhs",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which year was the National Health Service established?",
+    "options": [
+      "1948",
+      "1945",
+      "1951",
+      "1973"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The National Health Service was established in 1948.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0157",
+    "category": "history",
+    "subcategory": "nhs",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the National Health Service are correct?",
+    "options": [
+      "It was established in 1948",
+      "It was led by Aneurin Bevan, the Minister of Health",
+      "It was established in 1945",
+      "It replaced the BBC"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The NHS was established in 1948 under the leadership of Aneurin Bevan, the Minister of Health.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0158",
+    "category": "history",
+    "subcategory": "migration",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which group was invited to come to Britain to work in 1948?",
+    "options": [
+      "People from the West Indies",
+      "People from Uganda",
+      "Russian Jews",
+      "People from Poland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1948, when the NHS was established, people from the West Indies were invited to come to Britain to work.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0159",
+    "category": "history",
+    "subcategory": "irish-republic",
+    "type": "truefalse",
+    "difficulty": "easy",
+    "question": "The Irish Free State became a republic in 1949.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1949 the Irish Free State became a republic.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0160",
+    "category": "history",
+    "subcategory": "human-rights",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did the UK do in 1950 in relation to the European Convention on Human Rights?",
+    "options": [
+      "It was one of the first countries to sign it",
+      "It refused to sign it",
+      "It wrote it alone",
+      "It abolished it"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1950 the UK was one of the first countries to sign the European Convention on Human Rights.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0161",
+    "category": "history",
+    "subcategory": "post-war-politics",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which party formed the government between 1951 and 1964, and who returned as Prime Minister in 1951?",
+    "options": [
+      "The Conservatives, with Winston Churchill",
+      "Labour, with Clement Attlee",
+      "The Conservatives, with Margaret Thatcher",
+      "The Liberal Democrats, with David Cameron"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Britain had a Conservative government from 1951 to 1964, and Winston Churchill returned as Prime Minister in 1951.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0162",
+    "category": "history",
+    "subcategory": "royal-history",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which year did Queen Elizabeth II begin her reign?",
+    "options": [
+      "1952",
+      "1936",
+      "1945",
+      "1953"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Queen Elizabeth II began her reign in 1952.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0163",
+    "category": "history",
+    "subcategory": "theatre",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Agatha Christie's play The Mousetrap began its record-breaking run in the West End in 1952.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Mousetrap by Agatha Christie began its record-breaking West End run in 1952.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0164",
+    "category": "history",
+    "subcategory": "scientific-discovery",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What was discovered in 1953 through work at British universities in London and Cambridge?",
+    "options": [
+      "The structure of the DNA molecule",
+      "Penicillin",
+      "The first vaccine",
+      "The electron"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The structure of the DNA molecule was discovered in 1953 through work at British universities in London and Cambridge.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0166",
+    "category": "history",
+    "subcategory": "european-integration",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "How many western European countries formed the European Economic Community in 1957?",
+    "options": [
+      "Six",
+      "Three",
+      "Nine",
+      "Twelve"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The European Economic Community was formed in 1957 by six western European countries.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0167",
+    "category": "history",
+    "subcategory": "inventions",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which bank installed the first cash-dispensing ATM, in Enfield, north London, in 1967?",
+    "options": [
+      "Barclays Bank",
+      "NatWest",
+      "Lloyds Bank",
+      "The Bank of England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first ATM was installed by Barclays Bank in Enfield, north London, in 1967; it was designed by John Shepherd-Barron.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0168",
+    "category": "history",
+    "subcategory": "sailing-records",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO sailors are associated with sailing single-handed around the world?",
+    "options": [
+      "Sir Francis Chichester",
+      "Sir Robin Knox-Johnston",
+      "Sir Roger Bannister",
+      "Bradley Wiggins"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Sir Francis Chichester was the first person to sail single-handed around the world with one stop, and Sir Robin Knox-Johnston was the first to do it non-stop.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0170",
+    "category": "history",
+    "subcategory": "aviation",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Concorde first flew in 1969. Which two countries developed it?",
+    "options": [
+      "Britain and France",
+      "Britain and the United States",
+      "France and Germany",
+      "Britain and Germany"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Concorde, the world's only supersonic commercial airliner, was developed by Britain and France and first flew in 1969.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0171",
+    "category": "history",
+    "subcategory": "voting-age",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What change to the voting age was made in 1969?",
+    "options": [
+      "It was reduced to 18 for men and women",
+      "It was raised to 21",
+      "It was reduced to 16",
+      "It was abolished for men"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1969 the voting age was reduced to 18 for both men and women.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0172",
+    "category": "history",
+    "subcategory": "the-troubles",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What broke out in Northern Ireland in 1969?",
+    "options": [
+      "The Troubles",
+      "The Easter Rising",
+      "The Great Depression",
+      "The Chartist movement"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Troubles broke out in Northern Ireland in 1969.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0173",
+    "category": "history",
+    "subcategory": "migration",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "In the early 1970s Britain admitted about 28,000 people of Indian origin who had been forced to leave Uganda",
+      "In the early 1970s Britain admitted Ugandans who had been forced to leave India",
+      "In the early 1970s about 280,000 people came to Britain from Uganda",
+      "In the early 1970s Britain refused to admit people from Uganda"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the early 1970s Britain admitted about 28,000 people of Indian origin who had been forced to leave Uganda.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0174",
+    "category": "history",
+    "subcategory": "northern-ireland",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What happened in Northern Ireland in 1972?",
+    "options": [
+      "The Northern Ireland Parliament was suspended and direct rule from Westminster began",
+      "The Northern Ireland Parliament was elected for the first time",
+      "Northern Ireland left the United Kingdom",
+      "A peace agreement was signed in Belfast"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1972 serious unrest in Northern Ireland led to the Northern Ireland Parliament being suspended and direct rule from the UK government.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0175",
+    "category": "history",
+    "subcategory": "european-integration",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which year did the UK join the European Economic Community?",
+    "options": [
+      "1973",
+      "1957",
+      "1969",
+      "1993"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The UK joined the European Economic Community in 1973.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0176",
+    "category": "history",
+    "subcategory": "aviation",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "Concorde began carrying passengers in 1976.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Concorde first flew in 1969 and began carrying passengers in 1976.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0177",
+    "category": "history",
+    "subcategory": "medical-firsts",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Where was the world's first 'test-tube baby' born in 1978?",
+    "options": [
+      "Oldham, Lancashire",
+      "Enfield, London",
+      "Leamington Spa",
+      "Cambridge"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The world's first 'test-tube baby' was born in Oldham, Lancashire, in 1978.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0178",
+    "category": "history",
+    "subcategory": "prime-ministers",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who became the UK's first woman Prime Minister in 1979?",
+    "options": [
+      "Margaret Thatcher",
+      "Emmeline Pankhurst",
+      "Queen Elizabeth II",
+      "Theresa May"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Margaret Thatcher became the first woman Prime Minister of the UK in 1979.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0179",
+    "category": "history",
+    "subcategory": "arts-and-sport",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Turner Prize for contemporary art was established in 1984",
+      "The Turner Prize was established in 1902",
+      "Jayne Torvill and Christopher Dean won Olympic gold for swimming in 1984",
+      "The Turner Prize is awarded for literature"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1984 the Turner Prize for contemporary art was established, and Jayne Torvill and Christopher Dean won Olympic gold for ice dancing.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0180",
+    "category": "history",
+    "subcategory": "modern-britain",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these events happened in the 1990s?",
+    "options": [
+      "The World Wide Web was used to transfer information for the first time",
+      "The Good Friday Agreement was signed",
+      "The NHS was established",
+      "The UK joined the EEC"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Information was first transferred via the World Wide Web in 1990, and the Good Friday (Belfast) Agreement was signed in 1998.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0181",
+    "category": "history",
+    "subcategory": "stonehenge",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "In which English county does the monument Stonehenge still stand?",
+    "options": [
+      "Wiltshire",
+      "Dorset",
+      "Suffolk",
+      "Kent"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Stonehenge, a Stone Age monument thought to have been a special gathering place for seasonal ceremonies, still stands in what is now the English county of Wiltshire.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0182",
+    "category": "history",
+    "subcategory": "skara-brae",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What is Skara Brae on Orkney best known as?",
+    "options": [
+      "The best preserved prehistoric village in northern Europe",
+      "An Iron Age hill fort in Dorset",
+      "A Roman fort on Hadrian's Wall",
+      "A Norman castle built after 1066"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Skara Brae, on Orkney off the north coast of Scotland, is the best preserved prehistoric village in northern Europe.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0183",
+    "category": "history",
+    "subcategory": "iron-age",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The language spoken by the people of the Iron Age belonged to which language family?",
+    "options": [
+      "The Celtic language family",
+      "The Germanic language family",
+      "The Latin language family",
+      "The Norse language family"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Iron Age people spoke a language that was part of the Celtic language family; related languages are still spoken today in parts of Wales, Scotland and Ireland.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0184",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "statement",
+    "difficulty": "medium",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "The Emperor Hadrian built a wall to keep out the Picts",
+      "The Emperor Hadrian built a wall to keep out the Vikings",
+      "Hadrian's Wall was built by the Anglo-Saxons",
+      "Hadrian's Wall marks the border between England and Wales"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Emperor Hadrian built a wall in the north of England to keep out the Picts, the ancestors of the Scottish people.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0185",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these are things the Romans introduced or built in Britain?",
+    "options": [
+      "Roads and public buildings",
+      "A structure of law",
+      "The English language",
+      "The Church of England"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "During their 400 years in Britain the Romans built roads and public buildings, created a structure of law, and introduced new plants and animals.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0186",
+    "category": "history",
+    "subcategory": "anglo-saxons",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which tribes from northern Europe invaded Britain after the Roman army left?",
+    "options": [
+      "The Jutes, the Angles and the Saxons",
+      "The Vikings, the Danes and the Norsemen",
+      "The Normans and the Bretons",
+      "The Picts and the Scots"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After the Romans left in AD 410, Britain was invaded by the Jutes, the Angles and the Saxons, whose languages are the basis of modern-day English.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0187",
+    "category": "history",
+    "subcategory": "sutton-hoo",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Where was an Anglo-Saxon king buried with treasure and armour in a ship?",
+    "options": [
+      "Sutton Hoo in Suffolk",
+      "Skara Brae in Orkney",
+      "Maiden Castle in Dorset",
+      "Glencoe in Scotland"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The burial place of one of the Anglo-Saxon kings was at Sutton Hoo in modern Suffolk, where he was buried with treasure and armour in a ship covered by a mound of earth.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0188",
+    "category": "history",
+    "subcategory": "christianity-anglo-saxon",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who became the first Archbishop of Canterbury?",
+    "options": [
+      "St Augustine",
+      "St Patrick",
+      "St Columba",
+      "St George"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Augustine led missionaries from Rome who spread Christianity in the south of Britain, and he became the first Archbishop of Canterbury.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0189",
+    "category": "history",
+    "subcategory": "christianity-anglo-saxon",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Who founded a monastery on the island of Iona, off the coast of what is now Scotland?",
+    "options": [
+      "St Columba",
+      "St Augustine",
+      "St Patrick",
+      "St Andrew"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "St Columba, one of the missionaries from Ireland who spread Christianity in the north, founded a monastery on the island of Iona.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0190",
+    "category": "history",
+    "subcategory": "vikings",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "Cnut, also called Canute, was the first Danish king to rule what is now England.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Anglo-Saxon kings continued to rule what is now England except for a short period of Danish kings, the first of whom was Cnut, also called Canute.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0191",
+    "category": "history",
+    "subcategory": "scotland",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Who united the people of the north against the threat of Viking attack, after which the term Scotland began to be used?",
+    "options": [
+      "Kenneth MacAlpin",
+      "Cnut",
+      "Alfred the Great",
+      "Robert the Bruce"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The threat of Viking attack encouraged the people in the north to unite under one king, Kenneth MacAlpin, and the term Scotland began to be used to describe that country.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0192",
+    "category": "history",
+    "subcategory": "bayeux-tapestry",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Bayeux Tapestry, which commemorates the Battle of Hastings, is nearly 70 metres long.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Bayeux Tapestry is a great piece of embroidery commemorating the Battle of Hastings; the linen cloth is nearly 70 metres (230 feet) long.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0193",
+    "category": "history",
+    "subcategory": "norman-england",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "After the Norman Conquest, the king and his noblemen spoke Norman French.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After the Norman Conquest the king and his noblemen spoke Norman French, a language that influenced the development of the English we know today.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0194",
+    "category": "history",
+    "subcategory": "crusades",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "During the Middle Ages, English knights took part in the Crusades, fighting for control of which land?",
+    "options": [
+      "The Holy Land",
+      "Normandy",
+      "The Danelaw",
+      "The Pale"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Many knights took part in the Crusades, in which European Christians fought for control of the Holy Land.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0195",
+    "category": "history",
+    "subcategory": "magna-carta",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "What does the name 'Magna Carta' mean?",
+    "options": [
+      "The Great Charter",
+      "The Great Council",
+      "The King's Law",
+      "The Noble Oath"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Magna Carta means 'the Great Charter'; it was a charter of rights agreed by King John in 1215.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0196",
+    "category": "history",
+    "subcategory": "scottish-parliament",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The Parliament that developed in Scotland had three Houses, called Estates. Which of these lists them?",
+    "options": [
+      "The lords, the commons and the clergy",
+      "The lords, the bishops and the merchants",
+      "The knights, the commons and the judges",
+      "The nobles, the clergy and the craftsmen"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Parliament that developed in Scotland had three Houses, called Estates: the lords, the commons and the clergy.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0197",
+    "category": "history",
+    "subcategory": "printing",
+    "type": "statement",
+    "difficulty": "hard",
+    "question": "Which of these statements is correct?",
+    "options": [
+      "William Caxton was the first person in England to print books using a printing press",
+      "William Caxton wrote The Canterbury Tales",
+      "William Caxton was an Anglo-Saxon king",
+      "William Caxton designed St Paul's Cathedral"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William Caxton was the first person in England to print books using a printing press, and The Canterbury Tales was one of the first books he printed.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0198",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "truefalse",
+    "difficulty": "hard",
+    "question": "No monarch has set foot in the House of Commons since Charles I entered it to try to arrest five parliamentary leaders.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1642 Charles I entered the House of Commons to arrest five parliamentary leaders, who had been warned and were not there, and no monarch has set foot in the Commons since.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0199",
+    "category": "history",
+    "subcategory": "commonwealth",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Cromwell defeated the Scottish army of Charles II at which two battles?",
+    "options": [
+      "Dunbar and Worcester",
+      "Marston Moor and Naseby",
+      "Hastings and Agincourt",
+      "Culloden and Killiecrankie"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Cromwell defeated Charles II's Scottish army at the Battles of Dunbar and Worcester; Charles II escaped and eventually fled to Europe.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0200",
+    "category": "history",
+    "subcategory": "royal-society",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which scientific society, formed during the reign of Charles II, is the oldest surviving scientific society in the world?",
+    "options": [
+      "The Royal Society",
+      "The Royal Academy",
+      "The Royal Institution",
+      "The British Association"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Royal Society was formed during Charles II's reign to promote 'natural knowledge' and is the oldest surviving scientific society in the world.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0201",
+    "category": "history",
+    "subcategory": "isaac-newton",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which of these did the scientist Isaac Newton discover?",
+    "options": [
+      "That white light is made up of the colours of the rainbow",
+      "That the Earth is at the centre of the universe",
+      "That gravity applies only on Earth",
+      "That atoms can be split in a laboratory"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "As well as showing how gravity applied to the whole universe, Newton discovered that white light is made up of the colours of the rainbow.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0202",
+    "category": "history",
+    "subcategory": "glencoe",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which clan was killed at Glencoe after being late in taking an oath to accept William as king?",
+    "options": [
+      "The MacDonalds",
+      "The MacAlpins",
+      "The Stuarts",
+      "The Tudors"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The MacDonalds of Glencoe were late in taking the oath to accept William as king and were all killed; the memory of the massacre made some Scots distrust the new government.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0203",
+    "category": "history",
+    "subcategory": "whigs-tories",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO were the main groups in Parliament after the Glorious Revolution?",
+    "options": [
+      "The Whigs",
+      "The Tories",
+      "The Roundheads",
+      "The Cavaliers"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The two main groups in Parliament after the Glorious Revolution were the Whigs and the Tories, which marked the beginning of party politics.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0204",
+    "category": "history",
+    "subcategory": "migration",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year did the first Jews to come to Britain since the Middle Ages settle in London?",
+    "options": [
+      "1656",
+      "1685",
+      "1707",
+      "1745"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first Jews to come to Britain since the Middle Ages settled in London in 1656.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0205",
+    "category": "history",
+    "subcategory": "robert-burns",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about Robert Burns are correct?",
+    "options": [
+      "He is known in Scotland as 'The Bard'",
+      "His best-known work is the song Auld Lang Syne",
+      "He was an English king in the 18th century",
+      "He designed the Great Western Railway"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Robert Burns, known in Scotland as 'The Bard', wrote in Scots and English; his best-known work is probably the song Auld Lang Syne, sung when celebrating the New Year (Hogmanay).",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0206",
+    "category": "history",
+    "subcategory": "enlightenment",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO statements about the Enlightenment of the 18th century are correct?",
+    "options": [
+      "Adam Smith developed ideas about economics",
+      "David Hume's ideas about human nature still influence philosophers",
+      "It took place mainly in the 13th century",
+      "It taught that the state should tell people what to believe"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Many great Enlightenment thinkers were Scottish: Adam Smith developed ideas about economics, and David Hume's ideas about human nature continue to influence philosophers.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0207",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Before he moved into textiles, what trade did Richard Arkwright train and work in?",
+    "options": [
+      "A barber",
+      "A blacksmith",
+      "A weaver",
+      "A miner"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Richard Arkwright originally trained and worked as a barber, dyeing hair and making wigs, before starting to work in textiles.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0208",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The development of which process led to the mass production of steel?",
+    "options": [
+      "The Bessemer process",
+      "The Arkwright process",
+      "The Brunel process",
+      "The Stephenson process"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The development of the Bessemer process for the mass production of steel led to the development of the shipbuilding industry and the railways.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0209",
+    "category": "history",
+    "subcategory": "exploration",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who mapped the coast of Australia?",
+    "options": [
+      "Captain James Cook",
+      "Sir Francis Drake",
+      "Admiral Nelson",
+      "Isambard Kingdom Brunel"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "During the period of increased colonisation overseas, Captain James Cook mapped the coast of Australia and a few colonies were established there.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0210",
+    "category": "history",
+    "subcategory": "sake-dean-mahomet",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Who opened the Hindoostane Coffee House in London in 1810, the first curry house in Britain?",
+    "options": [
+      "Sake Dean Mahomet",
+      "William Wilberforce",
+      "Richard Arkwright",
+      "Robert Burns"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sake Dean Mahomet, who came to Britain from India, opened the Hindoostane Coffee House in George Street, London, in 1810; it was the first curry house in Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0211",
+    "category": "history",
+    "subcategory": "abolition-slavery",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which Member of Parliament played an important part in changing the law against the slave trade?",
+    "options": [
+      "William Wilberforce",
+      "Sir Robert Walpole",
+      "Guy Fawkes",
+      "Richard Arkwright"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William Wilberforce, an evangelical Christian and a member of Parliament, helped turn public opinion against the slave trade, which became illegal to trade in British ships in 1807.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0212",
+    "category": "history",
+    "subcategory": "brunel",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these were the work of the engineer Isambard Kingdom Brunel?",
+    "options": [
+      "The Clifton Suspension Bridge",
+      "The Great Western Railway",
+      "The Crystal Palace",
+      "The Tower of London"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Brunel designed the Clifton Suspension Bridge and was responsible for constructing the Great Western Railway, the first major railway built in Britain.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0214",
+    "category": "history",
+    "subcategory": "napoleonic-wars",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Who was in charge of the British fleet at the Battle of Trafalgar and was killed in the battle?",
+    "options": [
+      "Admiral Nelson",
+      "The Duke of Wellington",
+      "Sir Robert Walpole",
+      "Captain James Cook"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Admiral Nelson was in charge of the British fleet at Trafalgar in 1805 and was killed in the battle; Nelson's Column in Trafalgar Square is a monument to him.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0215",
+    "category": "history",
+    "subcategory": "second-world-war",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Roughly how many men were rescued from the beaches around Dunkirk by the Navy and civilian volunteers?",
+    "options": [
+      "More than 300,000",
+      "About 30,000",
+      "About 3,000",
+      "More than 3 million"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Civilian volunteers in small pleasure and fishing boats helped the Navy to rescue more than 300,000 men from the beaches around Dunkirk, an event that gave rise to the phrase 'the Dunkirk spirit'.",
+    "source": "Original practice question based on public handbook facts"
+  },
+  {
+    "id": "hist-0216",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which Roman structure in northern England is a UNESCO World Heritage Site?",
+    "options": [
+      "Hadrian's Wall",
+      "The Tower of London",
+      "Stonehenge",
+      "Edinburgh Castle"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Hadrian's Wall, built to defend the Roman province of Britannia against the Picts, is a UNESCO World Heritage Site.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0217",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Boudicca, who led a revolt against the Romans, was queen of which tribe?",
+    "options": [
+      "The Iceni",
+      "The Picts",
+      "The Jutes",
+      "The Normans"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Boudicca was the queen of the Iceni, a tribe in what is now eastern England. She led a rebellion against Roman rule.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0218",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these were introduced or established in Britain by the Romans?",
+    "options": [
+      "New plants and animals",
+      "A structure of law",
+      "The English language",
+      "The printing press"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "The Romans brought new plants and animals to Britain and created a structure of law. English, as we know it, came later with the Anglo-Saxons.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0221",
+    "category": "history",
+    "subcategory": "normans",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What was the system of land ownership introduced by the Normans called?",
+    "options": [
+      "Feudalism",
+      "Capitalism",
+      "Socialism",
+      "Serfdom"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Normans used a system of land ownership called feudalism, in which the king gave land to lords in return for help in war.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0222",
+    "category": "history",
+    "subcategory": "normans",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who became King of England after defeating Harold at the Battle of Hastings in 1066?",
+    "options": [
+      "William, the Duke of Normandy",
+      "Harold of Wessex",
+      "Cnut the Great",
+      "Edward the Confessor"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "William, the Duke of Normandy, defeated Harold at the Battle of Hastings in 1066 and became king, and is known as William the Conqueror.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0224",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which famous battle of the Hundred Years War was fought in 1415?",
+    "options": [
+      "The Battle of Agincourt",
+      "The Battle of Hastings",
+      "The Battle of Bannockburn",
+      "The Battle of Bosworth"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Battle of Agincourt, one of the most famous battles of the Hundred Years War, was fought in 1415 under King Henry V.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0225",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which new class of large landowners emerged in England after the Black Death?",
+    "options": [
+      "The gentry",
+      "The yeomen",
+      "The barons",
+      "The Vikings"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After the Black Death, new social classes appeared, including owners of large areas of land known as 'the gentry'.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0226",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which king established the Church of England after the Pope refused to annul his first marriage?",
+    "options": [
+      "Henry VIII",
+      "Henry VII",
+      "Edward VI",
+      "James I"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "When the Pope refused to annul his marriage to Catherine of Aragon, Henry VIII broke with Rome and established the Church of England.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0227",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of Henry VIII's wives were executed?",
+    "options": [
+      "Anne Boleyn",
+      "Catherine Howard",
+      "Catherine of Aragon",
+      "Jane Seymour"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Henry VIII had six wives; both Anne Boleyn and Catherine Howard were executed. Catherine of Aragon was divorced and Jane Seymour died naturally.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0228",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Henry VII deliberately reduced the power of which group after taking the throne?",
+    "options": [
+      "The nobles",
+      "The merchants",
+      "The clergy",
+      "The peasants"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Henry VII wanted England to remain peaceful and his position secure, so he deliberately reduced the power of the nobles.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0229",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "What did Charles I do in the House of Commons in 1642?",
+    "options": [
+      "He tried to arrest five parliamentary leaders",
+      "He crowned himself king there",
+      "He signed the Bill of Rights",
+      "He abolished the House of Lords"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charles I entered the House of Commons to try to arrest five parliamentary leaders, but they had been warned and had escaped.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0230",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which event of 1688 was later called 'glorious' partly because there was no fighting in England?",
+    "options": [
+      "The Glorious Revolution",
+      "The Gunpowder Plot",
+      "The Great Fire of London",
+      "The Restoration"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The events of 1688 were called the 'Glorious Revolution' because there was no fighting in England and because it confirmed Parliament's power.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0231",
+    "category": "history",
+    "subcategory": "glorious-revolution",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In which year did the Habeas Corpus Act, which protects people against unlawful imprisonment, become law?",
+    "options": [
+      "1679",
+      "1649",
+      "1689",
+      "1707"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Habeas Corpus Act became law in 1679. It remains an important protection against unlawful imprisonment.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0232",
+    "category": "history",
+    "subcategory": "empire",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which British navigator mapped the coast of Australia?",
+    "options": [
+      "Captain James Cook",
+      "Sir Francis Drake",
+      "Sir Walter Raleigh",
+      "Captain Robert Scott"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Captain James Cook mapped the coast of Australia during his voyages of exploration in the 18th century.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0233",
+    "category": "history",
+    "subcategory": "empire",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "In which year did the 13 American colonies declare their independence from Britain?",
+    "options": [
+      "1776",
+      "1707",
+      "1815",
+      "1865"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1776 the 13 American colonies declared their independence, stating that people had a right to establish their own governments.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0234",
+    "category": "history",
+    "subcategory": "empire",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which 1833 Act abolished slavery throughout the British Empire?",
+    "options": [
+      "The Emancipation Act",
+      "The Reform Act",
+      "The Bill of Rights",
+      "The Act of Union"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Campaigners led by William Wilberforce helped to change public opinion, and in 1833 the Emancipation Act abolished slavery throughout the British Empire.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0235",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Richard Arkwright is remembered for his work in which field?",
+    "options": [
+      "Running factories during the Industrial Revolution",
+      "Writing poetry in the 18th century",
+      "Exploring the coast of Australia",
+      "Painting portraits of the monarch"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Richard Arkwright is remembered as an early and highly successful factory owner during the Industrial Revolution.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0236",
+    "category": "history",
+    "subcategory": "19th-century",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The Chartists of the 1830s and 1840s campaigned for reform of which system?",
+    "options": [
+      "The voting and parliamentary system",
+      "The education system",
+      "The railway network",
+      "The Church of England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Chartists campaigned for political reform, including the vote for every man, secret ballots and payment for MPs.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0237",
+    "category": "history",
+    "subcategory": "ww1",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Approximately how many British casualties were there on the first day of the Battle of the Somme in 1916?",
+    "options": [
+      "About 60,000",
+      "About 6,000",
+      "About 600",
+      "About 600,000"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The British attack on the Somme in July 1916 resulted in about 60,000 British casualties on the first day alone.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0238",
+    "category": "history",
+    "subcategory": "ww1",
+    "type": "two",
+    "difficulty": "medium",
+    "question": "Which TWO of these poets wrote about their experiences in the First World War?",
+    "options": [
+      "Wilfred Owen",
+      "Siegfried Sassoon",
+      "William Blake",
+      "Lord Byron"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Wilfred Owen and Siegfried Sassoon were inspired to write about their experiences in the First World War. Blake and Byron wrote much earlier.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0239",
+    "category": "history",
+    "subcategory": "ww2",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Which country did Germany invade in 1939, causing Britain and France to declare war?",
+    "options": [
+      "Poland",
+      "France",
+      "Belgium",
+      "Norway"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "When Hitler invaded Poland in 1939, Britain and France declared war in order to stop his aggression.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0240",
+    "category": "history",
+    "subcategory": "ww2",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "The 'Blitz' refers to which of the following?",
+    "options": [
+      "The bombing of British cities by the German air force",
+      "The evacuation of British troops from France",
+      "The Allied landings in Normandy",
+      "The rescue of soldiers at Dunkirk"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Blitz was the German air force's campaign of night-time bombing of London and other British cities.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0242",
+    "category": "history",
+    "subcategory": "post-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which Minister for Health led the establishment of the National Health Service in 1948?",
+    "options": [
+      "Aneurin Bevan",
+      "Clement Attlee",
+      "Ernest Bevin",
+      "Winston Churchill"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In 1948 Aneurin (Nye) Bevan, the Minister for Health, led the establishment of the National Health Service.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0246",
+    "category": "history",
+    "subcategory": "highland-clearances",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "In the 18th and 19th centuries, what were the 'Highland Clearances'?",
+    "options": [
+      "The removal of people from their land in Scotland to make way for sheep and cattle",
+      "The demolition of castles after the Jacobite rebellion",
+      "The clearing of forests to build warships",
+      "The draining of marshland in eastern England"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Scottish landlords cleared people from their land to make room for large flocks of sheep and cattle, in what became known as the Highland Clearances. Many people were forced to move to towns or emigrate.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0247",
+    "category": "history",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Which scientist became the first person to 'split the atom', in 1919?",
+    "options": [
+      "Ernest Rutherford",
+      "Isaac Newton",
+      "Alexander Fleming",
+      "Charles Darwin"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Ernest Rutherford, working in Manchester, became the first person to split the atom in 1919.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0250",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Why were canals built during the Industrial Revolution?",
+    "options": [
+      "To link factories to towns, cities and ports",
+      "To supply drinking water to country houses",
+      "To carry passengers on holiday",
+      "To defend the coast from invasion"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Canals were built to link the new factories to towns, cities and ports so that raw materials and goods could be moved more easily.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0251",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "How did Charles II escape to Europe after he was defeated by Cromwell's forces?",
+    "options": [
+      "He hid in an oak tree",
+      "He sailed aboard a warship",
+      "He disguised himself as a priest",
+      "He walked across the Scottish border"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "After his defeat, Charles II escaped by hiding in an oak tree before fleeing to Europe.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0252",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Charles I believed in the 'Divine Right of Kings'. What did he try to do as a result?",
+    "options": [
+      "Rule without Parliament",
+      "Give more power to Parliament",
+      "Abolish the monarchy",
+      "Introduce a written constitution"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Charles I believed that the king ruled by divine right, and he tried to rule without Parliament, which led to conflict and later to the Civil War.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0253",
+    "category": "history",
+    "subcategory": "english-civil-war",
+    "type": "truefalse",
+    "difficulty": "medium",
+    "question": "The Puritans were Protestants who wanted to make the Church of England plainer and simpler.",
+    "options": [
+      "True",
+      "False"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Puritans were Protestants who wanted to purify the Church of England and make its worship plainer and simpler.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0254",
+    "category": "history",
+    "subcategory": "empire",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What name was given to the Irish nationalists who wanted complete independence from the UK in the 19th century?",
+    "options": [
+      "The Fenians",
+      "The Jacobites",
+      "The Chartists",
+      "The Covenanters"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Irish nationalists who favoured complete independence from the UK in the 19th century were known as the Fenians.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0255",
+    "category": "history",
+    "subcategory": "roman-britain",
+    "type": "two",
+    "difficulty": "hard",
+    "question": "Which TWO of these were Roman forts on Hadrian's Wall?",
+    "options": [
+      "Vindolanda",
+      "Housesteads",
+      "Skara Brae",
+      "Stonehenge"
+    ],
+    "answer": [
+      0,
+      1
+    ],
+    "explanation": "Vindolanda and Housesteads are Roman forts on Hadrian's Wall. Skara Brae is a prehistoric village in Orkney and Stonehenge is a prehistoric monument in Wiltshire.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0256",
+    "category": "history",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "Alan Turing devised which theoretical machine in the 1930s?",
+    "options": [
+      "The Turing machine",
+      "The steam engine",
+      "The jet engine",
+      "The spinning jenny"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the 1930s Alan Turing devised the Turing machine, a mathematical model of computing, and he later worked on breaking enemy codes during the Second World War.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0257",
+    "category": "history",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "easy",
+    "question": "Who was voted the greatest Briton of all time in a 2002 poll?",
+    "options": [
+      "Winston Churchill",
+      "Queen Victoria",
+      "Isaac Newton",
+      "William Shakespeare"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Winston Churchill, who led Britain as Prime Minister during much of the Second World War, was voted the greatest Briton of all time in a 2002 poll.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0258",
+    "category": "history",
+    "subcategory": "industrial-revolution",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which power source drove much of Britain's industrial development during the Industrial Revolution?",
+    "options": [
+      "Steam power",
+      "Electricity",
+      "Nuclear power",
+      "Wind power"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Industrial Revolution relied on steam power, which was used to drive machinery in mines, mills and factories.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0259",
+    "category": "history",
+    "subcategory": "19th-century",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "During the Victorian age, how did the government promote a policy of free trade?",
+    "options": [
+      "By abolishing a number of taxes on imported goods",
+      "By banning all foreign goods",
+      "By nationalising the railways",
+      "By setting up a single state bank"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "In the Victorian age the government promoted free trade by abolishing a number of taxes on imported goods.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0260",
+    "category": "history",
+    "subcategory": "tudors",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "The English translation of the Bible produced during the reign of James I is known as which version?",
+    "options": [
+      "The Authorised Version",
+      "The Geneva Bible",
+      "The Latin Vulgate",
+      "The Bishops' Bible"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The version of the Bible created during the reign of James I became known as the Authorised Version, or the King James Version.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0261",
+    "category": "history",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "What did Sir Frank Whittle invent in the 1930s?",
+    "options": [
+      "The jet engine",
+      "The television",
+      "The steam locomotive",
+      "The telephone"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Sir Frank Whittle invented the jet engine in the 1930s.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0262",
+    "category": "history",
+    "subcategory": "middle-ages",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "During the Middle Ages, what were serfs?",
+    "options": [
+      "Peasants who worked the land of their lord",
+      "Wealthy landowners who owned large estates",
+      "Soldiers who guarded the king's castles",
+      "Traders who sold goods in market towns"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "Serfs were peasants who had a small area of their lord's land to farm in return for working on the lord's land. They were not free to leave.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0263",
+    "category": "history",
+    "subcategory": "20th-century",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "During the Great Depression of the 1930s, which British industry was badly affected?",
+    "options": [
+      "Shipbuilding",
+      "Tourism",
+      "Agriculture",
+      "Banking"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The Great Depression of the 1930s hit traditional heavy industries hard, and shipbuilding in particular suffered badly.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0264",
+    "category": "history",
+    "subcategory": "empire",
+    "type": "single",
+    "difficulty": "medium",
+    "question": "Which monarch was on the throne when the 13 American colonies declared their independence in 1776?",
+    "options": [
+      "George III",
+      "George I",
+      "Charles II",
+      "William IV"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "George III was king when the 13 American colonies declared independence in 1776.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  },
+  {
+    "id": "hist-0265",
+    "category": "history",
+    "subcategory": "iron-age",
+    "type": "single",
+    "difficulty": "hard",
+    "question": "The earliest coins made in Britain carried which of the following?",
+    "options": [
+      "The names of local kings",
+      "A portrait of the Roman emperor",
+      "The Christian cross",
+      "A map of the tribe's lands"
+    ],
+    "answer": [
+      0
+    ],
+    "explanation": "The first coins made in Britain, during the Iron Age, carried the names of local kings.",
+    "source": "Original practice question based on public facts",
+    "batch": "new"
+  }
+]

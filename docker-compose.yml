@@ -1,0 +1,9 @@
+services:
+  life-in-uk:
+    build: .
+    image: life-in-uk-test:latest
+    container_name: life-in-uk-test
+    ports:
+      # Change the left-hand side if 8080 is already in use, e.g. LIFE_IN_UK_PORT=8090 docker compose up -d
+      - "${LIFE_IN_UK_PORT:-8080}:80"
+    restart: unless-stopped

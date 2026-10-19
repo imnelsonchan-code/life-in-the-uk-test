@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# The app is entirely static. This workflow validates the committed pool, runs
+# the regression suite, and publishes only the `app/` directory.
+#
+# One-time setup: Settings -> Pages -> Build and deployment -> Source:
+# "GitHub Actions". Then push to `main`.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; newer pushes cancel in-flight ones.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Validate the question pool
+        run: node tools/validate.js
+
+      - name: Run the regression suite
+        run: node tools/test.js
+
+      # Give every deploy a fresh asset URL so browsers don't reuse a cached
+      # app.js/styles.css from the previous release.
+      - name: Stamp asset URLs with the commit
+        run: |
+          SHA="${GITHUB_SHA::7}"
+          sed -i -E "s/(\?v=)[^\"']*/\1${SHA}/g" app/index.html
+          grep -o '?v=[^"]*' app/index.html
+
+      - name: Upload the static app
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: app
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

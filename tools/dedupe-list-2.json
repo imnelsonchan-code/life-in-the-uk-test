@@ -1,0 +1,7 @@
+[
+  { "id": "uk-0074", "keep": "uk-0038", "reason": "which are British overseas territories - same fact as uk-0038" },
+  { "id": "soc-0113", "keep": "uk-0016", "reason": "St Andrew's Day is 30 November - same fact as uk-0016" },
+  { "id": "hist-0213", "keep": "uk-0029", "reason": "why the Welsh dragon is not on the Union Flag - same fact as uk-0029" },
+  { "id": "hist-0120", "keep": "soc-0122", "reason": "first tennis club, Leamington Spa 1872 - same fact as soc-0122" },
+  { "id": "hist-0129", "keep": "soc-0124", "reason": "motor racing in the UK began 1902 - same fact as soc-0124" }
+]
