@@ -109,7 +109,7 @@ On the final days you re-read only that sheet — not the whole book.
 | Day 7 (baseline) | ~15/24 | You know the format |
 | Day 12 | **18+/24** | Passing level |
 | Day 21 | **20+/24** | Comfortable |
-| Day 25 | **22+/24** | Exam-ready with margin (day 26 confirms it under exam conditions) |
+| Day 26 | **22+/24** | Exam-ready with margin (day 25 sets it, day 26 confirms it under exam conditions) |
 
 ---
 
