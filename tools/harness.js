@@ -217,6 +217,9 @@ class Page {
       const u = entry.url || '';
       // A missing favicon is noise from a plain static file server.
       if (/favicon/.test(t) || /favicon/.test(u)) return;
+      // The GitHub star count is an optional, best-effort lookup: the app hides
+      // the count when it fails, so a failure here is never an app defect.
+      if (/api\.github\.com/.test(u) || /api\.github\.com/.test(t)) return;
       this.netFailures.push(u ? `${t} (${u})` : t);
     } else if (msg.method === 'Page.javascriptDialogOpening') {
       this.dialogs.push(msg.params.message);

@@ -519,7 +519,9 @@ const ui = {
 const mainEl = document.getElementById('main');
 const headerSub = document.getElementById('headerSubtitle');
 const backBtn = document.getElementById('backBtn');
-const headerRight = document.getElementById('headerRight');
+/* The GitHub button lives directly in #headerRight and must survive re-renders,
+ * so screen-specific header content goes into this separate slot. */
+const headerExtra = document.getElementById('headerExtra');
 
 function setTab(tab) {
   ui.tab = tab;
@@ -821,7 +823,7 @@ function submitMock(auto) {
  * ========================================================================= */
 
 function render() {
-  headerRight.innerHTML = '';
+  headerExtra.innerHTML = '';
   backBtn.hidden =
     (ui.screen === 'home' || ui.screen === 'mock-home') && !(ui.tab === 'verify' && ui.verify.cat);
   headerSub.textContent =
@@ -946,6 +948,20 @@ function renderPracticeHome() {
         <button class="btn" data-action="start-new" ${newCount ? '' : 'disabled'}>✨ Practise new (${newCount})</button>
         <button class="btn secondary" data-action="verify-new" ${newCount ? '' : 'disabled'}>✅ Verify new</button>
       </div>
+    </div>
+
+    <h2 class="section">Links</h2>
+    <div class="app-grid">
+      <a class="app-tile" id="ghTile" href="${GH.url}" target="_blank" rel="noopener noreferrer">
+        <span class="app-ico gh" aria-hidden="true">${GH_ICON}</span>
+        <span class="app-label">GitHub</span>
+        <span class="app-sub" id="ghTileStars">${ghStarsText()}</span>
+      </a>
+      <a class="app-tile" href="https://www.gov.uk/life-in-the-uk-test" target="_blank" rel="noopener noreferrer">
+        <span class="app-ico gov" aria-hidden="true">🇬🇧</span>
+        <span class="app-label">Official test</span>
+        <span class="app-sub">GOV.UK</span>
+      </a>
     </div>
   `;
 }
@@ -1181,7 +1197,7 @@ function renderMock() {
   const answered = m.items.filter((it) => it.selected.size).length;
 
   headerSub.textContent = 'Mock test';
-  headerRight.innerHTML = `<span class="timer ${left <= 300 ? 'low' : ''}" id="mockTimer">${fmtTime(left)}</span>`;
+  headerExtra.innerHTML = `<span class="timer ${left <= 300 ? 'low' : ''}" id="mockTimer">${fmtTime(left)}</span>`;
 
   mainEl.innerHTML = `
     <div class="q-progress">
@@ -2184,6 +2200,91 @@ document.addEventListener('keydown', (e) => {
 });
 
 /* =========================================================================
+ * GitHub link + star count
+ *
+ * This is the only part of the app that ever touches the network: an
+ * optional, cached, best-effort read of the repo's public star count. With no
+ * connection the count is simply hidden and the links still work.
+ * ========================================================================= */
+
+const GH_REPO = 'imnelsonchan-code/life-in-the-uk-test';
+const GH = {
+  repo: GH_REPO,
+  url: 'https://github.com/' + GH_REPO,
+  key: 'liuk_gh_stars_v1',
+  ttlMs: 6 * 60 * 60 * 1000, // don't ask GitHub more than once every 6 hours
+  stars: null,
+};
+
+const GH_ICON =
+  '<svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true" focusable="false">' +
+  '<path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/>' +
+  '</svg>';
+
+/** 1234 -> "1.2k". */
+function fmtCount(n) {
+  return n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, '') + 'k' : String(n);
+}
+
+function ghStarsText() {
+  if (GH.stars == null) return 'Star the project';
+  return '★ ' + fmtCount(GH.stars) + (GH.stars === 1 ? ' star' : ' stars');
+}
+
+/** Paint the star count into every place that shows it (header + home tile). */
+function applyStars(n) {
+  GH.stars = n;
+  const head = document.getElementById('ghCount');
+  if (head) {
+    head.textContent = n == null ? '' : '★ ' + fmtCount(n);
+    head.hidden = n == null;
+  }
+  const tile = document.getElementById('ghTileStars');
+  if (tile) tile.textContent = ghStarsText();
+}
+
+function readStarCache() {
+  try {
+    const raw = JSON.parse(localStorage.getItem(GH.key) || 'null');
+    if (raw && typeof raw.n === 'number' && typeof raw.t === 'number') return raw;
+  } catch (e) {
+    /* corrupt cache — treat as empty */
+  }
+  return null;
+}
+
+function initGithub() {
+  const btn = document.getElementById('ghBtn');
+  if (btn) {
+    btn.href = GH.url;
+    const ico = btn.querySelector('.gh-ico');
+    if (ico && !ico.firstChild) ico.innerHTML = GH_ICON;
+  }
+
+  const cached = readStarCache();
+  if (cached) applyStars(cached.n);
+  if (cached && Date.now() - cached.t < GH.ttlMs) return;
+  if (navigator.onLine === false) return;
+
+  fetch('https://api.github.com/repos/' + GH.repo, {
+    headers: { Accept: 'application/vnd.github+json' },
+  })
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => {
+      if (!j || typeof j.stargazers_count !== 'number') return;
+      try {
+        localStorage.setItem(GH.key, JSON.stringify({ n: j.stargazers_count, t: Date.now() }));
+      } catch (e) {
+        /* storage full or blocked — the count just won't be cached */
+      }
+      applyStars(j.stargazers_count);
+    })
+    .catch(() => {
+      /* offline or rate-limited: leave the count hidden, nothing else changes */
+    });
+}
+
+/* =========================================================================
  * Boot
  * ========================================================================= */
 
@@ -2191,6 +2292,7 @@ document.addEventListener('keydown', (e) => {
   try {
     await loadData();
     render();
+    initGithub();
   } catch (err) {
     mainEl.innerHTML = `
       <div class="card">

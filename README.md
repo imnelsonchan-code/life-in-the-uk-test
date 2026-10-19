@@ -30,8 +30,13 @@ keep getting wrong.
   handbook, mark each question *OK* or *needs fix*, and export the notes.
 - **Multiple people** — optional named profiles, so several people can share one
   device without mixing up their progress.
+- **Project link** — a GitHub star button sits in the header (and a
+  home-screen-style tile on the Practice home) pointing at the source repo, with
+  its live star count.
 - **Offline** — everything (progress included) lives in `localStorage`. There is
-  no backend and no network traffic.
+  no backend and no account, and no data ever leaves the device. The single
+  optional network call is the GitHub star count; if it can't be reached, the
+  number is hidden and the rest of the app is unaffected.
 
 ## The question pool
 

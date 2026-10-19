@@ -123,6 +123,56 @@ module.exports = {
         suite.eq('hidden on the user tab', await backVisible(), false);
       });
 
+      await suite.group('GitHub link', async () => {
+        const REPO = 'https://github.com/imnelsonchan-code/life-in-the-uk-test';
+        suite.check('header star button exists', await page.exists('#ghBtn'));
+        suite.eq(
+          'header button points at the repo',
+          await page.eval('return document.getElementById("ghBtn").href'),
+          REPO
+        );
+        suite.check(
+          'header button opens in a new tab, safely',
+          await page.eval(
+            'var b=document.getElementById("ghBtn"); return b.target === "_blank" && /noopener/.test(b.rel);'
+          )
+        );
+        // It must live outside the dynamic slot, so screen renders never wipe it.
+        suite.eq(
+          'header button is not inside the dynamic slot',
+          await page.eval(
+            'return document.getElementById("headerExtra").contains(document.getElementById("ghBtn"));'
+          ),
+          false
+        );
+        suite.check(
+          'header button has an icon',
+          await page.eval('return !!document.querySelector("#ghBtn .gh-ico svg");')
+        );
+
+        await page.click('.tab[data-tab="practice"]');
+        await page.waitFor('ui.tab === "practice" && ui.screen === "home"', { label: 'practice home' });
+        suite.check('home has a GitHub tile', await page.exists('#ghTile'));
+        suite.eq(
+          'tile points at the repo',
+          await page.eval('return document.getElementById("ghTile").href'),
+          REPO
+        );
+        suite.check(
+          'tile opens in a new tab, safely',
+          await page.eval(
+            'var a=document.getElementById("ghTile"); return a.target === "_blank" && /noopener/.test(a.rel);'
+          )
+        );
+        suite.check(
+          'tile shows a star label',
+          await page.eval(
+            'var s=document.getElementById("ghTileStars"); return !!s && /star/i.test(s.textContent);'
+          ),
+          await page.eval('var s=document.getElementById("ghTileStars"); return s ? s.textContent : null;')
+        );
+      });
+
       await suite.group('No client-side errors', async () => {
         const problems = page.problems();
         suite.check('no console errors or failed requests', problems.length === 0, problems.join(' | '));

@@ -115,6 +115,50 @@ body {
   align-items: center;
   gap: 8px;
 }
+.header-extra {
+  display: flex;
+  align-items: center;
+}
+
+/* GitHub button — always in the header, never cleared by a re-render */
+.gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.gh-btn:active {
+  transform: scale(0.96);
+}
+.gh-btn .gh-ico {
+  display: inline-flex;
+  align-items: center;
+}
+.gh-label {
+  display: none;
+}
+.gh-count {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.gh-count[hidden] {
+  display: none;
+}
+/* Show the "GitHub" word only when the header has room for it. */
+@media (min-width: 430px) {
+  .gh-label {
+    display: inline;
+  }
+}
 
 .icon-btn {
   width: 40px;
@@ -168,6 +212,60 @@ body {
   box-shadow: var(--shadow);
   padding: 14px;
   margin-bottom: 12px;
+}
+
+/* ---------- links (home-screen style app tiles) ---------- */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(84px, 1fr));
+  gap: 14px 8px;
+  margin-bottom: 4px;
+}
+.app-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  text-decoration: none;
+  text-align: center;
+}
+.app-tile:active {
+  transform: scale(0.97);
+}
+.app-ico {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  line-height: 1;
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+.app-ico svg {
+  width: 24px;
+  height: 24px;
+}
+.app-ico.gov {
+  border-color: transparent;
+  background: linear-gradient(135deg, #012169 0%, #012169 55%, #c8102e 55%, #c8102e 100%);
+}
+.app-label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.app-sub {
+  font-size: 11px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
 }
 
 h2.section {
