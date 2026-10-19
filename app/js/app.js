@@ -2122,9 +2122,10 @@ function initGithub() {
  * Install — "Add to Home Screen"
  *
  * The header button shows unless the app is already running as an installed
- * app. On Chromium it fires the browser's own install prompt; elsewhere it
- * explains the menu route, because iOS Safari and Firefox give the page no
- * install API at all.
+ * app. On Chromium it fires the browser's own install prompt; elsewhere
+ * (iOS Safari, Firefox — they give the page no install API at all) it opens a
+ * step-by-step panel, because a fleeting toast is gone by the time the user has
+ * found the Share sheet, and on iOS the menu entry is easy to miss or hide.
  * ========================================================================= */
 
 const INSTALL = { prompt: null, done: false, btn: null };
@@ -2149,29 +2150,141 @@ function refreshInstallButton() {
   INSTALL.btn.hidden = INSTALL.done || isStandalone();
 }
 
-function installHint() {
-  if (isIos()) return 'Tap Share, then "Add to Home Screen"';
-  return 'Open your browser menu and choose "Install app" or "Add to Home screen"';
+/* On iOS only Safari can add a web app to the Home Screen. Telling someone in
+ * Chrome to look for "Add to Home Screen" is what makes this feel broken, so
+ * name the browser they are actually in. */
+const IOS_BROWSERS = [
+  [/CriOS/, 'Chrome'],
+  [/FxiOS/, 'Firefox'],
+  [/EdgiOS/, 'Edge'],
+  [/OPiOS/, 'Opera'],
+  [/GSA/, 'the Google app'],
+  [/DuckDuckGo/, 'DuckDuckGo'],
+];
+
+const ANDROID_BROWSERS = [
+  [/SamsungBrowser/, 'Samsung Internet'],
+  [/EdgA/, 'Edge'],
+  [/OPR\//, 'Opera'],
+  [/Firefox|FxiOS/, 'Firefox'],
+  [/Chrome|CriOS/, 'Chrome'],
+];
+
+function namedBrowser(list) {
+  const ua = navigator.userAgent;
+  const hit = list.find((b) => b[0].test(ua));
+  return hit ? hit[1] : null;
+}
+
+function isAndroid() {
+  return /Android/i.test(navigator.userAgent);
+}
+
+function androidSetupSteps(browser) {
+  if (browser === 'Samsung Internet') {
+    return [
+      'Tap the <strong>☰ menu</strong> at the bottom right.',
+      'Tap <strong>Add page to</strong>, then <strong>Home screen</strong>.',
+      'Tap <strong>Add</strong> — the app then opens on its own, without the browser bars.',
+    ];
+  }
+  if (browser === 'Firefox') {
+    return [
+      'Tap the <strong>⋮ menu</strong> at the top right.',
+      'Tap <strong>Install</strong> (on older versions, <strong>Add to Home screen</strong>).',
+      'Confirm it — the app then opens on its own, without the browser bars.',
+    ];
+  }
+  return [
+    'Tap the <strong>⋮ menu</strong> at the top right.',
+    'Tap <strong>Install app</strong> — or <strong>Add to Home screen</strong> if that is what it says.',
+    'Tap <strong>Install</strong> — the app then opens on its own, without the browser bars.',
+  ];
+}
+
+/** The steps and caveats for this device, as HTML-ready strings (safe literals). */
+function installHelp() {
+  if (isIos()) {
+    const other = namedBrowser(IOS_BROWSERS);
+    return {
+      steps: [
+        'Tap the <strong>⋯ Page Menu</strong> button beside the address bar, then <strong>Share</strong>.',
+        'Scroll down the list and tap <strong>Add to Home Screen</strong>.',
+        'Leave <strong>Open as Web App</strong> switched on, then tap <strong>Add</strong>.',
+      ],
+      notes: [
+        other
+          ? `You are in <strong>${other}</strong>. Open this page in <strong>Safari</strong> first — only Safari can add a web app on iPhone and iPad.`
+          : 'Only <strong>Safari</strong> can add a web app on iPhone and iPad; Chrome, Firefox and Edge on iOS cannot.',
+        'Cannot see <strong>Add to Home Screen</strong> in the Share list? Scroll to the very bottom of it, tap <strong>Edit Actions</strong>, and switch it on.',
+      ],
+    };
+  }
+  if (isAndroid()) {
+    const browser = namedBrowser(ANDROID_BROWSERS);
+    return {
+      steps: androidSetupSteps(browser),
+      notes: [
+        'On Android the browser usually offers its own <strong>Install</strong> prompt — if you dismissed that before, this menu route is the way back.',
+        'No option at all? The app may already be installed — look on your home screen and in the app drawer for <strong>Life in the UK</strong>.',
+      ],
+    };
+  }
+  return {
+    steps: [
+      'Open your browser menu (⋮ or ⋯).',
+      'Choose <strong>Install app</strong> or <strong>Add to Home screen</strong>.',
+      'Confirm it — the app gets its own icon and opens without the browser bars.',
+    ],
+    notes: [],
+  };
+}
+
+function openInstallHelp() {
+  const el = document.getElementById('installHelp');
+  const body = document.getElementById('installHelpBody');
+  if (!el || !body) {
+    toast('Open your browser menu and choose "Add to Home screen"');
+    return;
+  }
+  const help = installHelp();
+  body.innerHTML =
+    '<ol class="sheet-steps">' +
+    help.steps.map((s) => `<li>${s}</li>`).join('') +
+    '</ol>' +
+    help.notes.map((n) => `<p class="sheet-note">${n}</p>`).join('');
+  el.hidden = false;
+  const close = document.getElementById('installHelpClose');
+  if (close) close.focus();
+}
+
+function closeInstallHelp() {
+  const el = document.getElementById('installHelp');
+  if (el) el.hidden = true;
 }
 
 function installNow() {
   const p = INSTALL.prompt;
   INSTALL.prompt = null; // a captured prompt can only be spent once
   if (!p) {
-    toast(installHint(), 6000);
+    // No browser prompt (iOS Safari and Firefox never offer one): walk through it.
+    openInstallHelp();
     return;
   }
-  let choice = null;
+
+  let started;
   try {
-    p.prompt();
-    choice = p.userChoice;
+    // Chromium returns a promise here; a refusal (no user gesture, or a prompt
+    // that was already spent) arrives as a rejection, not a throw.
+    started = p.prompt();
   } catch (e) {
-    // A few browsers expose the event but refuse the call (no user gesture);
-    // fall back to telling the user where the menu entry lives.
-    toast(installHint(), 6000);
+    // Older implementations throw instead.
+    openInstallHelp();
     return;
   }
-  Promise.resolve(choice)
+  Promise.resolve(started).catch(() => openInstallHelp());
+
+  Promise.resolve(p.userChoice)
     .then((c) => {
       if (c && c.outcome === 'accepted') {
         INSTALL.done = true;
@@ -2187,6 +2300,26 @@ function initInstall() {
   if (!INSTALL.btn) return;
   INSTALL.btn.addEventListener('click', installNow);
   refreshInstallButton();
+
+  const close = document.getElementById('installHelpClose');
+  if (close) close.addEventListener('click', closeInstallHelp);
+  const scrim = document.getElementById('installHelp');
+  if (scrim) {
+    scrim.addEventListener('click', (e) => {
+      if (e.target === scrim) closeInstallHelp(); // tap outside the sheet
+    });
+    // Escape closes it, and while it is open the answer-key shortcuts stay out
+    // of the way.
+    document.addEventListener(
+      'keydown',
+      (e) => {
+        if (scrim.hidden) return;
+        if (e.key === 'Escape') closeInstallHelp();
+        e.stopPropagation();
+      },
+      true
+    );
+  }
 
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault(); // keep the prompt back for our own button

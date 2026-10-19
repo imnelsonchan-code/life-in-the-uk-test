@@ -198,20 +198,217 @@ module.exports = {
           await page.eval('return !!document.querySelector("#installBtn svg");')
         );
 
-        // With no captured prompt, the click must explain where the menu entry is.
+        // No captured prompt (iOS Safari and Firefox never offer one): the click
+        // must open the step-by-step panel rather than a toast that is gone
+        // before the user has finished hunting through the Share sheet.
+        await page.eval('INSTALL.prompt = null; return true;');
+        suite.check(
+          'the install help panel starts hidden',
+          await page.eval('return document.getElementById("installHelp").hidden;')
+        );
+        await page.click('#installBtn');
+        suite.check(
+          'clicking it with no prompt opens the help panel',
+          await page.eval('return !document.getElementById("installHelp").hidden;')
+        );
+        suite.check(
+          'the panel is a labelled dialog',
+          await page.eval(
+            'var d = document.querySelector("#installHelp .sheet");' +
+              'return d.getAttribute("role") === "dialog" && d.getAttribute("aria-modal") === "true" &&' +
+              ' !!document.getElementById(d.getAttribute("aria-labelledby")).textContent;'
+          )
+        );
+        suite.check(
+          'the panel lists the install steps',
+          await page.eval('return document.querySelectorAll("#installHelp .sheet-steps li").length >= 3;')
+        );
+        suite.check(
+          'the steps name the home screen',
+          await page.eval('return /home screen/i.test(document.getElementById("installHelpBody").innerText);')
+        );
+        suite.check(
+          'the panel has a way out',
+          await page.eval('return !!document.getElementById("installHelpClose");')
+        );
+
+        // It must outlive a render and stay until dismissed.
+        await page.eval('render(); return true;');
+        suite.check(
+          'a re-render leaves the panel up',
+          await page.eval('return !document.getElementById("installHelp").hidden;')
+        );
+        await page.eval('document.getElementById("installHelpClose").click(); return true;');
+        suite.check(
+          'the button closes it',
+          await page.eval('return document.getElementById("installHelp").hidden;')
+        );
+        await page.click('#installBtn');
+        await page.eval('document.getElementById("installHelp").click(); return true;');
+        suite.check(
+          'tapping outside closes it too',
+          await page.eval('return document.getElementById("installHelp").hidden;')
+        );
+        await page.eval('INSTALL.prompt = null; return true;');
+        await page.click('#installBtn');
+        await page.send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
+        await page.send('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Escape', code: 'Escape', windowsVirtualKeyCode: 27 });
+        suite.check(
+          'and Escape closes it',
+          await page.eval('return document.getElementById("installHelp").hidden;')
+        );
+
+        // On an iPhone the panel has to name the Safari route, and the Share
+        // list's own "Add to Home Screen" toggle (the usual reason it "does not
+        // work"), and it has to say when the browser cannot do it at all.
+        const IPHONE_UA =
+          'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 ' +
+          '(KHTML, like Gecko) Version/18.5 Mobile/15E148 Safari/604.1';
+        const IPHONE_CHROME_UA =
+          'Mozilla/5.0 (iPhone; CPU iPhone OS 18_5 like Mac OS X) AppleWebKit/605.1.15 ' +
+          '(KHTML, like Gecko) CriOS/140.0.7339.100 Mobile/15E148 Safari/604.1';
+
+        await page.send('Emulation.setUserAgentOverride', {
+          userAgent: IPHONE_UA,
+          platform: 'iPhone',
+        });
+        await page.goto(base + '/');
+        await page.ready(EXPECTED_POOL);
+        await page.eval('INSTALL.prompt = null; return true;');
+        await page.click('#installBtn');
+        const iosBody = await page.eval('return document.getElementById("installHelpBody").innerText;');
+        suite.check(
+          'iPhone: the panel is shown',
+          await page.eval('return !document.getElementById("installHelp").hidden;')
+        );
+        suite.check('iPhone: it names the Share sheet', /share/i.test(iosBody), iosBody);
+        suite.check('iPhone: it names Add to Home Screen', /add to home screen/i.test(iosBody), iosBody);
+        suite.check('iPhone: it mentions Edit Actions', /edit actions/i.test(iosBody), iosBody);
+        suite.check('iPhone: it names Safari', /safari/i.test(iosBody), iosBody);
+        suite.check('iPhone: it does not talk about browser menus', !/browser menu/i.test(iosBody), iosBody);
+        await page.eval('closeInstallHelp(); return true;');
+
+        await page.send('Emulation.setUserAgentOverride', {
+          userAgent: IPHONE_CHROME_UA,
+          platform: 'iPhone',
+        });
+        await page.goto(base + '/');
+        await page.ready(EXPECTED_POOL);
+        await page.eval('INSTALL.prompt = null; return true;');
+        await page.click('#installBtn');
+        const chromeBody = await page.eval('return document.getElementById("installHelpBody").innerText;');
+        suite.check('iPhone Chrome: it names the browser in use', /Chrome/.test(chromeBody), chromeBody);
+        suite.check('iPhone Chrome: and sends the user to Safari', /Safari/i.test(chromeBody), chromeBody);
+        await page.eval('closeInstallHelp(); return true;');
+
+        await page.send('Emulation.setUserAgentOverride', { userAgent: '' });
+        await page.goto(base + '/');
+        await page.ready(EXPECTED_POOL);
         await page.eval('INSTALL.prompt = null; return true;');
         await page.click('#installBtn');
         suite.check(
-          'clicking it with no prompt explains how to install',
-          await page.eval('return !document.getElementById("toast").hidden;')
+          'back on a desktop browser the panel is up again',
+          await page.eval('return !document.getElementById("installHelp").hidden;')
         );
         suite.check(
-          'the hint names the home screen',
+          'and it talks about the browser menu, not about Safari',
           await page.eval(
-            'return /home screen|Share/i.test(document.getElementById("toast").textContent);'
+            'return /browser menu/i.test(document.getElementById("installHelpBody").innerText);'
           ),
-          await page.eval('return document.getElementById("toast").textContent;')
+          await page.eval('return document.getElementById("installHelpBody").innerText;')
         );
+        await page.eval('closeInstallHelp(); return true;');
+
+        /* ------------------------------------------------------------ Android ---
+         * Android offers the same function as the iPhone: the button is in the
+         * header, Chrome's own install prompt is used when it is available, and
+         * otherwise the panel has to give the right menu route for the browser
+         * the person is actually holding (Chrome, Samsung Internet, Firefox).
+         */
+        const ANDROID_CHROME =
+          'Mozilla/5.0 (Linux; Android 14; Pixel 7) AppleWebKit/537.36 (KHTML, like Gecko) ' +
+          'Chrome/140.0.0.0 Mobile Safari/537.36';
+        const ANDROID_SAMSUNG =
+          'Mozilla/5.0 (Linux; Android 14; SM-S918B) AppleWebKit/537.36 (KHTML, like Gecko) ' +
+          'SamsungBrowser/27.0 Chrome/125.0.0.0 Mobile Safari/537.36';
+        const ANDROID_FIREFOX =
+          'Mozilla/5.0 (Android 14; Mobile; rv:133.0) Gecko/133.0 Firefox/133.0';
+
+        const asAndroid = async (ua, label, want, notWant) => {
+          await page.send('Emulation.setUserAgentOverride', { userAgent: ua, platform: 'Linux armv8l' });
+          await page.goto(base + '/');
+          await page.ready(EXPECTED_POOL);
+          suite.check(
+            `${label}: the install button is offered`,
+            await page.eval('return !document.getElementById("installBtn").hidden;')
+          );
+          suite.check(
+            `${label}: the app is not treated as iOS`,
+            await page.eval('return isIos() === false && isStandalone() === false;')
+          );
+          await page.eval('INSTALL.prompt = null; return true;');
+          await page.click('#installBtn');
+          const body = await page.eval('return document.getElementById("installHelpBody").innerText;');
+          suite.check(`${label}: the panel names ${want}`, new RegExp(want, 'i').test(body), body);
+          if (notWant) {
+            suite.check(`${label}: and never mentions ${notWant}`, !new RegExp(notWant, 'i').test(body), body);
+          }
+          await page.eval('closeInstallHelp(); return true;');
+        };
+
+        await asAndroid(ANDROID_CHROME, 'android chrome', 'Install app', 'Safari');
+        await asAndroid(ANDROID_SAMSUNG, 'android samsung internet', 'Home screen', 'Safari');
+        await asAndroid(ANDROID_FIREFOX, 'android firefox', 'Install', 'Safari');
+
+        // Android Chrome with a captured prompt must spend it, exactly as on
+        // desktop — the native prompt is the whole point of the feature there.
+        await page.send('Emulation.setUserAgentOverride', {
+          userAgent: ANDROID_CHROME,
+          platform: 'Linux armv8l',
+        });
+        await page.goto(base + '/');
+        await page.ready(EXPECTED_POOL);
+        await page.eval(
+          'window.__prompted = 0;' +
+            'INSTALL.prompt = {' +
+            '  prompt: function(){ window.__prompted++; },' +
+            '  userChoice: Promise.resolve({ outcome: "accepted" })' +
+            '};' +
+            'return true;'
+        );
+        await page.click('#installBtn');
+        suite.check(
+          'android chrome: the native install prompt is used',
+          await page.eval('return window.__prompted === 1;')
+        );
+        await page.waitFor('INSTALL.done === true');
+        suite.check(
+          'android chrome: and the button retires afterwards',
+          await page.eval('return document.getElementById("installBtn").hidden;')
+        );
+
+        // Back to the default user agent for the rest of the file.
+        await page.send('Emulation.setUserAgentOverride', { userAgent: '' });
+        await page.goto(base + '/');
+        await page.ready(EXPECTED_POOL);
+
+        // A prompt the browser refuses (no user gesture) is a rejected promise,
+        // not a thrown error: the panel must take over, and nothing may be left
+        // as an unhandled rejection.
+        await page.eval(
+          'INSTALL.prompt = {' +
+            '  prompt: function(){ return Promise.reject(new Error("no user gesture")); },' +
+            '  userChoice: new Promise(function(){})' + // never settles: the prompt was refused
+            '};' +
+            'return true;'
+        );
+        await page.click('#installBtn');
+        await page.waitFor('!document.getElementById("installHelp").hidden', { label: 'refused prompt fallback' });
+        suite.check(
+          'a refused prompt opens the panel instead',
+          await page.eval('return !document.getElementById("installHelp").hidden;')
+        );
+        await page.eval('closeInstallHelp(); INSTALL.prompt = null; return true;');
 
         // With a prompt captured, the click must spend it and retire the button.
         // (A synthetic element.click() carries no user gesture, so the app has to

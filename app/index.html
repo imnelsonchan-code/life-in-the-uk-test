@@ -14,9 +14,14 @@
     <title>Life in the UK · Practice</title>
     <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-    <link rel="manifest" href="manifest.webmanifest?v=20261019f" />
+    <link rel="manifest" href="manifest.webmanifest?v=20261019g" />
     <meta name="apple-mobile-web-app-title" content="Life in the UK" />
-    <link rel="stylesheet" href="css/styles.css?v=20261019f" />
+    <!-- iOS 26 opens a Home Screen site as a web app on its own; these two keep
+         older iPhones (which read only the Apple meta tags) doing the same. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="stylesheet" href="css/styles.css?v=20261019g" />
   </head>
   <body>
     <div class="app">
@@ -100,6 +105,17 @@
 
     <div class="toast" id="toast" hidden></div>
 
-    <script src="js/app.js?v=20261019f"></script>
+    <!-- "Add to your Home Screen" help. Outside #main, so a re-render never
+         clears it, and it stays up while the user works through Safari's menus
+         (a toast would be gone before they found the Share sheet). -->
+    <div class="scrim" id="installHelp" hidden>
+      <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="installHelpTitle">
+        <h2 class="sheet-title" id="installHelpTitle">Add this app to your Home Screen</h2>
+        <div id="installHelpBody"></div>
+        <button class="btn" id="installHelpClose" type="button">Got it</button>
+      </div>
+    </div>
+
+    <script src="js/app.js?v=20261019g"></script>
   </body>
 </html>

@@ -49,24 +49,37 @@ keep getting wrong, and revise from a built-in cheat sheet.
 ## Install it like an app
 
 The ⬇ button in the header adds the site to your home screen so it launches like
-any other app — full screen, its own icon, no address bar.
+any other app — full screen, its own icon, no address bar. It hides itself once
+you are running the installed app, and it sits beside the GitHub link; neither
+replaces the other.
 
-- **Android / Chrome / Edge** — the button opens the browser's own *Install app*
-  prompt.
-- **iPhone / iPad (Safari)** — there is no install prompt in iOS, so the button
-  tells you where to tap: **Share → Add to Home Screen**.
-- **Desktop browsers** — the button either prompts, or points at the menu entry
-  (*Install app* in Chrome/Edge, *Add to Home screen* in Firefox for Android).
-- The button hides itself once you are running the installed app; it sits beside
-  the GitHub link in the header, and neither replaces the other.
+Where a browser offers its own install prompt (Chrome and Edge on **Android**,
+and Chromium on the desktop) the button fires that prompt — on Android that
+builds a real WebAPK, with the maskable icon. Where it does not, the button
+opens a step-by-step panel instead of a one-line toast, because on a phone you
+need the steps in front of you while you work through the menus:
+
+- **Android — Chrome** — ⋮ menu → *Install app* (or *Add to Home screen*) →
+  *Install*.
+- **Android — Samsung Internet** — ☰ → *Add page to* → *Home screen* → *Add*.
+- **Android — Firefox** — ⋮ → *Install* (older builds: *Add to Home screen*).
+- **iPhone / iPad** — only **Safari** can add a web app, so the panel says so if
+  you are in Chrome, Firefox or Edge. In Safari: the **⋯ Page Menu** beside the
+  address bar → **Share** → **Add to Home Screen**, leaving *Open as Web App*
+  switched on. If the entry is missing, scroll to the bottom of the Share list,
+  tap *Edit Actions* and switch *Add to Home Screen* on — a hidden entry there is
+  the usual reason it "does not work".
+- **Desktop** — the browser menu's *Install app* / *Add to Home screen*.
 
 Under the hood that is a standard PWA: `app/manifest.webmanifest` (name, icons,
-`display: standalone`, theme colour), the `app/icons/*.png` launcher icons, and
-`app/sw.js`, a service worker that serves the app from cache when the network is
-gone. The cache is **network-first**, so a file can never go stale; the cache
-name carries the same `?v=<commit>` as the rest of the assets, and a new deploy
-drops the old cache. Set a test date and install it, and the app will tell you
-which day of the plan you are on even with no signal.
+`display: standalone`, theme colour), the `app/icons/*.png` launcher icons, the
+Apple meta tags (`apple-touch-icon`, `apple-mobile-web-app-capable`, so older
+iPhones open it full screen too — iOS 26 does that by itself), and `app/sw.js`, a
+service worker that serves the app from cache when the network is gone. The cache
+is **network-first**, so a file can never go stale; the cache name carries the
+same `?v=<commit>` as the rest of the assets, and a new deploy drops the old
+cache. Set a test date and install it, and the app will tell you which day of the
+plan you are on even with no signal.
 
 ## The Cheat tab
 
@@ -181,7 +194,7 @@ is the merged pool the app actually loads — regenerate it after editing parts:
 ```bash
 node tools/merge.js        # parts -> app/data/questions (+ index.json)
 node tools/validate.js     # schema and invariant checks
-node tools/test.js         # regression suite (117 checks)
+node tools/test.js         # regression suite (133 checks)
 ```
 
 Browser end-to-end tests run against a live server (they drive the system Chrome

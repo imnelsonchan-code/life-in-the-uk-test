@@ -248,6 +248,13 @@ module.exports = {
         await page.waitFor('ui.tab === "cheat" && ui.cheat.ch === "what_is_uk"', { label: 'cheat wide table' });
       }
 
+      // The install panel is the one screen an Android and an iPhone user both
+      // land on, so it has to fit the smallest phone too.
+      async function installPanel() {
+        await page.eval('ui.screen = "home"; setTab("practice"); render(); openInstallHelp();');
+        await page.waitFor('!document.getElementById("installHelp").hidden', { label: 'install help' });
+      }
+
       const SCREENS = [
         { name: 'practice home', go: practiceHome },
         { name: 'practice question', go: practiceQuestion },
@@ -260,6 +267,7 @@ module.exports = {
         { name: 'cheat chooser', go: cheatChooser },
         { name: 'cheat chapter', go: cheatChapter },
         { name: 'cheat wide table', go: cheatWideTable },
+        { name: 'install help', go: installPanel },
       ];
 
       /* =================================================================

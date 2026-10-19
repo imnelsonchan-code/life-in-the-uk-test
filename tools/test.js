@@ -284,6 +284,34 @@ check('app.js wires the install button', /getElementById\('installBtn'\)/.test(a
 check('app.js keeps the browser install prompt', /beforeinstallprompt/.test(appjs));
 check('app.js handles appinstalled', /'appinstalled'/.test(appjs));
 check('app.js hides the button once installed', /display-mode: standalone/.test(appjs));
+
+// The install help panel: iOS gives the page no install API, so the button has
+// to walk the user through Safari's Share sheet, and Android through the menu.
+check('index.html has the install help panel', /id="installHelp"/.test(html));
+check('the panel is a modal dialog', /role="dialog"[\s\S]{0,80}aria-modal="true"/.test(html));
+check(
+  'the panel is labelled by its heading',
+  /aria-labelledby="installHelpTitle"[\s\S]{0,200}?id="installHelpTitle"/.test(html)
+);
+check('the panel has a close button', /id="installHelpClose"/.test(html));
+check('app.js opens the install help panel', /function openInstallHelp\s*\(/.test(appjs));
+check('app.js closes the install help panel', /function closeInstallHelp\s*\(/.test(appjs));
+check('the panel is opened when no prompt is available', /if \(!p\)[\s\S]{0,120}openInstallHelp\(\)/.test(appjs));
+check(
+  'the iOS route names the Share sheet',
+  /Page Menu<\/strong>[\s\S]{0,60}Share/.test(appjs)
+);
+check('the iOS route names Edit Actions', /Edit Actions/.test(appjs));
+check('the iOS route names Open as Web App', /Open as Web App/.test(appjs));
+check('the Android route names the menu route', /Install app/.test(appjs));
+check('the Android route covers Samsung Internet', /SamsungBrowser/.test(appjs));
+check('the Android route covers Firefox', /Firefox/.test(appjs));
+check('non-Safari iOS browsers are called out', /only Safari can add a web app/.test(appjs));
+check(
+  'index.html marks the app installable on older iOS',
+  /name="apple-mobile-web-app-capable" content="yes"/.test(html)
+);
+check('app.js spots an Android device', /function isAndroid\s*\(/.test(appjs));
 check('app.js registers the service worker', /serviceWorker\.register\('sw\.js\?v=/.test(appjs));
 
 /* ------------------------------------------------------------ cheat sheet --- */
