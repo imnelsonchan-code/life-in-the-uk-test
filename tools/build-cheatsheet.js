@@ -152,6 +152,160 @@ const CHIP = {
   government_law: 'Government',
 };
 
+/* ------------------------------------------ static page & AI text files --- */
+
+/* The app itself is a JavaScript shell: a crawler that does not run scripts
+ * sees an empty page, and most AI crawlers do not run scripts at all. These two
+ * files are the same notes in forms a machine can read without any JavaScript:
+ * notes.html for search engines, llms-full.txt for AI agents. Both are built
+ * from Cheat_Sheet.md, and both carry its hash so a stale build is obvious. */
+
+const APP = path.join(ROOT, 'app');
+const SITE = 'https://imnelsonchan-code.github.io/life-in-the-uk-test';
+
+/* One cache-busting stamp for the whole site: the one already on app/index.html.
+ * The deploy rewrites that to the commit SHA, and the static pages follow it. */
+const STAMP =
+  (/[?&]v=([^"'&\s]+)/.exec(fs.readFileSync(path.join(APP, 'index.html'), 'utf8')) || [])[1] || 'dev';
+
+function blockHtml(b) {
+  if (b.t === 'p') return `<p>${b.html}</p>`;
+  if (b.t === 'quote') {
+    return `<blockquote>${b.paras.map((p) => `<p>${p.join('<br>')}</p>`).join('')}</blockquote>`;
+  }
+  if (b.t === 'ul') {
+    return `<ul>${b.items
+      .map(
+        (it) =>
+          `<li>${it.html}${
+            it.sub && it.sub.length ? `<ul>${it.sub.map((s) => `<li>${s}</li>`).join('')}</ul>` : ''
+          }</li>`
+      )
+      .join('')}</ul>`;
+  }
+  if (b.t === 'table') {
+    return `<div class="tw"><table>
+          <thead><tr>${b.head.map((h) => `<th>${h}</th>`).join('')}</tr></thead>
+          <tbody>${b.rows
+            .map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join('')}</tr>`)
+            .join('')}</tbody>
+        </table></div>`;
+  }
+  return '';
+}
+
+const slug = (s) =>
+  s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+
+function notesPage(doc) {
+  const toc = doc.chapters
+    .map(
+      (c) =>
+        `<li><a href="#ch-${c.ch}">${c.ch}. ${esc(c.name)}</a> <span class="count">${c.sections.length} section${c.sections.length === 1 ? '' : 's'}</span></li>`
+    )
+    .join('\n        ');
+
+  const body = doc.chapters
+    .map((c) => {
+      const sections = c.sections
+        .map(
+          (s) => `<h3 id="ch-${c.ch}-${slug(s.title)}">${esc(s.title)}</h3>
+        ${s.blocks.map(blockHtml).join('\n        ')}`
+        )
+        .join('\n\n      ');
+      return `<section id="ch-${c.ch}">
+      <h2>Chapter ${c.ch} — ${esc(c.name)}</h2>
+      ${sections}
+    </section>`;
+    })
+    .join('\n\n    ');
+
+  return `<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Life in the UK Test notes — every fact, by chapter</title>
+    <meta
+      name="description"
+      content="Revision notes for the Life in the UK Test, chapter by chapter: values and principles, what the UK is, history, modern society, government and law. Facts current to 2026."
+    />
+    <link rel="canonical" href="${SITE}/notes.html" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Life in the UK Test notes — every fact, by chapter" />
+    <meta
+      property="og:description"
+      content="Revision notes for the Life in the UK Test, chapter by chapter. Facts current to 2026."
+    />
+    <meta property="og:url" content="${SITE}/notes.html" />
+    <meta property="og:image" content="${SITE}/icons/og.png" />
+    <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="css/doc.css?v=${STAMP}" />
+  </head>
+  <body>
+    <!-- source-hash: ${doc.sourceHash} -->
+    <header class="site">
+      <a class="back" href="./">← Life in the UK · practice app</a>
+      <nav><a href="guide.html">Study guide</a> · <a href="./">Practise</a></nav>
+    </header>
+
+    <main class="doc">
+      <h1>Life in the UK Test — revision notes</h1>
+      <p class="lede">
+        Every fact behind the 716 practice questions, written out chapter by
+        chapter — the same notes as the cheat sheet in the app, on one page you
+        can read, search and print.
+      </p>
+      <p class="muted">
+        These notes follow the five chapters of the official handbook, in the same
+        order as the question pool. They are the author's own summaries, not a copy
+        of the handbook. Where the 3rd edition (2013) has been overtaken, the current
+        figure is given with the handbook's in brackets.
+      </p>
+
+      <h2 class="plain">Chapters</h2>
+      <ul class="toc">
+        ${toc}
+      </ul>
+
+      ${body}
+    </main>
+
+    <footer class="site">
+      <p>
+        An independent study aid — not affiliated with GOV.UK or the official
+        handbook. Check the current rules on
+        <a href="https://www.gov.uk/life-in-the-uk-test" rel="noopener">GOV.UK</a>.
+      </p>
+      <p><a href="./">Practise the questions</a> · <a href="guide.html">Study guide</a></p>
+    </footer>
+  </body>
+</html>
+`;
+}
+
+function llmsFull(doc, md) {
+  return `# Life in the UK Test — revision notes (full text)
+
+Source: ${SITE}/notes.html
+Author: an independent study aid, not affiliated with GOV.UK. Questions and
+notes are original, written from public facts.
+Facts are current to 2026; where the 3rd-edition handbook (2013) has been
+overtaken, the current figure is given and the handbook's is noted in brackets.
+
+<!-- source-hash: ${doc.sourceHash} -->
+
+---
+
+${md.trim()}
+`;
+}
+
 function main() {
   const md = fs.readFileSync(SRC, 'utf8');
   const cats = JSON.parse(fs.readFileSync(INDEX, 'utf8')).categories;
@@ -208,6 +362,8 @@ function main() {
     chapters,
   };
   fs.writeFileSync(OUT, JSON.stringify(doc, null, 2) + '\n');
+  fs.writeFileSync(path.join(APP, 'notes.html'), notesPage(doc));
+  fs.writeFileSync(path.join(APP, 'llms-full.txt'), llmsFull(doc, md));
 
   let sections = 0;
   let items = 0;
@@ -225,6 +381,8 @@ function main() {
     );
   }
   console.log(`\napp/data/cheatsheet.json — ${chapters.length} chapters, ${sections} sections, ${items} blocks`);
+  console.log('app/notes.html      — the same notes as static HTML, for search engines');
+  console.log('app/llms-full.txt   — the same notes as markdown, for AI agents');
 }
 
 main();

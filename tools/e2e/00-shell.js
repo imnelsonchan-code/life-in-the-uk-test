@@ -503,6 +503,68 @@ module.exports = {
         }
       });
 
+      /* ---------------------------------------------------------------------
+       * Reachable by search engines and AI agents
+       *
+       * The app is a JavaScript shell, so these are the pages and files a
+       * crawler that does not run scripts actually gets: the readable guide and
+       * notes, the crawl instructions, and the plain-text copy for agents.
+       * ------------------------------------------------------------------- */
+      await suite.group('Crawlable by search engines and AI', async () => {
+        const fetchText = (url) =>
+          page.eval(
+            `return fetch(${JSON.stringify(url)}).then(function(r){ return r.ok ? r.text() : ('HTTP ' + r.status); });`
+          );
+        const fetchType = (url) =>
+          page.eval(
+            `return fetch(${JSON.stringify(url)}).then(function(r){ return r.ok ? (r.headers.get('content-type') || '') : ('HTTP ' + r.status); });`
+          );
+
+        const robots = await fetchText('robots.txt');
+        suite.check('robots.txt is served', robots.indexOf('HTTP') !== 0, robots.slice(0, 60));
+        suite.check('robots.txt points at the sitemap', /Sitemap: .*sitemap\.xml/.test(robots));
+        suite.check('robots.txt lets the AI agents in', /GPTBot[\s\S]*?Allow: \//.test(robots) && /ClaudeBot/.test(robots));
+
+        const sitemap = await fetchText('sitemap.xml');
+        suite.check('sitemap.xml is served', sitemap.indexOf('HTTP') !== 0, sitemap.slice(0, 60));
+        suite.check(
+          'sitemap.xml lists the app, guide and notes',
+          [/life-in-the-uk-test\/<\/loc>/, /guide\.html<\/loc>/, /notes\.html<\/loc>/].every((re) =>
+            re.test(sitemap)
+          ),
+          sitemap.replace(/\s+/g, ' ').slice(0, 200)
+        );
+
+        const llms = await fetchText('llms.txt');
+        suite.check('llms.txt is served', llms.indexOf('HTTP') !== 0, llms.slice(0, 60));
+        suite.check('llms.txt links the plain-text notes', llms.indexOf('llms-full.txt') >= 0);
+        const llmsFull = await fetchText('llms-full.txt');
+        suite.check('llms-full.txt is served', llmsFull.indexOf('HTTP') !== 0, llmsFull.slice(0, 60));
+        suite.check('llms-full.txt carries the notes', llmsFull.indexOf('Trafalgar') >= 0);
+
+        const guide = await fetchText('guide.html');
+        suite.check('guide.html is served as text', guide.indexOf('HTTP') !== 0, guide.slice(0, 60));
+        suite.check('guide.html explains the test', /24 questions/.test(guide) && /45 minutes/.test(guide));
+        suite.check('guide.html needs no app JavaScript', !/<script[^>]+src=/.test(guide));
+
+        const notes = await fetchText('notes.html');
+        suite.check('notes.html is served as text', notes.indexOf('HTTP') !== 0, notes.slice(0, 60));
+        suite.check('notes.html is readable without JavaScript', /<table>/.test(notes) && /Chapter 3 — /.test(notes));
+        suite.check('notes.html is not the app', notes.indexOf('data-tab=') < 0);
+
+        suite.check('guide.html is served as HTML', /text\/html/.test(await fetchType('guide.html')));
+
+        // The app must link the guide, and that link must resolve.
+        const tile = await page.eval(
+          "var a=Array.prototype.filter.call(document.querySelectorAll('.app-tile'), function(x){ return /guide\\.html$/.test(x.getAttribute('href')); })[0]; return a ? a.getAttribute('href') : null;"
+        );
+        suite.check('the app links the study guide', !!tile, String(tile));
+        if (tile) {
+          const linked = await fetchText(tile);
+          suite.check('and that link resolves', linked.indexOf('HTTP') !== 0 && linked.indexOf('<h1>') >= 0);
+        }
+      });
+
       await suite.group('No client-side errors', async () => {
         const problems = page.problems();
         suite.check('no console errors or failed requests', problems.length === 0, problems.join(' | '));

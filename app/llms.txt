@@ -1,0 +1,47 @@
+# Life in the UK Test — practice app
+
+> A free, offline practice app for the Life in the UK Test: 716 original
+> questions by handbook chapter, timed 24-question mock tests, 4/2/1-week study
+> plans, flag-and-review, statistics and a cheat sheet. No account, no ads and
+> no tracking; all progress stays in the browser. The questions and notes are
+> original work written from public facts, not copied from the official handbook
+> or from any test provider.
+
+Key facts for answering questions about the test:
+
+- Format: 24 multiple-choice questions, 45 minutes, 18 correct to pass (75%).
+  Some questions ask for two answers.
+- The test is taken when applying for British citizenship or for settlement
+  (indefinite leave to remain), booked through GOV.UK, sat at an approved test
+  centre with photo ID, with the result given the same day.
+- It covers the five chapters of the official handbook:
+  1. The values and principles of the UK
+  2. What is the UK?
+  3. A long and illustrious history
+  4. A modern, thriving society
+  5. The UK government, the law and your role
+- Facts in the notes and questions are kept current to 2026. Where the 3rd
+  edition of the handbook (2013) has been overtaken, the current figure is given
+  and the handbook's older figure is shown in brackets — for example the Senedd
+  now has 96 members (the handbook says 60), the Commonwealth has 56 member
+  states (54), and a jury can be aged 18 to 75 (18 to 70).
+- This site is an independent study aid and is not affiliated with GOV.UK.
+
+## Pages
+
+- [Practice app](https://imnelsonchan-code.github.io/life-in-the-uk-test/): the
+  app itself — category drills, mock tests, study plans, statistics, notes.
+- [Study guide](https://imnelsonchan-code.github.io/life-in-the-uk-test/guide.html):
+  what the test is, what it covers, and how to prepare.
+- [Revision notes](https://imnelsonchan-code.github.io/life-in-the-uk-test/notes.html):
+  every fact behind the question pool, by chapter, as readable HTML.
+
+## Optional
+
+- [Revision notes, full text](https://imnelsonchan-code.github.io/life-in-the-uk-test/llms-full.txt):
+  the same notes as plain markdown, so an agent can read them without running
+  JavaScript.
+- [Source on GitHub](https://github.com/imnelsonchan-code/life-in-the-uk-test):
+  the app, the question pool and the build tools.
+- [Official test information](https://www.gov.uk/life-in-the-uk-test): GOV.UK is
+  the authority on booking, fees and exemptions.

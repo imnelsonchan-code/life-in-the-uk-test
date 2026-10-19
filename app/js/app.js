@@ -985,6 +985,11 @@ function renderPracticeHome() {
         <span class="app-label">Official test</span>
         <span class="app-sub">GOV.UK</span>
       </a>
+      <a class="app-tile" href="guide.html">
+        <span class="app-ico" aria-hidden="true">📘</span>
+        <span class="app-label">Study guide</span>
+        <span class="app-sub">What the test covers</span>
+      </a>
     </div>
   `;
 }

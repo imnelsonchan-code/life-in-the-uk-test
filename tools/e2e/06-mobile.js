@@ -742,6 +742,64 @@ module.exports = {
       });
 
       /* =================================================================
+       * 9. The static pages (what search engines and AI agents read)
+       *
+       * guide.html and notes.html are ordinary documents, not the app, so they
+       * have their own stylesheet and no tab bar. They still have to be readable
+       * on the smallest phone: no sideways scrolling, tap targets big enough,
+       * and wide tables scrolling inside their own box.
+       * ================================================================= */
+      await suite.group('Static pages on a phone', async () => {
+        for (const vp of [SMALL, MID]) {
+          await setVp(vp);
+
+          await page.goto(base + '/guide.html');
+          await noOverflow('study guide', vp.name);
+          suite.check(
+            `study guide @ ${vp.name}: one readable heading`,
+            await page.eval(
+              'var h=document.querySelectorAll("h1"); return h.length === 1 && h[0].getBoundingClientRect().width > 0;'
+            )
+          );
+          const cta = await page.eval(
+            'var a=document.querySelector(".cta"); if(!a) return null; var r=a.getBoundingClientRect(); return {h: Math.round(r.height), w: Math.round(r.width), right: Math.round(r.right), vw: window.innerWidth};'
+          );
+          suite.check(
+            `study guide @ ${vp.name}: the start button is a real tap target`,
+            !!cta && cta.h >= 40 && cta.w > 120 && cta.right <= cta.vw + SLACK,
+            JSON.stringify(cta)
+          );
+
+          await page.goto(base + '/notes.html');
+          await noOverflow('revision notes', vp.name);
+          const notes = await page.eval(
+            'return {h1: document.querySelectorAll("h1").length, chapters: document.querySelectorAll("section").length, tables: document.querySelectorAll("table").length, rows: document.querySelectorAll(".toc li").length, links: Array.prototype.filter.call(document.querySelectorAll("a"), function(a){ return a.getAttribute("href") === "./"; }).length};'
+          );
+          suite.check(
+            `revision notes @ ${vp.name}: all five chapters are on the page`,
+            notes.chapters === 5 && notes.tables >= 10,
+            JSON.stringify(notes)
+          );
+          suite.check(
+            `revision notes @ ${vp.name}: the contents list is tappable`,
+            await page.eval(
+              'var r=Array.prototype.map.call(document.querySelectorAll(".toc li"), function(li){ return li.getBoundingClientRect().height; }); return r.length === 5 && r.every(function(h){ return h >= 40; });'
+            )
+          );
+          suite.check(
+            `revision notes @ ${vp.name}: every table scrolls inside its own box`,
+            await page.eval(
+              'var t=document.querySelectorAll("table"), w=document.querySelectorAll(".tw"); if(!t.length || t.length !== w.length) return false; return Array.prototype.every.call(w, function(x){ return getComputedStyle(x).overflowX === "auto"; });'
+            )
+          );
+          suite.check(
+            `revision notes @ ${vp.name}: links back to the app`,
+            notes.links >= 1
+          );
+        }
+      });
+
+      /* =================================================================
        * 9. Nothing blew up along the way
        * ================================================================= */
       await suite.group('No client-side errors', async () => {

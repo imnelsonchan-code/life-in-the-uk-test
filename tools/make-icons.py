@@ -9,13 +9,14 @@ is the same design, for the browser tab).
 
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 NAVY = (1, 33, 105)  # --brand    #012169
 RED = (200, 16, 46)  # --brand-2  #c8102e
 WHITE = (255, 255, 255)
 
 OUT = Path(__file__).resolve().parent.parent / "app" / "icons"
+FONT = Path("/usr/share/fonts/truetype/dejavu")
 
 
 def flag(size, radius_ratio=0.0):
@@ -56,6 +57,32 @@ def save(img, name):
     print("wrote app/icons/" + name)
 
 
+def og_image():
+    """The 1200x630 card search engines and chat apps show when the site is
+    linked (og:image / twitter:image). Navy panel on the left, the flag on the
+    right, the promise of the app spelled out in between."""
+    W, H = 1200, 630
+    img = Image.new("RGB", (W, H), NAVY)
+    d = ImageDraw.Draw(img)
+
+    # A flag panel on the right, with a thin white rule between it and the text.
+    panel = flag(430)
+    img.paste(panel, (W - 430 - 70, (H - 430) // 2))
+    d.rectangle([W - 430 - 100, 90, W - 430 - 96, H - 90], fill=(255, 255, 255))
+
+    bold = ImageFont.truetype(str(FONT / "DejaVuSans-Bold.ttf"), 62)
+    body = ImageFont.truetype(str(FONT / "DejaVuSans.ttf"), 33)
+    small = ImageFont.truetype(str(FONT / "DejaVuSans.ttf"), 26)
+
+    x = 76
+    d.text((x, 150), "Life in the UK Test", font=bold, fill=WHITE)
+    d.text((x, 232), "practice questions & mock tests", font=body, fill=(214, 222, 244))
+    for i, line in enumerate(["716 original questions", "24-question timed mocks", "4, 2 and 1-week study plans", "free, offline, no account"]):
+        d.text((x + 2, 320 + i * 44), "•  " + line, font=small, fill=(178, 192, 226))
+
+    return img
+
+
 OUT.mkdir(parents=True, exist_ok=True)
 # "any" icons: rounded like a launcher icon.
 save(flag(192, 0.22), "icon-192.png")
@@ -64,3 +91,5 @@ save(flag(512, 0.22), "icon-512.png")
 save(flag(512), "icon-maskable-512.png")
 # iOS applies its own rounding and dislikes transparency.
 save(flag(180), "apple-touch-icon.png")
+# The link preview card.
+save(og_image(), "og.png")

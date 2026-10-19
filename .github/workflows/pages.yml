@@ -40,12 +40,13 @@ jobs:
         run: node tools/test.js
 
       # Give every deploy a fresh asset URL so browsers don't reuse a cached
-      # app.js/styles.css from the previous release.
+      # app.js/styles.css from the previous release. Every page carries the same
+      # stamp, so the app and the static pages move together.
       - name: Stamp asset URLs with the commit
         run: |
           SHA="${GITHUB_SHA::7}"
-          sed -i -E "s/(\?v=)[^\"']*/\1${SHA}/g" app/index.html
-          grep -o '?v=[^"]*' app/index.html
+          sed -i -E "s/(\?v=)[^\"']*/\1${SHA}/g" app/*.html
+          grep -oh '?v=[^"]*' app/*.html | sort -u
 
       - name: Upload the static app
         uses: actions/upload-pages-artifact@v3

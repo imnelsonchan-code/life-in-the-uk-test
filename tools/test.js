@@ -314,6 +314,169 @@ check(
 check('app.js spots an Android device', /function isAndroid\s*\(/.test(appjs));
 check('app.js registers the service worker', /serviceWorker\.register\('sw\.js\?v=/.test(appjs));
 
+/* ----------------------------------------------- search engines & AI agents --- */
+
+section('Search & AI');
+
+const SITE = 'https://imnelsonchan-code.github.io/life-in-the-uk-test';
+const read = (p) => (fs.existsSync(p) ? fs.readFileSync(p, 'utf8') : '');
+
+const robots = read(path.join(APPDIR, 'robots.txt'));
+const sitemap = read(path.join(APPDIR, 'sitemap.xml'));
+const llms = read(path.join(APPDIR, 'llms.txt'));
+const llmsFull = read(path.join(APPDIR, 'llms-full.txt'));
+const notesHtml = read(path.join(APPDIR, 'notes.html'));
+const guideHtml = read(path.join(APPDIR, 'guide.html'));
+
+check('robots.txt is published', !!robots);
+check('robots.txt does not block anything', !/^\s*Disallow:\s*\/\S/m.test(robots));
+check('robots.txt points at the sitemap', robots.includes(`Sitemap: ${SITE}/sitemap.xml`));
+for (const bot of ['GPTBot', 'OAI-SearchBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended', 'Bingbot']) {
+  check(`robots.txt lets ${bot} in`, new RegExp(`User-agent: ${bot}\\s*\\nAllow: /`).test(robots));
+}
+
+check('sitemap.xml is published', !!sitemap);
+check('sitemap.xml is a sitemap', /^<\?xml/.test(sitemap) && sitemap.includes('<urlset'));
+const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+check('sitemap lists every page', locs.length === 3, locs.join(', '));
+check('sitemap URLs are absolute and on this site', locs.every((l) => l.startsWith(SITE + '/')), locs.join(', '));
+check(
+  'every sitemap URL maps to a real file',
+  locs.every((l) => {
+    const rel = l.slice(SITE.length).replace(/^\//, '');
+    return fs.existsSync(path.join(APPDIR, rel || 'index.html'));
+  }),
+  locs.join(', ')
+);
+check('sitemap lists the notes', locs.some((l) => l.endsWith('/notes.html')));
+check('sitemap lists the guide', locs.some((l) => l.endsWith('/guide.html')));
+check(
+  'sitemap carries a lastmod per URL',
+  (sitemap.match(/<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>/g) || []).length === locs.length
+);
+
+check('llms.txt is published', !!llms);
+check('llms.txt describes the app', /^#\s+\S/m.test(llms) && /^>/m.test(llms));
+check('llms.txt links the guide', llms.includes(`${SITE}/guide.html`));
+check('llms.txt links the notes', llms.includes(`${SITE}/notes.html`));
+check('llms.txt links the plain-text notes', llms.includes(`${SITE}/llms-full.txt`));
+check('llms.txt states the pass mark', /18 correct/.test(llms));
+
+check('notes.html is published as static HTML', !!notesHtml);
+check('notes.html is a whole document', /^<!doctype html>/i.test(notesHtml) && /<\/html>\s*$/.test(notesHtml));
+check('notes.html declares the language', /<html lang="en-GB">/.test(notesHtml));
+const cheatDoc = fs.existsSync(path.join(APPDIR, 'data', 'cheatsheet.json'))
+  ? JSON.parse(read(path.join(APPDIR, 'data', 'cheatsheet.json')))
+  : null;
+if (cheatDoc) {
+  check(
+    'notes.html has every chapter as a heading',
+    cheatDoc.chapters.every((c) => notesHtml.includes(`Chapter ${c.ch} — `))
+  );
+  check(
+    'notes.html has every section as a heading',
+    cheatDoc.chapters.every((c) => c.sections.every((s) => notesHtml.includes(`>${s.title}<`)))
+  );
+  check(
+    'notes.html is up to date with the notes',
+    notesHtml.includes(`<!-- source-hash: ${cheatDoc.sourceHash} -->`),
+    'run: node tools/build-cheatsheet.js'
+  );
+  check(
+    'llms-full.txt is up to date with the notes',
+    llmsFull.includes(`<!-- source-hash: ${cheatDoc.sourceHash} -->`),
+    'run: node tools/build-cheatsheet.js'
+  );
+}
+const noteIds = [...notesHtml.matchAll(/\sid="([^"]+)"/g)].map((m) => m[1]);
+check('notes.html has no duplicate ids', new Set(noteIds).size === noteIds.length, String(noteIds.length));
+check(
+  'every contents link in notes.html resolves',
+  [...notesHtml.matchAll(/<a href="#([^"]+)"/g)].every((m) => noteIds.includes(m[1]))
+);
+check('notes.html has no raw markdown left', !/\*\*[^*]+\*\*/.test(notesHtml));
+check('notes.html has tables and lists', /<table>/.test(notesHtml) && /<ul>/.test(notesHtml));
+check('documents link their stylesheet', /css\/doc\.css\?v=/.test(notesHtml) && /css\/doc\.css\?v=/.test(guideHtml));
+
+check('guide.html is published', !!guideHtml);
+check('guide.html has one h1', (guideHtml.match(/<h1>/g) || []).length === 1);
+check('guide.html explains the format', /24 questions/.test(guideHtml) && /45 minutes/.test(guideHtml));
+check('guide.html links the app', /href="\.\/"/.test(guideHtml));
+check('guide.html links the notes', /href="notes\.html"/.test(guideHtml));
+check('guide.html names the five chapters', /values and principles/i.test(guideHtml) && /government, the law/i.test(guideHtml));
+check('guide.html says it is not official', /not affiliated/i.test(guideHtml));
+check('guide.html links GOV.UK as the authority', /gov\.uk\/life-in-the-uk-test/.test(guideHtml));
+
+const ldBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+check('index.html carries structured data', ldBlocks.length >= 1);
+if (ldBlocks.length) {
+  let ld = null;
+  try {
+    ld = JSON.parse(ldBlocks[0]);
+  } catch (e) {
+    /* leave ld null */
+  }
+  check('the structured data parses as JSON', !!ld);
+  if (ld) {
+    check('it describes a WebApplication', ld['@type'] === 'WebApplication');
+    check('it is free', String((ld.offers || {}).price) === '0');
+    check('it points at this site', (ld.url || '').startsWith(SITE));
+  }
+}
+const guideLd = [...guideHtml.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) => m[1]);
+check('guide.html carries structured data', guideLd.length >= 1);
+if (guideLd.length) {
+  let ld = null;
+  try {
+    ld = JSON.parse(guideLd[0]);
+  } catch (e) {
+    /* leave ld null */
+  }
+  check('the guide structured data parses', !!ld);
+  const graph = (ld && ld['@graph']) || [];
+  check('the guide has a WebApplication node', graph.some((n) => n['@type'] === 'WebApplication'));
+  const faq = graph.find((n) => n['@type'] === 'FAQPage');
+  check('the guide has a FAQ node', !!faq);
+  if (faq) {
+    check('the FAQ has questions', (faq.mainEntity || []).length >= 3);
+    check(
+      'every FAQ question is on the page',
+      faq.mainEntity.every((q) => guideHtml.includes(q.name))
+    );
+  }
+}
+
+check('index.html is the app, not a document', html.includes('data-tab="practice"'));
+check('index.html declares en-GB', /<html lang="en-GB">/.test(html));
+check('index.html has a canonical URL', html.includes(`<link rel="canonical" href="${SITE}/"`));
+check('index.html allows indexing', /name="robots" content="index,follow"/.test(html));
+for (const tag of ['og:title', 'og:description', 'og:url', 'og:image', 'twitter:card']) {
+  check(`index.html has ${tag}`, new RegExp(`(property|name)="${tag}"`).test(html));
+}
+const ogOnDisk = path.join(APPDIR, 'icons', 'og.png');
+check('the social image exists', fs.existsSync(ogOnDisk));
+if (fs.existsSync(ogOnDisk)) {
+  const png = fs.readFileSync(ogOnDisk);
+  const w = png.readUInt32BE(16);
+  const h = png.readUInt32BE(20);
+  check('the social image is 1200x630', w === 1200 && h === 630, `${w}x${h}`);
+  check('index.html points at the social image', html.includes(`${SITE}/icons/og.png`));
+}
+
+// One stamp for the whole site, so the deploy moves every page together.
+const stamps = [...['index.html', 'guide.html', 'notes.html']].map((f) => {
+  const m = /\?v=([^"'&\s]+)/.exec(read(path.join(APPDIR, f)));
+  return { f, v: m ? m[1] : null };
+});
+check('every page carries an asset stamp', stamps.every((s) => s.v), JSON.stringify(stamps));
+check(
+  'all pages share one asset stamp',
+  new Set(stamps.map((s) => s.v)).size === 1,
+  JSON.stringify(stamps)
+);
+
+check('the app links the study guide', /href="guide\.html"/.test(appjs));
+
 /* ------------------------------------------------------------ cheat sheet --- */
 
 section('Cheat sheet');

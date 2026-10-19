@@ -1,0 +1,317 @@
+/* Styles for the static pages (guide.html, notes.html).
+ *
+ * Deliberately separate from styles.css: those pages are plain documents read
+ * by people arriving from a search engine, so they want normal page typography,
+ * not the app shell. The palette is the same so the two feel like one site.
+ */
+
+:root {
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-2: #eef1f8;
+  --text: #131a2b;
+  --muted: #5c6784;
+  --line: #dde3ef;
+  --brand: #012169;
+  --brand-2: #c8102e;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --maxw: 760px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1220;
+    --surface: #161d2f;
+    --surface-2: #1e2740;
+    --text: #eaeefb;
+    --muted: #9aa6c4;
+    --line: #2a3450;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: var(--brand);
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    color: #8fb0ff;
+  }
+}
+
+/* ---------- bars ---------- */
+
+.site {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 14px 18px;
+  font-size: 15px;
+}
+
+header.site {
+  border-bottom: 1px solid var(--line);
+}
+
+footer.site {
+  border-top: 1px solid var(--line);
+  margin-top: 32px;
+  color: var(--muted);
+  font-size: 14px;
+  display: block;
+}
+
+footer.site p {
+  margin: 6px 0;
+}
+
+.site .back {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--brand);
+}
+
+@media (prefers-color-scheme: dark) {
+  .site .back {
+    color: #8fb0ff;
+  }
+}
+
+/* ---------- document ---------- */
+
+.doc {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 26px 18px 8px;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 34px 0 10px;
+  padding-top: 6px;
+}
+
+h3 {
+  font-size: 17px;
+  margin: 24px 0 8px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+h2.plain {
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.lede {
+  font-size: 18px;
+  color: var(--text);
+}
+
+.muted,
+.count {
+  color: var(--muted);
+}
+
+.muted {
+  font-size: 15px;
+}
+
+p {
+  margin: 0 0 14px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ---------- table of contents ---------- */
+
+.toc {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.toc li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.toc li:last-child {
+  border-bottom: none;
+}
+
+.toc a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.toc .count {
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+/* ---------- notes ---------- */
+
+section {
+  border-top: 3px solid var(--brand);
+  margin-top: 40px;
+  padding-top: 4px;
+}
+
+section h2 {
+  margin-top: 14px;
+}
+
+/* Wide tables scroll inside their own box rather than pushing the page out. */
+.tw {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 14px 0 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 14px;
+}
+
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+  padding: 9px 11px;
+  border-bottom: 1px solid var(--line);
+  overflow-wrap: break-word;
+}
+
+th {
+  background: var(--surface-2);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+blockquote {
+  margin: 14px 0 18px;
+  padding: 12px 16px;
+  border-left: 4px solid var(--brand);
+  background: var(--surface);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+blockquote p {
+  margin: 0 0 8px;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- guide ---------- */
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  margin: 18px 0;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.cta {
+  display: inline-block;
+  margin: 8px 0 4px;
+  padding: 13px 20px;
+  border-radius: var(--radius-sm);
+  background: var(--brand);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 14px;
+}
+
+.steps li::before {
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  color: var(--brand);
+  font-weight: 700;
+  font-size: 15px;
+  display: grid;
+  place-items: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  .steps li::before {
+    color: #8fb0ff;
+  }
+}
