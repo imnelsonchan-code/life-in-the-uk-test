@@ -6,8 +6,8 @@
  * Covers: per-category sessions, the type/difficulty/unseen filters, targeted
  * practice (Quick 10 / Practise all / Retry wrong), the answer flow for all
  * four question types (correct + incorrect), the "Which TWO" cap, the New
- * questions batch and its Verify hand-off, store bookkeeping + persistence, and
- * that a fresh session starts clean.
+ * questions batch, store bookkeeping + persistence, and that a fresh session
+ * starts clean.
  *
  * Determinism: the pool is shuffled for every session, so this file asserts on
  * counts, invariants and rendered state — never on which question comes first.
@@ -464,7 +464,6 @@ module.exports = {
       await suite.group('New questions batch', async () => {
         await resetHome(page);
         suite.eq('Practise-new button shows the batch size', await page.eval('return document.querySelector(\'[data-action="start-new"]\').innerText.trim()'), `✨ Practise new (${NEW})`);
-        suite.eq('Verify-new button is offered', await page.exists('[data-action="verify-new"]'), true);
 
         await startVia(page, '[data-action="start-new"]');
         suite.eq('Practise new yields exactly the new batch', await page.eval('return ui.session.items.length'), NEW);
@@ -472,15 +471,6 @@ module.exports = {
         suite.eq('Practise new session is titled "New questions"', await page.eval('return ui.session.title'), 'New questions');
         await page.click('#backBtn');
         await page.waitFor('ui.screen === "home"');
-
-        await page.click('[data-action="verify-new"]');
-        await page.waitFor('ui.tab === "verify" && ui.verify.cat === "new"', { label: 'verify-new hand-off' });
-        suite.eq('Verify new switches to the Verify tab', await page.eval('return ui.tab'), 'verify');
-        suite.eq('Verify new scopes verify to the "new" pseudo-category', await page.eval('return ui.verify.cat'), 'new');
-        suite.eq('Verify header names the batch', await page.eval('return document.getElementById("headerSubtitle").textContent'), 'New questions');
-        suite.eq('Verify shows the first of the batch', await page.eval('return document.querySelector(".q-progress > span").innerText.trim()'), `1/${NEW}`);
-        suite.eq('the Verify pool for "new" is the whole batch', await page.eval('return catQuestions("new").length'), NEW);
-        suite.eq('every Verify-new question is from the new batch', await page.eval('return catQuestions("new").every(function(q){ return q.batch === "new"; })'), true);
 
         await resetHome(page);
       });

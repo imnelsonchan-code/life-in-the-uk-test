@@ -191,7 +191,7 @@ module.exports = {
 
       async function practiceHome() {
         await page.eval(
-          'ui.screen = "home"; ui.session = null; ui.mock = null; ui.verify.cat = null; setTab("practice"); render();'
+          'ui.screen = "home"; ui.session = null; ui.mock = null; ui.cheat = null; setTab("practice"); render();'
         );
       }
 
@@ -231,17 +231,21 @@ module.exports = {
         await page.waitFor(`ui.tab === ${JSON.stringify(tab)}`, { label: 'tab ' + tab });
       }
 
-      async function verifyHome() {
-        await page.eval(
-          'ui.verify = { cat: null, i: 0, editing: false, note: "" }; ui.screen = "home"; setTab("verify"); render();'
-        );
-        await page.waitFor('ui.tab === "verify" && !ui.verify.cat', { label: 'verify chooser' });
+      async function cheatChooser() {
+        await page.eval('ui.screen = "home"; ui.cheat = { ch: null }; setTab("cheat"); render();');
+        await page.waitFor('ui.tab === "cheat" && !ui.cheat.ch', { label: 'cheat chooser' });
       }
 
-      async function verifyQuestion() {
-        await verifyHome();
-        await page.click('[data-action="verify-start"]', { index: 0 });
-        await page.waitFor('!!ui.verify.cat && ui.tab === "verify"', { label: 'verify question' });
+      async function cheatChapter() {
+        await page.eval('ui.screen = "home"; ui.cheat = { ch: "history" }; setTab("cheat"); render();');
+        await page.waitFor('ui.tab === "cheat" && ui.cheat.ch === "history"', { label: 'cheat chapter' });
+      }
+
+      // what_is_uk carries the widest table in the notes (the 7-column
+      // "Countries characteristics" one), so it is the worst case for width.
+      async function cheatWideTable() {
+        await page.eval('ui.screen = "home"; ui.cheat = { ch: "what_is_uk" }; setTab("cheat"); render();');
+        await page.waitFor('ui.tab === "cheat" && ui.cheat.ch === "what_is_uk"', { label: 'cheat wide table' });
       }
 
       const SCREENS = [
@@ -253,8 +257,9 @@ module.exports = {
         { name: 'plan', go: () => tabTo('plan') },
         { name: 'stats', go: () => tabTo('stats') },
         { name: 'user', go: () => tabTo('user') },
-        { name: 'verify chooser', go: verifyHome },
-        { name: 'verify question', go: verifyQuestion },
+        { name: 'cheat chooser', go: cheatChooser },
+        { name: 'cheat chapter', go: cheatChapter },
+        { name: 'cheat wide table', go: cheatWideTable },
       ];
 
       /* =================================================================
@@ -293,8 +298,8 @@ module.exports = {
           const m = await page.eval(TABBAR_PROBE);
           const names = m.items.map((t) => t.tab);
           suite.check(
-            `tab bar @ ${vp.name}: all six tabs present (practice, plan, mock, stats, verify, user)`,
-            JSON.stringify(names) === JSON.stringify(['practice', 'plan', 'mock', 'stats', 'verify', 'user']),
+            `tab bar @ ${vp.name}: all six tabs present (practice, plan, mock, stats, cheat, user)`,
+            JSON.stringify(names) === JSON.stringify(['practice', 'plan', 'mock', 'stats', 'cheat', 'user']),
             `got ${JSON.stringify(names)}`
           );
           okCheck(
@@ -619,7 +624,7 @@ module.exports = {
        * ================================================================= */
       await suite.group('Dark mode', async () => {
         await page.eval(
-          'ui.screen = "home"; ui.session = null; ui.mock = null; setTab("practice"); render();'
+          'ui.screen = "home"; ui.session = null; ui.mock = null; ui.cheat = null; setTab("practice"); render();'
         );
         await setVp(SMALL);
         const lightBg = await page.eval('return getComputedStyle(document.body).backgroundColor;');

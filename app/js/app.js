@@ -13,6 +13,8 @@ const CATEGORIES = [
 ];
 const CAT_BY_ID = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]));
 const CAT_ORDER = CATEGORIES.map((c) => c.id);
+/* Defensive label for a question whose category is missing from the pool index. */
+const UNKNOWN_CAT = { id: 'unknown', name: 'Question', color: 'var(--muted)' };
 
 const MOCK = {
   total: 24,
@@ -220,7 +222,6 @@ function defaultStore() {
     plan: { '4w': {}, '2w': {}, '1w': {} },
     planId: '4w',
     testDate: null,
-    verify: {},
   };
 }
 
@@ -299,7 +300,6 @@ function reloadForUser() {
   ui.session = null;
   ui.mock = null;
   ui.screen = 'home';
-  ui.verify = { cat: null, i: 0, editing: false, note: '' };
   setTab('user');
   render();
 }
@@ -394,7 +394,7 @@ function removeUser(id) {
 
 /* ---------- app data ---------- */
 
-const DATA = { all: [], base: [], byId: {}, byCat: {}, batchNew: [] };
+const DATA = { all: [], base: [], byId: {}, byCat: {}, batchNew: [], cheat: null };
 
 async function loadData() {
   const res = await fetch('data/questions/index.json', { cache: 'no-cache' });
@@ -408,6 +408,11 @@ async function loadData() {
       })
     )
   );
+  // The cheat sheet is study material, not exam material: the app still works
+  // if it is missing, so a failure here is not fatal.
+  DATA.cheat = await fetch('data/cheatsheet.json', { cache: 'no-cache' })
+    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null);
   DATA.base = lists.flat();
   buildData();
   return DATA;
@@ -507,12 +512,12 @@ function questionHtml(item) {
 
 const ui = {
   tab: 'practice',
-  screen: 'home', // home | session | review | mock-home | mock | results
+  screen: 'home', // home | session | review | mock-home | mock | results | cheat
   session: null, // practice session
   mock: null, // mock session
   filters: { type: 'all', difficulty: 'all', unseen: false },
-  verify: { cat: null, i: 0, editing: false, note: '' },
   review: null, // { kind: 'flags' | 'wrong', i }
+  cheat: null, // { ch: null | category id }
   timer: null,
 };
 
@@ -835,14 +840,14 @@ function submitMock(auto) {
 function render() {
   headerExtra.innerHTML = '';
   backBtn.hidden =
-    (ui.screen === 'home' || ui.screen === 'mock-home') && !(ui.tab === 'verify' && ui.verify.cat);
+    (ui.screen === 'home' || ui.screen === 'mock-home') && !(ui.tab === 'cheat' && ui.cheat && ui.cheat.ch);
   headerSub.textContent =
     {
       practice: 'Practice',
       plan: 'Study plan',
       mock: 'Mock test',
       stats: 'Statistics',
-      verify: 'Verify facts',
+      cheat: 'Cheat sheet',
       user: 'User',
     }[ui.tab] || 'Practice';
 
@@ -853,7 +858,7 @@ function render() {
   if (ui.tab === 'plan') return renderPlan();
   if (ui.tab === 'mock') return renderMockHome();
   if (ui.tab === 'stats') return renderStats();
-  if (ui.tab === 'verify') return renderVerify();
+  if (ui.tab === 'cheat') return renderCheatsheet();
   if (ui.tab === 'user') return renderUser();
   return renderPracticeHome();
 }
@@ -895,12 +900,21 @@ function renderPracticeHome() {
 
   const rows = CATEGORIES.map((c) => {
     const n = poolFor(c.id).length;
-    return `<button class="cat-row" data-action="start-cat" data-cat="${c.id}">
+    const sheet = cheatChapter(c.id);
+    return `<div class="cat-line">
+      <button class="cat-row" data-action="start-cat" data-cat="${c.id}">
         <span class="cat-dot" style="background:${c.color}"></span>
         <span class="cat-name">${esc(c.name)}</span>
         <span class="cat-meta">${n} Q</span>
         <span class="cat-chev">›</span>
-      </button>`;
+      </button>
+      ${
+        sheet
+          ? `<button class="cheat-btn" data-action="cheat-open" data-ch="${c.id}"
+               aria-label="Cheat sheet for ${esc(c.name)}" title="Cheat sheet for this chapter">📄</button>`
+          : ''
+      }
+    </div>`;
   }).join('');
 
   mainEl.innerHTML = `
@@ -953,10 +967,9 @@ function renderPracticeHome() {
 
     <h2 class="section">New questions</h2>
     <div class="card">
-      <p class="small muted">The ${newCount} questions added in the most recent batch. They are written from the handbook like the rest, but you have not checked them against your own copy yet.</p>
+      <p class="small muted">The ${newCount} questions added in the most recent batch.</p>
       <div class="btn-row mt">
         <button class="btn" data-action="start-new" ${newCount ? '' : 'disabled'}>✨ Practise new (${newCount})</button>
-        <button class="btn secondary" data-action="verify-new" ${newCount ? '' : 'disabled'}>✅ Verify new</button>
       </div>
     </div>
 
@@ -974,6 +987,97 @@ function renderPracticeHome() {
       </a>
     </div>
   `;
+}
+
+/* ---------- cheat sheet ---------- */
+
+/** The cheat-sheet chapter that backs a pool category (null when it is missing). */
+function cheatChapter(id) {
+  return (DATA.cheat && DATA.cheat.chapters.find((c) => c.id === id)) || null;
+}
+
+/**
+ * Render one section's blocks. The HTML is escaped and assembled by
+ * tools/build-cheatsheet.js, so nothing here needs to sanitise it again.
+ */
+function cheatBlocks(blocks) {
+  return blocks
+    .map((b) => {
+      if (b.t === 'p') return `<p>${b.html}</p>`;
+      if (b.t === 'quote') {
+        return `<blockquote>${b.paras.map((p) => `<p>${p.join('<br>')}</p>`).join('')}</blockquote>`;
+      }
+      if (b.t === 'ul') {
+        return `<ul class="cheat-list">${b.items
+          .map(
+            (it) =>
+              `<li>${it.html}${
+                it.sub && it.sub.length
+                  ? `<ul class="cheat-list">${it.sub.map((s) => `<li>${s}</li>`).join('')}</ul>`
+                  : ''
+              }</li>`
+          )
+          .join('')}</ul>`;
+      }
+      if (b.t === 'table') {
+        return `<div class="cheat-scroll"><table class="cheat-table${
+          b.head.length > 3 ? ' wide' : ''
+        }">
+            <thead><tr>${b.head.map((h) => `<th>${h}</th>`).join('')}</tr></thead>
+            <tbody>${b.rows.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join('')}</tr>`).join('')}</tbody>
+          </table></div>`;
+      }
+      return '';
+    })
+    .join('');
+}
+
+function renderCheatsheet() {
+  const doc = DATA.cheat;
+  if (!doc || !doc.chapters.length) {
+    mainEl.innerHTML = `<div class="card"><p class="muted">The cheat sheet has not been cached on this device yet. Connect once and it will stay available offline.</p></div>`;
+    return;
+  }
+  const chId = ui.cheat && ui.cheat.ch;
+  const chapter = chId ? doc.chapters.find((c) => c.id === chId) : null;
+
+  const chips = `<div class="chips">
+    ${doc.chapters
+      .map(
+        (c) =>
+          `<button class="chip ${
+            chapter && chapter.id === c.id ? 'is-on' : ''
+          }" data-action="cheat-open" data-ch="${c.id}">${c.ch}. ${esc(c.chip)}</button>`
+      )
+      .join('')}
+    <button class="chip ${chapter ? '' : 'is-on'}" data-action="cheat-open">All chapters</button>
+  </div>`;
+
+  if (!chapter) {
+    const rows = doc.chapters
+      .map(
+        (c) => `<button class="cat-row" data-action="cheat-open" data-ch="${c.id}">
+          <span class="cat-dot" style="background:${(CAT_BY_ID[c.id] || {}).color || 'var(--muted)'}"></span>
+          <span class="cat-name">${c.ch}. ${esc(c.name)}</span>
+          <span class="cat-meta">${c.sections.length} section${c.sections.length === 1 ? '' : 's'}</span>
+          <span class="cat-chev">›</span>
+        </button>`
+      )
+      .join('');
+    mainEl.innerHTML = `
+      <p class="lede">Revision notes, split the same way as the question pool. Facts are current to 2026; where the handbook has moved on, the older figure is noted in brackets.</p>
+      ${chips}
+      <h2 class="section">By chapter</h2>
+      ${rows}`;
+    return;
+  }
+
+  mainEl.innerHTML = `
+    <p class="lede"><strong>${chapter.ch}. ${esc(chapter.name)}</strong> — revision notes for this chapter.</p>
+    ${chips}
+    ${chapter.sections
+      .map((s) => `<h2 class="section">${esc(s.title)}</h2><div class="card">${cheatBlocks(s.blocks)}</div>`)
+      .join('')}`;
 }
 
 /* ---------- practice: session ---------- */
@@ -1096,7 +1200,7 @@ function renderReview() {
   const i = Math.max(0, Math.min(r.i, ids.length - 1));
   r.i = i;
   const q = DATA.byId[ids[i]];
-  const cat = CAT_BY_ID[q.category] || NEW_CAT;
+  const cat = CAT_BY_ID[q.category] || UNKNOWN_CAT;
 
   const opts = q.options
     .map(
@@ -1336,7 +1440,6 @@ function statFor(s, total) {
     best: (s.mocks || []).reduce((m, r) => Math.max(m, r.correct || 0), 0),
     planDone: planDoneCount(s),
     planDays: planDef(s.planId).days.length,
-    verified: Object.keys(s.verify || {}).length,
   };
 }
 
@@ -1392,7 +1495,6 @@ function renderUser() {
       <div class="stat-box"><div class="n">${st.mocks}</div><div class="l">Mocks</div></div>
       <div class="stat-box"><div class="n">${st.best ? st.best + '/' + MOCK.total : '—'}</div><div class="l">Best mock</div></div>
       <div class="stat-box"><div class="n">${st.planDone}/${st.planDays}</div><div class="l">Plan days</div></div>
-      <div class="stat-box"><div class="n">${st.verified}</div><div class="l">Facts checked</div></div>
     </div>
 
     <h2 class="section">People on this device</h2>
@@ -1627,219 +1729,10 @@ function renderPlan() {
   `;
 }
 
-/* =========================================================================
- * Verify mode — check the pool against your own handbook
- * ========================================================================= */
-
+/** Trailing number in a question id — history-042 sorts as 42. */
 function numFromId(id) {
   const m = /-(\d+)$/.exec(String(id || ''));
   return m ? Number(m[1]) : 0;
-}
-
-const NEW_CAT = { id: 'new', name: 'New questions', color: '#8b5cf6' };
-
-function catMeta(catId) {
-  return catId === NEW_CAT.id ? NEW_CAT : CAT_BY_ID[catId] || NEW_CAT;
-}
-
-function catQuestions(catId) {
-  const src = catId === NEW_CAT.id ? DATA.batchNew : DATA.byCat[catId] || [];
-  return src.slice().sort((a, b) => numFromId(a.id) - numFromId(b.id));
-}
-
-function verifyStats(catId) {
-  const qs = catQuestions(catId);
-  let ok = 0;
-  let fix = 0;
-  for (const q of qs) {
-    const v = store.verify && store.verify[q.id];
-    if (!v) continue;
-    if (v.k === 'fix') fix++;
-    else ok++;
-  }
-  return { total: qs.length, ok, fix, done: ok + fix };
-}
-
-function advanceVerify() {
-  const qs = catQuestions(ui.verify.cat);
-  if (ui.verify.i < qs.length - 1) {
-    ui.verify.i++;
-    render();
-  } else {
-    toast('End of this chapter');
-    render();
-  }
-}
-
-function verifyReport() {
-  const lines = ['LIFE IN THE UK — fact corrections', ''];
-  let any = false;
-  for (const c of CATEGORIES) {
-    const bad = catQuestions(c.id).filter((q) => store.verify && store.verify[q.id] && store.verify[q.id].k === 'fix');
-    if (!bad.length) continue;
-    any = true;
-    lines.push(`## ${c.name} (${bad.length})`);
-    for (const q of bad) {
-      lines.push(`- ${q.id}${q.batch === 'new' ? ' (new batch)' : ''} — ${q.question}`);
-      lines.push(`  Pool says: ${q.explanation}`);
-      lines.push(`  Should say: ${(store.verify[q.id].n || '(no note)').trim()}`);
-      lines.push('');
-    }
-  }
-  if (!any) lines.push('No corrections — everything checked matched the handbook.');
-  return lines.join('\n');
-}
-
-function renderVerify() {
-  if (!ui.verify.cat) return renderVerifyHome();
-  const qs = catQuestions(ui.verify.cat);
-  if (!qs.length) {
-    ui.verify.cat = null;
-    return renderVerifyHome();
-  }
-  const i = Math.max(0, Math.min(ui.verify.i, qs.length - 1));
-  ui.verify.i = i;
-  const q = qs[i];
-  const cat = catMeta(ui.verify.cat);
-  const s = verifyStats(ui.verify.cat);
-  const verdict = store.verify ? store.verify[q.id] : null;
-
-  headerSub.textContent = cat.name;
-
-  const opts = q.options
-    .map(
-      (o, idx) =>
-        `<div class="ropt ${q.answer.includes(idx) ? 'correct' : ''}"><span>${
-          q.answer.includes(idx) ? '✓' : ''
-        }</span><span>${esc(o)}</span></div>`
-    )
-    .join('');
-
-  mainEl.innerHTML = `
-    <div class="q-progress">
-      <span>${i + 1}/${qs.length}</span>
-      <span class="progress-bar"><span style="width:${((i + 1) / qs.length) * 100}%"></span></span>
-      <span>${s.done} checked · ${s.fix} to fix</span>
-    </div>
-
-    <div class="card">
-      <div class="q-meta">
-        <span class="pill" style="color:${cat.color};border-color:${cat.color}">${esc(cat.name)}</span>
-        <span class="pill">${esc(q.subcategory)}</span>
-        <span class="pill">${q.id}</span>
-      </div>
-      <div class="small muted" style="margin:2px 0 4px">Fact to check against your handbook</div>
-      <div class="q-text" style="font-size:16px">${esc(q.explanation)}</div>
-      <div class="small muted" style="margin:10px 0 4px">The question in the pool</div>
-      <div style="font-weight:600;margin-bottom:8px">${esc(q.question)}</div>
-      ${opts}
-      ${
-        verdict
-          ? `<div class="feedback ${verdict.k === 'fix' ? 'bad' : 'ok'}"><strong>${
-              verdict.k === 'fix' ? '✗ Marked for correction' : '✅ Marked correct'
-            }</strong>${verdict.k === 'fix' && verdict.n ? esc(verdict.n) : ''}</div>`
-          : ''
-      }
-    </div>
-
-    <div class="actions">
-      ${
-        ui.verify.editing
-          ? `<textarea id="vnote" rows="3" placeholder="What should it say? e.g. The battle was in 1485, not 1486.">${esc(
-              ui.verify.note
-            )}</textarea>
-             <div class="btn-row mt">
-               <button class="btn secondary" data-action="verify-cancel-fix">Cancel</button>
-               <button class="btn" data-action="verify-save-fix">Save correction</button>
-             </div>`
-          : `<div class="btn-row">
-               <button class="btn secondary" data-action="verify-ok">✅ Correct</button>
-               <button class="btn danger" data-action="verify-fix">✗ Needs fix</button>
-             </div>
-             <div class="btn-row mt">
-               <button class="btn secondary" data-action="verify-prev" ${i === 0 ? 'disabled' : ''}>‹ Prev</button>
-               <button class="btn secondary" data-action="verify-clear" ${verdict ? '' : 'disabled'}>Clear mark</button>
-               <button class="btn secondary" data-action="verify-next" ${
-                 i === qs.length - 1 ? 'disabled' : ''
-               }>Next ›</button>
-             </div>`
-      }
-    </div>
-  `;
-}
-
-function renderVerifyHome() {
-  const totals = { done: 0, total: 0, fix: 0 };
-  const rows = CATEGORIES.map((c) => {
-    const s = verifyStats(c.id);
-    totals.done += s.done;
-    totals.total += s.total;
-    totals.fix += s.fix;
-    return `<button class="cat-row" data-action="verify-start" data-cat="${c.id}">
-        <span class="cat-dot" style="background:${c.color}"></span>
-        <span class="cat-name">${esc(c.name)}</span>
-        <span class="cat-meta">${s.done}/${s.total}${s.fix ? ` · ${s.fix} to fix` : ''}</span>
-        <span class="cat-chev">›</span>
-      </button>`;
-  }).join('');
-
-  const ns = verifyStats(NEW_CAT.id);
-
-  const corrections = CATEGORIES.flatMap((c) =>
-    catQuestions(c.id)
-      .filter((q) => store.verify && store.verify[q.id] && store.verify[q.id].k === 'fix')
-      .map((q) => ({ q, n: store.verify[q.id].n }))
-  );
-
-  mainEl.innerHTML = `
-    <p class="lede">Check the pool against your official handbook. Mark each question <strong>✅ Correct</strong> if the fact matches, or <strong>✗ Needs fix</strong> and note the correction. Only the ✗ ones need sending back.</p>
-
-    <div class="card">
-      <div class="stat-grid">
-        <div class="stat-box"><div class="n">${totals.done}</div><div class="l">Checked</div></div>
-        <div class="stat-box"><div class="n">${totals.fix}</div><div class="l">To fix</div></div>
-      </div>
-      <p class="small muted mt">${totals.total} questions in the pool.</p>
-      <div class="btn-row mt">
-        <button class="btn" data-action="verify-export" ${totals.fix ? '' : 'disabled'}>Export corrections (${
-    totals.fix
-  })</button>
-        <button class="btn secondary" data-action="verify-reset" ${totals.done ? '' : 'disabled'}>Reset</button>
-      </div>
-    </div>
-
-    ${
-      ns.total
-        ? `<h2 class="section">New questions</h2>
-           <p class="small muted" style="margin:-4px 0 8px">The most recent batch — written from the handbook, but not yet checked by you.</p>
-           <button class="cat-row" data-action="verify-start" data-cat="new">
-             <span class="cat-dot" style="background:${NEW_CAT.color}"></span>
-             <span class="cat-name">${esc(NEW_CAT.name)}</span>
-             <span class="cat-meta">${ns.done}/${ns.total}${ns.fix ? ` · ${ns.fix} to fix` : ''}</span>
-             <span class="cat-chev">›</span>
-           </button>`
-        : ''
-    }
-
-    <h2 class="section">Choose a chapter</h2>
-    ${rows}
-
-    ${
-      corrections.length
-        ? `<h2 class="section">Corrections found</h2>
-           <div class="card">
-             ${corrections
-               .map(
-                 (x) =>
-                   `<div class="small" style="margin-bottom:8px">• <code>${x.q.id}</code> ${
-                     x.q.explanation.length > 100 ? esc(x.q.explanation.slice(0, 97)) + '…' : esc(x.q.explanation)
-                   }<br><span class="muted">→ ${esc(x.n || '(no note)')}</span></div>`
-               )
-               .join('')}
-           </div>`
-        : ''
-    }
-  `;
 }
 
 /* =========================================================================
@@ -1862,9 +1755,8 @@ backBtn.addEventListener('click', () => {
     saveActiveMock();
     ui.screen = 'mock-home';
     render();
-  } else if (ui.tab === 'verify' && ui.verify.cat) {
-    ui.verify.cat = null;
-    ui.verify.editing = false;
+  } else if (ui.tab === 'cheat' && ui.cheat && ui.cheat.ch) {
+    ui.cheat.ch = null;
     render();
   } else {
     ui.screen = 'home';
@@ -1916,6 +1808,12 @@ mainEl.addEventListener('click', (e) => {
       break;
     case 'start-all':
       startPractice({ catId: null, title: 'All questions' });
+      break;
+    case 'cheat-open':
+      ui.cheat = { ch: t.dataset.ch || null };
+      ui.screen = 'home';
+      setTab('cheat');
+      render();
       break;
     case 'start-quick':
       startPractice({ catId: null, title: 'Quick 10', limit: 10 });
@@ -2017,13 +1915,6 @@ mainEl.addEventListener('click', (e) => {
     case 'start-new':
       startPractice({ ids: DATA.batchNew.map((q) => q.id), title: 'New questions' });
       break;
-    case 'verify-new':
-      setTab('verify');
-      ui.screen = 'home';
-      ui.verify = { cat: 'new', i: 0, editing: false, note: '' };
-      render();
-      break;
-
     case 'set-plan': {
       const id = t.dataset.plan;
       if (!PLANS[id]) break;
@@ -2061,82 +1952,6 @@ mainEl.addEventListener('click', (e) => {
       setTab(tab);
       ui.screen = tab === 'mock' ? 'mock-home' : 'home';
       render();
-      break;
-    }
-
-    case 'verify-start':
-      ui.verify = { cat: t.dataset.cat, i: 0, editing: false, note: '' };
-      render();
-      break;
-    case 'verify-ok': {
-      const it = catQuestions(ui.verify.cat)[ui.verify.i];
-      if (!store.verify) store.verify = {};
-      store.verify[it.id] = { k: 'ok' };
-      saveStore();
-      ui.verify.editing = false;
-      advanceVerify();
-      break;
-    }
-    case 'verify-fix': {
-      const it = catQuestions(ui.verify.cat)[ui.verify.i];
-      const prev = store.verify && store.verify[it.id];
-      ui.verify.editing = true;
-      ui.verify.note = prev && prev.n ? prev.n : '';
-      render();
-      break;
-    }
-    case 'verify-cancel-fix':
-      ui.verify.editing = false;
-      ui.verify.note = '';
-      render();
-      break;
-    case 'verify-save-fix': {
-      const it = catQuestions(ui.verify.cat)[ui.verify.i];
-      const noteEl = document.getElementById('vnote');
-      const note = noteEl ? noteEl.value.trim() : '';
-      if (!store.verify) store.verify = {};
-      store.verify[it.id] = { k: 'fix', n: note };
-      saveStore();
-      ui.verify.editing = false;
-      ui.verify.note = '';
-      advanceVerify();
-      break;
-    }
-    case 'verify-clear': {
-      const it = catQuestions(ui.verify.cat)[ui.verify.i];
-      if (store.verify) delete store.verify[it.id];
-      saveStore();
-      render();
-      break;
-    }
-    case 'verify-prev':
-      ui.verify.editing = false;
-      ui.verify.i = Math.max(0, ui.verify.i - 1);
-      render();
-      break;
-    case 'verify-next':
-      ui.verify.editing = false;
-      ui.verify.i = Math.min(catQuestions(ui.verify.cat).length - 1, ui.verify.i + 1);
-      render();
-      break;
-    case 'verify-reset':
-      if (confirm('Clear all verification marks?')) {
-        store.verify = {};
-        saveStore();
-        render();
-      }
-      break;
-    case 'verify-export': {
-      const text = verifyReport();
-      const blob = new Blob([text], { type: 'text/markdown' });
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'life-in-uk-corrections.md';
-      document.body.appendChild(a);
-      a.click();
-      a.remove();
-      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
-      toast('Corrections file downloaded');
       break;
     }
 

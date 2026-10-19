@@ -11,7 +11,7 @@ const { launch } = require('../harness');
 
 const EXPECTED_POOL = 716;
 const EXPECTED_NEW = 139;
-const TABS = ['practice', 'plan', 'mock', 'stats', 'verify', 'user'];
+const TABS = ['practice', 'plan', 'mock', 'stats', 'cheat', 'user'];
 
 module.exports = {
   name: 'App shell & data load',

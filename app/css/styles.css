@@ -379,6 +379,88 @@ p.lede {
   font-size: 20px;
 }
 
+/* ---------- cheat sheet ---------- */
+.cat-line {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+.cat-line .cat-row {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.cheat-btn {
+  flex: none;
+  width: 50px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+.cheat-btn:active {
+  transform: scale(0.97);
+}
+.cheat-list {
+  margin: 0;
+  padding-left: 18px;
+}
+.cheat-list li {
+  margin: 4px 0;
+}
+.cheat-list ul {
+  margin: 4px 0;
+  padding-left: 18px;
+}
+.cheat-scroll {
+  overflow-x: auto;
+}
+.cheat-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 13px;
+}
+.cheat-table.wide {
+  min-width: 640px;
+}
+.cheat-table th,
+.cheat-table td {
+  border: 1px solid var(--line);
+  padding: 6px 8px;
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+.cheat-table th {
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.cheat-table + * {
+  margin-top: 10px;
+}
+blockquote {
+  margin: 0;
+  padding: 0 0 0 12px;
+  border-left: 3px solid var(--line);
+}
+blockquote p {
+  margin: 0 0 10px;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
 /* ---------- people list (User tab) ---------- */
 .person-row {
   display: flex;
@@ -1007,7 +1089,7 @@ code {
   font-size: 12px;
 }
 
-/* ---------- verify mode ---------- */
+/* ---------- read-only option rows (review, results) ---------- */
 .ropt {
   display: flex;
   gap: 8px;

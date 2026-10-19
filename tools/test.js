@@ -187,7 +187,7 @@ check('app.js parses as JavaScript', parseError === null, parseError || '');
 
 const tabs = [...html.matchAll(/data-tab="([^"]+)"/g)].map((m) => m[1]);
 check('six tabs are declared', tabs.length === 6, `got ${tabs.length}: ${tabs.join(', ')}`);
-for (const t of ['practice', 'plan', 'mock', 'stats', 'verify', 'user']) {
+for (const t of ['practice', 'plan', 'mock', 'stats', 'cheat', 'user']) {
   check(`tab present: ${t}`, tabs.includes(t));
 }
 
@@ -211,12 +211,12 @@ check('every data-action has a handler', unhandled.length === 0, unhandled.join(
 const deadHandlers = [...handled].filter((a) => !actions.has(a));
 check('no handler is wired to an action nothing emits', deadHandlers.length === 0, deadHandlers.join(', '));
 
-for (const fn of ['loadData', 'buildData', 'startPractice', 'renderPracticeHome', 'renderMock', 'renderResults', 'renderStats', 'renderPlan', 'renderVerify', 'catQuestions']) {
+for (const fn of ['loadData', 'buildData', 'startPractice', 'renderPracticeHome', 'renderMock', 'renderResults', 'renderStats', 'renderPlan', 'renderCheatsheet']) {
   check(`function defined: ${fn}`, new RegExp(`function ${fn}\\s*\\(`).test(appjs));
 }
 
 check('references the manifest', appjs.includes("data/questions/index.json"));
-check('new-batch wiring present', appjs.includes('DATA.batchNew') && appjs.includes("'start-new'") && appjs.includes("'verify-new'"));
+check('new-batch wiring present', appjs.includes('DATA.batchNew') && appjs.includes("'start-new'"));
 
 const css = fs.readFileSync(path.join(APPDIR, 'css', 'styles.css'), 'utf8');
 check('stylesheet is non-trivial', css.length > 2000, `${css.length} bytes`);
@@ -285,6 +285,67 @@ check('app.js keeps the browser install prompt', /beforeinstallprompt/.test(appj
 check('app.js handles appinstalled', /'appinstalled'/.test(appjs));
 check('app.js hides the button once installed', /display-mode: standalone/.test(appjs));
 check('app.js registers the service worker', /serviceWorker\.register\('sw\.js\?v=/.test(appjs));
+
+/* ------------------------------------------------------------ cheat sheet --- */
+
+section('Cheat sheet');
+
+const cheatSrc = path.join(ROOT, 'Cheat_Sheet.md');
+const cheatJson = path.join(APPDIR, 'data', 'cheatsheet.json');
+
+check('the notes source is present', fs.existsSync(cheatSrc));
+check('the build tool is present', fs.existsSync(path.join(ROOT, 'tools', 'build-cheatsheet.js')));
+check('cheatsheet.json exists', fs.existsSync(cheatJson));
+check('app.js loads the cheat sheet', appjs.includes('data/cheatsheet.json'));
+check('index.html declares the cheat tab', /data-tab="cheat"/.test(html));
+check('app.js renders the cheat sheet', /function renderCheatsheet\s*\(/.test(appjs));
+check('app.js wires the cheat tab into the renderer', /ui\.tab === 'cheat'[\s\S]{0,40}renderCheatsheet\(\)/.test(appjs));
+check('every category row offers its chapter', /data-action="cheat-open" data-ch=/.test(appjs));
+
+if (fs.existsSync(cheatJson) && fs.existsSync(cheatSrc)) {
+  const cheat = JSON.parse(fs.readFileSync(cheatJson, 'utf8'));
+  const hash = require('crypto').createHash('sha256').update(fs.readFileSync(cheatSrc, 'utf8')).digest('hex').slice(0, 16);
+  check('cheatsheet.json is up to date with the notes', cheat.sourceHash === hash, 'run: node tools/build-cheatsheet.js');
+  check(
+    'one chapter per pool category, in pool order',
+    cheat.chapters.map((c) => c.id).join(',') === CATEGORIES.map((c) => c.id).join(','),
+    cheat.chapters.map((c) => c.id).join(',')
+  );
+  check(
+    'every chapter is named after its pool category',
+    cheat.chapters.every((c) => manifest.categories.some((m) => m.id === c.id && m.name === c.name))
+  );
+  check('every chapter has a chip label', cheat.chapters.every((c) => !!c.chip));
+  check('every chapter has sections', cheat.chapters.every((c) => c.sections.length > 0));
+  check('every section has blocks', cheat.chapters.every((c) => c.sections.every((s) => s.blocks.length > 0)));
+  check(
+    'block types are known',
+    cheat.chapters.every((c) =>
+      c.sections.every((s) => s.blocks.every((b) => ['p', 'ul', 'table', 'quote'].indexOf(b.t) >= 0))
+    )
+  );
+  const texts = [];
+  for (const c of cheat.chapters) {
+    for (const s of c.sections) {
+      for (const b of s.blocks) {
+        if (b.t === 'table') {
+          b.head.forEach((x) => texts.push(x));
+          b.rows.forEach((r) => r.forEach((x) => texts.push(x)));
+        } else if (b.t === 'ul') {
+          b.items.forEach((i) => {
+            texts.push(i.html);
+            (i.sub || []).forEach((x) => texts.push(x));
+          });
+        } else if (b.t === 'quote') {
+          b.paras.forEach((p) => p.forEach((x) => texts.push(x)));
+        } else if (b.html) texts.push(b.html);
+      }
+    }
+  }
+  check('no markdown emphasis survives the build', !texts.some((t) => /\*\*|_[_a-z]/.test(t)));
+  check('no HTML is left unescaped', !texts.some((t) => /<(?!\/?(strong|em)>)/.test(t)));
+  check('the notes have something in every chapter', cheat.chapters.length === CATEGORIES.length);
+}
 
 /* --------------------------------------------------------- verify sheets --- */
 

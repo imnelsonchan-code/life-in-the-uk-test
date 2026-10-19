@@ -50,7 +50,7 @@ Always close in a `finally`. A file that leaks a browser slows the whole run.
 ## Harness API
 
 `launch()` → `Browser`. Every `launch()` gets its own temporary Chrome profile,
-so localStorage, cookies and verify marks start empty — **except** where a test
+so localStorage, cookies and progress start empty — **except** where a test
 deliberately reloads the same page to check persistence.
 
 **Browser**
@@ -101,10 +101,11 @@ The app keeps everything on globals, which makes it easy to inspect:
 | `DATA.all` | every question in the pool |
 | `DATA.byCat[id]` | questions for one category |
 | `DATA.batchNew` | the most recently added batch |
-| `ui.tab`, `ui.screen`, `ui.session`, `ui.verify`, `ui.filters`, `ui.mock` | view state |
-| `store.seen`, `store.right`, `store.wrong`, `store.verify`, `store.mocks`, `store.plan`, `store.testDate` | persisted state |
+| `DATA.cheat` | the cheat-sheet chapters (`{id, ch, name, chip, sections}`) |
+| `ui.tab`, `ui.screen`, `ui.session`, `ui.filters`, `ui.mock`, `ui.cheat` | view state |
+| `store.seen`, `store.right`, `store.wrong`, `store.flags`, `store.mocks`, `store.plan`, `store.testDate` | persisted state |
 | `render()` | re-renders the current screen |
-| `setTab(id)` | switches tab (`practice`, `plan`, `mock`, `stats`, `verify`, `user`) |
+| `setTab(id)` | switches tab (`practice`, `plan`, `mock`, `stats`, `cheat`, `user`) |
 
 Prefer **driving the real UI** (`page.click('[data-action="..."]')`) over calling
 internals, so the tests cover what a user actually does. Reach for the globals to
