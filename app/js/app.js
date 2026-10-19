@@ -483,12 +483,12 @@ function fmtTime(sec) {
 }
 
 let toastTimer = null;
-function toast(msg) {
+function toast(msg, ms) {
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.hidden = false;
   clearTimeout(toastTimer);
-  toastTimer = setTimeout(() => (t.hidden = true), 1900);
+  toastTimer = setTimeout(() => (t.hidden = true), ms || 1900);
 }
 
 /* group questions for the "statement" type preview */
@@ -2304,6 +2304,111 @@ function initGithub() {
 }
 
 /* =========================================================================
+ * Install — "Add to Home Screen"
+ *
+ * The header button shows unless the app is already running as an installed
+ * app. On Chromium it fires the browser's own install prompt; elsewhere it
+ * explains the menu route, because iOS Safari and Firefox give the page no
+ * install API at all.
+ * ========================================================================= */
+
+const INSTALL = { prompt: null, done: false, btn: null };
+
+function isStandalone() {
+  return (
+    (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+    window.navigator.standalone === true
+  );
+}
+
+function isIos() {
+  return (
+    /iP(hone|ad|od)/.test(navigator.userAgent) ||
+    // iPadOS 13+ claims to be a Mac; the touch points give it away.
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  );
+}
+
+function refreshInstallButton() {
+  if (!INSTALL.btn) return;
+  INSTALL.btn.hidden = INSTALL.done || isStandalone();
+}
+
+function installHint() {
+  if (isIos()) return 'Tap Share, then "Add to Home Screen"';
+  return 'Open your browser menu and choose "Install app" or "Add to Home screen"';
+}
+
+function installNow() {
+  const p = INSTALL.prompt;
+  INSTALL.prompt = null; // a captured prompt can only be spent once
+  if (!p) {
+    toast(installHint(), 6000);
+    return;
+  }
+  let choice = null;
+  try {
+    p.prompt();
+    choice = p.userChoice;
+  } catch (e) {
+    // A few browsers expose the event but refuse the call (no user gesture);
+    // fall back to telling the user where the menu entry lives.
+    toast(installHint(), 6000);
+    return;
+  }
+  Promise.resolve(choice)
+    .then((c) => {
+      if (c && c.outcome === 'accepted') {
+        INSTALL.done = true;
+        toast('Installed — open it from your home screen');
+      }
+    })
+    .catch(() => {})
+    .then(refreshInstallButton);
+}
+
+function initInstall() {
+  INSTALL.btn = document.getElementById('installBtn');
+  if (!INSTALL.btn) return;
+  INSTALL.btn.addEventListener('click', installNow);
+  refreshInstallButton();
+
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault(); // keep the prompt back for our own button
+    INSTALL.prompt = e;
+    refreshInstallButton();
+  });
+  window.addEventListener('appinstalled', () => {
+    INSTALL.done = true;
+    INSTALL.prompt = null;
+    refreshInstallButton();
+    toast('Installed — open it from your home screen');
+  });
+}
+
+/* Offline: a service worker that serves the app from cache when the network is
+ * gone. Registered over https/localhost only, and only where supported. The
+ * `?v=` on our own <script> names the cache, so each deploy (which rewrites it
+ * to the commit) starts a fresh one and the old cache is dropped. */
+function assetVersion() {
+  const tag = document.querySelector('script[src*="app.js"]');
+  const m = tag && /[?&]v=([^&"]+)/.exec(tag.getAttribute('src') || '');
+  return m ? m[1] : 'dev';
+}
+
+function initServiceWorker() {
+  if (!('serviceWorker' in navigator)) return;
+  const local = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  if (location.protocol !== 'https:' && !local) return;
+  const start = () =>
+    navigator.serviceWorker.register('sw.js?v=' + assetVersion()).catch(() => {
+      /* no offline copy this time; the app itself is unaffected */
+    });
+  if (document.readyState === 'complete') start();
+  else window.addEventListener('load', start, { once: true });
+}
+
+/* =========================================================================
  * Boot
  * ========================================================================= */
 
@@ -2312,6 +2417,8 @@ function initGithub() {
     await loadData();
     render();
     initGithub();
+    initInstall();
+    initServiceWorker();
   } catch (err) {
     mainEl.innerHTML = `
       <div class="card">

@@ -35,10 +35,35 @@ keep getting wrong.
 - **Project link** — a GitHub star button sits in the header (and a
   home-screen-style tile on the Practice home) pointing at the source repo, with
   its live star count.
+- **Install it like an app** — a header button adds the site to your phone's home
+  screen (see *Install it like an app* below), with its own icon, no browser
+  chrome, and a service worker so it still opens without a connection.
 - **Offline** — everything (progress included) lives in `localStorage`. There is
   no backend and no account, and no data ever leaves the device. The single
   optional network call is the GitHub star count; if it can't be reached, the
   number is hidden and the rest of the app is unaffected.
+
+## Install it like an app
+
+The ⬇ button in the header adds the site to your home screen so it launches like
+any other app — full screen, its own icon, no address bar.
+
+- **Android / Chrome / Edge** — the button opens the browser's own *Install app*
+  prompt.
+- **iPhone / iPad (Safari)** — there is no install prompt in iOS, so the button
+  tells you where to tap: **Share → Add to Home Screen**.
+- **Desktop browsers** — the button either prompts, or points at the menu entry
+  (*Install app* in Chrome/Edge, *Add to Home screen* in Firefox for Android).
+- The button hides itself once you are running the installed app; it sits beside
+  the GitHub link in the header, and neither replaces the other.
+
+Under the hood that is a standard PWA: `app/manifest.webmanifest` (name, icons,
+`display: standalone`, theme colour), the `app/icons/*.png` launcher icons, and
+`app/sw.js`, a service worker that serves the app from cache when the network is
+gone. The cache is **network-first**, so a file can never go stale; the cache
+name carries the same `?v=<commit>` as the rest of the assets, and a new deploy
+drops the old cache. Set a test date and install it, and the app will tell you
+which day of the plan you are on even with no signal.
 
 ## The User tab — progress per person
 
@@ -122,7 +147,7 @@ is the merged pool the app actually loads — regenerate it after editing parts:
 ```bash
 node tools/merge.js        # parts -> app/data/questions (+ index.json)
 node tools/validate.js     # schema and invariant checks
-node tools/test.js         # regression suite (65 checks)
+node tools/test.js         # regression suite (100 checks)
 ```
 
 Browser end-to-end tests run against a live server (they drive the system Chrome
@@ -147,12 +172,16 @@ app/                     the site — this directory is what gets deployed
   index.html
   css/styles.css
   js/app.js              the whole application
+  manifest.webmanifest   PWA metadata for "Add to Home Screen"
+  sw.js                  service worker: offline cache
+  icons/                 launcher / favicon / apple-touch icons
   data/questions/        merged pool loaded at runtime
   data/parts/            source questions (edit these)
   data/schema.md         question schema
 docker/                  nginx config for the container
 docs/                    README assets
 tools/                   data pipeline, tests and the e2e harness
+  make-icons.py          regenerates app/icons from one design (needs Pillow)
 verify/                  fact-check reports
 .github/workflows/       GitHub Pages deploy workflow
 ```
@@ -164,8 +193,9 @@ Hosting is a standard **GitHub Pages** site built by
 `main` the workflow:
 
 1. runs `node tools/validate.js` and `node tools/test.js` (a red build blocks the deploy),
-2. stamps the CSS/JS URLs in `index.html` with the commit SHA, so browsers never
-   serve a stale app after a release,
+2. stamps the CSS/JS/manifest URLs in `index.html` with the commit SHA, so
+   browsers never serve a stale app after a release (the service worker reads
+   that same stamp to name its cache),
 3. uploads only the `app/` directory and deploys it to Pages.
 
 So the published site is exactly the tested, committed `app/` folder — and it

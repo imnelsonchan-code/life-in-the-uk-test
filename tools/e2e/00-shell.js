@@ -173,6 +173,139 @@ module.exports = {
         );
       });
 
+      await suite.group('Install to the home screen', async () => {
+        // The button lives in the header permanent area, so a render never
+        // clears it, and it starts hidden until app.js decides it is useful.
+        suite.check('header install button exists', await page.exists('#installBtn'));
+        suite.eq(
+          'install button is not inside the dynamic slot',
+          await page.eval(
+            'return document.getElementById("headerExtra").contains(document.getElementById("installBtn"));'
+          ),
+          false
+        );
+        suite.check(
+          'install button is offered once the app has booted',
+          await page.eval('return !document.getElementById("installBtn").hidden;')
+        );
+        suite.eq(
+          'install button has an accessible name',
+          await page.eval('return document.getElementById("installBtn").getAttribute("aria-label")'),
+          'Add this app to your home screen'
+        );
+        suite.check(
+          'install button has an icon',
+          await page.eval('return !!document.querySelector("#installBtn svg");')
+        );
+
+        // With no captured prompt, the click must explain where the menu entry is.
+        await page.eval('INSTALL.prompt = null; return true;');
+        await page.click('#installBtn');
+        suite.check(
+          'clicking it with no prompt explains how to install',
+          await page.eval('return !document.getElementById("toast").hidden;')
+        );
+        suite.check(
+          'the hint names the home screen',
+          await page.eval(
+            'return /home screen|Share/i.test(document.getElementById("toast").textContent);'
+          ),
+          await page.eval('return document.getElementById("toast").textContent;')
+        );
+
+        // With a prompt captured, the click must spend it and retire the button.
+        // (A synthetic element.click() carries no user gesture, so the app has to
+        // survive prompt() refusing the call — the catch path above.)
+        await page.eval(
+          'window.__prompted = 0;' +
+            'INSTALL.prompt = {' +
+            '  prompt: function(){ window.__prompted++; },' +
+            '  userChoice: Promise.resolve({ outcome: "accepted" })' +
+            '};' +
+            'return true;'
+        );
+        await page.click('#installBtn');
+        suite.check('a captured install prompt is used', await page.eval('return window.__prompted === 1;'));
+        await page.waitFor('INSTALL.done === true');
+        suite.check(
+          'the button retires once the app is installed',
+          await page.eval('return document.getElementById("installBtn").hidden;')
+        );
+        suite.check(
+          'and the app says so',
+          await page.eval(
+            'return /Installed/.test(document.getElementById("toast").textContent);'
+          ),
+          await page.eval('return document.getElementById("toast").textContent;')
+        );
+
+        const manifest = await page.eval(
+          "return fetch('manifest.webmanifest').then(function(r){ return r.ok ? r.json() : null; });"
+        );
+        suite.check('the manifest is served as JSON', !!manifest, JSON.stringify(manifest));
+        if (manifest) {
+          suite.check('manifest names the app', !!manifest.name && !!manifest.short_name);
+          suite.eq('manifest opens standalone', manifest.display, 'standalone');
+          suite.check(
+            'manifest starts and scopes inside the app',
+            /^\.?\/?$/.test(manifest.start_url) || /^\.\//.test(manifest.start_url),
+            manifest.start_url
+          );
+          suite.check('manifest sets a theme colour', !!manifest.theme_color, manifest.theme_color);
+          const sizes = (manifest.icons || []).map((i) => i.sizes);
+          suite.check('manifest has a 192 icon', sizes.indexOf('192x192') >= 0, sizes.join(','));
+          suite.check('manifest has a 512 icon', sizes.indexOf('512x512') >= 0, sizes.join(','));
+          suite.check(
+            'manifest has a maskable icon',
+            (manifest.icons || []).some((i) => /maskable/.test(i.purpose || ''))
+          );
+          suite.check(
+            'every icon the manifest names is served',
+            await page.eval(
+              "return fetch('manifest.webmanifest').then(function(r){ return r.json(); }).then(function(m){ return Promise.all(m.icons.map(function(i){ return fetch(i.src).then(function(r){ return r.ok; }); })); }).then(function(oks){ return oks.length > 0 && oks.every(Boolean); });"
+            )
+          );
+        }
+
+        suite.eq(
+          'the page links that manifest',
+          await page.eval(
+            "var l=document.querySelector('link[rel=manifest]'); return l ? l.getAttribute('href').replace(/\\?.*$/, '') : null;"
+          ),
+          'manifest.webmanifest'
+        );
+        suite.eq(
+          'iOS gets an apple-touch-icon',
+          await page.eval(
+            "var l=document.querySelector('link[rel=apple-touch-icon]'); return l ? l.getAttribute('href') : null;"
+          ),
+          'icons/apple-touch-icon.png'
+        );
+        suite.eq(
+          'the browser tab gets a vector icon',
+          await page.eval(
+            "var l=document.querySelector('link[rel=icon]'); return l ? l.getAttribute('type') : null;"
+          ),
+          'image/svg+xml'
+        );
+
+        const sw = await page.eval(
+          "return fetch('sw.js').then(function(r){ return r.ok ? r.text() : null; });"
+        );
+        suite.check('the service worker is served', !!sw);
+        if (sw) {
+          suite.check(
+            'the service worker caches and answers fetches',
+            /addEventListener\('fetch'/.test(sw) && /caches\s*\.\s*open/.test(sw)
+          );
+          suite.eq(
+            'the service worker stays out of cross-origin requests',
+            /url\.origin !== self\.location\.origin/.test(sw),
+            true
+          );
+        }
+      });
+
       await suite.group('No client-side errors', async () => {
         const problems = page.problems();
         suite.check('no console errors or failed requests', problems.length === 0, problems.join(' | '));

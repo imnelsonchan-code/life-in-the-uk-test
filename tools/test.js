@@ -221,6 +221,71 @@ check('new-batch wiring present', appjs.includes('DATA.batchNew') && appjs.inclu
 const css = fs.readFileSync(path.join(APPDIR, 'css', 'styles.css'), 'utf8');
 check('stylesheet is non-trivial', css.length > 2000, `${css.length} bytes`);
 
+/* --------------------------------------------------- home-screen app --- */
+
+section('Home-screen app');
+
+const manifestPath = path.join(APPDIR, 'manifest.webmanifest');
+check('manifest exists', fs.existsSync(manifestPath));
+if (fs.existsSync(manifestPath)) {
+  let man = null;
+  try {
+    man = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+  } catch (e) {
+    check('manifest is valid JSON', false, e.message);
+  }
+  if (man) {
+    check('manifest is valid JSON', true);
+    check('manifest has a name', !!man.name && !!man.short_name);
+    check('manifest has a description', !!man.description);
+    check('manifest opens standalone', man.display === 'standalone', man.display);
+    check('manifest start_url is app-relative', /^\./.test(man.start_url), man.start_url);
+    check('manifest scope is app-relative', /^\./.test(man.scope), man.scope);
+    check('manifest sets a theme colour', !!man.theme_color, man.theme_color);
+    const sizes = (man.icons || []).map((i) => i.sizes);
+    check('manifest icon is 192', sizes.includes('192x192'), sizes.join(','));
+    check('manifest icon is 512', sizes.includes('512x512'), sizes.join(','));
+    check('manifest has a maskable icon', (man.icons || []).some((i) => /maskable/.test(i.purpose || '')));
+    for (const icon of man.icons || []) {
+      check(`icon on disk: ${icon.src}`, fs.existsSync(path.join(APPDIR, icon.src)));
+    }
+    // The icons must sit inside the declared scope: GitHub Pages serves app/.
+    check(
+      'icons stay inside the app directory',
+      (man.icons || []).every((i) => !i.src.startsWith('/') && !i.src.startsWith('..'))
+    );
+  }
+}
+
+check('apple-touch-icon on disk', fs.existsSync(path.join(APPDIR, 'icons', 'apple-touch-icon.png')));
+check('vector favicon on disk', fs.existsSync(path.join(APPDIR, 'icons', 'icon.svg')));
+
+const swPath = path.join(APPDIR, 'sw.js');
+check('service worker exists', fs.existsSync(swPath));
+if (fs.existsSync(swPath)) {
+  const sw = fs.readFileSync(swPath, 'utf8');
+  check('service worker handles fetches', /addEventListener\('fetch'/.test(sw));
+  check('service worker uses the Cache API', /caches\s*\.\s*open\(/.test(sw));
+  check('service worker ignores cross-origin requests', /origin !== self\.location\.origin/.test(sw));
+  check('service worker names its cache from ?v=', /\?v=/.test(sw) || /searchParams/.test(sw));
+}
+
+check('index.html links the manifest', /rel="manifest"/.test(html));
+check('index.html links the apple-touch-icon', /rel="apple-touch-icon"/.test(html));
+check('index.html links a vector favicon', /rel="icon"[^>]*image\/svg\+xml/.test(html));
+check('index.html declares a theme colour', /name="theme-color"/.test(html));
+check('header has the install button', /id="installBtn"/.test(html));
+check(
+  'install button is labelled for assistive tech',
+  /id="installBtn"[\s\S]{0,200}?aria-label="[^"]+"/.test(html)
+);
+check('install button starts hidden', /id="installBtn"[\s\S]{0,300}?hidden/.test(html));
+check('app.js wires the install button', /getElementById\('installBtn'\)/.test(appjs));
+check('app.js keeps the browser install prompt', /beforeinstallprompt/.test(appjs));
+check('app.js handles appinstalled', /'appinstalled'/.test(appjs));
+check('app.js hides the button once installed', /display-mode: standalone/.test(appjs));
+check('app.js registers the service worker', /serviceWorker\.register\('sw\.js\?v=/.test(appjs));
+
 /* --------------------------------------------------------- verify sheets --- */
 
 section('Verification sheets');

@@ -120,6 +120,20 @@ body {
   align-items: center;
 }
 
+/* "Add to Home Screen" — icon only, sits beside the project link. */
+.install-btn {
+  width: 34px;
+  height: 34px;
+  font-size: 15px;
+  flex: none;
+}
+.install-btn:active {
+  transform: scale(0.96);
+}
+.install-btn svg {
+  display: block;
+}
+
 /* GitHub button — always in the header, never cleared by a re-render */
 .gh-btn {
   display: inline-flex;

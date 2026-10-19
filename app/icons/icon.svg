@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Life in the UK Test practice">
+  <title>Life in the UK Test practice</title>
+  <defs>
+    <clipPath id="rounded"><rect width="64" height="64" rx="14" ry="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#rounded)">
+    <rect width="64" height="64" fill="#012169"/>
+    <g stroke-linecap="butt">
+      <path d="M0 0L64 64M64 0L0 64" stroke="#ffffff" stroke-width="6.4"/>
+      <path d="M0 0L64 64M64 0L0 64" stroke="#c8102e" stroke-width="4.3"/>
+      <path d="M32 0V64M0 32H64" stroke="#ffffff" stroke-width="21.3"/>
+      <path d="M32 0V64M0 32H64" stroke="#c8102e" stroke-width="12.8"/>
+    </g>
+  </g>
+</svg>
