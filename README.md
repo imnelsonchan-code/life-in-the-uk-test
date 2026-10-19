@@ -29,7 +29,7 @@ keep getting wrong.
 - **Verify mode** — work through the pool alongside your own copy of the
   handbook, mark each question *OK* or *needs fix*, and export the notes.
 - **Multiple people** — optional named profiles, so several people can share one
-  device without mixing up their progress.
+  device without mixing up their progress (see *The User tab* below).
 - **Project link** — a GitHub star button sits in the header (and a
   home-screen-style tile on the Practice home) pointing at the source repo, with
   its live star count.
@@ -37,6 +37,50 @@ keep getting wrong.
   no backend and no account, and no data ever leaves the device. The single
   optional network call is the GitHub star count; if it can't be reached, the
   number is hidden and the rest of the app is unaffected.
+
+## The User tab — progress per person
+
+The **User** tab keeps separate records for several people sharing one device.
+
+- **Naming yourself is optional.** With no name the app just tracks "you"
+  anonymously, exactly as it did before profiles existed.
+- **Start tracking** — type a name and your progress is recorded under it. The
+  *first* name you add adopts whatever you have already practised, so naming
+  yourself never wipes your history.
+- **Add person** — adds a second (third, …) person. Each one keeps their own
+  seen/right/wrong set, flags, mock history, plan ticks and test date.
+- **Switch** — tap a name under "People on this device" to make them active. The
+  current person's state is parked and theirs is loaded, and a half-finished mock
+  is parked with its owner too, so everyone resumes where they left off.
+- **Rename** — edit the name field and press *Save name*.
+- **Remove** — asks for confirmation. Removing the active person switches to the
+  next one, or leaves a fresh empty record if they were the last.
+
+Each row shows that person's shorthand progress (seen / accuracy / mocks), and
+the panel above repeats their full numbers: seen, correct %, mocks, best mock,
+plan days ticked and facts verified.
+
+## What's stored on your device
+
+All of it lives in the browser's `localStorage`. There is no server, no account,
+no cookie and no analytics:
+
+| Key | What it holds |
+| --- | --- |
+| `liuk_state_v1` | The **active person's** progress: which questions you have `seen`, per-question `right`/`wrong` counts, your `flags`, the `mocks` history, the `plan` tick maps for all three plans, the `planId` you chose, your `testDate`, and your `verify` marks |
+| `liuk_users_v1` | The roster of people on this device: names and ids, who is active, and the paused progress of everyone who is not |
+| `liuk_active_mock_v1` | A mock test that is still in progress, so reloading the page resumes it instead of losing it |
+| `liuk_gh_stars_v1` | The cached GitHub star count and when it was fetched — the only value that comes from the network |
+
+A few consequences worth knowing:
+
+- Progress belongs to the **browser**, not to a person or an account. Another
+  browser, another OS profile, a private window, or clearing site data all start
+  fresh — nothing syncs between devices.
+- Nothing is ever uploaded. Your answers never leave the page, and the only
+  outgoing request in the whole app is the optional star-count lookup.
+- Clearing cookies and site data for this site erases everything, including
+  every person on the roster.
 
 ## The question pool
 
